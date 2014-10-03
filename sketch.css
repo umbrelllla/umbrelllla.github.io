@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-src:url('https://googledrive.com/host/0B7CCAGR_S7BGN0RIUVVZYVlSZTg/icomoon.eot?-upsmpk');
-  src:url('https://googledrive.com/host/0B7CCAGR_S7BGN0RIUVVZYVlSZTg/icomoon.eot?#iefix-upsmpk') format('embedded-opentype'),
-    url('https://googledrive.com/host/0B7CCAGR_S7BGN0RIUVVZYVlSZTg/icomoon.woff?-upsmpk') format('woff'),
-    url('https://googledrive.com/host/0B7CCAGR_S7BGN0RIUVVZYVlSZTg/icomoon.ttf?-upsmpk') format('truetype'),
-    url('https://googledrive.com/host/0B7CCAGR_S7BGN0RIUVVZYVlSZTg/icomoon.svg?-upsmpk#icomoon') format('svg');
+src:url('icomoon/icomoon.eot?-upsmpk');
+  src:url('icomoon/icomoon.eot?#iefix-upsmpk') format('embedded-opentype'),
+    url('icomoon/icomoon.woff?-upsmpk') format('woff'),
+    url('icomoon/icomoon.ttf?-upsmpk') format('truetype'),
+    url('icomoon/icomoon.svg?-upsmpk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
