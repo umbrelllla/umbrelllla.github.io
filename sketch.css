@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-src:url('icomoon/icomoon.eot?-upsmpk');
-  src:url('icomoon/icomoon.eot?#iefix-upsmpk') format('embedded-opentype'),
-    url('icomoon/icomoon.woff?-upsmpk') format('woff'),
-    url('icomoon/icomoon.ttf?-upsmpk') format('truetype'),
-    url('icomoon/icomoon.svg?-upsmpk#icomoon') format('svg');
+src:url('http://umbrelllla.github.io/icomoon/icomoon.eot?-upsmpk');
+  src:url('http://umbrelllla.github.io/icomoon/icomoon.eot?#iefix-upsmpk') format('embedded-opentype'),
+    url('http://umbrelllla.github.io/icomoon/icomoon.woff?-upsmpk') format('woff'),
+    url('http://umbrelllla.github.io/icomoon/icomoon.ttf?-upsmpk') format('truetype'),
+    url('http://umbrelllla.github.io/icomoon/icomoon.svg?-upsmpk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
