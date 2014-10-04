@@ -354,7 +354,7 @@ user is not using shrink to fit then we expand the header.
 
 
             <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-              <span class='glyphicon glyphicon-tag'/>
+             
 <data:title/>
               <b class='caret'/>
             </a>
@@ -1098,9 +1098,7 @@ user is not using shrink to fit then we expand the header.
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
                   <div class='post-header'>
                     <span class='post-author vcard'>
-                      <span class='glyphicon glyphicon-user'/>
                       <b:if cond='data:top.showAuthor'>
-                        <data:top.authorLabel/>
                         <span class='fn'>
                           <data:post.author/>
                         </span>
@@ -1160,15 +1158,14 @@ user is not using shrink to fit then we expand the header.
                      </a>   
                     <div class='media-body'>
                       <a expr:href='data:post.url'>
-                        <h1 class='media-heading'><span class='icon-quill'/><data:post.title/></h1>
+                        <h1 class='media-heading'><data:post.title/></h1>
                       </a>
                       <a expr:href='data:post.url'><p><data:post.body/></p></a>
  <div class='post-meta'>
                     <span class='post-author vcard'>
-                      <span class='icon-user'/>
                       <b:if cond='data:top.showAuthor'>                        
                         <span class='fn'>
-                          <data:post.author/>
+                          &#9786;<data:post.author/>
                         </span>
                       </b:if>
                     </span>
@@ -1185,21 +1182,23 @@ user is not using shrink to fit then we expand the header.
                     </span>
                     <span class='post-labels'><span class='glyphicon glyphicon-tag'/>
                       <b:if cond='data:post.labels'>
-                        <b:loop values='data:post.labels' var='label'>
+                        &#x2329;<b:loop values='data:post.labels' var='label'>
                           <a class='label label-default' expr:href='data:label.url' rel='tag'>
                             <data:label.name/>
                           </a>
                           <b:if cond='data:label.isLast != &quot;true&quot;'>
                             ,
                           </b:if>
-                        </b:loop>
+                        </b:loop>&#x232A;
                       </b:if>
                     </span>
                     <span class='post-comment-link'>
                       <b:if cond='data:blog.pageType != &quot;item&quot;'>
                         <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
                           <b:if cond='data:post.allowComments'>
+ <b:if cond='data:post.numComments > 0'>
                             <b:include data='post' name='comment_count_picker'/>
+                            </b:if>
                           </b:if>
                         </b:if>
                       </b:if>
