@@ -1987,9 +1987,10 @@ margin-top: 5px;
 margin-top: 10px;
 }
 abbr.published {
-
 font-style: italic;
-
 color: #666;
 font-size: 90%;
+}
+li.categoryLabel span:before {
+content: '&#x00BB;';
 }
