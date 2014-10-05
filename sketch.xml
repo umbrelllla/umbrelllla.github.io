@@ -1572,7 +1572,7 @@ user is not using shrink to fit then we expand the header.
       <b:loop values='data:labels' var='label'>
         <li>
           <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+            <span class='active' expr:dir='data:blog.languageDirection'><data:label.name/></span>
           <b:else/>
             <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
           </b:if>
