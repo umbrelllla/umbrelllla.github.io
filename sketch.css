@@ -1991,6 +1991,6 @@ font-style: italic;
 color: #666;
 font-size: 90%;
 }
-li.categoryLabel span:before {
-content: '&#x00BB;';
+li.categoryLabel span.active:before {
+content: '\002714';
 }
