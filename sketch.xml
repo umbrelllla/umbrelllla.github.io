@@ -997,15 +997,14 @@ user is not using shrink to fit then we expand the header.
                           </span>
                           <span class='post-labels'>
                             <b:if cond='data:post.labels'>
-                              <data:postLabelsLabel/>
-                              <b:loop values='data:post.labels' var='label'>
+&#x2329;<b:loop values='data:post.labels' var='label'>
                                 <a class='label label-default' expr:href='data:label.url' rel='tag'>
                                   <data:label.name/>
                                 </a>
                                 <b:if cond='data:label.isLast != &quot;true&quot;'>
                                   ,
                                 </b:if>
-                              </b:loop>
+                              </b:loop>&#x232A;                              
                             </b:if>
                           </span>
                         </div>
@@ -1100,15 +1099,12 @@ user is not using shrink to fit then we expand the header.
                     <span class='post-author vcard'>
                       <b:if cond='data:top.showAuthor'>
                         <span class='fn'>
-                          <data:post.author/>
+                          &#9786;<data:post.author/>
                         </span>
                       </b:if>
                     </span>
                     <span class='post-timestamp'>
-                      <span class='glyphicon glyphicon-ok-circle'>
-                      </span>
 <b:if cond='data:top.showTimestamp'>
-  <data:top.timestampLabel/>
   <b:if cond='data:post.url'>
     <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
       <abbr class='published' expr:title='data:post.timestampISO8601'>
@@ -1560,10 +1556,10 @@ user is not using shrink to fit then we expand the header.
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
      <b:if cond='data:blog.url == data:blog.homepageUrl'>
-                  <p class='active'><span class='icon-home'/>Home</p>
+                  <p class='active home'>&#10026;Home</p>
                   <b:else/>
                   
-                    <p><a expr:href='data:blog.homepageUrl'><span class='icon-home'/>Home</a></p>
+                    <p><a class='home' expr:href='data:blog.homepageUrl'>&#10026;Home</a></p>
                   
                 </b:if>
 
