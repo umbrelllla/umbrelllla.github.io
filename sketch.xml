@@ -22,7 +22,7 @@
       <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
       <meta content='Site Name' property='og:site_name'/>
       <meta content='article' property='og:type'/>
-      <b:if cond='data:blog.postImageThumbnailUrl'>p
+      <b:if cond='data:blog.postImageThumbnailUrl'>
         <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
         <b:else/>
         <meta content='http://2.bp.blogspot.com/-DknlKJONMdY/UhBRqSykyiI/AAAAAAAABws/Id-lSMf1bMY/s1600/apple-touch-icon-144-precomposed.png' property='og:image'/>
@@ -44,7 +44,7 @@
     <link href='http://4.bp.blogspot.com/-3miLDAfjF9k/UhBRxD6aipI/AAAAAAAABxE/4qR5jc7leU8/s1600/favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'/>
 &lt;style type=&quot;text/css&quot;&gt;
 &lt;!-- /*<b:skin><![CDATA[*/]]></b:skin>
-<link type='text/css' rel='stylesheet' href='http://umbrelllla.github.io/sketch.min.css' />
+<link href='http://umbrelllla.github.io/sketch.min.css' rel='stylesheet' type='text/css'/>
 
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
         <style>
@@ -191,74 +191,8 @@ right: 6px;
 bottom: -5px;
 box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
-
-.pthumb {float:left;margin:3px 10px 0 0;border: 4px solid #eee;width:90px;height:90px;overflow:hidden;position:related}
     </style>
       </b:if>
-
-
-
-
-
-  <!-- <link href='https://googledrive.com/host/0B7CCAGR_S7BGN0RIUVVZYVlSZTg/sketchicomoon.css' rel='stylesheet'/> -->
-    <!-- <link href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css' rel='stylesheet'/> -->
-    <style>
-      .PopularPosts .widget-content ul li {
-        width: 100%;
-border-bottom: 1px solid #ddd;
-padding: 5px 0;
-list-style-type: none;
-      }
-      ul.hierarchy li {
-list-style-type: none;
-}
-ul.hierarchy {
-padding: 0;
-}
-ul.hierarchy ul {
-padding-left: 20px;
-}
-      .navbar-brand{
-        display: none;
-      }
-      .navbar-fixed-top .navbar-brand {
-        display: block;
-        font-size: 26px;
-        font-weight: bold;
-        color: #000;
-      }
-      body{margin-top:10px;}
-      .navbar-brand {
-        float: left;
-        font-size: 18px;
-        line-height: 20px;
-      }
-      .navbar {
-        min-height: 41px;}
-      .navbar-form {
-        margin-top: 4px;
-        margin-bottom: 3px;}
-      .page-header {
-        padding-bottom: 0;
-        margin: 0px 0;
-      }
-.post-timestamp, .post-labels {
-margin-left: 10px;
-}
-.PopularPosts .item-title {
-font-size: 85%;
-line-height: 1;
-
-}
-.PopularPosts .widget-content ul {
-padding: 0 0 0 0px;
-}
-.PopularPosts img {;
-float: left;
-margin-right: 10px;
-}
-
-    </style>
   </head>
   <body>
 
@@ -425,19 +359,19 @@ user is not using shrink to fit then we expand the header.
 
 <div class='middle category'><div class='container'>
 
-<b:if cond='data:blog.pageType == "index"'>インデックス
-<b:else />
-  <b:if cond='data:blog.pageType == "archive"'>アーカイブ
-  <b:else />
-    <b:if cond='data:blog.pageType == "item"'>アイテム
-    <b:else />不明なページタイプ
+<b:if cond='data:blog.pageType == &quot;index&quot;'>インデックス
+<b:else/>
+  <b:if cond='data:blog.pageType == &quot;archive&quot;'>アーカイブ
+  <b:else/>
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>アイテム
+    <b:else/>不明なページタイプ
     </b:if>
   </b:if>
 </b:if>
 
   <div class='row'>
   <div class='col-xs-12'>
-    <b:if cond='data:blog.pageName'><h1><data:blog.pageName/><b:if cond='data:blog.pageType == "archive"'>年のアーカイブ</b:if></h1>
+    <b:if cond='data:blog.pageName'><h1><data:blog.pageName/><b:if cond='data:blog.pageType == &quot;archive&quot;'>年のアーカイブ</b:if></h1>
     <b:else/>
 
           <b:section class='header' id='middle-title' maxwidgets='1' showaddelement='no'>
@@ -997,14 +931,14 @@ user is not using shrink to fit then we expand the header.
                           </span>
                           <span class='post-labels'>
                             <b:if cond='data:post.labels'>
-&#x2329;<b:loop values='data:post.labels' var='label'>
+&#9001;<b:loop values='data:post.labels' var='label'>
                                 <a class='label label-default' expr:href='data:label.url' rel='tag'>
                                   <data:label.name/>
                                 </a>
                                 <b:if cond='data:label.isLast != &quot;true&quot;'>
                                   ,
                                 </b:if>
-                              </b:loop>&#x232A;                              
+                              </b:loop>&#9002;                              
                             </b:if>
                           </span>
                         </div>
@@ -1178,21 +1112,21 @@ user is not using shrink to fit then we expand the header.
                     </span>
                     <span class='post-labels'><span class='glyphicon glyphicon-tag'/>
                       <b:if cond='data:post.labels'>
-                        &#x2329;<b:loop values='data:post.labels' var='label'>
+                        &#9001;<b:loop values='data:post.labels' var='label'>
                           <a class='label label-default' expr:href='data:label.url' rel='tag'>
                             <data:label.name/>
                           </a>
                           <b:if cond='data:label.isLast != &quot;true&quot;'>
                             ,
                           </b:if>
-                        </b:loop>&#x232A;
+                        </b:loop>&#9002;
                       </b:if>
                     </span>
                     <span class='post-comment-link'>
                       <b:if cond='data:blog.pageType != &quot;item&quot;'>
                         <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
                           <b:if cond='data:post.allowComments'>
- <b:if cond='data:post.numComments > 0'>
+ <b:if cond='data:post.numComments &gt; 0'>
                             <b:include data='post' name='comment_count_picker'/>
                             </b:if>
                           </b:if>
@@ -1817,7 +1751,7 @@ user is not using shrink to fit then we expand the header.
                 <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
     <b:if cond='data:codeSnippet != &quot;&quot;'>
-      <h3 class='widget-title'><data:title/></h3>
+      <h2 class='title'><data:title/></h2>
     <b:else/>
       <b:if cond='data:totalFollowerCount != &quot;&quot;'>
         <h2 class='title'><data:title/> (<data:totalFollowerCount/>)</h2>
@@ -1978,7 +1912,7 @@ user is not using shrink to fit then we expand the header.
         gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
           if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
             gapi.iframes.getContext().openChild({
-                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0751690451613892052173\46blogName\75%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://vasilikirr.blogspot.com/search\46blogLocale\75ja\46v\0752\46homepageUrl\75http://vasilikirr.blogspot.com/\46readAccessMode\75PRIVATE\46vt\0752267837795844551126&#39;,
+                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0751690451613892052173\46blogName\75%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75DISABLED\46layoutType\75LAYOUTS\46searchRoot\75http://vasilikirr.blogspot.com/search\46blogLocale\75ja\46v\0752\46homepageUrl\75http://vasilikirr.blogspot.com/\46readAccessMode\75PRIVATE\46vt\0752267837795844551126&#39;,
                 where: document.getElementById(&quot;navbar-iframe-container&quot;),
                 id: &quot;navbar-iframe&quot;
             });
@@ -2006,7 +1940,7 @@ head.appendChild(script);
       <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=1.7.2' type='text/javascript'/>
      <script src='http://umbrelllla.github.io/bootstrap.min.js'/>
      <b:if cond='data:blog.pageType == &quot;item&quot;'>
-     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js"></script>
+     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js'/>
       </b:if>
       <p class='footer-link'>
         &#169; 
@@ -2026,7 +1960,7 @@ head.appendChild(script);
       </p>
     </div>
     <!-- END Footer --> 
-        <script language="JavaScript" type="text/javascript">
+        <script language='JavaScript' type='text/javascript'>
   <![CDATA[
 
 ]]>
@@ -2116,14 +2050,14 @@ $(&#39;.post-labels&#39;).children(&quot;a&quot;).each(function(){
 <script>
 (function($){
     $(function(){
-        $('a[imageanchor="1"').colorbox({
-            opacity: '0.7',
-            maxWidth:'100%',
-            maxHeight:'100%',
-            speed:'200',
-            rel:'photo',
+        $(&#39;a[imageanchor=&quot;1&quot;&#39;).colorbox({
+            opacity: &#39;0.7&#39;,
+            maxWidth:&#39;100%&#39;,
+            maxHeight:&#39;100%&#39;,
+            speed:&#39;200&#39;,
+            rel:&#39;photo&#39;,
             title: function(){/*キャプションにimg要素のtitle使用*/
-  return $(this).children('img').attr('title');
+  return $(this).children(&#39;img&#39;).attr(&#39;title&#39;);
   }
         });
     });

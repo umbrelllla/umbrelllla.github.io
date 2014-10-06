@@ -1,10 +1,11 @@
   .post {
 color: #666666;
-overflow: hidden;
 line-height: 2em;
-margin-bottom: 5px;
+clear: both; 
+overflow: hidden;
+border-bottom: 1px solid #ddd
+padding: 8px 0px;
 }
-.post {padding-bottom: 5px; clear: both; overflow: hidden;}
 
 .status-msg-body {
 position: relative !important;
@@ -341,11 +342,6 @@ cite {
 }
 .text-center {
   text-align: center;
-}
-
-.page-header {
-  padding-bottom: 9.5px;
-  margin: 42px 0 21px;
 }
 ul,
 ol {
@@ -1381,7 +1377,7 @@ border-radius: 0;
 }
 .page-header {
 padding-bottom: 0px;
-margin: 10px 0 20px 0;
+margin: 10px 0;
 border-bottom: none;
 }
 hr {
@@ -1892,11 +1888,7 @@ margin-top: 0;
 img#logo {
 margin-top: 5px;
 }
-.media-body {
-padding: 3px 30px 0 5px;
-padding: 3px 20px 5px 5px;
-border-bottom: 1px solid #ddd;
-}
+
 .top-header img#logo {
 margin-top: 0;
 }
@@ -2005,10 +1997,53 @@ margin-right: 3px;
 .post-header {
 font-size: 75%;
 }
-/* p.active.home:before,a.home:before {
-content: '\002605';
+.PopularPosts .item-title {
+font-size: 85%;
+line-height: 1;
+
 }
-p.active.home{
-  color: #ff0000;
-  font-weight: bold;
-} */
+.PopularPosts .widget-content ul {
+padding: 0 0 0 0px;
+}
+.PopularPosts img {;
+float: left;
+margin-right: 10px;
+}
+      .navbar-brand{
+        display: none;
+      }
+      .navbar-fixed-top .navbar-brand {
+        display: block;
+        font-size: 26px;
+        font-weight: bold;
+        color: #000;
+      }
+      .navbar-brand {
+        float: left;
+        font-size: 18px;
+        line-height: 20px;
+      }
+      .navbar {
+        min-height: 41px;}
+      .navbar-form {
+        margin-top: 4px;
+        margin-bottom: 3px;}
+      .pthumb {float:left;margin:3px 10px 0 0;border: 4px solid #eee;width:90px;height:90px;overflow:hidden;position:related}
+      .PopularPosts .widget-content ul li {
+        width: 100%;
+border-bottom: 1px solid #ddd;
+padding: 5px 0;
+list-style-type: none;
+      }
+      ul.hierarchy li {
+list-style-type: none;
+}
+ul.hierarchy {
+padding: 0;
+}
+ul.hierarchy ul {
+padding-left: 20px;
+}
+.post-timestamp, .post-labels {
+margin-left: 10px;
+}
