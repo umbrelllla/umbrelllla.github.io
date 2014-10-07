@@ -191,35 +191,34 @@ right: 6px;
 bottom: -5px;
 box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
-.lazyYT-title {
-    z-index: 100!important;
-    color: #fff!important;
-    font-family: sans-serif!important;
-    font-size: 12px!important;
-    top: 10px!important;
-    left: 12px!important;
-    position: absolute!important;
-    margin: 0!important;
-    padding: 0.5em!important;
-    line-height: 1!important;
-    font-style: normal!important;
-    font-weight: normal!important;
-    background-color: rgba(0,0,0,0.8)!important;
-    border-radius: 0.5em!important;
+a.youtube-lazy-link {
+  vertical-align:top;
+  background:#555;
+  width:560px; height:315px;
+  background-size:cover;
+  text-decoration:none;
+  color:#DDD;
+  text-align:left;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display:inline-block;
 }
-
-.lazyYT-button {
-    margin: 0!important;
-    padding: 0!important;
-    width: 60px!important;
-    height: 41px!important;
-    z-index: 100!important;
-    position: absolute!important;
-    top: 50%!important;
-    margin-top: -22px!important;
-    left: 50%!important;
-    margin-left: -30px!important;
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAApCAYAAABp50paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABV9JREFUeNrcWk1IK1cUvrmZGBOjJvr6xKe+Slvroi6kK6GrUkSxO12IC6GgUFBcuOlC8GdRulERV3VRQV0IKhRU0NJupK3tpi1dCRaxffWHGjWZPJNnNJlMz9FzX+ZNkzylcxP1wMdMZiYz97vnu+ee+2Njmc0GyANwgANQDCgAuABOwGOAG6AAiuh+MV3Lo+fc9KyN3qGYvnEBSAA0QBTwAnBp+P0ccAxQ6bkw/T4HRABn9B+8F6f/ZiRktjJANaCSUE0kkVApoBDgAeQTIeM7dAKjAuiG6+b7wniKstgMv+2m5xMGslgZIUAAEAOcAv4GHAL+BDwDBNMRxvOPAZ8C3iUPOVNUiGaCfgOV3MZe9z5OlSDAUzxzQZXyC+BLwM+pCtMJGCTvCTJxOlpBxGpLVzF2ajqiMvyAzwDfGuXyPuALkmyY5KGZ5GVGri1duXRyVIyOPsA7gO9R/iIYtQLKiSy7Q6T+b2UkSN7vAT4U7QGDz9Mbtp/7SPySjh9gj8EpApeyh2/YoyicuhlvhuBkVU3n2jA/cBkJxyUVjBuipz2HEf0qYcKs5w1ify6DbFVVVbSrq0s9ODhQlpaWClRVdUtWUyqLE0cPEn5CXkhI8HC8ubk5ODw8XJBIJOJNTU2H/f39j/f29jxZDJI2Iowq9nJiLk1KZWWYqcKHOC9pa2t7c21tLdTR0XHgdDo1kng22rdGQaucU2YlraY1TRPJACrIXldXVzU/P+8YHR09rqysVIkwz1JWxjmNZqQRBimbBxdIvLyvr8+7uroabGxs9NP1bAS0fOmE09Q2SsxdX19fsbCw4BgcHNzzeDxhGrDItCJO2s52hiVIO3w+X+nIyEgxRPCjmpqaE8lp7VU/nCeTMASrTO++GrTDM8UQzStB4uHOzs5niqIkJLRrLIeTG2QkpVZtthu9Fgk6amtrn8zMzLgmJyePvV7vmcVl0kUuncfuhumkiIqenh7f4uJiAJKWMwuDmS4krdyxURKOYz0Qvd0NDQ1Ri9+tKIbh050Zx+q6fjg1NaWtr6/7SO5WvTuq0ABZuNyWY7L6ycnJ0dDQ0OXc3FxFJBKxW0w4opCEcmnYrDh4Vd3c3FS7u7t929vbj6ipWT3IuOREOFeeRQ/GQqGQf2xsLNDS0vIIyBbRdU2Cgl5K2pYD+SKpF1tbW0cDAwOu5eXlKkleNdqVpMMyk3eQaioJ6zCo8M/OzsZh6Fi0v79fYsi+ZNpzJByU6WHD4AEJ4QxpfHd392hiYuJyenq64vz8XGGvrlJIHSbix46lavc60xISVjc2NsK9vb0ukHKZYeIhG00I7WpeOirxQ3xnZwc99w90MaHx8fFAa2trMZAtYcl542wYOhbXoU7xox8BvmLJFTxLCRcWFkbb29tVv9+vrKyseOnj2SL6MqUEHAA+QcJ1gDl2PTcdldCexeKXCEq5GIrizOzvgC5OUTrI/rtua1ncYsl1nlzm7CjpCKcTld3vtaQbZVlY+SJoBR4wUeHIPUyykDBOwP8mZgTYw1pQQy755N2fsGlxurgO+JUmAxyGh/V7VgHmMjspNn0D+IEZZhOwDf/FrheOn7Lkdgexkm43vfB18rF8JuQGvYCD4DSUH69/B/gccJSqgG+z630euJb6Fv3JaSCfjpBm6McTFqWKNvbqPg6eIefXSbYXVAbc8PIH4EfA1+x620NGj2Cf7KMOG7cm4fi0hK5XUw0KiG1MeHQTHBZGVrFjJ0znuEXpjIItdnX7FHRPCeLeITPt4LmtBEWNiz1XYj7MxZJbmPIJpSy5pUlUXDrPxAzKiBBJN53vk9fE/q0okY4ZVBS7jaL+FWAA/y++OTUmOgsAAAAASUVORK5CYII=')!important;
+a.youtube-lazy-link:hover {
+  text-decoration:none;
+  color:#FFF;
+}
+.youtube-lazy-link-div {
+  border:2px solid #000;
+  background: url(http://lh4.googleusercontent.com/-QCeB6REIFlE/TuGUlY3N46I/AAAAAAAAAaI/9-urEUtpKcI/s800/youtube-play-button.png) center center no-repeat;
+  position:absolute;
+}
+.youtube-lazy-link-div:hover {
+  background: url(http://lh5.googleusercontent.com/-oBFjswrosz4/TuHqainRc3I/AAAAAAAAAbE/t3rMQuSJdLA/s800/youtube-play-button-hover.png) center center no-repeat;
+}
+.youtube-lazy-link-info {
+  font-size: 110%;
+  padding: 2px 6px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
 }
 
     </style>
@@ -443,22 +442,23 @@ user is not using shrink to fit then we expand the header.
       <div class='row'>
         <div class='col-12 col-sm-8 col-lg-8 clearfix'>
 
-<b:if cond='data:blog.url == data:blog.homepageUrl'>
 
-<div class='page-header'><h3> 最新の投稿 <a class='pull-right' href='http://http://in4park.blogspot.jp//feeds/posts/default?alt=rss '> <img alt='feed' height='10' src='https://lh6.googleusercontent.com/-4GA0LNH4EmQ/VCTqOmYnIoI/AAAAAAAAD1c/1TNBWpbAV-w/s800/feedicon14.png' title='feedはこちらからどうぞ' width='10'/></a></h3></div>
-</b:if>
                              
           
           <b:section class='main' id='main' showaddelement='no'>
             <b:widget id='Blog1' locked='true' title='ブログの投稿' type='Blog'>
               <b:includable id='main' var='top'>
                 <b:if cond='data:mobile == &quot;false&quot;'>
+                  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+<div class='page-header'><h3> 最新の投稿 <a class='pull-right' href='http://http://in4park.blogspot.jp//feeds/posts/default?alt=rss '> <img alt='feed' height='10' src='https://lh6.googleusercontent.com/-4GA0LNH4EmQ/VCTqOmYnIoI/AAAAAAAAD1c/1TNBWpbAV-w/s800/feedicon14.png' title='feedはこちらからどうぞ' width='10'/></a></h3></div>
+</b:if>
                   <!-- posts -->
                   <div class='blog-posts hfeed'>
+                    <b:include data='posts' name='breadcrumb'/>
                     <b:include data='top' name='status-message'/>
                     <data:defaultAdStart/>
                     <b:loop values='data:posts' var='post'>
-                      
+                 
 
                         <b:include data='post' name='post'/>
                         <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
@@ -554,6 +554,48 @@ user is not using shrink to fit then we expand the header.
                   </a>
                 </p>
               </b:includable>
+<b:includable id='breadcrumb' var='posts'>
+<b:if cond='data:blog.homepageUrl != data:blog.url'>
+<b:if cond='data:blog.pageType == "static_page"'>
+<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='tag'>Home</a></span> » <span><data:blog.pageName/></span></div>
+<b:else/>
+<b:if cond='data:blog.pageType == "item"'>
+<!-- breadcrumb for the post page -->
+<b:loop values='data:posts' var='post'>
+<b:if cond='data:post.labels'>
+<div class='breadcrumbs' xmlns:v="http://rdf.data-vocabulary.org/#">
+<span typeof="v:Breadcrumb"><a expr:href='data:blog.homepageUrl' rel="v:url" property="v:title">Home</a></span>
+<b:loop values='data:post.labels' var='label'><b:if cond='data:label.isLast == "true"'>
+» <span typeof="v:Breadcrumb"><a expr:href='data:label.url' rel="v:url" property="v:title"><data:label.name/></a></span>
+</b:if>
+</b:loop>
+» <span><data:post.title/></span>
+</div>
+<b:else/>
+<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='tag'>Home</a></span> » <span>Unlabelled</span> » <span><data:post.title/></span></div>
+</b:if>
+</b:loop>
+<b:else/>
+<b:if cond='data:blog.pageType == "archive"'>
+<!-- breadcrumb for the label archive page and search pages.. -->
+<div class='breadcrumbs'>
+<span><a expr:href='data:blog.homepageUrl'>Home</a></span> » <span>Archives for <data:blog.pageName/></span>
+</div>
+<b:else/>
+<b:if cond='data:blog.pageType == "index"'>
+<div class='breadcrumbs'>
+<b:if cond='data:blog.pageName == ""'>
+<span><a expr:href='data:blog.homepageUrl'>Home</a></span> » <span>All posts</span>
+<b:else/>
+<span><a expr:href='data:blog.homepageUrl'>Home</a></span> » <span>Posts filed under <data:blog.pageName/></span>
+</b:if>
+</div>
+</b:if>
+</b:if>
+</b:if>
+</b:if>
+</b:if>
+</b:includable>
               <b:includable id='comment-form' var='post'>
                 <div class='comment-form'>
                   <a name='comment-form'/>
@@ -1052,7 +1094,9 @@ user is not using shrink to fit then we expand the header.
                         <b:if cond='data:blog.url != data:post.url'>
 
                           <b:else/>
-<!--itemタイトル削除 -->
+
+                        <h1 class='post-title'><data:post.title/></h1><!--itemタイトル-->
+                    
                         </b:if>
                         <b:else/>
                         <data:post.title/>
@@ -1060,6 +1104,7 @@ user is not using shrink to fit then we expand the header.
                     </b:if>
                   </b:if>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
+
                   <div class='post-header'>
                     <span class='post-author vcard'>
                       <b:if cond='data:top.showAuthor'>
@@ -1121,7 +1166,7 @@ user is not using shrink to fit then we expand the header.
                       <a expr:href='data:post.url'>
                         <h1 class='media-heading'><data:post.title/></h1>
                       </a>
-                      <a expr:href='data:post.url'><p><data:post.body/></p></a>
+                      <a expr:href='data:post.url'><p><data:post.snippet/></p></a>
  <div class='post-meta'>
                     <span class='post-author vcard'>
                       <b:if cond='data:top.showAuthor'>                        
@@ -1963,12 +2008,12 @@ head.appendChild(script);
               </b:widget>
             </b:section>
           
-        </div>
-      </div>
-    </div>
-    <!-- END Container --> 
+        </div><!-- END dmbs-right --> 
+      </div><!-- END row --> 
+    </div><!-- END Container --> 
+    
     <div id='footer'>
-      <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=1.7.2' type='text/javascript'/>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'/>
      <script src='http://umbrelllla.github.io/bootstrap.min.js'/>
      <b:if cond='data:blog.pageType == &quot;item&quot;'>
      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js'/>
@@ -1991,13 +2036,8 @@ head.appendChild(script);
       </p>
     </div>
     <!-- END Footer --> 
-        <script language='JavaScript' type='text/javascript'>
-  <![CDATA[
-
-]]>
-         </script>
-
       <script type='text/javascript'>
+        /*fix nav*/
         $(function(){ var box = $(&quot;.navbar&quot;);
         var leftsidebar = $(&quot;.content&quot;);
         var boxTop = leftsidebar.offset().top;
@@ -2011,9 +2051,7 @@ head.appendChild(script);
             } 
             }); 
             });
-         </script>
-<script type='text/javascript'>
-//ラベル階層化
+/*ラベル階層化*/
 $(function(){
     
     var list = $(&#39;div#Label1 div ul &gt; li&#39;);
@@ -2071,92 +2109,64 @@ $(function(){
 });
 
 // フッタの表示ラベルをサブカテゴリのみにする
-$(&#39;.post-labels&#39;).children(&quot;a&quot;).each(function(){
+/*$(&#39;.post-labels&#39;).children(&quot;a&quot;).each(function(){
     var work = $(this).text().split(&quot;/&quot;);
     $(this).text(work[work.length -1]);
-});
+});*/
 
 </script>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-<script>
+<script type='text/javascript'>
+//<![CDATA[
+/*colorbox*/
 (function($){
     $(function(){
-        $(&#39;a[imageanchor=&quot;1&quot;&#39;).colorbox({
-            opacity: &#39;0.7&#39;,
-            maxWidth:&#39;100%&#39;,
-            maxHeight:&#39;100%&#39;,
-            speed:&#39;200&#39;,
-            rel:&#39;photo&#39;,
+        $('a[imageanchor="1"').colorbox({
+            opacity: '0.7',
+            maxWidth:'100%',
+            maxHeight:'100%',
+            speed:'200',
+            rel:'photo',
             title: function(){/*キャプションにimg要素のtitle使用*/
-  return $(this).children(&#39;img&#39;).attr(&#39;title&#39;);
+  return $(this).children('img').attr('title');
   }
         });
     });
 })(jQuery);
-/*! LazyYT (lazy load Youtube videos plugin) - v0.3.4 - 2014-06-30
-* Usage: <div class="lazyYT" data-youtube-id="laknj093n" ratio="16:9" data-parameters="rel=0">loading...</div>
-* Copyright (c) 2014 Tyler Pearson; Licensed MIT */
-
-
-;(function ($) {
-    'use strict';
-
-    function setUp($el) {
-        var width = $el.data('width'),
-            height = $el.data('height'),
-            ratio = $el.data('ratio'),
-            id = $el.data('youtube-id'),
-            aspectRatio = ['16', '9'],
-            paddingTop = 0,
-            youtubeParameters = $el.data('parameters') || '';
-
-        if (typeof width === 'undefined' || typeof height === 'undefined') {
-          height = 0;
-          width = '100%';
-          aspectRatio = (ratio.split(":")[1] / ratio.split(":")[0]) * 100;
-          paddingTop = aspectRatio + '%';
-        }
-
-        $el.css({
-            'position': 'relative',
-            'height': height,
-            'width': width,
-            'padding-top': paddingTop,
-            'background': 'url(//img.youtube.com/vi/' + id + '/hqdefault.jpg) center center no-repeat',
-            'cursor': 'pointer',
-            'background-size': 'cover'
-        })
-            .html('<p id="lazyYT-title-' + id + '" class="lazyYT-title"></p><div class="lazyYT-button"></div>')
-            .addClass('lazyYT-image-loaded');
-
-        $.getJSON('https://gdata.youtube.com/feeds/api/videos/' + id + '?v=2&amp;alt=json', function (data) {
-            $('#lazyYT-title-' + id).text(data.entry.title.$t);
-        });
-
-        $el.on('click', function (e) {
-            e.preventDefault();
-            if (!$el.hasClass('lazyYT-video-loaded') &amp;&amp; $el.hasClass('lazyYT-image-loaded')) {
-                $el.html('<iframe width="' + width + '" height="' + height + '" src="//www.youtube.com/embed/' + id + '?autoplay=1&amp;' + youtubeParameters + '" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allowfullscreen="1"></iframe>')
-                    .removeClass('lazyYT-image-loaded')
-                    .addClass('lazyYT-video-loaded');
-            }
-        });
-
+/*youtube lazy link*/
+$(document).ready(function() {
+  $("a.youtube-lazy-link").each(function(index) {
+    var embedparms = $(this).attr("href").split("/embed/")[1];
+    if(!embedparms) embedparms = $(this).attr("href").split("://youtu.be/")[1];
+    if(!embedparms) embedparms = $(this).attr("href").split("?v=")[1].replace(/\&/,'?');
+    var youid = embedparms.split("?")[0].split("#")[0];
+    var start = embedparms.match(/[#&]t=(\d+)s/);
+    if(start) start = start[1];
+    else {
+      start = embedparms.match(/[#&]t=(\d+)m(\d+)s/);
+      if(start) start = parseInt(start[1])*60+parseInt(start[2]);
+      else {
+        start = embedparms.match(/[?&]start=(\d+)/);
+        if(start) start = start[1];
+      }
     }
-
-    $.fn.lazyYT = function () {
-        return this.each(function () {
-            var $el = $(this).css('cursor', 'pointer');
-            setUp($el);
-        });
-    };
-
-}(jQuery));
-
-    </script>
-      </b:if>
-
-
-
-  </body>
-</html>
+    embedparms = embedparms.split("#")[0];
+    if(start && embedparms.indexOf("start=") == -1)
+      embedparms += ((embedparms.indexOf("?")==-1) ? "?" : "&") + "start="+start;
+    if(embedparms.indexOf("showinfo=0") != -1)
+      $(this).html('');
+    else
+      $(this).html('<div class="youtube-lazy-link-info">' + $(this).html() + '</div>');
+    $(this).prepend('<div style="height:'+(parseInt($(this).css("height"))-4)+'px;width:'+(parseInt($(this).css("width"))-4)+'px;" class="youtube-lazy-link-div"></div>');
+    $(this).css("background", "#000 url(http://i2.ytimg.com/vi/"+youid+"/0.jpg) center center no-repeat");
+    $(this).attr("id", youid+index);
+    $(this).attr("href", "http://www.youtube.com/watch?v="+youid+(start ? "#t="+start+"s" : ""));
+    var emu = 'http://www.youtube.com/embed/'+embedparms;
+    emu += ((emu.indexOf("?")==-1) ? "?" : "&") + "autoplay=1";
+    var videoFrame = '<iframe width="'+parseInt($(this).css("width"))+'" height="'+parseInt($(this).css("height"))+'" style="vertical-align:top;" src="'+emu+'" frameborder="0" allowfullscreen></iframe>';
+    $(this).attr("onclick", "$('#"+youid+index+"').replaceWith('"+videoFrame+"');return false;");
+  });
+})
+//]]>
+</script>
+</b:if></body></html>
