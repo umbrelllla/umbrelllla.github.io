@@ -1,5 +1,5 @@
   .post {
-color: #666666;
+color: #333;
 line-height: 2em;
 clear: both; 
 overflow: hidden;
@@ -19,7 +19,7 @@ padding: 5px 10px;
 font-size: 110%;
 position: relative;
 }
-#footer a {color:#fff;}
+#footer a {color:#fff; background-color:#333;}
 .rmlink{float:right !important;}
 .rmlink a {color:#fff !important;}
 .jump-link{display:none;}
@@ -1015,6 +1015,7 @@ padding: 0;
 margin-bottom: 0px;
 list-style: none;
 font-size: 70%;
+letter-spacing: 1px;
 }
 .breadcrumb > li {
   display: inline-block;
@@ -1578,7 +1579,7 @@ margin-top: 185px;
 background-color: #f2f2f2;
 }
 .post-title h1 {
-margin: 5px 10px 0px 0;
+margin: 5px 10px 10px 0;
 color: #222;
 font-weight: normal;
 font-size: 160%;
@@ -1919,7 +1920,7 @@ background-color: #000;
 width: 100%;
 }
 }
-h3.widget-title {
+h3.widget-title,h2.title {
 background-color: #000;
 color: #fff;
 font-size: 100%;
@@ -1983,7 +1984,8 @@ margin-right: 3px;
 /* margin-right: 2px; */
 }
 .post-header {
-font-size: 75%;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 .PopularPosts .item-title {
 font-size: 85%;
@@ -2035,9 +2037,54 @@ padding-left: 20px;
 .post-timestamp{
 margin-left: 10px;
 }
-.labels {
-margin-left: 0;
-font-size: 70%;
-line-height: 1;
-border-bottom: 1px solid #ccc;
+
+div#blog-pager {
+margin: 20px 0;
+}
+.showpageNum a {
+background: #fff;
+padding: 5px;
+padding-left: 10px;
+border: 1px solid #b9b9b9;
+padding-right: 10px;
+margin-right: 5px;
+color: #000;
+font-weight: bold;
+}
+.showpage a {
+background: #fff;
+padding: 5px;
+padding-left: 10px;
+border: 1px solid #b9b9b9;
+padding-right: 10px;
+margin-right: 5px;
+color: #0099FF;
+font-weight: bold;
+}
+.showpageArea {
+float: left;
+}
+.feed-links {
+display: none;
+}
+.showpageArea a {
+float: left;
+font-size: 15px;
+color: #fff!important;
+padding-left: 15px;
+padding-right: 15px;
+}
+.showpagePoint {
+float: left;
+font-size: 15px;
+padding-left: 15px;
+padding-right: 15px;
+}
+.showpageArea a {
+text-decoration: none;
+}
+.showpageArea {
+float: left;
+width: 363px;
+margin-top: 10px;
 }

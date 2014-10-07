@@ -47,7 +47,7 @@
 <link href='http://umbrelllla.github.io/sketch.min.css' rel='stylesheet' type='text/css'/>
 
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-        <style>
+<style>
 /*Colorbox Core Style:*/
 #colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
 #cboxWrapper {max-width:none;}
@@ -220,6 +220,13 @@ a.youtube-lazy-link:hover {
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
 }
+.labels {
+margin-left: 0;
+font-size: 70%;
+line-height: 1;
+padding-bottom: 5px;
+border-bottom: 1px solid #ccc;
+}
 
     </style>
       </b:if>
@@ -238,7 +245,7 @@ a.youtube-lazy-link:hover {
 
           <!-- ヘッダ画像 -->
           <b:section class='header' id='blog-title' maxwidgets='1' showaddelement='no'>
-            <b:widget id='Header1' locked='true' title='スケッチテンプレートバックアップ (Header)' type='Header'>
+            <b:widget id='Header1' locked='true' title='sketch -スケッチ (Header)' type='Header'>
               <b:includable id='main'>
                 <b:if cond='data:useImage'>
                   <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
@@ -399,10 +406,22 @@ user is not using shrink to fit then we expand the header.
         <b:if cond='data:blog.pageType == &quot;index&quot;'>
           <b:if cond='data:blog.url == data:blog.homepageUrl'>
           <b:section class='header' id='middle-title' maxwidgets='1' showaddelement='no'>
-            <b:widget id='Header2' locked='true' title='スケッチテンプレートバックアップ (Header)' type='Header'>
+            <b:widget id='Header2' locked='true' title='sketch -スケッチ (Header)' type='Header'>
               <b:includable id='main'>
-                <data:title/> &#x00BB; <data:description/>
+                <data:title/> &#187; <data:description/>
               </b:includable>
+              <b:includable id='description'>
+  <div class='descriptionwrapper'>
+    <p class='description'><span><data:description/></span></p>
+  </div>
+</b:includable>
+              <b:includable id='title'>
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <data:title/>
+  <b:else/>
+    <a expr:href='data:blog.homepageUrl'><data:title/></a>
+  </b:if>
+</b:includable>
             </b:widget>
           </b:section>
           </b:if>
@@ -419,12 +438,12 @@ user is not using shrink to fit then we expand the header.
 
     <div class='container content' id='container'>
       <div class='row'>
-        <div class='col-12 col-sm-8 col-lg-8 clearfix'>
+        
 
 
                              
           
-          <b:section class='main' id='main' showaddelement='no'>
+          <b:section class='main col-12 col-sm-8 clearfix' id='main' showaddelement='no'>
             <b:widget id='Blog1' locked='true' title='ブログの投稿' type='Blog'>
               <b:includable id='main' var='top'>
                 <b:if cond='data:mobile == &quot;false&quot;'>
@@ -533,19 +552,19 @@ user is not using shrink to fit then we expand the header.
                   </a>
                 </p>
               </b:includable>
-<b:includable id='breadcrumb' var='posts'>
+              <b:includable id='breadcrumb' var='posts'>
 
 <b:if cond='data:blog.homepageUrl != data:blog.url'>
-<b:if cond='data:blog.pageType == "static_page"'>
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
 <ul class='breadcrumb'><li><a expr:href='data:blog.homepageUrl' rel='tag'>&#10026;Home</a></li>/<li><data:blog.pageName/></li></ul>
 <b:else/>
-<b:if cond='data:blog.pageType == "item"'>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
 <!-- breadcrumb for the post page -->
 <b:loop values='data:posts' var='post'>
 <b:if cond='data:post.labels'>
-<ul class='breadcrumb' xmlns:v="http://rdf.data-vocabulary.org/#">
-<li typeof="v:Breadcrumb"><a expr:href='data:blog.homepageUrl' rel="v:url" property="v:title">&#10026;Home</a></li>
-<b:loop values='data:post.labels' var='label'><b:if cond='data:label.isLast == "true"'>/<li typeof="v:Breadcrumb"><a expr:href='data:label.url' rel="v:url" property="v:title"><data:label.name/></a></li>
+<ul class='breadcrumb' xmlns:v='http://rdf.data-vocabulary.org/#'>
+<li typeof='v:Breadcrumb'><a expr:href='data:blog.homepageUrl' property='v:title' rel='v:url'>&#10026;Home</a></li>
+<b:loop values='data:post.labels' var='label'><b:if cond='data:label.isLast == &quot;true&quot;'>/<li typeof='v:Breadcrumb'><a expr:href='data:label.url' property='v:title' rel='v:url'><data:label.name/></a></li>
 </b:if>
 </b:loop>
 /<span><data:post.title/></span>
@@ -555,15 +574,15 @@ user is not using shrink to fit then we expand the header.
 </b:if>
 </b:loop>
 <b:else/>
-<b:if cond='data:blog.pageType == "archive"'>
+<b:if cond='data:blog.pageType == &quot;archive&quot;'>
 <!-- breadcrumb for the label archive page and search pages.. -->
 <ul class='breadcrumb'>
 <li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>Archives for <data:blog.pageName/></li>
 </ul>
 <b:else/>
-<b:if cond='data:blog.pageType == "index"'>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
 <ul class='breadcrumb'>
-<b:if cond='data:blog.pageName == ""'>
+<b:if cond='data:blog.pageName == &quot;&quot;'>
 <li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>All posts</li>
 <b:else/>
 <li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>Posts filed under <data:blog.pageName/></li>
@@ -1074,12 +1093,12 @@ user is not using shrink to fit then we expand the header.
                         <b:if cond='data:blog.url != data:post.url'>
 
                           <b:else/>
-<div class="post-title">
+<div class='post-title'>
                         <h1 class=''><data:post.title/></h1><!--itemタイトル-->
-                        <div class="labels">
+                        <div class='labels'>
                     <span class='post-labels'>
                       <b:if cond='data:post.labels'>
-                        <data:postLabelsLabel/>
+
                           &#9001;<b:loop values='data:post.labels' var='label'>
                                 <a class='label label-default' expr:href='data:label.url' rel='tag'>
                                   <data:label.name/>
@@ -1540,13 +1559,12 @@ user is not using shrink to fit then we expand the header.
             </b:widget>
           </b:section>
           <!-- END Loop --> 
-        </div>
-        <!-- END Content --> 
-        <div class='col-6 col-sm-4 col-lg-4 dmbs-right'>
+ <!-- END Content --> 
+
           
-            <b:section class='sidebar' id='sidebar' preferred='yes'>
-              <b:widget id='Label1' locked='false' title='' type='Label'>
-                <b:includable id='main'>
+            <b:section class='sidebar col-6 col-sm-4 dmbs-right' id='sidebar' preferred='yes'>
+               <b:widget id='Label1' locked='false' title='ラベル' type='Label'>
+                 <b:includable id='main'>
   <b:if cond='data:title'>
     <h3 class='widget-title'><data:title/></h3>
   </b:if>
@@ -1593,9 +1611,9 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
   </div>
 </b:includable>
-              </b:widget>
-              <b:widget id='PopularPosts3' locked='false' title='人気の投稿' type='PopularPosts'>
-                <b:includable id='main'>
+               </b:widget>
+               <b:widget id='PopularPosts3' locked='false' title='人気の投稿' type='PopularPosts'>
+                 <b:includable id='main'>
                   <b:if cond='data:title'>
                      <h3 class='widget-title'><data:title/></h3>
                   </b:if>
@@ -1672,9 +1690,9 @@ user is not using shrink to fit then we expand the header.
                     <b:include name='quickedit'/>
                   </div>
                 </b:includable>
-              </b:widget>
-              <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
-                <b:includable id='main'>
+               </b:widget>
+               <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+                 <b:includable id='main'>
   <div class='widget-content'>
     <b:if cond='data:blog.disableAdSenseWidget != &quot;true&quot;'>
       <data:adCode/>
@@ -1682,9 +1700,9 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
   </div>
 </b:includable>
-              </b:widget>
-              <b:widget id='BlogArchive1' locked='false' title='アーガイブ' type='BlogArchive'>
-                <b:includable id='main'>
+               </b:widget>
+               <b:widget id='BlogArchive1' locked='false' title='アーガイブ' type='BlogArchive'>
+                 <b:includable id='main'>
                   <b:if cond='data:title'>
                      <h3 class='widget-title'><data:title/></h3>
                   </b:if>
@@ -1705,7 +1723,7 @@ user is not using shrink to fit then we expand the header.
                     <b:include name='quickedit'/>
                   </div>
                 </b:includable>
-                <b:includable id='flat' var='data'>
+                 <b:includable id='flat' var='data'>
                   <ul class='flat'>
                     <b:loop values='data:data' var='i'>
                       <li class='archivedate'>
@@ -1719,7 +1737,7 @@ user is not using shrink to fit then we expand the header.
                     </b:loop>
                   </ul>
                 </b:includable>
-                <b:includable id='interval' var='intervalData'>
+                 <b:includable id='interval' var='intervalData'>
                   <b:loop values='data:intervalData' var='i'>
                     <ul class='hierarchy'>
                       <li expr:class='&quot;archivedate &quot; + data:i.expclass'>
@@ -1742,7 +1760,7 @@ user is not using shrink to fit then we expand the header.
                     </ul>
                   </b:loop>
                 </b:includable>
-                <b:includable id='menu' var='data'>
+                 <b:includable id='menu' var='data'>
                   <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
                     <option value=''>
                       <data:title/>
@@ -1757,7 +1775,7 @@ user is not using shrink to fit then we expand the header.
                     </b:loop>
                   </select>
                 </b:includable>
-                <b:includable id='posts' var='posts'>
+                 <b:includable id='posts' var='posts'>
                   <ul class='posts'>
                     <b:loop values='data:posts' var='i'>
                       <li>
@@ -1768,7 +1786,7 @@ user is not using shrink to fit then we expand the header.
                     </b:loop>
                   </ul>
                 </b:includable>
-                <b:includable id='toggle' var='interval'>
+                 <b:includable id='toggle' var='interval'>
                   <b:if cond='data:interval.toggleId'>
                     <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
                       <a class='toggle' href='javascript:void(0)'>
@@ -1789,9 +1807,9 @@ user is not using shrink to fit then we expand the header.
                     </b:if>
                   </b:if>
                 </b:includable>
-              </b:widget>
-              <b:widget id='Stats1' locked='false' title='ページビューの合計' type='Stats'>
-                <b:includable id='main'>
+               </b:widget>
+               <b:widget id='Stats1' locked='false' title='ページビューの合計' type='Stats'>
+                 <b:includable id='main'>
   <b:if cond='data:title'> <h3 class='widget-title'><data:title/></h3></b:if>
   <div class='widget-content'>
     <!-- Content is going to be visible when data will be fetched from server. -->
@@ -1809,15 +1827,15 @@ user is not using shrink to fit then we expand the header.
     </div>
   </div>
 </b:includable>
-              </b:widget>
-              <b:widget id='Followers1' locked='false' title='フォロワー' type='Followers'>
-                <b:includable id='main'>
+               </b:widget>
+               <b:widget id='Followers1' locked='false' title='フォロワー' type='Followers'>
+                 <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
     <b:if cond='data:codeSnippet != &quot;&quot;'>
-      <h2 class='title'><data:title/></h2>
+      <h3 class="widget-title"><data:title/></h3>
     <b:else/>
       <b:if cond='data:totalFollowerCount != &quot;&quot;'>
-        <h2 class='title'><data:title/> (<data:totalFollowerCount/>)</h2>
+        <h3 class="widget-title"><data:title/> (<data:totalFollowerCount/>)</h3><!-- follower -->
       </b:if>
     </b:if>  
   </b:if>
@@ -1887,62 +1905,9 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
   </div>
 </b:includable>
-              </b:widget>
-              <b:widget id='Profile1' locked='false' title='About Me' type='Profile'>
-                <b:includable id='main'>
-                  <b:if cond='data:title != &quot;&quot;'>
-                     <h3 class='widget-title'><data:title/></h3>
-                  </b:if>
-                  <div class='widget-content'>
-                    <b:if cond='data:team == &quot;true&quot;'>
-                      <!-- team blog profile -->
-                      <ul>
-                        <b:loop values='data:authors' var='i'>
-                          <li>
-                            <a class='profile-name-link g-profile' expr:href='data:i.userUrl' expr:style='&quot;background-image: url(&quot; + data:i.profileLogo + &quot;);&quot;'>
-                              <data:i.display-name/>
-                            </a>
-                          </li>
-                        </b:loop>
-                      </ul>
-                      <b:else/>
-                      <!-- normal blog profile -->
-                      <b:if cond='data:photo.url != &quot;&quot;'>
-                        <a expr:href='data:userUrl'>
-                          <img class='profile-img' expr:alt='data:photo.alt' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/>
-                        </a>
-                      </b:if>
-                      <dl class='profile-datablock'>
-                        <dt class='profile-data'>
-                          <a class='profile-name-link g-profile' expr:href='data:userUrl' expr:style='&quot;background-image: url(&quot; + data:profileLogo + &quot;);&quot;' rel='author'>
-                            <data:displayname/>
-                          </a>
-                          <b:if cond='data:hasgoogleprofile'>
-                            <br/>
-                            <div class='g-plus' data-action='follow' data-width='100' expr:data-href='data:userUrl'/>
-                          </b:if>
-                        </dt>
-                        <b:if cond='data:showlocation == &quot;true&quot;'>
-                          <dd class='profile-data'>
-                            <data:location/>
-                          </dd>
-                        </b:if>
-                        <b:if cond='data:aboutme != &quot;&quot;'>
-                          <dd class='profile-textblock'>
-                            <data:aboutme/>
-                          </dd>
-                        </b:if>
-                      </dl>
-                      <a class='profile-link' expr:href='data:userUrl' rel='author'>
-                        <data:viewProfileMsg/>
-                      </a>
-                    </b:if>
-                    <b:include name='quickedit'/>
-                  </div>
-                </b:includable>
-              </b:widget>
-              <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
-                <b:includable id='main'>
+               </b:widget>
+               <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
+                 <b:includable id='main'>
     <b:if cond='data:feedbackSurveyLink'>
       <div class='mobile-survey-link' style='text-align: center;'>
         <data:feedbackSurveyLink/>
@@ -1957,9 +1922,9 @@ user is not using shrink to fit then we expand the header.
 
     <b:include name='quickedit'/>
   </b:includable>
-              </b:widget>
-              <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'>
-                <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
+               </b:widget>
+               <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'>
+                 <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
     function setAttributeOnload(object, attribute, val) {
       if(window.addEventListener) {
         window.addEventListener(&#39;load&#39;,
@@ -1975,7 +1940,7 @@ user is not using shrink to fit then we expand the header.
         gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
           if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
             gapi.iframes.getContext().openChild({
-                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0751690451613892052173\46blogName\75%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75DISABLED\46layoutType\75LAYOUTS\46searchRoot\75http://vasilikirr.blogspot.com/search\46blogLocale\75ja\46v\0752\46homepageUrl\75http://vasilikirr.blogspot.com/\46readAccessMode\75PRIVATE\46vt\0752267837795844551126&#39;,
+                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0756247092727966084688\46blogName\75sketch+-%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75DISABLED\46layoutType\75LAYOUTS\46searchRoot\75http://sketch-log.blogspot.com/search\46blogLocale\75ja\46v\0752\46homepageUrl\75http://sketch-log.blogspot.com/\46vt\75-2570655488950797369&#39;,
                 where: document.getElementById(&quot;navbar-iframe-container&quot;),
                 id: &quot;navbar-iframe&quot;
             });
@@ -1992,10 +1957,8 @@ head.appendChild(script);
 }})();
 &lt;/script&gt;
 </b:includable>
-              </b:widget>
-            </b:section>
-          
-        </div><!-- END dmbs-right --> 
+               </b:widget>
+             </b:section>
       </div><!-- END row --> 
     </div><!-- END Container --> 
     
@@ -2156,4 +2119,21 @@ $(document).ready(function() {
 })
 //]]>
 </script>
-</b:if></body></html>
+</b:if>
+
+<!--SBT Page Navigation Starts-->
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<script type='text/javascript'>
+var pageCount=6;
+var displayPageNum=6;
+var upPageWord =&#39;Previous&#39;;
+var downPageWord =&#39;Next&#39;;
+</script>
+<script src='https://googledrive.com/host/0B5XHBEaFFoSYSHgxaHFNUkdFWWc' type='text/javascript'/>
+</b:if>
+</b:if>
+<!--SBT Page Navigation Ends -->
+
+
+</body></html>
