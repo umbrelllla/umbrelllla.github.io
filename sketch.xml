@@ -448,7 +448,7 @@ user is not using shrink to fit then we expand the header.
               <b:includable id='main' var='top'>
                 <b:if cond='data:mobile == &quot;false&quot;'>
                   <b:if cond='data:blog.url == data:blog.homepageUrl'>
-<div class='page-header'><h3> 最新の投稿 <a class='pull-right' href='http://http://in4park.blogspot.jp//feeds/posts/default?alt=rss '> <img alt='feed' height='10' src='https://lh6.googleusercontent.com/-4GA0LNH4EmQ/VCTqOmYnIoI/AAAAAAAAD1c/1TNBWpbAV-w/s800/feedicon14.png' title='feedはこちらからどうぞ' width='10'/></a></h3></div>
+<div class='page-header'><h3> 最新の投稿 <a class='pull-right' href='http://sketch-log.blogspot.jp/feeds/posts/default?alt=rss '> <img alt='feed' height='10' src='https://lh6.googleusercontent.com/-4GA0LNH4EmQ/VCTqOmYnIoI/AAAAAAAAD1c/1TNBWpbAV-w/s800/feedicon14.png' title='feedはこちらからどうぞ' width='10'/></a></h3></div>
 </b:if>
                   <!-- posts -->
                   <div class='blog-posts hfeed'>
@@ -793,40 +793,7 @@ user is not using shrink to fit then we expand the header.
                   </div>
                 </div>
               </b:includable>
-              <b:includable id='feedLinks'>
-                <b:if cond='data:blog.pageType != &quot;item&quot;'>
-                  <!-- Blog feed links -->
-                  <b:if cond='data:feedLinks'>
-                    <div class='blog-feeds'>
-                      <b:include data='feedLinks' name='feedLinksBody'/>
-                    </div>
-                  </b:if>
-                  <b:else/>
-                  <!--Post feed links -->
-                  <div class='post-feeds'>
-                    <b:loop values='data:posts' var='post'>
-                      <b:if cond='data:post.allowComments'>
-                        <b:if cond='data:post.feedLinks'>
-                          <b:include data='post.feedLinks' name='feedLinksBody'/>
-                        </b:if>
-                      </b:if>
-                    </b:loop>
-                  </div>
-                </b:if>
-              </b:includable>
-              <b:includable id='feedLinksBody' var='links'>
-                <div class='feed-links'>
-                  <data:feedLinksMsg/>
-                  <b:loop values='data:links' var='f'>
-                    <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'>
-                      <data:f.name/>
-                      (
-                      <data:f.feedType/>
-                      )
-                    </a>
-                  </b:loop>
-                </div>
-              </b:includable>
+              
               <b:includable id='iframe_comments' var='post'>
                 <b:if cond='data:post.allowIframeComments'>
                   <script expr:src='data:post.iframeCommentSrc' type='text/javascript'/>
