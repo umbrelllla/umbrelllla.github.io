@@ -1577,14 +1577,13 @@ padding: 10px 0;
 margin-top: 185px;
 background-color: #f2f2f2;
 }
-h1.post-title {
+.post-title h1 {
 margin: 5px 10px 0px 0;
 color: #222;
 font-weight: normal;
-border-bottom: 1px dashed #999;
 font-size: 160%;
 }
-h1.post-title:before {
+.post-title h1:before {
 content: '\002605';
 }
 div.well.article-list.clearfix {
@@ -2033,6 +2032,12 @@ padding: 0;
 ul.hierarchy ul {
 padding-left: 20px;
 }
-.post-timestamp, .post-labels {
+.post-timestamp{
 margin-left: 10px;
+}
+.labels {
+margin-left: 0;
+font-size: 70%;
+line-height: 1;
+border-bottom: 1px solid #ccc;
 }
