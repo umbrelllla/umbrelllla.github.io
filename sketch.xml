@@ -388,50 +388,29 @@ user is not using shrink to fit then we expand the header.
     </nav>
 
 <div class='middle category'><div class='container'>
-
-<b:if cond='data:blog.pageType == &quot;index&quot;'>インデックス
-<b:else/>
-  <b:if cond='data:blog.pageType == &quot;archive&quot;'>アーカイブ
-  <b:else/>
-    <b:if cond='data:blog.pageType == &quot;item&quot;'>アイテム
-    <b:else/>不明なページタイプ
-    </b:if>
-  </b:if>
-</b:if>
-
   <div class='row'>
   <div class='col-xs-12'>
-    <b:if cond='data:blog.pageName'><h1><data:blog.pageName/><b:if cond='data:blog.pageType == &quot;archive&quot;'>年のアーカイブ</b:if></h1>
-    <b:else/>
-
+    
+      <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+        <b:if cond='data:blog.pageName'>
+          <h1><data:blog.pageName/>年のアーカイブ</h1>
+        </b:if>
+       <b:else/>
+        <b:if cond='data:blog.pageType == &quot;index&quot;'>
+          <b:if cond='data:blog.url == data:blog.homepageUrl'>
           <b:section class='header' id='middle-title' maxwidgets='1' showaddelement='no'>
             <b:widget id='Header2' locked='true' title='スケッチテンプレートバックアップ (Header)' type='Header'>
-              <b:includable id='main'><data:title/>&#12288;<data:description/>
+              <b:includable id='main'>
+                <data:title/> &#x00BB; <data:description/>
               </b:includable>
-              <b:includable id='description'>
-  <div class='descriptionwrapper'>
-    <p class='description'><span><data:description/></span></p>
-  </div>
-</b:includable>
-              <b:includable id='title'>
-  <b:if cond='data:blog.url == data:blog.homepageUrl'>
-    <data:title/>
-
-  <b:else/>
-  
-
-
-
-
-    <a expr:href='data:blog.homepageUrl'><data:title/></a>
-
-
-
-
-  </b:if>
-</b:includable>
             </b:widget>
           </b:section>
+          </b:if>
+        </b:if>
+
+
+
+
 
 
     </b:if>
@@ -555,46 +534,47 @@ user is not using shrink to fit then we expand the header.
                 </p>
               </b:includable>
 <b:includable id='breadcrumb' var='posts'>
+
 <b:if cond='data:blog.homepageUrl != data:blog.url'>
 <b:if cond='data:blog.pageType == "static_page"'>
-<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='tag'>Home</a></span> » <span><data:blog.pageName/></span></div>
+<ul class='breadcrumb'><li><a expr:href='data:blog.homepageUrl' rel='tag'>&#10026;Home</a></li>/<li><data:blog.pageName/></li></ul>
 <b:else/>
 <b:if cond='data:blog.pageType == "item"'>
 <!-- breadcrumb for the post page -->
 <b:loop values='data:posts' var='post'>
 <b:if cond='data:post.labels'>
-<div class='breadcrumbs' xmlns:v="http://rdf.data-vocabulary.org/#">
-<span typeof="v:Breadcrumb"><a expr:href='data:blog.homepageUrl' rel="v:url" property="v:title">Home</a></span>
-<b:loop values='data:post.labels' var='label'><b:if cond='data:label.isLast == "true"'>
-» <span typeof="v:Breadcrumb"><a expr:href='data:label.url' rel="v:url" property="v:title"><data:label.name/></a></span>
+<ul class='breadcrumb' xmlns:v="http://rdf.data-vocabulary.org/#">
+<li typeof="v:Breadcrumb"><a expr:href='data:blog.homepageUrl' rel="v:url" property="v:title">&#10026;Home</a></li>
+<b:loop values='data:post.labels' var='label'><b:if cond='data:label.isLast == "true"'>/<li typeof="v:Breadcrumb"><a expr:href='data:label.url' rel="v:url" property="v:title"><data:label.name/></a></li>
 </b:if>
 </b:loop>
-» <span><data:post.title/></span>
-</div>
+/<span><data:post.title/></span>
+</ul>
 <b:else/>
-<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='tag'>Home</a></span> » <span>Unlabelled</span> » <span><data:post.title/></span></div>
+<ul class='breadcrumb'><li><a expr:href='data:blog.homepageUrl' rel='tag'>&#10026;Home</a></li>/<li>Unlabelled</li>/<li><data:post.title/></li></ul>
 </b:if>
 </b:loop>
 <b:else/>
 <b:if cond='data:blog.pageType == "archive"'>
 <!-- breadcrumb for the label archive page and search pages.. -->
-<div class='breadcrumbs'>
-<span><a expr:href='data:blog.homepageUrl'>Home</a></span> » <span>Archives for <data:blog.pageName/></span>
-</div>
+<ul class='breadcrumb'>
+<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>Archives for <data:blog.pageName/></li>
+</ul>
 <b:else/>
 <b:if cond='data:blog.pageType == "index"'>
-<div class='breadcrumbs'>
+<ul class='breadcrumb'>
 <b:if cond='data:blog.pageName == ""'>
-<span><a expr:href='data:blog.homepageUrl'>Home</a></span> » <span>All posts</span>
+<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>All posts</li>
 <b:else/>
-<span><a expr:href='data:blog.homepageUrl'>Home</a></span> » <span>Posts filed under <data:blog.pageName/></span>
+<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>Posts filed under <data:blog.pageName/></li>
 </b:if>
-</div>
-</b:if>
-</b:if>
+</ul>
 </b:if>
 </b:if>
 </b:if>
+</b:if>
+</b:if>
+
 </b:includable>
               <b:includable id='comment-form' var='post'>
                 <div class='comment-form'>
