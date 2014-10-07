@@ -1074,9 +1074,25 @@ user is not using shrink to fit then we expand the header.
                         <b:if cond='data:blog.url != data:post.url'>
 
                           <b:else/>
+<div class="post-title">
+                        <h1 class=''><data:post.title/></h1><!--itemタイトル-->
+                        <div class="labels">
+                    <span class='post-labels'>
+                      <b:if cond='data:post.labels'>
+                        <data:postLabelsLabel/>
+                          &#9001;<b:loop values='data:post.labels' var='label'>
+                                <a class='label label-default' expr:href='data:label.url' rel='tag'>
+                                  <data:label.name/>
+                                </a>
+                                <b:if cond='data:label.isLast != &quot;true&quot;'>
+                                  ,
+                                </b:if>
+                              </b:loop>&#9002;         
 
-                        <h1 class='post-title'><data:post.title/></h1><!--itemタイトル-->
-                    
+                      </b:if>
+                    </span>
+                    </div>
+                    </div>
                         </b:if>
                         <b:else/>
                         <data:post.title/>
@@ -1113,21 +1129,7 @@ user is not using shrink to fit then we expand the header.
                         </b:if>                      
                     </span>
                   </div>
-                  <div class="labels">
-                    <span class='post-labels'><span class='glyphicon glyphicon-tag'/>
-                      <b:if cond='data:post.labels'>
-                        <data:postLabelsLabel/>
-                        <b:loop values='data:post.labels' var='label'>
-                          <a class='label label-default' expr:href='data:label.url' rel='tag'>
-                            <data:label.name/>
-                          </a>
-                          <b:if cond='data:label.isLast != &quot;true&quot;'>
-                            ,
-                          </b:if>
-                        </b:loop>
-                      </b:if>
-                    </span>
-                    </div>
+
 
 
                   </b:if>
@@ -1171,7 +1173,7 @@ user is not using shrink to fit then we expand the header.
                           </b:if>
                       </b:if>
                     </span>
-                    <span class='post-labels'><span class='glyphicon glyphicon-tag'/>
+                    <span class='post-labels'>
                       <b:if cond='data:post.labels'>
                         &#9001;<b:loop values='data:post.labels' var='label'>
                           <a class='label label-default' expr:href='data:label.url' rel='tag'>
