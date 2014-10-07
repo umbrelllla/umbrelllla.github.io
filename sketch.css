@@ -26,9 +26,8 @@ font-size: 80%;
 padding: 20px 10px;
 color: #999;
 }
-.rmlink{float:right !important;}
-.rmlink a {color:#fff !important;}
-.jump-link{display:none;}
+
+
 .label-size{margin:6px 0;}
 #postsocial{border: 1px solid #ddd;
 min-width: 55px;
@@ -1972,7 +1971,7 @@ a.navbar-brand img {
 margin-top: 5px;
 }
 #main {
-margin-top: 10px;
+margin-top: 25px;
 }
 abbr.published {
 font-style: italic;
@@ -2051,3 +2050,14 @@ padding: 5px 10px;
 }
 .showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}
 .showpageOf{display:none!important}
+div.middle.category h1 {
+margin: 10px 0 5px 10px;
+}
+
+/*index,archive*/
+a.snippet:hover {
+color: #ff37df;
+}
+a.snippet {
+color: #888;
+}

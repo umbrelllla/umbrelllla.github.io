@@ -232,9 +232,6 @@ user is not using shrink to fit then we expand the header.
                       <a expr:class='&quot;navbar-brand&quot;' expr:href='data:blog.homepageUrl'>
                         <img expr:alt='data:title' expr:src='data:sourceUrl'/>
                       </a>
-<b:if cond='data:blog.url != data:blog.homepageUrl'>
-                      <p class='navbar-text'><data:title/>:<data:description/></p>
-</b:if>
                       <!--Show the description-->
                       <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
                         <b:include name='description'/>
@@ -359,42 +356,26 @@ user is not using shrink to fit then we expand the header.
 <div class='middle category'><div class='container'>
   <div class='row'>
   <div class='col-xs-12'>
-    
-      <b:if cond='data:blog.pageType == &quot;archive&quot;'>
-        <b:if cond='data:blog.pageName'>
-          <h1><data:blog.pageName/>年のアーカイブ</h1>
-        </b:if>
-       <b:else/>
-        <b:if cond='data:blog.pageType == &quot;index&quot;'>
-          <b:if cond='data:blog.url == data:blog.homepageUrl'>
+
           <b:section class='header' id='middle-title' maxwidgets='1' showaddelement='no'>
             <b:widget id='Header2' locked='true' title='sketch -スケッチ (Header)' type='Header'>
               <b:includable id='main'>
-                <data:title/> &#187; <data:description/>
+                <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                  <data:title/>
+                <b:else/>
+                  <a expr:href='data:blog.homepageUrl'><data:title/></a>
+                </b:if>
+                 &#187; <data:description/>
               </b:includable>
-              <b:includable id='description'>
-  <div class='descriptionwrapper'>
-    <p class='description'><span><data:description/></span></p>
-  </div>
-</b:includable>
-              <b:includable id='title'>
-  <b:if cond='data:blog.url == data:blog.homepageUrl'>
-    <data:title/>
-  <b:else/>
-    <a expr:href='data:blog.homepageUrl'><data:title/></a>
-  </b:if>
-</b:includable>
             </b:widget>
           </b:section>
-          </b:if>
+        <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+        <b:if cond='data:blog.pageName'>
+          <h1><data:blog.pageName/>年のアーカイブ</h1>
+        </b:if>
         </b:if>
 
 
-
-
-
-
-    </b:if>
   </div></div></div></div>
         
 
@@ -1104,7 +1085,11 @@ user is not using shrink to fit then we expand the header.
                       <a expr:href='data:post.url'>
                         <h1 class='media-heading'><data:post.title/></h1>
                       </a>
-                      <a expr:href='data:post.url'><p><data:post.snippet/></p></a>
+                      <a class='snippet' expr:href='data:post.url'><p><data:post.snippet/>
+<b:if cond='data:post.hasJumpLink'>
+<a expr:href='data:post.url + "#more"' class='rmlink'><data:post.jumpText/></a>
+</b:if >
+                    </p></a>
  <div class='post-meta'>
                     <span class='post-author vcard'>
                       <b:if cond='data:top.showAuthor'>                        
@@ -1499,9 +1484,6 @@ user is not using shrink to fit then we expand the header.
             <b:section class='sidebar col-6 col-sm-4 dmbs-right' id='sidebar' preferred='yes'>
                <b:widget id='Label1' locked='false' title='ラベル' type='Label'>
                  <b:includable id='main'>
-  <b:if cond='data:title'>
-    <h3 class='widget-title'><data:title/></h3>
-  </b:if>
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
      <b:if cond='data:blog.url == data:blog.homepageUrl'>
