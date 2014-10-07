@@ -19,7 +19,13 @@ padding: 5px 10px;
 font-size: 110%;
 position: relative;
 }
-#footer a {color:#fff; background-color:#333;}
+#footer {
+background-color: #111;
+text-align: center;
+font-size: 80%;
+padding: 20px 10px;
+color: #999;
+}
 .rmlink{float:right !important;}
 .rmlink a {color:#fff !important;}
 .jump-link{display:none;}
@@ -1983,22 +1989,8 @@ font-size: 90%;
 margin-right: 3px;
 /* margin-right: 2px; */
 }
-.post-header {
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-.PopularPosts .item-title {
-font-size: 85%;
-line-height: 1;
 
-}
-.PopularPosts .widget-content ul {
-padding: 0 0 0 0px;
-}
-.PopularPosts img {;
-float: left;
-margin-right: 10px;
-}
+
       .navbar-brand{
         display: none;
       }

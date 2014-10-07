@@ -122,75 +122,6 @@ background: #fff url(http://3.bp.blogspot.com/-UMSMHaOBzQg/To2XKFseUSI/AAAAAAAAC
 width:32px;
 height:32px
 }
-p.footer-link{
-clear: both;
-text-align: center;
-font-size: 11px;
-padding: 12px;
-overflow: hidden;
-color: #F9F9F9;
-background: #232627;
-line-height: 18px;
-}
-#related-posts li{ border-bottom: 1px solid #eee; margin-bottom: 10px; padding-bottom: 10px;}
-#related-posts li { display: block; float: left; margin-left: 15px; width: 47%; }
-#related-posts {margin: 20px 0;
-font-size: 14px;
-line-height: 20px;}
-#related-posts h3{margin: 10px 0px!important;
-padding: 15px 15px!important;
-font-size: 15px;
-font-weight: 700;
-line-height: 14px;
-text-transform: capitalize;
-border-top-right-radius: 5px;
-border-top-left-radius: 5px;
-z-index: 2;
-background: #363636;
-color: #fff;
-position: relative;}
-#related-posts img {overflow: hidden;
-width: 90px;
-height: 90px;
--webkit-transition: all .1s ease-in-out;
--moz-transition: all .1s ease-in-out;
--ms-transition: all .1s ease-in-out;
--o-transition: all .1s ease-in-out;
-transition: all .1s ease-in-out;
-opacity: 1;
-}
-.boxframe {
-position: relative;
-padding: 20px;
-background: #fff;
-border: 1px solid #bbb;
--moz-box-shadow: 0 0 3px rgba(0,0,0,0.1),inset 0 0 5px rgba(0,0,0,0.1);
--webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1),inset 0 0 5px rgba(0,0,0,0.1);
-box-shadow: 0 0 3px rgba(0,0,0,0.1),inset 0 0 5px rgba(0,0,0,0.1);
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
-}
-.boxframe:before,.boxframe:after {
-content: &quot;&quot;;
-position: absolute;
-height: 1px;
-background: #fff;
-border: 1px solid #bbb;
-border-top: 0;
-box-shadow: 0 0 3px rgba(0,0,0,0.1);
-}
-.boxframe:before {
-bottom: -3px;
-left: 3px;
-right: 3px;
-}
-.boxframe:after {
-left: 6px;
-right: 6px;
-bottom: -5px;
-box-shadow: 0 0 3px rgba(0,0,0,0.2);
-}
 a.youtube-lazy-link {
   vertical-align:top;
   background:#555;
@@ -226,6 +157,11 @@ font-size: 70%;
 line-height: 1;
 padding-bottom: 5px;
 border-bottom: 1px solid #ccc;
+}
+.post-header {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 70%;
 }
 
     </style>
@@ -793,7 +729,10 @@ user is not using shrink to fit then we expand the header.
                   </div>
                 </div>
               </b:includable>
-              
+              <b:includable id='feedLinks'>
+  
+</b:includable>
+
               <b:includable id='iframe_comments' var='post'>
                 <b:if cond='data:post.allowIframeComments'>
                   <script expr:src='data:post.iframeCommentSrc' type='text/javascript'/>
@@ -1196,7 +1135,7 @@ user is not using shrink to fit then we expand the header.
                       <div id='related-posts'>
                         <script type='text/javascript'>
                           //<![CDATA[
-                          var ry='<h3 class="heading-border"><span>Related Posts</span></h3>';rn='<h3 class="heading-border"><span>No related post available</span></h3>';rcomment='comments';rdisable='disable comments';commentYN='yes';
+                          var ry='<h3 class="heading-border"><span>&#9829;関連しているかもしれない記事</span></h3>';rn='<h3 class="heading-border"><span>No related post available</span></h3>';rcomment='comments';rdisable='disable comments';commentYN='yes';
                           var dw='';titles=new Array();titlesNum=0;urls=new Array();timeR=new Array();thumb=new Array();commentsNum=new Array();comments=new Array();function related_results_labels(c){for(var b=0;b<c.feed.entry.length;b++){var d=c.feed.entry[b];titles[titlesNum]=d.title.$t;for(var a=0;a<d.link.length;a++){if('thr$total' in d){commentsNum[titlesNum]=d.thr$total.$t+' '+rcomment}else{commentsNum[titlesNum]=rdisable};if(d.link[a].rel=="alternate"){urls[titlesNum]=d.link[a].href;timeR[titlesNum]=d.published.$t;if('media$thumbnail' in d){thumb[titlesNum]=d.media$thumbnail.url}else{thumb[titlesNum]='http://lh3.ggpht.com/--Z8SVBQZ4X8/TdDxPVMl_sI/AAAAAAAAAAA/jhAgjCpZtRQ/no-image.png'};titlesNum++;break}}}}function removeRelatedDuplicates(){var b=new Array(0);c=new Array(0);e=new Array(0);f=new Array(0);g=new Array(0);for(var a=0;a<urls.length;a++){if(!contains(b,urls[a])){b.length+=1;b[b.length-1]=urls[a];c.length+=1;c[c.length-1]=titles[a];e.length+=1;e[e.length-1]=timeR[a];f.length+=1;f[f.length-1]=thumb[a];g.length+=1;g[g.length-1]=commentsNum[a]}}urls=b;titles=c;timeR=e;thumb=f;commentsNum=g}function contains(b,d){for(var c=0;c<b.length;c++){if(b[c]==d){return true}}return false}function printRelatedLabels(a){var y=a.indexOf('?m=0');if(y!=-1){a=a.replace(/\?m=0/g,'')}for(var b=0;b<urls.length;b++){if(urls[b]==a){urls.splice(b,1);titles.splice(b,1);timeR.splice(b,1);thumb.splice(b,1);commentsNum.splice(b,1)}}var c=Math.floor((titles.length-1)*Math.random());var b=0;if(titles.length==0){dw+=rn}else{dw+=ry;dw+='<ul>';while(b<titles.length&&b<20&&b<maxresults){if(y!=-1){urls[c]=urls[c]+'?m=0'}if(commentYN=='yes'){comments[c]=' - '+commentsNum[c]}else{comments[c]=''};dw+='<li><div class="pthumb"><a href="'+urls[c]+'" rel="nofollow"><img alt="'+titles[c]+'" src="'+thumb[c]+'"/></a></div><a href="'+urls[c]+'" rel="nofollow">'+titles[c]+'</a><div class="clear"></div></li></div>';if(c<titles.length-1){c++}else{c=0}b++}dw+='</ul>'};urls.splice(0,urls.length);titles.splice(0,titles.length);document.getElementById('related-posts').innerHTML=dw};
                           //]]></script>
                         <b:loop values='data:post.labels' var='label'>
@@ -1799,10 +1738,10 @@ user is not using shrink to fit then we expand the header.
                  <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
     <b:if cond='data:codeSnippet != &quot;&quot;'>
-      <h3 class="widget-title"><data:title/></h3>
+      <h2 class='title'><data:title/></h2>
     <b:else/>
       <b:if cond='data:totalFollowerCount != &quot;&quot;'>
-        <h3 class="widget-title"><data:title/> (<data:totalFollowerCount/>)</h3><!-- follower -->
+        <h2 class='title'><data:title/> (<data:totalFollowerCount/>)</h2>
       </b:if>
     </b:if>  
   </b:if>
@@ -1907,7 +1846,7 @@ user is not using shrink to fit then we expand the header.
         gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
           if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
             gapi.iframes.getContext().openChild({
-                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0756247092727966084688\46blogName\75sketch+-%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75DISABLED\46layoutType\75LAYOUTS\46searchRoot\75http://sketch-log.blogspot.com/search\46blogLocale\75ja\46v\0752\46homepageUrl\75http://sketch-log.blogspot.com/\46vt\75-2570655488950797369&#39;,
+                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0756247092727966084688\46blogName\75sketch+-%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75DISABLED\46layoutType\75LAYOUTS\46searchRoot\75http://in4park.blogspot.com/search\46blogLocale\75ja\46v\0752\46homepageUrl\75http://in4park.blogspot.com/\46vt\0751983631029881904399&#39;,
                 where: document.getElementById(&quot;navbar-iframe-container&quot;),
                 id: &quot;navbar-iframe&quot;
             });
@@ -1938,9 +1877,7 @@ head.appendChild(script);
       <p class='footer-link'>
         &#169; 
         <a expr:href='data:blog.homepageUrl'>
-          <strong>
             <data:blog.title/>
-          </strong>
         </a>
         2013 . Powered by 
         <a href='http://twitter.github.com/bootstrap/' rel='nofollow' title='Bootstrap'>
@@ -2094,8 +2031,8 @@ $(document).ready(function() {
   /*<![CDATA[*/
     var postperpage=5;
     var numshowpage=2;
-    var upPageWord ='« Previous Page';
-    var downPageWord ='Next Page »';
+    var upPageWord ='« 前のページ';
+    var downPageWord ='次のページ »';
     var urlactivepage=location.href;
     var home_page="/";
   /*]]>*/
