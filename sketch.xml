@@ -1104,6 +1104,16 @@ user is not using shrink to fit then we expand the header.
   </b:if>
                       </b:if>
                     </span>
+
+                    <span class='post-comment-link'>                     
+                        <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+                          <b:if cond='data:post.allowComments'>
+                            <b:include data='post' name='comment_count_picker'/>
+                          </b:if>
+                        </b:if>                      
+                    </span>
+                  </div>
+                  <div class="labels">
                     <span class='post-labels'><span class='glyphicon glyphicon-tag'/>
                       <b:if cond='data:post.labels'>
                         <data:postLabelsLabel/>
@@ -1117,14 +1127,9 @@ user is not using shrink to fit then we expand the header.
                         </b:loop>
                       </b:if>
                     </span>
-                    <span class='post-comment-link'>                     
-                        <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-                          <b:if cond='data:post.allowComments'>
-                            <b:include data='post' name='comment_count_picker'/>
-                          </b:if>
-                        </b:if>                      
-                    </span>
-                  </div>
+                    </div>
+
+
                   </b:if>
                   <b:if cond='data:blog.pageType == &quot;item&quot;'>
                     <!-- Adsense Below Post Title  -->
