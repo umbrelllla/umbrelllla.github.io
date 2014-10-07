@@ -153,7 +153,7 @@ li.categoryLabel span.active:before{content:'\002714';margin-right:3px}.middle.c
 .navbar-brand{display:none}.navbar-fixed-top .navbar-brand{display:block;font-size:26px;font-weight:bold;color:#000}.navbar-brand{float:left;font-size:18px;line-height:20px}
 .navbar{min-height:41px}.navbar-form{margin-top:4px;margin-bottom:3px}.pthumb{float:left;margin:3px 10px 0 0;border:4px solid #eee;width:90px;height:90px;overflow:hidden;position:related}
 .PopularPosts .widget-content ul li{width:100%;border-bottom:1px solid #ddd;padding:5px 0;list-style-type:none}ul.hierarchy li{list-style-type:none}ul.hierarchy{padding:0}
-ul.hierarchy ul{padding-left:20px}.post-timestamp{margin-left:10px}div#blog-pager{margin:20px 0}.showpageNum a{background:#fff;padding:5px;padding-left:10px;border:1px solid #b9b9b9;padding-right:10px;margin-right:5px;color:#000;font-weight:bold}
-.showpage a{background:#fff;padding:5px;padding-left:10px;border:1px solid #b9b9b9;padding-right:10px;margin-right:5px;color:#09f;font-weight:bold}.showpageArea{float:left}
-.feed-links{display:none}.showpageArea a{float:left;font-size:15px;color:#fff!important;padding-left:15px;padding-right:15px}.showpagePoint{float:left;font-size:15px;padding-left:15px;padding-right:15px}
-.showpageArea a{text-decoration:none}.showpageArea{float:left;width:363px;margin-top:10px}
+ul.hierarchy ul{padding-left:20px}.post-timestamp{margin-left:10px}#blog-pager{float:left;font-size:16px;line-height:normal;margin:0 20px;padding:2em 0}
+.showpageNum a,.showpage a,.showpagePoint{background:#3498db;border:0;border-bottom:3px solid #246ea0;color:#FFF;font-size:15px;font-family:open sans;font-weight:700;margin-left:10px;border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;-moz-border-radius:5px;-o-border-radius:5px 5px 5px 5px;transition:background 400ms;-webkit-transition:background 400ms;-moz-transition:background 400ms;-o-transition:background 400ms;padding:10px 20px}
+.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#2980b9;color:#FFF}.showpageOf{display:none!important}
+@font-face{font-family:'font-style:normal;font-weight:700;src:local('OpenSansBold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff')}
