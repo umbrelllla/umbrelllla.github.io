@@ -72,10 +72,10 @@ a.youtube-lazy-link:hover{text-decoration:none;color:#FFF}.youtube-lazy-link-div
 #related-posts ul li{clear:both}h3.heading-border{margin-bottom:10px}#related-posts ul li:before{content:&#39;\00bb&#39;}span#blog-pager-older-link{float:right}
 span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto;max-width:100%;height:auto}
 .post img:hover{border:1px solid #38a1db;background-color:#38a1db}.post-title h1{margin:5px 10px 10px 0;color:#222;font-weight:normal;font-size:160%}.post-title h1:before{content:&#39;\002605&#39;}
-#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}
 </style><b:else/><style>
 .middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}
 .status-msg-body{position:relative!important;background-color:#f8e5f1;border:1px solid #fd91df;border-radius:3px;margin:40px 0;padding:5px 10px}.status-msg-wrap{font-size:110%;position:relative}
+#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}
 .page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}
 .media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size:100%;margin:0 0 8px 0;font-weight:normal}
 .showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}
@@ -938,7 +938,11 @@ user is not using shrink to fit then we expand the header.
                     <!-- Adsense Below Post Title  -->
                   </b:if>
                   <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                    <data:post.body/>
+                    <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+                          <data:post.body/>
+                          <div style='clear: both;'/>
+                          <!-- clear for photos floats -->
+                        </div>
                     <b:else/>
 <!-- アーガイブとトップページ -->
                     
@@ -1010,7 +1014,24 @@ user is not using shrink to fit then we expand the header.
 
                     
                   </b:if>
-                  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                  
+                  <!-- email post links -->
+                   <b:if cond='data:post.emailPostUrl'>
+                  <div class='post-footer'>
+                    <div class='post-footer-line post-footer-line-1'>
+                      <span class='post-icons'>
+                          <span class='item-action'>
+                            <a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'>
+                              <img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/>
+                            </a>
+                          </span>
+                      </span>
+                    </div>
+                  </div>
+                  </b:if>
+                        <!-- quickedit pencil -->
+                </div>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
                     <section class='boxframe' id='related-posts'>
                       <div id='related-posts'>
                         <script type='text/javascript'>
@@ -1029,23 +1050,6 @@ user is not using shrink to fit then we expand the header.
                       <div class='clear'/>
                     </section>
                   </b:if>
-                  <!-- email post links -->
-                   <b:if cond='data:post.emailPostUrl'>
-                  <div class='post-footer'>
-                    <div class='post-footer-line post-footer-line-1'>
-                      <span class='post-icons'>
-                          <span class='item-action'>
-                            <a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'>
-                              <img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/>
-                            </a>
-                          </span>
-                      </span>
-                    </div>
-                  </div>
-                  </b:if>
-                        <!-- quickedit pencil -->
-                </div>
-
               </b:includable>
     <b:includable id='postQuickEdit' var='post'>
                 <b:if cond='data:post.editUrl'>
@@ -1144,7 +1148,7 @@ user is not using shrink to fit then we expand the header.
                     var items = <data:post.commentJso/>;
                     var msgs = <data:post.commentMsgs/>;
                     var config = <data:post.commentConfig/>;
-                    /*<![CDATA[*/
+                    /* <![CDATA[*/
                     var cursor = null;
                     if (items && items.length > 0) {
                       cursor = parseInt(items[items.length - 1].timestamp) + 1;
@@ -1165,7 +1169,7 @@ user is not using shrink to fit then we expand the header.
                       if (data && data.feed && data.feed.entry) {
                         for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
                           var comment = {};
-                          /* comment ID, parsed out of the original id format*/
+                          /*comment ID, parsed out of the original id format*/
                           var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
                           comment.id = id ? id[2] : null;
                           comment.body = bodyFromEntry(entry);
@@ -1304,7 +1308,7 @@ user is not using shrink to fit then we expand the header.
                       window.goog.comments.loadQueue.push(render);
                     }
                   })();
-                  /* ]]>*/
+                  /*]]>*/
                 </script>
               </b:includable>
     <b:includable id='threaded_comments' var='post'>
@@ -1748,7 +1752,7 @@ head.appendChild(script);
     </div><!-- END Container --> 
     
     <div id='footer'>
-
+      
       <p class='footer-link'>
         &#169; 
         <a expr:href='data:blog.homepageUrl'>
@@ -1765,7 +1769,7 @@ head.appendChild(script);
       </p>
     </div>
     <!-- END Footer --> 
-          <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'/>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'/>
      <script src='http://umbrelllla.github.io/bootstrap.min.js'/>
      <b:if cond='data:blog.pageType == &quot;item&quot;'>
      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js'/>
@@ -1854,15 +1858,13 @@ $(function(){
 /*colorbox*/
 (function($){
     $(function(){
-        $('a[imageanchor="1"').colorbox({
+        $('a[imageanchor="1"]').colorbox({
             opacity: '0.7',
             maxWidth:'100%',
             maxHeight:'100%',
             speed:'200',
             rel:'photo',
-            title: function(){
-  return $(this).children('img').attr('title');
-  }
+
         });
     });
 })(jQuery);
