@@ -498,7 +498,7 @@ user is not using shrink to fit then we expand the header.
 
                              
           
-          <b:section class='main col-12 col-sm-8 clearfix' id='main' showaddelement='no'>
+          <b:section class='main col-xs-12 col-sm-8 clearfix' id='main' showaddelement='no'>
             <b:widget id='Blog1' locked='true' title='ブログの投稿' type='Blog'>
               <b:includable id='main' var='top'>
                 <b:if cond='data:mobile == &quot;false&quot;'>
@@ -1593,16 +1593,16 @@ user is not using shrink to fit then we expand the header.
  <!-- END Content --> 
 
           
-            <b:section class='sidebar col-6 col-sm-4 dmbs-right' id='sidebar' preferred='yes'>
+            <b:section class='sidebar col-xs-12 col-sm-4 dmbs-right' id='sidebar' preferred='yes'>
                <b:widget id='Label1' locked='false' title='ラベル' type='Label'>
                  <b:includable id='main'>
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
      <b:if cond='data:blog.url == data:blog.homepageUrl'>
-                  <p class='active home'>&#10026;Home</p>
+                  <p class='active home'>Home</p>
                   <b:else/>
                   
-                    <p><a class='home' expr:href='data:blog.homepageUrl'>&#10026;Home</a></p>
+                    <p><a class='home' expr:href='data:blog.homepageUrl'>Home</a></p>
                   
                 </b:if>
 
