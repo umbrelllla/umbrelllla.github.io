@@ -6,17 +6,7 @@ overflow: hidden;
 border-bottom: 1px solid #ddd;
 padding: 8px 0px;
 }
-a.navbar-brand img {
-margin-top: 5px;
-display: inline;
-margin-bottom: 0;
-height: 180px;
-vertical-align: top;
--webkit-transition: height 0.3s ease-in;
--moz-transition: height 0.3s ease-in;
--o-transition: height 0.3s ease-in;
-transition: height 0.3s ease-in;
-}
+
 
 #footer {
 background-color: #111;
@@ -1932,4 +1922,15 @@ margin-left: 10px;
 .home:before {
 content: '\00272a';
 margin-right: 2px;
+}
+a.navbar-brand img {
+margin-top: 5px;
+display: inline;
+margin-bottom: 0;
+height: 180px;
+vertical-align: top;
+-webkit-transition: height 0.3s ease-in;
+-moz-transition: height 0.3s ease-in;
+-o-transition: height 0.3s ease-in;
+transition: height 0.3s ease-in;
 }
