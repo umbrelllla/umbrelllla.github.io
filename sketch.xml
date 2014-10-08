@@ -69,15 +69,16 @@ a.youtube-lazy-link:hover{text-decoration:none;color:#FFF}.youtube-lazy-link-div
 .youtube-lazy-link-div:hover{background:url(http://lh5.googleusercontent.com/-oBFjswrosz4/TuHqainRc3I/AAAAAAAAAbE/t3rMQuSJdLA/s800/youtube-play-button-hover.png) center center no-repeat}
 .youtube-lazy-link-info{font-size:110%;padding:2px 6px;background:#000;background:rgba(0,0,0,0.5)}.labels{margin-left:0;font-size:70%;line-height:1;padding-bottom:5px;border-bottom:1px solid #ccc}
 .post-header{line-height:1.8;margin-bottom:20px;font-size:70%}#related-posts{margin:20px 0;border:1px solid #999;padding:10px 20px}#related-posts ul{padding:0;list-style-type:none;margin-left:20px;line-height:1.7}
-#related-posts ul li{clear:both}h3.heading-border{margin-bottom:10px}#related-posts ul li:before{content:'\00bb'}span#blog-pager-older-link{float:right}
+#related-posts ul li{clear:both}h3.heading-border{margin-bottom:10px}#related-posts ul li:before{content:&#39;\00bb&#39;}span#blog-pager-older-link{float:right}
 span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto;max-width:100%;height:auto}
-.post img:hover{border:1px solid #38a1db;background-color:#38a1db}.post-title h1{margin:5px 10px 10px 0;color:#222;font-weight:normal;font-size:160%}.post-title h1:before{content:'\002605'}
+.post img:hover{border:1px solid #38a1db;background-color:#38a1db}.post-title h1{margin:5px 10px 10px 0;color:#222;font-weight:normal;font-size:160%}.post-title h1:before{content:&#39;\002605&#39;}
+#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}
 </style><b:else/><style>
-.middle.category h1:before{content:'\002605';font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}
+.middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}
 .status-msg-body{position:relative!important;background-color:#f8e5f1;border:1px solid #fd91df;border-radius:3px;margin:40px 0;padding:5px 10px}.status-msg-wrap{font-size:110%;position:relative}
 .page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}
 .media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size:100%;margin:0 0 8px 0;font-weight:normal}
-#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}
+.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}
 .showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}
 div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color:#888}
 </style></b:if></head><body>
@@ -153,7 +154,9 @@ user is not using shrink to fit then we expand the header.
                     <data:title/>
                   </a>
                 </b:if>
-              </b:includable></b:widget></b:section></div>
+              </b:includable>
+            </b:widget>
+          </b:section></div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
           <b:section class='main' id='navigation' showaddelement='no'>
@@ -205,7 +208,9 @@ user is not using shrink to fit then we expand the header.
   </div>
   </div>
 </li></ul></li></ul>
-</b:includable></b:widget></b:section>
+</b:includable>
+            </b:widget>
+          </b:section>
 <form class='navbar-form navbar-right' expr:action='data:blog.homepageUrl + &quot;search/&quot;' id='ajax-search-form' role='search'>
 <div class='form-group'>
     <input class='form-control' name='q' onblur='if (this.value == &quot;&quot;) {this.value = &quot;Search...&quot;;}' onfocus='if (this.value == &quot;Search...&quot;) {this.value = &quot;&quot;;}' type='text' value='Search...'/>
@@ -221,6 +226,18 @@ user is not using shrink to fit then we expand the header.
               <b:includable id='main'>
                 <b:if cond='data:blog.url == data:blog.homepageUrl'><data:title/><b:else/><a expr:href='data:blog.homepageUrl'><data:title/></a></b:if>&#187; <data:description/>
               </b:includable>
+              <b:includable id='description'>
+  <div class='descriptionwrapper'>
+    <p class='description'><span><data:description/></span></p>
+  </div>
+</b:includable>
+              <b:includable id='title'>
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <data:title/>
+  <b:else/>
+    <a expr:href='data:blog.homepageUrl'><data:title/></a>
+  </b:if>
+</b:includable>
             </b:widget>
           </b:section>
         <b:if cond='data:blog.pageType == &quot;archive&quot;'>
@@ -232,8 +249,8 @@ user is not using shrink to fit then we expand the header.
 <div class='container content' id='container'>
       <div class='row'>
 <b:section class='main col-xs-12 col-sm-8 clearfix' id='main' showaddelement='no'>
-            <b:widget id='Blog1' locked='true' title='ブログの投稿' type='Blog'>
-              <b:includable id='main' var='top'>
+  <b:widget id='Blog1' locked='true' title='ブログの投稿' type='Blog'>
+    <b:includable id='main' var='top'>
                 <b:if cond='data:mobile == &quot;false&quot;'>
                   <b:if cond='data:blog.url == data:blog.homepageUrl'>
 <div class='page-header'><h3> 最新の投稿 <a class='pull-right' href='http://sketch-log.blogspot.jp/feeds/posts/default?alt=rss '> <img alt='feed' height='10' src='https://lh6.googleusercontent.com/-4GA0LNH4EmQ/VCTqOmYnIoI/AAAAAAAAD1c/1TNBWpbAV-w/s800/feedicon14.png' title='feedはこちらからどうぞ' width='10'/></a></h3></div>
@@ -292,14 +309,14 @@ user is not using shrink to fit then we expand the header.
                   <data:top.dummyBootstrap/>
                 </b:if>
               </b:includable>
-              <b:includable id='backlinkDeleteIcon' var='backlink'>
+    <b:includable id='backlinkDeleteIcon' var='backlink'>
                 <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
                   <a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>
                     <img src='//www.blogger.com/img/icon_delete13.gif'/>
                   </a>
                 </span>
               </b:includable>
-              <b:includable id='backlinks' var='post'>
+    <b:includable id='backlinks' var='post'>
                 <a name='links'/>
                 <h4>
                   <data:post.backlinksLabel/>
@@ -340,7 +357,7 @@ user is not using shrink to fit then we expand the header.
                   </a>
                 </p>
               </b:includable>
-              <b:includable id='breadcrumb' var='posts'>
+    <b:includable id='breadcrumb' var='posts'>
 
 <b:if cond='data:blog.homepageUrl != data:blog.url'>
 <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
@@ -383,7 +400,7 @@ user is not using shrink to fit then we expand the header.
 </b:if>
 
 </b:includable>
-              <b:includable id='comment-form' var='post'>
+    <b:includable id='comment-form' var='post'>
                 <div class='comment-form'>
                   <a name='comment-form'/>
                   <b:if cond='data:mobile'>
@@ -416,7 +433,7 @@ user is not using shrink to fit then we expand the header.
                   </script>
                 </div>
               </b:includable>
-              <b:includable id='commentDeleteIcon' var='comment'>
+    <b:includable id='commentDeleteIcon' var='comment'>
                 <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
                   <b:if cond='data:showCmtPopup'>
                     <div class='goog-toggle-button'>
@@ -429,7 +446,7 @@ user is not using shrink to fit then we expand the header.
                   </b:if>
                 </span>
               </b:includable>
-              <b:includable id='comment_count_picker' var='post'>
+    <b:includable id='comment_count_picker' var='post'>
                 <b:if cond='data:post.forceIframeComments'>
                   <span class='cmt_count_iframe_holder' expr:data-count='data:post.numComments' expr:data-onclick='data:post.addCommentOnclick' expr:data-url='data:post.canonicalUrl'>
                   </span>
@@ -445,7 +462,7 @@ user is not using shrink to fit then we expand the header.
                   </b:if>
                 </b:if>
               </b:includable>
-              <b:includable id='comment_picker' var='post'>
+    <b:includable id='comment_picker' var='post'>
                 <b:if cond='data:post.commentSource == 1'>
                   <b:include data='post' name='iframe_comments'/>
                   <b:else/>
@@ -456,7 +473,7 @@ user is not using shrink to fit then we expand the header.
                   </b:if>
                 </b:if>
               </b:includable>
-              <b:includable id='comments' var='post'>
+    <b:includable id='comments' var='post'>
                 <div class='comments well' id='comments'>
                   <a name='comments'/>
                   <b:if cond='data:post.allowComments'>
@@ -581,11 +598,18 @@ user is not using shrink to fit then we expand the header.
                   </div>
                 </div>
               </b:includable>
-              <b:includable id='feedLinks'>
+    <b:includable id='feedLinks'>
   
 </b:includable>
-
-              <b:includable id='iframe_comments' var='post'>
+    <b:includable id='feedLinksBody' var='links'>
+  <div class='feed-links'>
+  <data:feedLinksMsg/>
+  <b:loop values='data:links' var='f'>
+     <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+  </b:loop>
+  </div>
+</b:includable>
+    <b:includable id='iframe_comments' var='post'>
                 <b:if cond='data:post.allowIframeComments'>
                   <script expr:src='data:post.iframeCommentSrc' type='text/javascript'/>
                   <div class='cmt_iframe_holder' expr:data-href='data:post.canonicalUrl' expr:data-viewtype='data:post.viewType'/>
@@ -596,7 +620,7 @@ user is not using shrink to fit then we expand the header.
                   </b:if>
                 </b:if>
               </b:includable>
-              <b:includable id='mobile-index-post' var='post'>
+    <b:includable id='mobile-index-post' var='post'>
                 <div class='mobile-date-outer date-outer'>
                   <b:if cond='data:post.dateHeader'>
                     <div class='date-header'>
@@ -641,7 +665,7 @@ user is not using shrink to fit then we expand the header.
                   </div>
                 </div>
               </b:includable>
-              <b:includable id='mobile-main' var='top'>
+    <b:includable id='mobile-main' var='top'>
                 <!-- posts -->
                 <div class='blog-posts hfeed'>
                   <b:include data='top' name='status-message'/>
@@ -657,7 +681,7 @@ user is not using shrink to fit then we expand the header.
                 </div>
                 <b:include name='mobile-nextprev'/>
               </b:includable>
-              <b:includable id='mobile-nextprev'>
+    <b:includable id='mobile-nextprev'>
                 <div class='blog-pager' id='blog-pager'>
                   <b:if cond='data:newerPageUrl'>
                     <div class='mobile-link-button' id='blog-pager-newer-link'>
@@ -686,7 +710,7 @@ user is not using shrink to fit then we expand the header.
                 </div>
                 <div class='clear'/>
               </b:includable>
-              <b:includable id='mobile-post' var='post'>
+    <b:includable id='mobile-post' var='post'>
                 <div class='date-outer'>
                   <b:if cond='data:post.dateHeader'>
                     <h3 class='date-header'>
@@ -804,7 +828,7 @@ user is not using shrink to fit then we expand the header.
                   </div>
                 </div>
               </b:includable>
-              <b:includable id='nextprev'>
+    <b:includable id='nextprev'>
                 <div class='blog-pager' id='blog-pager'>
                   <b:if cond='data:newerPageUrl'>
                     <span id='blog-pager-newer-link'>
@@ -833,7 +857,7 @@ user is not using shrink to fit then we expand the header.
                 </div>
                 <div class='clear'/>
               </b:includable>
-              <b:includable id='post' var='post'>
+    <b:includable id='post' var='post'>
                 <div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
                   <b:if cond='data:post.firstImageUrl'>
                     <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
@@ -932,8 +956,8 @@ user is not using shrink to fit then we expand the header.
                       </a>
                       <a class='snippet' expr:href='data:post.url'><p><data:post.snippet/>
 <b:if cond='data:post.hasJumpLink'>
-<a expr:href='data:post.url + "#more"' class='rmlink'><data:post.jumpText/></a>
-</b:if >
+<a class='rmlink' expr:href='data:post.url + &quot;#more&quot;'><data:post.jumpText/></a>
+</b:if>
                     </p></a>
  <div class='post-meta'>
                     <span class='post-author vcard'>
@@ -990,12 +1014,12 @@ user is not using shrink to fit then we expand the header.
                     <section class='boxframe' id='related-posts'>
                       <div id='related-posts'>
                         <script type='text/javascript'>
-                          //<![CDATA[
+                          /*<![CDATA[*/
                           var ry='<h3 class="heading-border">&#9829;関連しているかもしれない記事</h3>';rn='<h3 class="heading-border">関連記事が見つかりませんでした</h3>';rcomment='comments';rdisable='disable comments';commentYN='yes';
                           var dw='';titles=new Array();titlesNum=0;urls=new Array();timeR=new Array();commentsNum=new Array();comments=new Array();function related_results_labels(c){for(var b=0;b<c.feed.entry.length;b++){var d=c.feed.entry[b];titles[titlesNum]=d.title.$t;for(var a=0;a<d.link.length;a++){if('thr$total' in d){commentsNum[titlesNum]=d.thr$total.$t+' '+rcomment}else{commentsNum[titlesNum]=rdisable};if(d.link[a].rel=="alternate"){urls[titlesNum]=d.link[a].href;timeR[titlesNum]=d.published.$t;
                           titlesNum++;break}}}}function removeRelatedDuplicates(){var b=new Array(0);c=new Array(0);e=new Array(0);f=new Array(0);g=new Array(0);for(var a=0;a<urls.length;a++){if(!contains(b,urls[a])){b.length+=1;b[b.length-1]=urls[a];c.length+=1;c[c.length-1]=titles[a];e.length+=1;e[e.length-1]=timeR[a];f.length+=1;
                           g.length+=1;g[g.length-1]=commentsNum[a]}}urls=b;titles=c;timeR=e;commentsNum=g}function contains(b,d){for(var c=0;c<b.length;c++){if(b[c]==d){return true}}return false}function printRelatedLabels(a){var y=a.indexOf('?m=0');if(y!=-1){a=a.replace(/\?m=0/g,'')}for(var b=0;b<urls.length;b++){if(urls[b]==a){urls.splice(b,1);titles.splice(b,1);timeR.splice(b,1);commentsNum.splice(b,1)}}var c=Math.floor((titles.length-1)*Math.random());var b=0;if(titles.length==0){dw+=rn}else{dw+=ry;dw+='<ul>';while(b<titles.length&&b<20&&b<maxresults){if(y!=-1){urls[c]=urls[c]+'?m=0'}if(commentYN=='yes'){comments[c]=' - '+commentsNum[c]}else{comments[c]=''};dw+='<li><a href="'+urls[c]+'" rel="nofollow">'+titles[c]+'</a><div class="clear"></div></li></div>';if(c<titles.length-1){c++}else{c=0}b++}dw+='</ul>'};urls.splice(0,urls.length);titles.splice(0,titles.length);document.getElementById('related-posts').innerHTML=dw};
-                          //]]></script>
+                          /*]]>*/</script>
                         <b:loop values='data:post.labels' var='label'>
                           <script expr:src='&quot;/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels&quot;' type='text/javascript'/>
                         </b:loop>
@@ -1023,7 +1047,7 @@ user is not using shrink to fit then we expand the header.
                 </div>
 
               </b:includable>
-              <b:includable id='postQuickEdit' var='post'>
+    <b:includable id='postQuickEdit' var='post'>
                 <b:if cond='data:post.editUrl'>
                   <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
                     <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
@@ -1032,7 +1056,7 @@ user is not using shrink to fit then we expand the header.
                   </span>
                 </b:if>
               </b:includable>
-              <b:includable id='shareButtons' var='post'>
+    <b:includable id='shareButtons' var='post'>
                 <b:if cond='data:top.showEmailButton'>
                   <a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'>
                     <span class='share-button-link-text'>
@@ -1074,7 +1098,7 @@ user is not using shrink to fit then we expand the header.
                   </div>
                 </b:if>
               </b:includable>
-              <b:includable id='status-message'>
+    <b:includable id='status-message'>
                 <b:if cond='data:navMessage'>
                   <div class='status-msg-wrap alert alert-danger'>
                     <div class='status-msg-body'>
@@ -1088,7 +1112,7 @@ user is not using shrink to fit then we expand the header.
                   <div style='clear: both;'/>
                 </b:if>
               </b:includable>
-              <b:includable id='threaded-comment-form' var='post'>
+    <b:includable id='threaded-comment-form' var='post'>
                 <div class='comment-form'>
                   <a name='comment-form'/>
                   <b:if cond='data:mobile'>
@@ -1113,14 +1137,14 @@ user is not using shrink to fit then we expand the header.
                   </script>
                 </div>
               </b:includable>
-              <b:includable id='threaded_comment_js' var='post'>
+    <b:includable id='threaded_comment_js' var='post'>
                 <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
                 <script type='text/javascript'>
                   (function() {
                     var items = <data:post.commentJso/>;
                     var msgs = <data:post.commentMsgs/>;
                     var config = <data:post.commentConfig/>;
-                    // <![CDATA[
+                    /*<![CDATA[*/
                     var cursor = null;
                     if (items && items.length > 0) {
                       cursor = parseInt(items[items.length - 1].timestamp) + 1;
@@ -1141,7 +1165,7 @@ user is not using shrink to fit then we expand the header.
                       if (data && data.feed && data.feed.entry) {
                         for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
                           var comment = {};
-                          // comment ID, parsed out of the original id format
+                          /* comment ID, parsed out of the original id format*/
                           var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
                           comment.id = id ? id[2] : null;
                           comment.body = bodyFromEntry(entry);
@@ -1224,7 +1248,7 @@ user is not using shrink to fit then we expand the header.
                     var replyParent = undefined;
                     var onReply = function(commentId, domId) {
                       if (replybox == null) {
-                        // lazily cache replybox, and adjust to suit this style:
+                        /* lazily cache replybox, and adjust to suit this style:*/
                         replybox = document.getElementById('comment-editor');
                         if (replybox != null) {
                           replybox.height = '250px';
@@ -1247,7 +1271,7 @@ user is not using shrink to fit then we expand the header.
                     } else if (/^c[0-9]+$/.test(hash)) {
                       targetComment = hash.substring(1);
                     }
-                    // Configure commenting API:
+                    /* Configure commenting API:*/
                     var configJso = {
                       'maxDepth': config.maxThreadDepth
                     };
@@ -1270,7 +1294,7 @@ user is not using shrink to fit then we expand the header.
                         window.goog.comments.render(holder, provider);
                       }
                     };
-                    // render now, or queue to render when library loads:
+                    /* render now, or queue to render when library loads:*/
                     if (window.goog && window.goog.comments) {
                       render();
                     } else {
@@ -1280,10 +1304,10 @@ user is not using shrink to fit then we expand the header.
                       window.goog.comments.loadQueue.push(render);
                     }
                   })();
-                  // ]]>
+                  /* ]]>*/
                 </script>
               </b:includable>
-              <b:includable id='threaded_comments' var='post'>
+    <b:includable id='threaded_comments' var='post'>
                 <div class='comments well' id='comments'>
                   <a name='comments'/>
                   <h4>
@@ -1320,8 +1344,8 @@ user is not using shrink to fit then we expand the header.
                   </div>
                 </div>
               </b:includable>
-            </b:widget>
-          </b:section>
+  </b:widget>
+</b:section>
           <!-- END Loop --> 
  <!-- END Content --> 
 
@@ -1724,11 +1748,7 @@ head.appendChild(script);
     </div><!-- END Container --> 
     
     <div id='footer'>
-      <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'/>
-     <script src='http://umbrelllla.github.io/bootstrap.min.js'/>
-     <b:if cond='data:blog.pageType == &quot;item&quot;'>
-     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js'/>
-      </b:if>
+
       <p class='footer-link'>
         &#169; 
         <a expr:href='data:blog.homepageUrl'>
@@ -1745,6 +1765,11 @@ head.appendChild(script);
       </p>
     </div>
     <!-- END Footer --> 
+          <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'/>
+     <script src='http://umbrelllla.github.io/bootstrap.min.js'/>
+     <b:if cond='data:blog.pageType == &quot;item&quot;'>
+     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js'/>
+      </b:if>
       <script type='text/javascript'>
         /*fix nav*/
         $(function(){ var box = $(&quot;.navbar&quot;);
@@ -1816,7 +1841,7 @@ $(function(){
     $(&#39;div#Label3 div ul&#39;).html($(dest).html());
 });
 
-// フッタの表示ラベルをサブカテゴリのみにする
+/* フッタの表示ラベルをサブカテゴリのみにする*/
 /*$(&#39;.post-labels&#39;).children(&quot;a&quot;).each(function(){
     var work = $(this).text().split(&quot;/&quot;);
     $(this).text(work[work.length -1]);
@@ -1825,7 +1850,7 @@ $(function(){
 </script>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <script type='text/javascript'>
-//<![CDATA[
+/*<![CDATA[*/
 /*colorbox*/
 (function($){
     $(function(){
@@ -1874,7 +1899,7 @@ $(document).ready(function() {$("a.youtube-lazy-link").each(function(index) {
     $(this).attr("onclick", "$('#"+youid+index+"').replaceWith('"+videoFrame+"');return false;");
   });
 })
-//]]>
+/*]]>*/
 </script>
 </b:if>
 
