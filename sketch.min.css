@@ -1,5 +1,5 @@
-.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}.status-msg-body{position:relative!important;background-color:#f8e5f1;border:1px solid #fd91df;border-radius:3px;margin:40px 0;padding:5px 10px}
-.status-msg-wrap{font-size:110%;position:relative}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;color:#999}/*!
+.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;color:#999}
+/*!
  * Bootswatch v3.1.1+1
  * Homepage: http://bootswatch.com
  * Copyright 2012-2014 Thomas Park
@@ -51,7 +51,7 @@ div#Header2{font-size:80%}@media(min-width:768px){.navbar-toggle{display:none}}.
 .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-nav .open .dropdown-menu>li>a:focus{background-image:none}}@media(min-width:768px){.navbar-nav{float:left;margin:0}
 .navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:14.5px;padding-bottom:14.5px}.navbar-nav.navbar-right:last-child{margin-right:-15px}}@media(min-width:768px){.navbar-right{float:right!important}
 }.navbar-form{margin-left:-15px;margin-right:-15px;padding:10px 15px;border-top:1px solid transparent;border-bottom:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1);margin-top:3.5px;margin-bottom:3.5px}
-@media(min-width:768px){.navbar-form .form-group{display:inline-block;margin-bottom:0;vertical-align:middle}.navbar-form .form-control{display:inline-block;width:auto;vertical-align:middle;font-size:80%}
+@media(min-width:768px){.navbar-form .form-group{display:inline-block;margin-bottom:0;vertical-align:middle}.navbar-form .form-control{display:inline-block;width:180px;vertical-align:middle;font-size:80%}
 }@media(max-width:767px){.navbar-form .form-group{margin-bottom:5px}}@media(min-width:768px){.navbar-form{width:auto;border:0;margin-left:0;margin-right:0;padding-top:0;padding-bottom:0;-webkit-box-shadow:none;box-shadow:none}
 .navbar-form.navbar-right:last-child{margin-right:-15px}}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-right-radius:0;border-top-left-radius:0}
 .navbar-default{background-color:#222;border-color:#121212}.navbar-default .navbar-brand{color:#fff}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color:#fff;background-color:none}
@@ -81,18 +81,17 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 }.btn{border:0}table a{text-decoration:underline}body{padding-top:0;background-color:#FFF;font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;color:#333}
 h1,h2,h3,h4,h5,h6{font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif}h1{font-size:30px}.navbar-brand{float:left;padding:0 30px 0 0;font-size:19px;line-height:20px}
 .content{background-color:#fff}.navbar{min-height:0;margin-bottom:0}h3.list-title{font-size:150%;font-weight:normal;border-bottom:1px dotted #c9c9c9;margin-bottom:10px;margin-top:0;padding-bottom:5px}
-.navbar{border-radius:0}.page-header{padding-bottom:0;margin:0;border-bottom:0}hr{border-top:1px dashed #555}.navbar-default{background-color:#FFF;border-color:#FFF}
-.navbar-default .navbar-brand{display:none}.navbar-fixed-top.navbar-default .navbar-brand{display:block}h3{margin-top:10px;margin-bottom:3px;border-bottom:1px dashed #666}
-/*!
+.navbar{border-radius:0}hr{border-top:1px dashed #555}.navbar-default{background-color:#FFF;border-color:#FFF}.navbar-default .navbar-brand{display:none}
+.navbar-fixed-top.navbar-default .navbar-brand{display:block}h3{margin-top:10px;margin-bottom:3px;border-bottom:1px dashed #666}/*!
  * Yamm!3
  * Yet another megamenu for Bootstrap 3
  * 
  * http://geedmo.github.com/yamm3
- */.yamm .nav,.yamm .collapse,.yamm .dropdown{position:static}.yamm .container{position:relative}.yamm .dropdown-menu{left:auto}
-.yamm .yamm-content{padding:10px 20px}pre{margin:0;padding:10px 20px!important}.list-unstyled{min-width:120px}.yamm .yamm-content li a{color:#FFF;font-weight:normal}
-#navbar-collapse-grid>ul>li>a:hover{background-color:#00608d}.navbar-default .navbar-nav>li>a{color:#FFF}ul.list-unstyled{line-height:24px;margin-bottom:8px}
-.treenav{margin:0 auto;left:60px;min-height:auto;font-size:80%}.treenav ul.list,.treenav ul.list ul{list-style-type:none;margin:0;padding:0}.treenav ul.list ul{margin-left:5px;position:relative}
-.treenav ul.list ul:before{content:"";display:block;width:0;position:absolute;top:0;bottom:0;left:0;border-left:1px solid #ccc}
+ */.yamm .nav,.yamm .collapse,.yamm .dropdown{position:static}
+.yamm .container{position:relative}.yamm .dropdown-menu{left:auto}.yamm .yamm-content{padding:10px 20px}pre{margin:0;padding:10px 20px!important}.list-unstyled{min-width:120px}
+.yamm .yamm-content li a{color:#FFF;font-weight:normal}#navbar-collapse-grid>ul>li>a:hover{background-color:#00608d}.navbar-default .navbar-nav>li>a{color:#FFF}
+ul.list-unstyled{line-height:24px;margin-bottom:8px}.treenav{margin:0 auto;left:60px;min-height:auto;font-size:80%}.treenav ul.list,.treenav ul.list ul{list-style-type:none;margin:0;padding:0}
+.treenav ul.list ul{margin-left:5px;position:relative}.treenav ul.list ul:before{content:"";display:block;width:0;position:absolute;top:0;bottom:0;left:0;border-left:1px solid #ccc}
 .treenav ul.list li{margin:0;padding:3px 10px;text-decoration:none;color:#333;font-weight:normal;position:relative}.treenav ul.list li a{line-height:1.6;font-weight:normal;position:relative}
 .treenav ul.list li a:hover,.yamm-content .treenav ul.list li.active>a:hover,.yamm .yamm-content li.current a:hover,li.yamm-listhead a:hover{color:#f00}
 .treenav ul.list li a:hover+ul li a,li.yamm-listhead a:hover+hr+div.row.treenav ul.list li a */,.treenav ul.list li.used-cat>a,.yamm-content .treenav ul.list li.used-cat>a{color:red}
@@ -111,16 +110,12 @@ span.glyphicon.glyphicon-facetime-video,.dropdown span.glyphicon.glyphicon-star,
 @media(max-width:767px){.navbar-nav .open .dropdown-menu{background-color:#232323;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,0.1)}
 }.badge{color:#FFF;background-color:#f76cca;border-radius:10px}.treenav ul.list li a:hover,.treenav ul.list li.active>a:hover,.yamm-content .treenav ul.list li a:hover,{color:red}
 .treenav ul.list li.active>a{color:#2a9fd6;font-weight:bold}.yamm ul.nav.navbar-nav{display:none}.navbar-default .navbar-nav>li>a{color:#FFF;background-color:#000}
-.media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size:100%;margin:0 0 8px 0;font-weight:normal}
-img#logo{margin-top:5px}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}@media(max-width:767px){div.navbar.navbar-default.yamm{display:block}
-.yamm ul.nav.navbar-nav{display:block}.navbar-toggle{background-color:#000}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#444;background-color:#000}
-}h3.widget-title,h2.title{background-color:#000;color:#fff;font-size:100%;padding:6px 10px 5px 20px;border-left:4px solid red;margin-bottom:10px}li.categoryLabel span{font-weight:bold;color:red}
-li.categoryLabel span.badge{color:#fff}div#ArchiveList{font-size:75%;margin:10px 0 20px 10px}.widget-content{margin-bottom:30px}.media-body p:hover{color:#f76cca}
+img#logo{margin-top:5px}@media(max-width:767px){div.navbar.navbar-default.yamm{display:block}.yamm ul.nav.navbar-nav{display:block}.navbar-toggle{background-color:#000}
+.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#444;background-color:#000}}h3.widget-title,h2.title{background-color:#000;color:#fff;font-size:100%;padding:6px 10px 5px 20px;border-left:4px solid red;margin-bottom:10px}
+li.categoryLabel span{font-weight:bold;color:red}li.categoryLabel span.badge{color:#fff}div#ArchiveList{font-size:75%;margin:10px 0 20px 10px}.widget-content{margin-bottom:30px}
 .btn-default{background-color:#000;color:#ccc}.list-label-widget-content p{font-size:90%;margin-bottom:5px}div#Label1{margin-top:10px}a.navbar-brand img{margin-top:5px}
 #main{margin-top:25px}abbr.published{font-style:italic;color:#666;font-size:90%}li.categoryLabel span.active:before{content:'\002714';margin-right:3px}
 .middle.category h1:before{content:'\002605';font-size:90%;margin-right:3px}.PopularPosts .item-title{font-size:85%;line-height:1}
 .PopularPosts .widget-content ul{padding:0}.PopularPosts img{;float:left;margin-right:10px}.navbar-brand{display:none}.navbar-fixed-top .navbar-brand{display:block;font-size:26px;font-weight:bold;color:#000}
 .navbar-brand{float:left;font-size:18px;line-height:20px}.navbar{min-height:41px}.navbar-form{margin-top:4px;margin-bottom:3px}.PopularPosts .widget-content ul li{width:100%;border-bottom:1px solid #ddd;padding:5px 0;list-style-type:none}
-ul.hierarchy li{list-style-type:none}.post-timestamp{margin-left:10px}#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}
-.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}
-.showpageOf{display:none!important}div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color:#888}
+.post-timestamp{margin-left:10px}
