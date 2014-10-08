@@ -1,316 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-  <head>
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
-    <b:if cond='data:blog.pageType == &quot;index&quot;'>
-    </b:if>
-    <b:if cond='data:blog.pageType == &quot;index&quot;'>
-      <title>
-        <data:blog.pageTitle/>
-      </title>
-      <b:else/>
-      <title>
-        <data:blog.pageName/>
-      </title>
-    </b:if>
-    <b:include data='blog' name='all-head-content'/>
-    <!-- BEGIN Open Graph tags --> 
-    <meta expr:content='data:blog.metaDescription' name='description' property='og:description'/>
-    <b:if cond='data:blog.pageType == &quot;item&quot;'>
-      <meta expr:content='data:blog.pageName' property='og:title'/>
-      <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
-      <meta content='Site Name' property='og:site_name'/>
-      <meta content='article' property='og:type'/>
-      <b:if cond='data:blog.postImageThumbnailUrl'>
-        <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
-        <b:else/>
-        <meta content='http://2.bp.blogspot.com/-DknlKJONMdY/UhBRqSykyiI/AAAAAAAABws/Id-lSMf1bMY/s1600/apple-touch-icon-144-precomposed.png' property='og:image'/>
-      </b:if>
-      <b:else/>
-      <meta expr:content='data:blog.title' property='og:title'/>
-      <meta expr:content='data:blog.canonicalHomepageUrl' property='og:url'/>
-      <meta content='Site Name' property='og:site_name'/>
-      <meta content='blog' property='og:type'/>
-      <meta content='http://2.bp.blogspot.com/-DknlKJONMdY/UhBRqSykyiI/AAAAAAAABws/Id-lSMf1bMY/s1600/apple-touch-icon-144-precomposed.png' property='og:image'/>
-    </b:if>
-    <meta expr:content='&quot;en_US&quot;' property='og:locale'/>
-    <!-- END Open Graph tags -->
-    <link href='http://2.bp.blogspot.com/-DknlKJONMdY/UhBRqSykyiI/AAAAAAAABws/Id-lSMf1bMY/s1600/apple-touch-icon-144-precomposed.png' rel='apple-touch-icon-precomposed' sizes='144x144'/>
-    <link href='http://3.bp.blogspot.com/-rRWmpiJY5BA/UhBRpQVuLxI/AAAAAAAABwk/lclFS71I0pY/s1600/apple-touch-icon-114-precomposed.png' rel='apple-touch-icon-precomposed' sizes='114x114'/>
-    <link href='http://4.bp.blogspot.com/-gfIbuWbo0gc/UhBRv6ZlsRI/AAAAAAAABw8/La3g8rX-MPQ/s1600/apple-touch-icon-72-precomposed.png' rel='apple-touch-icon-precomposed' sizes='72x72'/>
-    <link href='http://4.bp.blogspot.com/-J75pjsUM8mk/UhBRq0uetvI/AAAAAAAABw0/-kcTxAIYhko/s1600/apple-touch-icon-57-precomposed.png' rel='apple-touch-icon-precomposed'/>
-    <link href='http://4.bp.blogspot.com/-3miLDAfjF9k/UhBRxD6aipI/AAAAAAAABxE/4qR5jc7leU8/s1600/favicon.png' rel='shortcut icon'/>
-    <link href='http://4.bp.blogspot.com/-3miLDAfjF9k/UhBRxD6aipI/AAAAAAAABxE/4qR5jc7leU8/s1600/favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'/>
+<head>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+  <title>
+    <data:blog.pageTitle/>
+  </title>
+  <b:else/>
+  <title>
+    <data:blog.pageName/>
+  </title>
+</b:if>
+<b:include data='blog' name='all-head-content'/>
+<!-- BEGIN Open Graph tags --> 
+<meta expr:content='data:blog.metaDescription' name='description' property='og:description'/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+  <meta expr:content='data:blog.pageName' property='og:title'/>
+  <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+  <meta content='Site Name' property='og:site_name'/>
+  <meta content='article' property='og:type'/>
+  <b:if cond='data:blog.postImageThumbnailUrl'>
+    <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
+    <b:else/>
+    <meta content='http://2.bp.blogspot.com/-DknlKJONMdY/UhBRqSykyiI/AAAAAAAABws/Id-lSMf1bMY/s1600/apple-touch-icon-144-precomposed.png' property='og:image'/>
+  </b:if>
+  <b:else/>
+  <meta expr:content='data:blog.title' property='og:title'/>
+  <meta expr:content='data:blog.canonicalHomepageUrl' property='og:url'/>
+  <meta content='Site Name' property='og:site_name'/>
+  <meta content='blog' property='og:type'/>
+  <meta content='http://2.bp.blogspot.com/-DknlKJONMdY/UhBRqSykyiI/AAAAAAAABws/Id-lSMf1bMY/s1600/apple-touch-icon-144-precomposed.png' property='og:image'/>
+</b:if>
+<meta expr:content='&quot;en_US&quot;' property='og:locale'/>
+<!-- END Open Graph tags -->
+<link href='http://2.bp.blogspot.com/-DknlKJONMdY/UhBRqSykyiI/AAAAAAAABws/Id-lSMf1bMY/s1600/apple-touch-icon-144-precomposed.png' rel='apple-touch-icon-precomposed' sizes='144x144'/>
+<link href='http://3.bp.blogspot.com/-rRWmpiJY5BA/UhBRpQVuLxI/AAAAAAAABwk/lclFS71I0pY/s1600/apple-touch-icon-114-precomposed.png' rel='apple-touch-icon-precomposed' sizes='114x114'/>
+<link href='http://4.bp.blogspot.com/-gfIbuWbo0gc/UhBRv6ZlsRI/AAAAAAAABw8/La3g8rX-MPQ/s1600/apple-touch-icon-72-precomposed.png' rel='apple-touch-icon-precomposed' sizes='72x72'/>
+<link href='http://4.bp.blogspot.com/-J75pjsUM8mk/UhBRq0uetvI/AAAAAAAABw0/-kcTxAIYhko/s1600/apple-touch-icon-57-precomposed.png' rel='apple-touch-icon-precomposed'/>
+<link href='http://4.bp.blogspot.com/-3miLDAfjF9k/UhBRxD6aipI/AAAAAAAABxE/4qR5jc7leU8/s1600/favicon.png' rel='shortcut icon'/>
+<link href='http://4.bp.blogspot.com/-3miLDAfjF9k/UhBRxD6aipI/AAAAAAAABxE/4qR5jc7leU8/s1600/favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'/>
 &lt;style type=&quot;text/css&quot;&gt;
 &lt;!-- /*<b:skin><![CDATA[*/]]></b:skin>
-<link href='http://umbrelllla.github.io/sketch.min.css' rel='stylesheet' type='text/css'/>
-
-
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
-<style>
-/*Colorbox Core Style:*/
-#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
-#cboxWrapper {max-width:none;}
-#cboxOverlay{position:fixed; width:100%; height:100%;}
-#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
-#cboxContent{position:relative;}
-#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
-#cboxTitle{margin:0;}
-#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
-#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
-.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
-.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
-#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
-#cboxOverlay{background:#000; opacity: 0.9; filter: alpha(opacity = 90);}
-#colorbox{outline:0;}
-    #cboxContent{margin-top:20px;background:#000;}
-        .cboxIframe{background:#fff;}
-        #cboxError{padding:50px; border:1px solid #ccc;}
-        #cboxLoadedContent{border:5px solid #000; background:#fff;}
-        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
-        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
-        #cboxLoadingGraphic{background:url(http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example3/images/loading.gif) no-repeat center center;}
-
-        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
-        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
-        
-        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
-        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
-        
-        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
-        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example3/images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
-        #cboxPrevious:hover{background-position:bottom left;}
-        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example3/images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
-        #cboxNext:hover{background-position:bottom right;}
-        #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example3/images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
-        #cboxClose:hover{background-position:bottom center;}
-/* COMMENT */
-#comments h4 {font-size:16px;color:#333;font-weight:bold;
-padding:10px 10px ; padding-left:20px; margin-top:10px;}
-#comments-block {line-height:1.6em;margin:1em 0 1.5em;color:#7F7D77;}
-#comments-block .comment-author {background:#dfdfdf none repeat scroll 0 0;border:1px solid #eaeaea;margin:0.5em 0;padding-bottom:4px;padding-left:8px;padding-top:4px;font-weight:bold;}
-#comments-block .comment-body {background:#fff; border-left:1px solid #e3e3e3;border-right:1px solid #e3e3e3;margin-top:-8px;padding-left:10px;padding-top:10px;}
-#comments-block .comment-footer {background:#fff;border-bottom:1px solid #e3e3e3;border-left:1px solid #e3e3e3;border-right:1px solid #e3e3e3;font-size:11px;line-height:1.4em;margin:-0.25em 0 2em;padding-bottom:5px;padding-left:10px;text-transform:none;}
-#comments-block .comment-body p {margin:0;padding-bottom:15px;}
-#comment-holder{padding: 10px 15px;}
-.comments .comment-block, .comments .comment-thread.inline-thread .comment {
-background: #fff;
-}
-#comments h4, .comments .comment-header, .comments .comment-thread.inline-thread .comment {
-position: relative;
-}
-.comments .comments-content .icon.blog-author {
-position: absolute;
-top: -12px;
-right: -12px;
-margin: 0;
-background-image: url(http://lh6.ggpht.com/-GDMurKK2tec/T5JCD6hoKoI/AAAAAAAABAc/COHOItBlFWk/author.png);
-width: 36px;
-height: 36px;
-}
-.post-comment-link{float:right;}
-.comments .comment-replybox-thread{margin-top: 5px;}
-.comment-form{max-width:100%;}
-.comments .comments-content .comment-header, .comments .comments-content .comment-content{margin: 0 0 8px;
-border: 1px dashed #ddd;
-padding: 10px;}
-.comments .comments-content .comment-thread ol{margin:0 0 10px 0px !important;}
-.comments .comments-content .icon.blog-author {top: -2px;right: -2px;}
-#comments-block .avatar-image-container img {
-background: #fff url(http://3.bp.blogspot.com/-UMSMHaOBzQg/To2XKFseUSI/AAAAAAAACVU/vlvJki_9vqA/s1600/gravatar.png) no-repeat left top;
-width:32px;
-height:32px
-}
-a.youtube-lazy-link {
-  vertical-align:top;
-  background:#555;
-  width:560px; height:315px;
-  background-size:cover;
-  text-decoration:none;
-  color:#DDD;
-  text-align:left;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  display:inline-block;
-}
-a.youtube-lazy-link:hover {
-  text-decoration:none;
-  color:#FFF;
-}
-.youtube-lazy-link-div {
-  border:2px solid #000;
-  background: url(http://lh4.googleusercontent.com/-QCeB6REIFlE/TuGUlY3N46I/AAAAAAAAAaI/9-urEUtpKcI/s800/youtube-play-button.png) center center no-repeat;
-  position:absolute;
-}
-.youtube-lazy-link-div:hover {
-  background: url(http://lh5.googleusercontent.com/-oBFjswrosz4/TuHqainRc3I/AAAAAAAAAbE/t3rMQuSJdLA/s800/youtube-play-button-hover.png) center center no-repeat;
-}
-.youtube-lazy-link-info {
-  font-size: 110%;
-  padding: 2px 6px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-}
-.labels {
-margin-left: 0;
-font-size: 70%;
-line-height: 1;
-padding-bottom: 5px;
-border-bottom: 1px solid #ccc;
-}
-.post-header {
-  line-height: 1.8;
-  margin-bottom: 20px;
-  font-size: 70%;
-}
-#related-posts {
-margin: 20px 0;
-border: 1px solid #999;
-padding: 10px 20px;
-}
-#related-posts ul {
-padding: 0;
-list-style-type: none;
-margin-left: 20px;
-line-height: 1.7;
-}
-#related-posts ul li {
-clear: both;
-}
-
-h3.heading-border {
-margin-bottom: 10px;
-}
-#related-posts ul li:before {
-content: '\00bb';
-}
-span#blog-pager-older-link {
-float: right;
-}
-span#blog-pager-newer-link {
-float: left;
-}
-.post img {
-padding: 4px;
-line-height: 1.42857143;
-background-color: #fff;
-border: 1px solid #ddd;
-border-radius: 0;
--webkit-transition: all .2s ease-in-out;
-transition: all .2s ease-in-out;
-display: inline-block;
-max-width: 100%;
-height: auto;
-  max-width: 100%;
-  height: auto;
-}
-.post img:hover {
-border: 1px solid #38a1db;
-background-color: #38a1db;
-}
-.post-title h1 {
-margin: 5px 10px 10px 0;
-color: #222;
-font-weight: normal;
-font-size: 160%;
-}
-.post-title h1:before {
-content: '\002605';
-}
-
-
-    </style>
-    <b:else/>
-<style>
-  .middle.category h1:before {
-content: '\002605';
-font-size: 90%;
-margin-right: 3px;
-}
-  div.post-meta {
-font-size: 60%;
-line-height: 150%;
-}
-  .img-thumbnail {
-  padding: 4px;
-  line-height: 1.42857143;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  display: inline-block;
-  max-width: 100%;
-  margin-right: 8px;
-}
-.status-msg-body {
-position: relative !important;
-background-color: #F8E5F1;
-border: 1px solid #FD91DF;
-border-radius: 3px;
-margin: 40px 0;
-padding: 5px 10px;
-}
-.status-msg-wrap {
-font-size: 110%;
-position: relative;
-}
-.page-header {
-padding-bottom: 0px;
-margin: 0;
-border-bottom: none;
-}
-.page-header h3 {
-font-size: 130%;
-font-weight: normal;
-margin-top: 0px;
-margin-bottom: 15px;
-}
-.media-body p:hover {
-color: #f76cca;
-}
-.media-body p,.media-body div {
-font-size: 70%;
-color: #888;
-margin-bottom:5px;
-line-height:130%
-}
-h1.media-heading {
-font-size: 100%;
-margin: 0 0 8px 0 ;
-font-weight: normal;
-}
-#blog-pager{width: 100%;font-size:16px;line-height:normal;padding:2em 0;text-align: center;}
-.showpageNum a,.showpage a,.showpagePoint{
-background: #007fff;
-border: 0;
-color: #FFF;
-margin-left: 10px;
-padding: 5px 10px;
-}
-.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}
-.showpageOf{display:none!important}
-div.middle.category h1 {
-margin: 10px 0 5px 10px;
-}
-
-/*index,archive*/
-a.snippet:hover {
-color: #ff37df;
-}
-a.snippet {
-color: #888;
-}
-    </style>
-      </b:if>
-
-
-  </head>
-  <body>
-
-    <nav class='navbar navbar-default navbar-fixed-top yamm' role='navigation'>
-      <div class='container'>
-      <!-- Brand and toggle get grouped for better mobile display -->
+<link href='http://umbrelllla.github.io/sketch.min.css' rel='stylesheet' type='text/css'/><b:if cond='data:blog.pageType == &quot;item&quot;'><style>
+#colorbox,#cboxOverlay,#cboxWrapper{position:absolute;top:0;left:0;z-index:9999;overflow:hidden}#cboxWrapper{max-width:none}#cboxOverlay{position:fixed;width:100%;height:100%}
+#cboxMiddleLeft,#cboxBottomLeft{clear:left}#cboxContent{position:relative}#cboxLoadedContent{overflow:auto;-webkit-overflow-scrolling:touch}#cboxTitle{margin:0}
+#cboxLoadingOverlay,#cboxLoadingGraphic{position:absolute;top:0;left:0;width:100%;height:100%}#cboxPrevious,#cboxNext,#cboxClose,#cboxSlideshow{cursor:pointer}
+.cboxPhoto{float:left;margin:auto;border:0;display:block;max-width:none;-ms-interpolation-mode:bicubic}.cboxIframe{width:100%;height:100%;display:block;border:0;padding:0;margin:0}
+#colorbox,#cboxContent,#cboxLoadedContent{box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box}#cboxOverlay{background:#000;opacity:.9;filter:alpha(opacity = 90)}
+#colorbox{outline:0}#cboxContent{margin-top:20px;background:#000}.cboxIframe{background:#fff}#cboxError{padding:50px;border:1px solid #ccc}#cboxLoadedContent{border:5px solid #000;background:#fff}
+#cboxTitle{position:absolute;top:-20px;left:0;color:#ccc}#cboxCurrent{position:absolute;top:-20px;right:0;color:#ccc}#cboxLoadingGraphic{background:url(http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example3/images/loading.gif) no-repeat center center}
+#cboxPrevious,#cboxNext,#cboxSlideshow,#cboxClose{border:0;padding:0;margin:0;overflow:visible;width:auto;background:0}#cboxPrevious:active,#cboxNext:active,#cboxSlideshow:active,#cboxClose:active{outline:0}
+#cboxSlideshow{position:absolute;top:-20px;right:90px;color:#fff}#cboxPrevious{position:absolute;top:50%;left:5px;margin-top:-32px;background:url(http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example3/images/controls.png) no-repeat top left;width:28px;height:65px;text-indent:-9999px}
+#cboxPrevious:hover{background-position:bottom left}#cboxNext{position:absolute;top:50%;right:5px;margin-top:-32px;background:url(http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example3/images/controls.png) no-repeat top right;width:28px;height:65px;text-indent:-9999px}
+#cboxNext:hover{background-position:bottom right}#cboxClose{position:absolute;top:5px;right:5px;display:block;background:url(http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example3/images/controls.png) no-repeat top center;width:38px;height:19px;text-indent:-9999px}
+#cboxClose:hover{background-position:bottom center}#comments h4{font-size:16px;color:#333;font-weight:bold;padding:10px 10px;padding-left:20px;margin-top:10px}
+#comments-block{line-height:1.6em;margin:1em 0 1.5em;color:#7f7d77}#comments-block .comment-author{background:#dfdfdf none repeat scroll 0 0;border:1px solid #eaeaea;margin:.5em 0;padding-bottom:4px;padding-left:8px;padding-top:4px;font-weight:bold}
+#comments-block .comment-body{background:#fff;border-left:1px solid #e3e3e3;border-right:1px solid #e3e3e3;margin-top:-8px;padding-left:10px;padding-top:10px}
+#comments-block .comment-footer{background:#fff;border-bottom:1px solid #e3e3e3;border-left:1px solid #e3e3e3;border-right:1px solid #e3e3e3;font-size:11px;line-height:1.4em;margin:-0.25em 0 2em;padding-bottom:5px;padding-left:10px;text-transform:none}
+#comments-block .comment-body p{margin:0;padding-bottom:15px}#comment-holder{padding:10px 15px}.comments .comment-block,.comments .comment-thread.inline-thread .comment{background:#fff}
+#comments h4,.comments .comment-header,.comments .comment-thread.inline-thread .comment{position:relative}.comments .comments-content .icon.blog-author{position:absolute;top:-12px;right:-12px;margin:0;background-image:url(http://lh6.ggpht.com/-GDMurKK2tec/T5JCD6hoKoI/AAAAAAAABAc/COHOItBlFWk/author.png);width:36px;height:36px}
+.post-comment-link{float:right}.comments .comment-replybox-thread{margin-top:5px}.comment-form{max-width:100%}.comments .comments-content .comment-header,.comments .comments-content .comment-content{margin:0 0 8px;border:1px dashed #ddd;padding:10px}
+.comments .comments-content .comment-thread ol{margin:0 0 10px 0!important}.comments .comments-content .icon.blog-author{top:-2px;right:-2px}#comments-block .avatar-image-container img{background:#fff url(http://3.bp.blogspot.com/-UMSMHaOBzQg/To2XKFseUSI/AAAAAAAACVU/vlvJki_9vqA/s1600/gravatar.png) no-repeat left top;width:32px;height:32px}
+a.youtube-lazy-link{vertical-align:top;background:#555;width:560px;height:315px;background-size:cover;text-decoration:none;color:#DDD;text-align:left;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;display:inline-block}
+a.youtube-lazy-link:hover{text-decoration:none;color:#FFF}.youtube-lazy-link-div{border:2px solid #000;background:url(http://lh4.googleusercontent.com/-QCeB6REIFlE/TuGUlY3N46I/AAAAAAAAAaI/9-urEUtpKcI/s800/youtube-play-button.png) center center no-repeat;position:absolute}
+.youtube-lazy-link-div:hover{background:url(http://lh5.googleusercontent.com/-oBFjswrosz4/TuHqainRc3I/AAAAAAAAAbE/t3rMQuSJdLA/s800/youtube-play-button-hover.png) center center no-repeat}
+.youtube-lazy-link-info{font-size:110%;padding:2px 6px;background:#000;background:rgba(0,0,0,0.5)}.labels{margin-left:0;font-size:70%;line-height:1;padding-bottom:5px;border-bottom:1px solid #ccc}
+.post-header{line-height:1.8;margin-bottom:20px;font-size:70%}#related-posts{margin:20px 0;border:1px solid #999;padding:10px 20px}#related-posts ul{padding:0;list-style-type:none;margin-left:20px;line-height:1.7}
+#related-posts ul li{clear:both}h3.heading-border{margin-bottom:10px}#related-posts ul li:before{content:'\00bb'}span#blog-pager-older-link{float:right}
+span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto;max-width:100%;height:auto}
+.post img:hover{border:1px solid #38a1db;background-color:#38a1db}.post-title h1{margin:5px 10px 10px 0;color:#222;font-weight:normal;font-size:160%}.post-title h1:before{content:'\002605'}
+</style><b:else/><style>
+.middle.category h1:before{content:'\002605';font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}
+.status-msg-body{position:relative!important;background-color:#f8e5f1;border:1px solid #fd91df;border-radius:3px;margin:40px 0;padding:5px 10px}.status-msg-wrap{font-size:110%;position:relative}
+.page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}
+.media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size:100%;margin:0 0 8px 0;font-weight:normal}
+#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}
+.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}
+div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color:#888}
+</style></b:if></head><body>
+<nav class='navbar navbar-default navbar-fixed-top yamm' role='navigation'>
+<div class='container'>
+<!-- Brand and toggle get grouped for better mobile display -->
       <div class='navbar-header'>
         <button class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
           <span class='icon-bar'/>
@@ -380,11 +153,7 @@ user is not using shrink to fit then we expand the header.
                     <data:title/>
                   </a>
                 </b:if>
-              </b:includable>
-            </b:widget>
-          </b:section>
-
-      </div>
+              </b:includable></b:widget></b:section></div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
           <b:section class='main' id='navigation' showaddelement='no'>
@@ -393,16 +162,8 @@ user is not using shrink to fit then we expand the header.
 <ul class='nav navbar-nav'>
 <li class='dropdown'>
   <b:if cond='data:title'>
-
-
-
-            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-             
-<data:title/>
-              <b class='caret'/>
-            </a>
-
-  </b:if>
+  <a class='dropdown-toggle' data-toggle='dropdown' href='#'><data:title/><b class='caret'/></a>
+</b:if>
 <ul class='dropdown-menu'>
   <li>
   <div class=' yamm-content' id='Label1Cover'>
@@ -424,7 +185,6 @@ user is not using shrink to fit then we expand the header.
         </li>
       </b:loop>
       </ul>
-
     <b:else/>
       <b:loop values='data:labels' var='label'>
         <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
@@ -444,40 +204,22 @@ user is not using shrink to fit then we expand the header.
     </div>
   </div>
   </div>
-
-
-          </li>
-        </ul>
-         </li>
-        </ul>
-</b:includable>
-            </b:widget>
-          </b:section>
+</li></ul></li></ul>
+</b:includable></b:widget></b:section>
 <form class='navbar-form navbar-right' expr:action='data:blog.homepageUrl + &quot;search/&quot;' id='ajax-search-form' role='search'>
 <div class='form-group'>
     <input class='form-control' name='q' onblur='if (this.value == &quot;&quot;) {this.value = &quot;Search...&quot;;}' onfocus='if (this.value == &quot;Search...&quot;) {this.value = &quot;&quot;;}' type='text' value='Search...'/>
  </div>
-    <button class='btn btn-default btn-sm' type='submit' value='Search'>
-ブログ内検索
-          </button>
+    <button class='btn btn-default btn-sm' type='submit' value='Search'>ブログ内検索</button>
 </form>
-      </div>
-      <!-- /.navbar-collapse -->
-      </div>
-    </nav>
-
-<div class='middle category'><div class='container'>
-  <div class='row'>
-  <div class='col-xs-12'>
+</div><!-- /.navbar-collapse -->
+</div>
+</nav>
+<div class='middle category'><div class='container'><div class='row'><div class='col-xs-12'>
           <b:section class='header' id='middle-title' maxwidgets='1' showaddelement='no'>
             <b:widget id='Header2' locked='true' title='sketch -スケッチ (Header)' type='Header'>
               <b:includable id='main'>
-                <b:if cond='data:blog.url == data:blog.homepageUrl'>
-                  <data:title/>
-                <b:else/>
-                  <a expr:href='data:blog.homepageUrl'><data:title/></a>
-                </b:if>
-                 &#187; <data:description/>
+                <b:if cond='data:blog.url == data:blog.homepageUrl'><data:title/><b:else/><a expr:href='data:blog.homepageUrl'><data:title/></a></b:if>&#187; <data:description/>
               </b:includable>
             </b:widget>
           </b:section>
@@ -486,19 +228,10 @@ user is not using shrink to fit then we expand the header.
           <h1><data:blog.pageName/>年のアーカイブ</h1>
         </b:if>
         </b:if>
-
-
-  </div></div></div></div>
-        
-
-    <div class='container content' id='container'>
+</div></div></div></div>
+<div class='container content' id='container'>
       <div class='row'>
-        
-
-
-                             
-          
-          <b:section class='main col-xs-12 col-sm-8 clearfix' id='main' showaddelement='no'>
+<b:section class='main col-xs-12 col-sm-8 clearfix' id='main' showaddelement='no'>
             <b:widget id='Blog1' locked='true' title='ブログの投稿' type='Blog'>
               <b:includable id='main' var='top'>
                 <b:if cond='data:mobile == &quot;false&quot;'>
@@ -2029,7 +1762,6 @@ head.appendChild(script);
             });
 /*ラベル階層化*/
 $(function(){
-    
     var list = $(&#39;div#Label1 div ul &gt; li&#39;);
     var dest = $(&quot;<ul style='display: none;'/>&quot;);
     var nodes = new Array();
@@ -2103,15 +1835,14 @@ $(function(){
             maxHeight:'100%',
             speed:'200',
             rel:'photo',
-            title: function(){/*キャプションにimg要素のtitle使用*/
+            title: function(){
   return $(this).children('img').attr('title');
   }
         });
     });
 })(jQuery);
 /*youtube lazy link*/
-$(document).ready(function() {
-  $("a.youtube-lazy-link").each(function(index) {
+$(document).ready(function() {$("a.youtube-lazy-link").each(function(index) {
     var embedparms = $(this).attr("href").split("/embed/")[1];
     if(!embedparms) embedparms = $(this).attr("href").split("://youtu.be/")[1];
     if(!embedparms) embedparms = $(this).attr("href").split("?v=")[1].replace(/\&/,'?');
@@ -2151,17 +1882,13 @@ $(document).ready(function() {
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <script type='text/javascript'>
   /*<![CDATA[*/
-    var postperpage=5;
-    var numshowpage=2;
-    var upPageWord ='« 前のページ';
-    var downPageWord ='次のページ »';
-    var urlactivepage=location.href;
-    var home_page="/";
-  /*]]>*/
-</script>
-<script type='text/javascript'>
-  /*<![CDATA[*/
-    var nopage;var jenis;var nomerhal;var lblname1;halamanblogger();function loophalaman(banyakdata){var html='';nomerkiri=parseInt(numshowpage/2);if(nomerkiri==numshowpage-nomerkiri){numshowpage=nomerkiri*2+1}mulai=nomerhal-nomerkiri;if(mulai<1)mulai=1;maksimal=parseInt(banyakdata/postperpage)+1;if(maksimal-1==banyakdata/postperpage)maksimal=maksimal-1;akhir=mulai+numshowpage-1;if(akhir>maksimal)akhir=maksimal;html+="<span class='showpageOf'>Page "+nomerhal+' of '+maksimal+"</span>";var prevnomer=parseInt(nomerhal)-1;if(nomerhal>1){if(nomerhal==2){if(jenis=="page"){html+='<span class="showpage"><a href="'+home_page+'">'+upPageWord+'</a></span>'}else{html+='<span class="showpageNum"><a href="/search/label/'+lblname1+'?&max-results='+postperpage+'">'+upPageWord+'</a></span>'}}else{if(jenis=="page"){html+='<span class="showpageNum"><a href="#" onclick="redirectpage('+prevnomer+');return false">'+upPageWord+'</a></span>'}else{html+='<span class="showpageNum"><a href="#" onclick="redirectlabel('+prevnomer+');return false">'+upPageWord+'</a></span>'}}}if(mulai>1){if(jenis=="page"){html+='<span class="showpageNum"><a href="'+home_page+'">1</a></span>'}else{html+='<span class="showpageNum"><a href="/search/label/'+lblname1+'?&max-results='+postperpage+'">1</a></span>'}}if(mulai>2){html+=' ... '}for(var jj=mulai;jj<=akhir;jj++){if(nomerhal==jj){html+='<span class="showpagePoint">'+jj+'</span>'}else if(jj==1){if(jenis=="page"){html+='<span class="showpageNum"><a href="'+home_page+'">1</a></span>'}else{html+='<span class="showpageNum"><a href="/search/label/'+lblname1+'?&max-results='+postperpage+'">1</a></span>'}}else{if(jenis=="page"){html+='<span class="showpageNum"><a href="#" onclick="redirectpage('+jj+');return false">'+jj+'</a></span>'}else{html+='<span class="showpageNum"><a href="#" onclick="redirectlabel('+jj+');return false">'+jj+'</a></span>'}}}if(akhir<maksimal-1){html+='...'}if(akhir<maksimal){if(jenis=="page"){html+='<span class="showpageNum"><a href="#" onclick="redirectpage('+maksimal+');return false">'+maksimal+'</a></span>'}else{html+='<span class="showpageNum"><a href="#" onclick="redirectlabel('+maksimal+');return false">'+maksimal+'</a></span>'}}var nextnomer=parseInt(nomerhal)+1;if(nomerhal<maksimal){if(jenis=="page"){html+='<span class="showpageNum"><a href="#" onclick="redirectpage('+nextnomer+');return false">'+downPageWord+'</a></span>'}else{html+='<span class="showpageNum"><a href="#" onclick="redirectlabel('+nextnomer+');return false">'+downPageWord+'</a></span>'}}var pageArea=document.getElementsByName("pageArea");var blogPager=document.getElementById("blog-pager");for(var p=0;p<pageArea.length;p++){pageArea[p].innerHTML=html}if(pageArea&&pageArea.length>0){html=''}if(blogPager){blogPager.innerHTML=html}}function hitungtotaldata(root){var feed=root.feed;var totaldata=parseInt(feed.openSearch$totalResults.$t,10);loophalaman(totaldata)}function halamanblogger(){var thisUrl=urlactivepage;if(thisUrl.indexOf("/search/label/")!=-1){if(thisUrl.indexOf("?updated-max")!=-1){lblname1=thisUrl.substring(thisUrl.indexOf("/search/label/")+14,thisUrl.indexOf("?updated-max"))}else{lblname1=thisUrl.substring(thisUrl.indexOf("/search/label/")+14,thisUrl.indexOf("?&max"))}}if(thisUrl.indexOf("?q=")==-1&&thisUrl.indexOf(".html")==-1){if(thisUrl.indexOf("/search/label/")==-1){jenis="page";if(urlactivepage.indexOf("#PageNo=")!=-1){nomerhal=urlactivepage.substring(urlactivepage.indexOf("#PageNo=")+8,urlactivepage.length)}else{nomerhal=1}document.write("<script src=\""+home_page+"feeds/posts/summary?max-results=1&alt=json-in-script&callback=hitungtotaldata\"><\/script>")}else{jenis="label";if(thisUrl.indexOf("&max-results=")==-1){postperpage=20}if(urlactivepage.indexOf("#PageNo=")!=-1){nomerhal=urlactivepage.substring(urlactivepage.indexOf("#PageNo=")+8,urlactivepage.length)}else{nomerhal=1}document.write('<script src="'+home_page+'feeds/posts/summary/-/'+lblname1+'?alt=json-in-script&callback=hitungtotaldata&max-results=1" ><\/script>')}}}function redirectpage(numberpage){jsonstart=(numberpage-1)*postperpage;nopage=numberpage;var nBody=document.getElementsByTagName('head')[0];var newInclude=document.createElement('script');newInclude.type='text/javascript';newInclude.setAttribute("src",home_page+"feeds/posts/summary?start-index="+jsonstart+"&max-results=1&alt=json-in-script&callback=finddatepost");nBody.appendChild(newInclude)}function redirectlabel(numberpage){jsonstart=(numberpage-1)*postperpage;nopage=numberpage;var nBody=document.getElementsByTagName('head')[0];var newInclude=document.createElement('script');newInclude.type='text/javascript';newInclude.setAttribute("src",home_page+"feeds/posts/summary/-/"+lblname1+"?start-index="+jsonstart+"&max-results=1&alt=json-in-script&callback=finddatepost");nBody.appendChild(newInclude)}function finddatepost(root){post=root.feed.entry[0];var timestamp1=post.published.$t.substring(0,19)+post.published.$t.substring(23,29);var timestamp=encodeURIComponent(timestamp1);if(jenis=="page"){var alamat="/search?updated-max="+timestamp+"&max-results="+postperpage+"#PageNo="+nopage}else{var alamat="/search/label/"+lblname1+"?updated-max="+timestamp+"&max-results="+postperpage+"#PageNo="+nopage}location.href=alamat}
+var postperpage=5;
+var numshowpage=2;
+var upPageWord ='« 前のページ';
+var downPageWord ='次のページ »';
+var urlactivepage=location.href;
+var home_page="/";
+var nopage;var jenis;var nomerhal;var lblname1;halamanblogger();function loophalaman(banyakdata){var html='';nomerkiri=parseInt(numshowpage/2);if(nomerkiri==numshowpage-nomerkiri){numshowpage=nomerkiri*2+1}mulai=nomerhal-nomerkiri;if(mulai<1)mulai=1;maksimal=parseInt(banyakdata/postperpage)+1;if(maksimal-1==banyakdata/postperpage)maksimal=maksimal-1;akhir=mulai+numshowpage-1;if(akhir>maksimal)akhir=maksimal;html+="<span class='showpageOf'>Page "+nomerhal+' of '+maksimal+"</span>";var prevnomer=parseInt(nomerhal)-1;if(nomerhal>1){if(nomerhal==2){if(jenis=="page"){html+='<span class="showpage"><a href="'+home_page+'">'+upPageWord+'</a></span>'}else{html+='<span class="showpageNum"><a href="/search/label/'+lblname1+'?&max-results='+postperpage+'">'+upPageWord+'</a></span>'}}else{if(jenis=="page"){html+='<span class="showpageNum"><a href="#" onclick="redirectpage('+prevnomer+');return false">'+upPageWord+'</a></span>'}else{html+='<span class="showpageNum"><a href="#" onclick="redirectlabel('+prevnomer+');return false">'+upPageWord+'</a></span>'}}}if(mulai>1){if(jenis=="page"){html+='<span class="showpageNum"><a href="'+home_page+'">1</a></span>'}else{html+='<span class="showpageNum"><a href="/search/label/'+lblname1+'?&max-results='+postperpage+'">1</a></span>'}}if(mulai>2){html+=' ... '}for(var jj=mulai;jj<=akhir;jj++){if(nomerhal==jj){html+='<span class="showpagePoint">'+jj+'</span>'}else if(jj==1){if(jenis=="page"){html+='<span class="showpageNum"><a href="'+home_page+'">1</a></span>'}else{html+='<span class="showpageNum"><a href="/search/label/'+lblname1+'?&max-results='+postperpage+'">1</a></span>'}}else{if(jenis=="page"){html+='<span class="showpageNum"><a href="#" onclick="redirectpage('+jj+');return false">'+jj+'</a></span>'}else{html+='<span class="showpageNum"><a href="#" onclick="redirectlabel('+jj+');return false">'+jj+'</a></span>'}}}if(akhir<maksimal-1){html+='...'}if(akhir<maksimal){if(jenis=="page"){html+='<span class="showpageNum"><a href="#" onclick="redirectpage('+maksimal+');return false">'+maksimal+'</a></span>'}else{html+='<span class="showpageNum"><a href="#" onclick="redirectlabel('+maksimal+');return false">'+maksimal+'</a></span>'}}var nextnomer=parseInt(nomerhal)+1;if(nomerhal<maksimal){if(jenis=="page"){html+='<span class="showpageNum"><a href="#" onclick="redirectpage('+nextnomer+');return false">'+downPageWord+'</a></span>'}else{html+='<span class="showpageNum"><a href="#" onclick="redirectlabel('+nextnomer+');return false">'+downPageWord+'</a></span>'}}var pageArea=document.getElementsByName("pageArea");var blogPager=document.getElementById("blog-pager");for(var p=0;p<pageArea.length;p++){pageArea[p].innerHTML=html}if(pageArea&&pageArea.length>0){html=''}if(blogPager){blogPager.innerHTML=html}}function hitungtotaldata(root){var feed=root.feed;var totaldata=parseInt(feed.openSearch$totalResults.$t,10);loophalaman(totaldata)}function halamanblogger(){var thisUrl=urlactivepage;if(thisUrl.indexOf("/search/label/")!=-1){if(thisUrl.indexOf("?updated-max")!=-1){lblname1=thisUrl.substring(thisUrl.indexOf("/search/label/")+14,thisUrl.indexOf("?updated-max"))}else{lblname1=thisUrl.substring(thisUrl.indexOf("/search/label/")+14,thisUrl.indexOf("?&max"))}}if(thisUrl.indexOf("?q=")==-1&&thisUrl.indexOf(".html")==-1){if(thisUrl.indexOf("/search/label/")==-1){jenis="page";if(urlactivepage.indexOf("#PageNo=")!=-1){nomerhal=urlactivepage.substring(urlactivepage.indexOf("#PageNo=")+8,urlactivepage.length)}else{nomerhal=1}document.write("<script src=\""+home_page+"feeds/posts/summary?max-results=1&alt=json-in-script&callback=hitungtotaldata\"><\/script>")}else{jenis="label";if(thisUrl.indexOf("&max-results=")==-1){postperpage=20}if(urlactivepage.indexOf("#PageNo=")!=-1){nomerhal=urlactivepage.substring(urlactivepage.indexOf("#PageNo=")+8,urlactivepage.length)}else{nomerhal=1}document.write('<script src="'+home_page+'feeds/posts/summary/-/'+lblname1+'?alt=json-in-script&callback=hitungtotaldata&max-results=1" ><\/script>')}}}function redirectpage(numberpage){jsonstart=(numberpage-1)*postperpage;nopage=numberpage;var nBody=document.getElementsByTagName('head')[0];var newInclude=document.createElement('script');newInclude.type='text/javascript';newInclude.setAttribute("src",home_page+"feeds/posts/summary?start-index="+jsonstart+"&max-results=1&alt=json-in-script&callback=finddatepost");nBody.appendChild(newInclude)}function redirectlabel(numberpage){jsonstart=(numberpage-1)*postperpage;nopage=numberpage;var nBody=document.getElementsByTagName('head')[0];var newInclude=document.createElement('script');newInclude.type='text/javascript';newInclude.setAttribute("src",home_page+"feeds/posts/summary/-/"+lblname1+"?start-index="+jsonstart+"&max-results=1&alt=json-in-script&callback=finddatepost");nBody.appendChild(newInclude)}function finddatepost(root){post=root.feed.entry[0];var timestamp1=post.published.$t.substring(0,19)+post.published.$t.substring(23,29);var timestamp=encodeURIComponent(timestamp1);if(jenis=="page"){var alamat="/search?updated-max="+timestamp+"&max-results="+postperpage+"#PageNo="+nopage}else{var alamat="/search/label/"+lblname1+"?updated-max="+timestamp+"&max-results="+postperpage+"#PageNo="+nopage}location.href=alamat}
   /*]]>*/
 </script>
 </b:if>
