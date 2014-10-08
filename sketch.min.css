@@ -109,9 +109,10 @@ span.glyphicon.glyphicon-facetime-video,.dropdown span.glyphicon.glyphicon-star,
 .pagination>li>span.current{z-index:2;color:#fff;background-color:#007fff;border-color:#ddd;cursor:default}article{line-height:200%;color:#666}ins.adsbygoogle{margin:30px 0 10px 0}
 @media(max-width:767px){.navbar-nav .open .dropdown-menu{background-color:#232323;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,0.1)}
 }.badge{color:#FFF;background-color:#f76cca;border-radius:10px}.treenav ul.list li a:hover,.treenav ul.list li.active>a:hover,.yamm-content .treenav ul.list li a:hover,{color:red}
-.treenav ul.list li.active>a{color:#2a9fd6;font-weight:bold}.yamm ul.nav.navbar-nav{display:none}.navbar-default .navbar-nav>li>a{color:#FFF;background-color:#000}
-img#logo{margin-top:5px}@media(max-width:767px){div.navbar.navbar-default.yamm{display:block}.yamm ul.nav.navbar-nav{display:block}.navbar-toggle{background-color:#000}
-.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#444;background-color:#000}}h3.widget-title,h2.title{background-color:#000;color:#fff;font-size:100%;padding:6px 10px 5px 20px;border-left:4px solid red;margin-bottom:10px}
+.treenav ul.list li.active>a{color:#2a9fd6;font-weight:bold}.navbar.navbar-default.navbar-fixed-top.yamm.top-header{border-color:#ddd;background:rgba(255,255,255,.90);display:block}
+.top-header img{width:80px;height:auto}.yamm ul.nav.navbar-nav{display:none}.top-header ul.nav.navbar-nav{display:block}.navbar-default .navbar-nav>li>a{color:#FFF;background-color:#000}
+img#logo{margin-top:5px}.top-header img#logo{margin-top:0}@media(max-width:767px){div.navbar.navbar-default.yamm{display:block}.yamm ul.nav.navbar-nav{display:block}
+.navbar-toggle{background-color:#000}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#444;background-color:#000}}h3.widget-title,h2.title{background-color:#000;color:#fff;font-size:100%;padding:6px 10px 5px 20px;border-left:4px solid red;margin-bottom:10px}
 li.categoryLabel span{font-weight:bold;color:red}li.categoryLabel span.badge{color:#fff}div#ArchiveList{font-size:75%;margin:10px 0 20px 10px}.widget-content{margin-bottom:30px}
 .btn-default{background-color:#000;color:#ccc}.list-label-widget-content p{font-size:90%;margin-bottom:5px}div#Label1{margin-top:10px}a.navbar-brand img{margin-top:5px}
 #main{margin-top:25px}abbr.published{font-style:italic;color:#666;font-size:90%}li.categoryLabel span.active:before{content:'\002714';margin-right:3px}
