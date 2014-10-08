@@ -1,5 +1,5 @@
-.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}a.navbar-brand img{margin-top:5px;display:inline;margin-bottom:0;height:180px;vertical-align:top;-webkit-transition:height .3s ease-in;-moz-transition:height .3s ease-in;-o-transition:height .3s ease-in;transition:height .3s ease-in}
-#footer{background-color:#111;text-align:center;font-size:80%;margin-top:10px;padding:20px 10px;color:#999}/*!
+.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}#footer{background-color:#111;text-align:center;font-size:80%;margin-top:10px;padding:20px 10px;color:#999}
+/*!
  * Bootswatch v3.1.1+1
  * Homepage: http://bootswatch.com
  * Copyright 2012-2014 Thomas Park
@@ -97,4 +97,4 @@ abbr.published{font-style:italic;color:#666;font-size:90%}li.categoryLabel span.
 .PopularPosts .item-title{font-size:85%;line-height:1}.PopularPosts .widget-content ul{padding:0}.PopularPosts img{;float:left;margin-right:10px}.navbar-brand{display:none}
 .navbar-fixed-top .navbar-brand{display:block;font-size:26px;font-weight:bold;color:#000}.navbar-brand{float:left;font-size:18px;line-height:20px}.navbar{min-height:41px}
 .navbar-form{margin-top:4px;margin-bottom:3px}.PopularPosts .widget-content ul li{width:100%;border-bottom:1px solid #ddd;padding:5px 0;list-style-type:none}
-.post-timestamp{margin-left:10px}.home:before{content:'\00272a';margin-right:2px}
+.post-timestamp{margin-left:10px}.home:before{content:'\00272a';margin-right:2px}a.navbar-brand img{margin-top:5px;display:inline;margin-bottom:0;height:180px;vertical-align:top;-webkit-transition:height .3s ease-in;-moz-transition:height .3s ease-in;-o-transition:height .3s ease-in;transition:height .3s ease-in}
