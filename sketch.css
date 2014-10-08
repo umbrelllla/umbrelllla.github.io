@@ -1758,7 +1758,7 @@ color: red;
 color: #2a9fd6;
 font-weight: bold;
 }
-/* .navbar.navbar-default.navbar-fixed-top.yamm.top-header {
+ .navbar.navbar-default.navbar-fixed-top.yamm.top-header {
 border-color: #ddd;
 background: rgba(255,255,255,.90);
 display:block
@@ -1766,13 +1766,13 @@ display:block
 .top-header img {
 width: 80px;
 height:auto;
-} */
+} 
 .yamm ul.nav.navbar-nav{
 display: none;
 }
-/* .top-header ul.nav.navbar-nav{
+ .top-header ul.nav.navbar-nav{
 display: block;
-} */
+} 
 .navbar-default .navbar-nav > li > a {
 color: #FFF;
 background-color: #000000;
@@ -1812,9 +1812,9 @@ img#logo {
 margin-top: 5px;
 }
 
-/* .top-header img#logo {
+ .top-header img#logo {
 margin-top: 0;
-} */
+} 
 /* .singlepost-meta ul.list-inline li a {
 color:#007fff; 
 } */
