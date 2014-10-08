@@ -82,7 +82,7 @@ span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.428571
 .showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}
 div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color:#888}
 </style></b:if></head><body>
-<nav class='navbar navbar-default navbar-fixed-top yamm' role='navigation'>
+<nav id='masthead' class='navbar navbar-default navbar-fixed-top yamm' role='navigation'>
 <div class='container'>
 <!-- Brand and toggle get grouped for better mobile display -->
       <div class='navbar-header'>
