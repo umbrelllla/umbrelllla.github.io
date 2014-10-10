@@ -191,7 +191,7 @@ user is not using shrink to fit then we expand the header.
 <b:section class='header' id='middle-title' maxwidgets='1' showaddelement='no'>
             <b:widget id='Header2' locked='true' title='BlenderJuice (Header)' type='Header'>
               <b:includable id='main'>
-                <b:if cond='data:blog.url == data:blog.homepageUrl'><data:title/><b:else/><a expr:href='data:blog.homepageUrl'><data:title/></a></b:if>&#187; <data:description/>
+                <b:if cond='data:blog.url == data:blog.homepageUrl'><data:title/><b:else/><a expr:href='data:blog.homepageUrl'><data:title/></a></b:if>
               </b:includable>
               <b:includable id='title'>
   <b:if cond='data:blog.url == data:blog.homepageUrl'>
