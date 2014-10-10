@@ -1453,16 +1453,16 @@ font-size: 80%;
 
 }
 .treenav ul.list,
-.treenav ul.list ul,.list-label-widget-content ul,.list-label-widget-content ul ul {
+.treenav ul.list ul {
     list-style-type: none;
     margin:0;
     padding:0;
 }
-.treenav ul.list ul,.list-label-widget-content ul ul {
+.treenav ul.list ul {
     margin-left:5px; 
     position:relative;
 }
-.treenav ul.list ul:before,.list-label-widget-content ul ul:before {
+.treenav ul.list ul:before {
     content:"";
     display:block;
     width:0;
@@ -1472,7 +1472,7 @@ font-size: 80%;
     left:0;
     border-left:1px solid #ccc;
 }
-.treenav ul.list li,.list-label-widget-content ul li  {
+.treenav ul.list li  {
     margin:0;
     padding:3px 10px;
     text-decoration: none;
@@ -1480,20 +1480,20 @@ font-size: 80%;
     font-weight:normal;
     position:relative;
 }
-.treenav ul.list li a,.list-label-widget-content ul li a { 
+.treenav ul.list li a { 
     line-height:1.6;
     font-weight:normal;
     position:relative;
 }
 
 /*hover時子要素にも影響*/
-.treenav ul.list li a:hover,.list-label-widget-content ul li a:hover,.yamm-content .treenav ul.list li.active>a:hover ,.yamm .yamm-content li.current a:hover ,li.yamm-listhead a:hover /* ,.postinfo .treenav ul.list li a:hover */{
+.treenav ul.list li a:hover,.yamm-content .treenav ul.list li.active>a:hover ,.yamm .yamm-content li.current a:hover ,li.yamm-listhead a:hover /* ,.postinfo .treenav ul.list li a:hover */{
     color: #ff0000;
 }
-.treenav ul.list li a:hover+ul li a , .list-label-widget-content ul li a:hover+ul li a,li.yamm-listhead a:hover+hr+div.row.treenav ul.list li a ,.treenav ul.list li.used-cat>a,.yamm-content .treenav ul.list li.used-cat>a {
+.treenav ul.list li a:hover+ul li a ,li.yamm-listhead a:hover+hr+div.row.treenav ul.list li a */,.treenav ul.list li.used-cat>a,.yamm-content .treenav ul.list li.used-cat>a {
     color: red;
 }
-.treenav ul.list ul li:before,.list-label-widget-content ul ul li {
+.treenav ul.list ul li:before {
     content:"";
     display:block;
     width:8px;
@@ -1503,7 +1503,7 @@ font-size: 80%;
     top:10px;
     left: 0;
 }
-.treenav ul.list ul li:last-child:before,.list-label-widget-content ul ul li:last-child:before{
+.treenav ul.list ul li:last-child:before{
     background: #FFF; 
     height: auto;
     top: 10px; 
