@@ -754,7 +754,12 @@ output {
 /* .navbar-default .navbar-text{
 display:block;} */
 div#Header2 {
-font-size: 80%;
+display: none;
+margin: 7px 10px 7px 0;
+font-weight: bold;
+}
+.navbar-fixed-top div#Header2 {
+display: block;
 }
 @media (min-width: 768px) {
   .navbar-toggle {
@@ -1908,10 +1913,10 @@ content: '\00272a';
 .navbar-fixed-top .descriptionwrapper {
 display: none;
 }
-h1.title{
+div#Header2{
   display: none
 }
-.navbar-fixed-top h1.title {
+.navbar-fixed-top div#Header2 {
   display: block;
 font-size: 100%;
 margin: 10px 20px 5px 0;

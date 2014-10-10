@@ -72,6 +72,9 @@ a.youtube-lazy-link:hover{text-decoration:none;color:#FFF}.youtube-lazy-link-div
 #related-posts ul li{clear:both}h3.heading-border{margin-bottom:10px}#related-posts ul li:before{content:&#39;\00bb&#39;}span#blog-pager-older-link{float:right}
 span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto;max-width:100%;height:auto}
 .post img:hover{border:1px solid #38a1db;background-color:#38a1db}.post-title h1{margin:5px 10px 10px 0;color:#222;font-weight:normal;font-size:160%}.post-title h1:before{content:&#39;\002605&#39;}
+#related-posts {
+margin: 40px 20px 50px 20px;
+}
 </style><b:else/><style>
 .middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}
 .status-msg-body{position:relative!important;background-color:#f8e5f1;border:1px solid #fd91df;border-radius:3px;margin:40px 0;padding:5px 10px}.status-msg-wrap{font-size:110%;position:relative}
@@ -100,7 +103,22 @@ div.row.video {
 border-bottom: 1px solid #ddd;
 margin-bottom: 20px;
 }
-</style></b:if></head><body>
+</style></b:if>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<style>
+  .post-title h1 {
+border-bottom: 1px dashed #444;
+padding-bottom: 5px;
+/* line-height: 100%; */
+margin-bottom: 30px;
+}
+</style>
+</b:if>
+
+
+
+
+</head><body>
 <!-- /////ヘッダ/////// -->
 <div class="headbody"> <div class="container head"> <div class="headtitle" id="banner"> <div class="row"> <div class="col-md-6">
   <!-- ヘッダ画像 -->
@@ -168,9 +186,54 @@ user is not using shrink to fit then we expand the header.
               </b:includable>
             </b:widget>
           </b:section><!-- header -->
-</div> <div class="col-md-6 hidden-xs"> <ul class="nav nav-pills pull-right topnav"> <li><a href="http://blender.3rdstar.net/pages/about.html">当サイトについて</a></li> <li><a href="http://blender.3rdstar.net/pages/contact.html">お問い合わせ</a></li> <li class="active"><a href="http://blender.3rdstar.net/index.html" class="active">Home</a></li> </ul> </div> </div> </div> </div><!-- container -->
-<b:section id='pagelist'>
+</div> <div class="col-md-6 hidden-xs"> <ul class="nav nav-pills pull-right topnav"> <li><a href="http://blender.3rdstar.net/pages/about.html">当サイトについて</a></li> <li><a href="http://blender.3rdstar.net/pages/contact.html">お問い合わせ</a></li> <li class="active"><a href="http://blender.3rdstar.net/index.html" class="active">Home</a></li> </ul>
+<b:section id='pagelist' preferred='yes'>
+  <b:widget id='PageList1' locked='false' title='' type='PageList'>
+    <b:includable id='main'>
+  <b:if cond='data:title'><h2><data:title/></h2></b:if>
+
+    <b:if cond='data:mobile'>
+        <div class='widget-content'>
+      <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
+        <b:loop values='data:links' var='link'>
+          <b:if cond='data:link.isCurrentPage'>
+            <option expr:value='data:link.href' selected='selected'><data:link.title/></option>
+          <b:else/>
+            <option expr:value='data:link.href'><data:link.title/></option>
+          </b:if>
+        </b:loop>
+      </select>
+      </div>
+      <span class='pagelist-arrow'>&amp;#9660;</span>
+
+    <b:else/>
+      <ul class="nav nav-pills pull-right topnav">
+        <b:loop values='data:links' var='link'>
+          <b:if cond='data:link.isCurrentPage'>
+            <li class='active'><a expr:href='data:link.href'><data:link.title/></a></li>
+          <b:else/>
+            <li><a expr:href='data:link.href'><data:link.title/></a></li>
+          </b:if>
+        </b:loop>
+      </ul>
+    </b:if>
+    <b:include name='quickedit'/>
+  
+</b:includable>
+  </b:widget>
 </b:section>
+
+
+
+
+
+
+
+
+
+
+</div> </div> </div> </div><!-- container -->
+
 
 
 </div>
@@ -908,8 +971,9 @@ user is not using shrink to fit then we expand the header.
     <b:includable id='post' var='post'>
 
 
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
-<!-- ///////////個別投稿ページ//////////////// -->
+<b:if cond='data:blog.pageType != &quot;index&quot;'>
+  <b:if cond='data:blog.pageType != &quot;archive&quot;'>
+<!-- ///////////個別投稿ページとページ//////////////// -->
 <!-- 共通だったところ -->
                 <div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
                   <b:if cond='data:post.firstImageUrl'>
@@ -954,7 +1018,7 @@ user is not using shrink to fit then we expand the header.
                     </b:if>
                   </b:if>
 <!-- 共通だったところ -->
-
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
                   <div class='post-header'>
                     <span class='post-author vcard'>
                       <b:if cond='data:top.showAuthor'>
@@ -983,6 +1047,7 @@ user is not using shrink to fit then we expand the header.
                         </b:if>                      
                     </span>
                   </div>
+                  </b:if>
                     <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
                           <data:post.body/>
                           <div style='clear: both;'/>
@@ -1001,6 +1066,9 @@ user is not using shrink to fit then we expand the header.
                     </div>
                   </div>
                   </b:if>
+                  <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+
+                        
                         <!-- quickedit pencil -->  
                         <section class='boxframe' id='related-posts'>
                       <div id='related-posts'>
@@ -1019,10 +1087,12 @@ user is not using shrink to fit then we expand the header.
                       </div>
                       <div class='clear'/>
                     </section>
+                    </b:if> 
 
 
   </div><!-- post hentry -->
 <!-- ///////////個別投稿ページここまで//////////////// -->
+</b:if>
 <b:else/><!-- /if else item -->
 <!-- ////////////////アーガイブとトップページ/////////////// -->
  <!-- 共通だったところ -->

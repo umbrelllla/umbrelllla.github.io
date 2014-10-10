@@ -44,8 +44,8 @@ output{display:block;padding-top:11px;font-size:15px;line-height:1.42857143;colo
 @media(min-width:768px){.navbar-fixed-top{border-radius:0}}.navbar-fixed-top{top:0;border-width:0 0 1px}.navbar-brand{float:left;padding:14.5px 15px;font-size:19px}
 .navbar-brand:hover,.navbar-brand:focus{text-decoration:none}.navbar-toggle{position:relative;float:right;margin-right:15px;padding:9px 10px;margin-top:8px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:0}
 .navbar-toggle:focus{outline:0}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}
-div#Header2{font-size:80%}@media(min-width:768px){.navbar-toggle{display:none}}.navbar-nav{margin:7.25px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:21px}
-@media(max-width:767px){.navbar-nav .open .dropdown-menu{position:static;float:none;width:auto;margin-top:0;background-color:transparent;border:0;box-shadow:none}
+div#Header2{display:none;margin:7px 10px 7px 0;font-weight:bold}.navbar-fixed-top div#Header2{display:block}@media(min-width:768px){.navbar-toggle{display:none}
+}.navbar-nav{margin:7.25px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:21px}@media(max-width:767px){.navbar-nav .open .dropdown-menu{position:static;float:none;width:auto;margin-top:0;background-color:transparent;border:0;box-shadow:none}
 .navbar-nav .open .dropdown-menu>li>a,.navbar-nav .open .dropdown-menu .dropdown-header{padding:5px 15px 5px 25px}.navbar-nav .open .dropdown-menu>li>a{line-height:21px}
 .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-nav .open .dropdown-menu>li>a:focus{background-image:none}}@media(min-width:768px){.navbar-nav{float:left;margin:0}
 .navbar-nav>li{float:left}.navbar-nav.navbar-right:last-child{margin-right:-15px}}@media(min-width:768px){.navbar-right{float:right!important}}.navbar-form{margin-left:-15px;margin-right:-15px;padding:10px 15px;border-top:1px solid transparent;border-bottom:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1);margin-top:3.5px;margin-bottom:3.5px}
@@ -95,4 +95,4 @@ li.categoryLabel span.badge{color:#fff}div#ArchiveList{font-size:75%;margin:10px
 li.categoryLabel span.active:before{content:'\002714';margin-right:3px}.PopularPosts .item-title{font-size:85%;line-height:1}
 .PopularPosts .widget-content ul{padding:0}.PopularPosts img{;float:left;margin-right:10px}.navbar-brand{display:none}.navbar-fixed-top .navbar-brand{display:block;font-size:26px;font-weight:bold;color:#000}
 .navbar-brand{float:left;font-size:18px;line-height:20px}.navbar{min-height:41px}.navbar-form{margin-top:4px;margin-bottom:3px}.PopularPosts .widget-content ul li{width:100%;border-bottom:1px solid #ddd;padding:5px 0;list-style-type:none}
-p.home:before{content:'\00272a'}.navbar-fixed-top .descriptionwrapper{display:none}h1.title{display:none}.navbar-fixed-top h1.title{display:block;font-size:100%;margin:10px 20px 5px 0}
+p.home:before{content:'\00272a'}.navbar-fixed-top .descriptionwrapper{display:none}div#Header2{display:none}.navbar-fixed-top div#Header2{display:block;font-size:100%;margin:10px 20px 5px 0}
