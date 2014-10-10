@@ -1403,9 +1403,17 @@ pre { margin: 0; padding: 10px 20px !important;}
 /* li.used-cat a{
 color: red;
 } */
-.yamm .yamm-content li a {
-color: #FFF;
+ .yamm .yamm-content li a {
+color: #ccc;
+font-size: 90%;
+line-height: 2;
 font-weight: normal;
+} 
+.yamm .yamm-content li {
+list-style-type: none;
+}
+.yamm .yamm-content ul {
+padding: 0;
 }
 /*navbar*/
 #navbar-collapse-grid > ul > li > a:hover {
@@ -1445,16 +1453,16 @@ font-size: 80%;
 
 }
 .treenav ul.list,
-.treenav ul.list ul {
+.treenav ul.list ul,.list-label-widget-content ul,.list-label-widget-content ul ul {
     list-style-type: none;
     margin:0;
     padding:0;
 }
-.treenav ul.list ul {
+.treenav ul.list ul,.list-label-widget-content ul ul {
     margin-left:5px; 
     position:relative;
 }
-.treenav ul.list ul:before {
+.treenav ul.list ul:before,.list-label-widget-content ul ul:before {
     content:"";
     display:block;
     width:0;
@@ -1464,7 +1472,7 @@ font-size: 80%;
     left:0;
     border-left:1px solid #ccc;
 }
-.treenav ul.list li  {
+.treenav ul.list li,.list-label-widget-content ul li  {
     margin:0;
     padding:3px 10px;
     text-decoration: none;
@@ -1472,20 +1480,20 @@ font-size: 80%;
     font-weight:normal;
     position:relative;
 }
-.treenav ul.list li a { 
+.treenav ul.list li a,.list-label-widget-content ul li a { 
     line-height:1.6;
     font-weight:normal;
     position:relative;
 }
 
 /*hover時子要素にも影響*/
-.treenav ul.list li a:hover,.yamm-content .treenav ul.list li.active>a:hover ,.yamm .yamm-content li.current a:hover ,li.yamm-listhead a:hover /* ,.postinfo .treenav ul.list li a:hover */{
+.treenav ul.list li a:hover,.list-label-widget-content ul li a:hover,.yamm-content .treenav ul.list li.active>a:hover ,.yamm .yamm-content li.current a:hover ,li.yamm-listhead a:hover /* ,.postinfo .treenav ul.list li a:hover */{
     color: #ff0000;
 }
-.treenav ul.list li a:hover+ul li a ,li.yamm-listhead a:hover+hr+div.row.treenav ul.list li a */,.treenav ul.list li.used-cat>a,.yamm-content .treenav ul.list li.used-cat>a {
+.treenav ul.list li a:hover+ul li a , .list-label-widget-content ul li a:hover+ul li a,li.yamm-listhead a:hover+hr+div.row.treenav ul.list li a ,.treenav ul.list li.used-cat>a,.yamm-content .treenav ul.list li.used-cat>a {
     color: red;
 }
-.treenav ul.list ul li:before {
+.treenav ul.list ul li:before,.list-label-widget-content ul ul li {
     content:"";
     display:block;
     width:8px;
@@ -1495,7 +1503,7 @@ font-size: 80%;
     top:10px;
     left: 0;
 }
-.treenav ul.list ul li:last-child:before{
+.treenav ul.list ul li:last-child:before,.list-label-widget-content ul ul li:last-child:before{
     background: #FFF; 
     height: auto;
     top: 10px; 
@@ -1920,4 +1928,29 @@ div#Header2{
   display: block;
 font-size: 100%;
 margin: 10px 20px 5px 0;
+}
+
+.treehead {
+display: none;
+}
+.middle h2.title {
+background-color: transparent;
+border: none;
+color: #222;
+float: left;
+margin: 0;
+padding: 0;
+line-height: 1;
+}
+.middle h2.title:after {
+content: '\00bb';
+margin: 0 5px;
+color: #999;
+}
+p.labelhead {
+font-weight: bold;
+border-bottom: 1px solid #007fff;
+border-left: 5px solid #007fff;
+padding-left: 5px;
+margin-bottom: 10px;
 }
