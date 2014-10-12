@@ -2010,7 +2010,12 @@ $(function(){
                  }
                  key = key + work[i];
                  if (nodes[key] == null){
+                  if(work[i] == &quot;チュートリアル&quot;){
+                      var item = $(&quot;<li class='categoryLabel tutorial'><span class='treehead'>&quot; + work[i] + &quot;</span></li>&quot;);
+                    }else{
                       var item = $(&quot;<li class='categoryLabel'><span class='treehead'>&quot; + work[i] + &quot;</span></li>&quot;);
+
+                      }
                       var temp = $(&quot;<ul/>&quot;);                      
                       item.append(temp);
                       nodes[key] = temp;
@@ -2024,7 +2029,10 @@ $(function(){
         });
     });
     $(&#39;div#Label1 div ul&#39;).html($(dest).html());
-    $(&#39;div#Label3 div ul&#39;).html($(dest).html());
+    $(&#39;div#Label3 div ul&#39;).html($(dest).html(function() {
+  var emph = $('li.tutorial').length;
+  return emph;
+}););
 });
 
 /* フッタの表示ラベルをサブカテゴリのみにする*/
