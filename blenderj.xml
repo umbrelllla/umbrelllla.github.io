@@ -2029,10 +2029,7 @@ $(function(){
         });
     });
     $(&#39;div#Label1 div ul&#39;).html($(dest).html());
-    $(&#39;div#Label3 div ul&#39;).html($(dest).html(function() {
-  var emph = $('li.tutorial').length;
-  return emph;
-}););
+    $(&#39;div#Label3 div ul&#39;).html($(&#39;div#Label1 div ul li.tutorial&#39;).html());
 });
 
 /* フッタの表示ラベルをサブカテゴリのみにする*/

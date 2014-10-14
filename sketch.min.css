@@ -97,4 +97,5 @@ li.categoryLabel span{font-weight:bold;color:red}li.categoryLabel span.badge{col
 .PopularPosts .item-title{font-size:85%;line-height:1}.PopularPosts .widget-content ul{padding:0}.PopularPosts img{;float:left;margin-right:10px}.navbar-brand{display:none}
 .navbar-fixed-top .navbar-brand{display:block;font-size:26px;font-weight:bold;color:#000}.navbar-brand{float:left;font-size:18px;line-height:20px}.navbar{min-height:41px}
 .navbar-form{margin-top:4px;margin-bottom:3px}.PopularPosts .widget-content ul li{width:100%;border-bottom:1px solid #ddd;padding:5px 0;list-style-type:none}
-.post-timestamp{margin-left:10px}.home:before{content:'\00272a';margin-right:2px}
+.post-timestamp{margin-left:10px}.home:before{content:'\00272a';margin-right:2px}.post-body h2{font-size:130%;border-left:5px solid #33bdfd;border-bottom:1px solid #33bdfd;padding-left:8px;padding-bottom:3px;margin:50px 0 10px 0}
+div#blog-pager{text-align:center}
