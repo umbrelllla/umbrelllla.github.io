@@ -1822,8 +1822,8 @@ margin-bottom: 10px;
 font-size: 75%;
 } */
 li.categoryLabel span {
-font-weight: bold;
-color: red;
+/* font-weight: bold;
+color: red; */
 }
 li.categoryLabel span.badge {
 color: #fff;
@@ -1930,9 +1930,9 @@ font-size: 100%;
 margin: 10px 20px 5px 0;
 }
 
-.treehead {
+/* .treehead {
 display: none;
-}
+} */
 .middle h2.title {
 background-color: transparent;
 border: none;
