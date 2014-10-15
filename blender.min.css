@@ -89,12 +89,12 @@ footer{margin:0;background-color:#111;padding:15px 0 20px 0}.dmbs-right h3{backg
 }.badge{color:#FFF;background-color:#f76cca;border-radius:10px}.treenav ul.list li a:hover,.treenav ul.list li.active>a:hover,.yamm-content .treenav ul.list li a:hover,{color:red}
 .treenav ul.list li.active>a{color:#2a9fd6;font-weight:bold}img#logo{margin-top:5px}@media(max-width:767px){div.navbar.navbar-default.yamm{display:block}
 .yamm ul.nav.navbar-nav{display:block}.navbar-toggle{background-color:#000}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#444;background-color:#000}
-}h3.widget-title,h2.title{background-color:#000;color:#fff;font-size:100%;padding:6px 10px 5px 20px;border-left:4px solid red;margin-bottom:10px}li.categoryLabel span{font-weight:bold;color:red}
-li.categoryLabel span.badge{color:#fff}div#ArchiveList{font-size:75%;margin:10px 0 20px 10px}.widget-content{margin-bottom:30px}.btn-default{background-color:#000;color:#ccc}
-.list-label-widget-content p{font-size:90%;margin-bottom:5px}div#Label1{margin-top:10px}a.navbar-brand img{margin-top:5px}#main{margin-top:25px}abbr.published{font-style:italic;color:#666;font-size:90%}
-li.categoryLabel span.active:before{content:'\002714';margin-right:3px}.PopularPosts .item-title{font-size:85%;line-height:1}
-.PopularPosts .widget-content ul{padding:0}.PopularPosts img{;float:left;margin-right:10px}.navbar-brand{display:none}.navbar-fixed-top .navbar-brand{display:block;font-size:26px;font-weight:bold;color:#000}
-.navbar-brand{float:left;font-size:18px;line-height:20px}.navbar{min-height:41px}.navbar-form{margin-top:4px;margin-bottom:3px}.PopularPosts .widget-content ul li{width:100%;border-bottom:1px solid #ddd;padding:5px 0;list-style-type:none}
+}h3.widget-title,h2.title{background-color:#000;color:#fff;font-size:100%;padding:6px 10px 5px 20px;border-left:4px solid red;margin-bottom:10px}li.categoryLabel span.badge{color:#fff}
+div#ArchiveList{font-size:75%;margin:10px 0 20px 10px}.widget-content{margin-bottom:30px}.btn-default{background-color:#000;color:#ccc}.list-label-widget-content p{font-size:90%;margin-bottom:5px}
+div#Label1{margin-top:10px}a.navbar-brand img{margin-top:5px}#main{margin-top:25px}abbr.published{font-style:italic;color:#666;font-size:90%}li.categoryLabel span.active:before{content:'\002714';margin-right:3px}
+.PopularPosts .item-title{font-size:85%;line-height:1}.PopularPosts .widget-content ul{padding:0}.PopularPosts img{;float:left;margin-right:10px}.navbar-brand{display:none}
+.navbar-fixed-top .navbar-brand{display:block;font-size:26px;font-weight:bold;color:#000}.navbar-brand{float:left;font-size:18px;line-height:20px}.navbar{min-height:41px}
+.navbar-form{margin-top:4px;margin-bottom:3px}.PopularPosts .widget-content ul li{width:100%;border-bottom:1px solid #ddd;padding:5px 0;list-style-type:none}
 p.home:before{content:'\00272a'}.navbar-fixed-top .descriptionwrapper{display:none}div#Header2{display:none}.navbar-fixed-top div#Header2{display:block;font-size:100%;margin:10px 20px 5px 0}
-.treehead{display:none}.middle h2.title{background-color:transparent;border:0;color:#222;float:left;margin:0;padding:0;line-height:1}.middle h2.title:after{content:'\00bb';margin:0 5px;color:#999}
+.middle h2.title{background-color:transparent;border:0;color:#222;float:left;margin:0;padding:0;line-height:1}.middle h2.title:after{content:'\00bb';margin:0 5px;color:#999}
 p.labelhead{font-weight:bold;border-bottom:1px solid #007fff;border-left:5px solid #007fff;padding-left:5px;margin-bottom:10px}

@@ -2067,7 +2067,7 @@ $(function(){
                  key = key + work[i];
                  if (nodes[key] == null){
                   if(work[i] == &quot;チュートリアル&quot;){
-                      var item = $(&quot;<li class='categoryLabel tutorial'><span class='treehead'>&quot; + work[i] + &quot;</span></li>&quot;);
+                      var item = $(&quot;<li class='categoryLabel tutorial'><span class='treehead'>&quot; + work[i] + labelCountMap[work[i]]+&quot;</span></li>&quot;);
                     }else{
                       var item = $(&quot;<li class='categoryLabel'><span class='treehead'>&quot; + work[i] + &quot;</span></li>&quot;);
 
