@@ -73,10 +73,11 @@ h1,h2,h3,h4,h5,h6{font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo
  * 
  * http://geedmo.github.com/yamm3
  */.yamm .nav,.yamm .collapse,.yamm .dropdown{position:static}
-.yamm .container{position:relative}.yamm .dropdown-menu{left:auto}.yamm .yamm-content{padding:10px 20px}pre{margin:0;padding:10px 20px!important}.yamm .yamm-content li a{color:#ccc;font-size:90%;line-height:2;font-weight:normal}
-.yamm .yamm-content li{list-style-type:none}.yamm .yamm-content ul{padding:0}#navbar-collapse-grid>ul>li>a:hover{background-color:#00608d}.navbar-default .navbar-nav>li>a{color:#FFF}
-ul.list-unstyled{line-height:24px;margin-bottom:8px}.treenav{margin:0 auto;left:60px;min-height:auto;font-size:80%}.treenav ul.list,.treenav ul.list ul{list-style-type:none;margin:0;padding:0}
-.treenav ul.list ul{margin-left:5px;position:relative}.treenav ul.list ul:before{content:"";display:block;width:0;position:absolute;top:0;bottom:0;left:0;border-left:1px solid #ccc}
+.yamm .container{position:relative}.yamm .dropdown-menu{left:auto}.yamm .yamm-content{padding:10px 20px}.yamm .dropdown.yamm-fw .dropdown-menu{left:0;right:0}
+pre{margin:0;padding:10px 20px!important}.yamm .yamm-content li a{color:#ccc;font-size:90%;line-height:2;font-weight:normal}.yamm .yamm-content li{list-style-type:none}
+.yamm .yamm-content ul{padding:0}#navbar-collapse-grid>ul>li>a:hover{background-color:#00608d}.navbar-default .navbar-nav>li>a{color:#FFF}ul.list-unstyled{line-height:24px;margin-bottom:8px}
+.treenav{margin:0 auto;left:60px;min-height:auto;font-size:80%}.treenav ul.list,.treenav ul.list ul{list-style-type:none;margin:0;padding:0}.treenav ul.list ul{margin-left:5px;position:relative}
+.treenav ul.list ul:before{content:"";display:block;width:0;position:absolute;top:0;bottom:0;left:0;border-left:1px solid #ccc}
 .treenav ul.list li{margin:0;padding:3px 10px;text-decoration:none;color:#333;font-weight:normal;position:relative}.treenav ul.list li a{line-height:1.6;font-weight:normal;position:relative}
 .treenav ul.list li a:hover,.yamm-content .treenav ul.list li.active>a:hover,.yamm .yamm-content li.current a:hover,li.yamm-listhead a:hover{color:#f00}
 .treenav ul.list li a:hover+ul li a,li.yamm-listhead a:hover+hr+div.row.treenav ul.list li a */,.treenav ul.list li.used-cat>a,.yamm-content .treenav ul.list li.used-cat>a{color:red}

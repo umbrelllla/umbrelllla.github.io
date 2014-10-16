@@ -1397,6 +1397,10 @@ border-bottom: 1px dashed #666;
 .yamm .yamm-content {
   padding: 10px 20px;
 }
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
 pre { margin: 0; padding: 10px 20px !important;}
 
 
