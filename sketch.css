@@ -1865,9 +1865,13 @@ font-style: italic;
 color: #666;
 font-size: 90%;
 }
-li.categoryLabel span.active:before {
+li.categoryLabel span.active:before,li span.active:before {
 content: '\002714';
 margin-right: 3px;
+}
+li span.active {
+color: #ff0000;
+font-weight: bold;
 }
 
 
@@ -1926,4 +1930,14 @@ margin: 50px 0 10px 0;
 }
 div#blog-pager {
 text-align: center;
+}
+h3.labelhead {
+font-weight: bold;
+border-bottom: 1px solid #007fff;
+border-left: 5px solid #007fff;
+padding: 3px 0 3px 5px;
+margin-bottom: 10px;
+background: transparent;
+color: #007fff;
+font-size: 90%;
 }

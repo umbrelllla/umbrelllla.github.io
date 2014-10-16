@@ -93,9 +93,9 @@ img#logo{margin-top:5px}.top-header img#logo{margin-top:0}@media(max-width:767px
 .navbar-toggle{background-color:#000}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#444;background-color:#000}}h3.widget-title,h2.title{background-color:#000;color:#fff;font-size:100%;padding:6px 10px 5px 20px;border-left:4px solid red;margin-bottom:10px}
 li.categoryLabel span{font-weight:bold;color:red}li.categoryLabel span.badge{color:#fff}div#ArchiveList{font-size:75%;margin:10px 0 20px 10px}.widget-content{margin-bottom:30px}
 .btn-default{background-color:#000;color:#ccc}.list-label-widget-content p{font-size:90%;margin-bottom:5px}div#Label1{margin-top:10px}a.navbar-brand img{margin-top:5px}
-#main{margin-top:25px}abbr.published{font-style:italic;color:#666;font-size:90%}li.categoryLabel span.active:before{content:'\002714';margin-right:3px}
-.PopularPosts .item-title{font-size:85%;line-height:1}.PopularPosts .widget-content ul{padding:0}.PopularPosts img{;float:left;margin-right:10px}.navbar-brand{display:none}
-.navbar-fixed-top .navbar-brand{display:block;font-size:26px;font-weight:bold;color:#000}.navbar-brand{float:left;font-size:18px;line-height:20px}.navbar{min-height:41px}
-.navbar-form{margin-top:4px;margin-bottom:3px}.PopularPosts .widget-content ul li{width:100%;border-bottom:1px solid #ddd;padding:5px 0;list-style-type:none}
+#main{margin-top:25px}abbr.published{font-style:italic;color:#666;font-size:90%}li.categoryLabel span.active:before,li span.active:before{content:'\002714';margin-right:3px}
+li span.active{color:#f00;font-weight:bold}.PopularPosts .item-title{font-size:85%;line-height:1}.PopularPosts .widget-content ul{padding:0}.PopularPosts img{;float:left;margin-right:10px}
+.navbar-brand{display:none}.navbar-fixed-top .navbar-brand{display:block;font-size:26px;font-weight:bold;color:#000}.navbar-brand{float:left;font-size:18px;line-height:20px}
+.navbar{min-height:41px}.navbar-form{margin-top:4px;margin-bottom:3px}.PopularPosts .widget-content ul li{width:100%;border-bottom:1px solid #ddd;padding:5px 0;list-style-type:none}
 .post-timestamp{margin-left:10px}.home:before{content:'\00272a';margin-right:2px}.post-body h2{font-size:130%;border-left:5px solid #33bdfd;border-bottom:1px solid #33bdfd;padding-left:8px;padding-bottom:3px;margin:50px 0 10px 0}
-div#blog-pager{text-align:center}
+div#blog-pager{text-align:center}h3.labelhead{font-weight:bold;border-bottom:1px solid #007fff;border-left:5px solid #007fff;padding:3px 0 3px 5px;margin-bottom:10px;background:transparent;color:#007fff;font-size:90%}
