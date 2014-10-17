@@ -377,7 +377,7 @@ user is not using shrink to fit then we expand the header.
         
         <ul class='dropdown-menu dropdown-menu-large row'>
           <b:section class='main' id='megamenu' showaddelement='yes'>
-<b:widget id='Label6' locked='false' title='カテゴリ' type='Label' class="col-sm-6">
+<b:widget id='Label6' locked='false' title='カテゴリ' type='Label'>
   <b:includable id='main'>
     <b:if cond='data:display == &quot;list&quot;'>
           <li class='col-sm-6'>
