@@ -1453,7 +1453,7 @@ margin-bottom:30px;
 
 
 /*tree menu*/
-.treenav {
+/* .treenav {
     margin: 0 auto;
     left: 60px;
     min-height: auto;
@@ -1493,12 +1493,12 @@ font-size: 80%;
     font-weight:normal;
     position:relative;
 }
-
+ */
 /*hover時子要素にも影響*/
-.treenav ul.list li a:hover,.yamm-content .treenav ul.list li.active>a:hover ,.yamm .yamm-content li.current a:hover ,li.yamm-listhead a:hover /* ,.postinfo .treenav ul.list li a:hover */{
+/* .treenav ul.list li a:hover,.yamm-content .treenav ul.list li.active>a:hover ,.yamm .yamm-content li.current a:hover ,li.yamm-listhead a:hover ,.postinfo .treenav ul.list li a:hover{
     color: #ff0000;
 }
-.treenav ul.list li a:hover+ul li a ,li.yamm-listhead a:hover+hr+div.row.treenav ul.list li a */,.treenav ul.list li.used-cat>a,.yamm-content .treenav ul.list li.used-cat>a {
+.treenav ul.list li a:hover+ul li a ,li.yamm-listhead a:hover+hr+div.row.treenav ul.list li a,.treenav ul.list li.used-cat>a,.yamm-content .treenav ul.list li.used-cat>a {
     color: red;
 }
 .treenav ul.list ul li:before {
@@ -1516,7 +1516,7 @@ font-size: 80%;
     height: auto;
     top: 10px; 
     bottom: 0;
-}
+} */
 ul.list {
 border-bottom: 1px dashed #666;
 }
@@ -1988,6 +1988,7 @@ line-height: 1.8;
 }
 .dropdown-menu-large > div > ul > li {
   list-style: none;
+  padding-left: 20px;
 }
 .dropdown-menu-large > div > ul > li > a {
   /* display: block; */
@@ -2020,6 +2021,7 @@ line-height: 1.8;
 .dropdown-menu-large .dropdown-header {
   color: #428bca;
   font-size: 22px;
+  padding-left: 10px;
 }
 @media (max-width: 768px) {
   .dropdown-menu-large {
@@ -2037,11 +2039,15 @@ line-height: 1.8;
   }
 }
 /*megamenu2カラム*/
-  #Label6,#Label7{
+  #Label6,#Label7,#Label8{
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+#Label8 {
+  float: left;
+  width: 100%;
 }
 
   @media (min-width: 768px) {
@@ -2049,4 +2055,11 @@ line-height: 1.8;
     width: 50%;
     float: left;
   }
+}
+li.active {
+color: #ff0000;
+}
+li.active:before {
+content: '\002714';
+margin-right: 3px;
 }
