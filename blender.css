@@ -1979,16 +1979,17 @@ font-size: 100%;
   margin-left: 16px;
   margin-right: 16px;
   padding: 20px 0px;
-  font-size:22px;
+  font-size: 85%;
+line-height: 1.8;
 }
-.dropdown-menu-large > div > div >li > ul {
+.dropdown-menu-large > div > div {
   padding: 0;
   margin: 0;
 }
-.dropdown-menu-large > div > div >li > ul > li {
+.dropdown-menu-large > div > div > li {
   list-style: none;
 }
-.dropdown-menu-large > div > div >li > ul > li > a {
+.dropdown-menu-large > div > div > li > a {
   display: block;
   padding: 3px 20px;
   clear: both;
@@ -1997,30 +1998,8 @@ font-size: 100%;
   color: #333333;
   white-space: normal;
 }
-.dropdown-menu-large > div > div >li ul > li > a:hover,
-.dropdown-menu-large > div > div >li ul > li > a:focus {
-  text-decoration: none;
-  color: #262626;
-  background-color: #f5f5f5;
-}
-.dropdown-menu-large >li > ul {
-  padding: 0;
-  margin: 0;
-}
-.dropdown-menu-large >li > ul > li {
-  list-style: none;
-}
-.dropdown-menu-large >li > ul > li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.428571429;
-  color: #333333;
-  white-space: normal;
-}
-.dropdown-menu-large >li ul > li > a:hover,
-.dropdown-menu-large >li ul > li > a:focus {
+.dropdown-menu-large > div > div > li > a:hover,
+.dropdown-menu-large > div > div > li > a:focus {
   text-decoration: none;
   color: #262626;
   background-color: #f5f5f5;
@@ -2048,9 +2027,6 @@ font-size: 100%;
     margin-right: 0 ;
   }
   .dropdown-menu-large div > div > li {
-    margin-bottom: 30px;
-  }
-   .dropdown-menu-large  > li {
     margin-bottom: 30px;
   }
   .dropdown-menu-large > li:last-child {
