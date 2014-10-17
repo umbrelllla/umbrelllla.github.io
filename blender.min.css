@@ -106,5 +106,4 @@ p.home:before{content:'\00272a'}.navbar-fixed-top .descriptionwrapper{display:no
 .dropdown-menu-large .disabled>a:hover,.dropdown-menu-large .disabled>a:focus{text-decoration:none;background-color:transparent;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);cursor:not-allowed}
 .dropdown-menu-large .dropdown-header{color:#428bca;font-size:22px}@media(max-width:768px){.dropdown-menu-large{margin-left:0;margin-right:0}.dropdown-menu-large div>div>li{margin-bottom:30px}
 .dropdown-menu-large>li{margin-bottom:30px}.dropdown-menu-large>li:last-child{margin-bottom:0}.dropdown-menu-large .dropdown-header{padding:3px 15px!important}
-}#label6,#label7{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media(min-width:768px){#label6,#label7 .col-sm-6{width:50%;float:left}
-}
+}#label6,#label7{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media(min-width:768px){#label6,#label7{width:50%;float:left}}

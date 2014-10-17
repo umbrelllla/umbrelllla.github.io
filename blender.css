@@ -2069,8 +2069,7 @@ font-size: 100%;
 }
 
   @media (min-width: 768px) {
-#label6,#label7
-     .col-sm-6 {
+#label6,#label7{
     width: 50%;
     float: left;
   }
