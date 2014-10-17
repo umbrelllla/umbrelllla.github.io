@@ -376,34 +376,84 @@ user is not using shrink to fit then we expand the header.
         <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Dropdown <b class='caret'/></a>
         
         <ul class='dropdown-menu dropdown-menu-large row'>
+          <b:section class='main' id='megamenu' showaddelement='yes'>
+<b:widget id='Label6' locked='false' title='カテゴリ' type='Label'>
+  <b:includable id='main'>
+    <b:if cond='data:display == &quot;list&quot;'>
           <li class='col-sm-6'>
             <ul>
-              <li class='dropdown-header'>Glyphicons</li>
-              <li><a href='#'>ゲームセンタープライズs</a></li>
-              <li class='disabled'><a href='#'>How to use</a></li>
-              <li><a href='#'>Examples</a></li>
-              <li class='divider'/>
-              <li class='dropdown-header'>Dropdowns</li>
-              <li><a href='#'>Example</a></li>
-              <li><a href='#'>Aligninment options</a></li>
-              <li><a href='#'>Headers</a></li>
-              <li><a href='#'>Disabled menu items</a></li>
+              <b:if cond='data:title'>
+              <li class='dropdown-header'><data:title/></li></b:if>
+      <b:loop values='data:labels' var='label'>
+        <li>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </li>
+      </b:loop>
             </ul>
           </li>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
+<b:widget id='Label7' locked='false' title='カテゴリ' type='Label'>
+  <b:includable id='main'>
+    <b:if cond='data:display == &quot;list&quot;'>
           <li class='col-sm-6'>
             <ul>
-              <li class='dropdown-header'>Button groups</li>
-              <li><a href='#'>Basic example</a></li>
-              <li><a href='#'>Button toolbar</a></li>
-              <li><a href='#'>Sizing</a></li>
-              <li><a href='#'>Nesting</a></li>
-              <li><a href='#'>Vertical variation</a></li>
-              <li class='divider'/>
-              <li class='dropdown-header'>Button dropdowns</li>
-              <li><a href='#'>Single button dropdowns</a></li>
+              <b:if cond='data:title'>
+              <li class='dropdown-header'><data:title/></li></b:if>
+      <b:loop values='data:labels' var='label'>
+        <li>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </li>
+      </b:loop>
             </ul>
           </li>
-          
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
+</b:section>          
           
         </ul>
         
@@ -1597,19 +1647,137 @@ user is not using shrink to fit then we expand the header.
  <!-- END Content --> 
         
             <b:section class='sidebar col-xs-12 col-sm-3 dmbs-right' id='sidebar' preferred='yes'>
-               <b:widget id='HTML2' locked='false' title='' type='HTML'>
+              
+               <b:widget id='Label1' locked='false' title='ラベル' type='Label'>
                  <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+ <!-- チュートリアルメニューヘッダ -->
+              <h2 class="menuhead">ビデオチュートリアル</h2>
+              <p class="menulead">主に英語。仕上がりは静止画中心。</p>     
+<p class='labelhead'><a expr:href='&quot;http://blenderj.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
+<nav class='treenav'>
+      <ul class='list'>
+      <b:loop values='data:labels' var='label'>
+        <li>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span class='active' expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='badge' dir='ltr'><data:label.count/></span>
+          </b:if>
+        </li>
+      </b:loop>
 
-  <b:include name='quickedit'/>
+      </ul>
+      </nav>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='badge' dir='ltr'><data:label.count/></span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
 </b:includable>
-               </b:widget>
+</b:widget>
+
+<b:widget id='Label2' locked='false' title='ラベル' type='Label'>
+                 <b:includable id='main'>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+    
+<p class='labelhead'><a expr:href='&quot;http://blenderj.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
+<nav class='treenav'>
+      <ul class='list'>
+      <b:loop values='data:labels' var='label'>
+        <li>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span class='active' expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='badge' dir='ltr'><data:label.count/></span>
+          </b:if>
+        </li>
+      </b:loop>
+
+      </ul>
+      </nav>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='badge' dir='ltr'><data:label.count/></span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
+
+
+              <b:widget id='Label5' locked='false' title='ラベル' type='Label'>
+                 <b:includable id='main'>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+     <!-- ブログメニューヘッダ -->
+              <h2 class="menuhead">ブログ</h2>
+              <p class="menulead">Blenderについてのメモ的なことやお知らせ。</p>
+<p class='labelhead'><a expr:href='&quot;http://blenderj.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
+<nav class='treenav'>
+      <ul class='list'>
+      <b:loop values='data:labels' var='label'>
+        <li>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span class='active' expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='badge' dir='ltr'><data:label.count/></span>
+          </b:if>
+        </li>
+      </b:loop>
+
+      </ul>
+      </nav>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='badge' dir='ltr'><data:label.count/></span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
                <b:widget id='PopularPosts3' locked='false' title='人気の投稿' type='PopularPosts'>
                  <b:includable id='main'>
                   <b:if cond='data:title'>
@@ -1998,6 +2166,7 @@ head.appendChild(script);
             } 
             }); 
             });
+
 
 </script>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
