@@ -1373,12 +1373,12 @@ border-bottom: 1px dashed #666;
 a[href$="%E3%82%A2%E3%83%97%E3%83%AA"] { color: red; }
 href="http://blenderj.blogspot.jp/search/label/%E3%82%A2%E3%83%97%E3%83%AA"
 /*!
- * Yamm!3
+ * Yamm!3現在未使用
  * Yet another megamenu for Bootstrap 3
  * 
  * http://geedmo.github.com/yamm3
  */
-.yamm .nav,
+/* .yamm .nav,
 .yamm .collapse,
 .yamm .dropdown {
   position: static;
@@ -1396,7 +1396,7 @@ href="http://blenderj.blogspot.jp/search/label/%E3%82%A2%E3%83%97%E3%83%AA"
 .yamm .dropdown.yamm-fw .dropdown-menu {
   left: 0;
   right: 0;
-}
+} */
 pre { margin: 0; padding: 10px 20px !important;}
 
 
@@ -1851,10 +1851,7 @@ margin-bottom: 30px;
 background-color: #000;
 color: #ccc;
 }
-.list-label-widget-content p {
-font-size: 90%;
-margin-bottom: 5px;
-}
+
 div#Label1 {
 margin-top: 10px;
 }
@@ -1956,12 +1953,20 @@ margin: 0 5px;
 color: #999;
 }
 p.labelhead {
+  font-size: 75%;
+color: #666;
+
+}
+.menuhead {
 font-weight: bold;
 border-bottom: 1px solid #007fff;
 border-left: 5px solid #007fff;
-padding-left: 5px;
-margin-bottom: 10px;
+padding: 3px 5px;
+margin: 0px 0 10px 0;
+color: #007fff;
+font-size: 100%;
 }
+/*Large dropdown menu from bootsnipp*/
 .dropdown-large {
   position: static !important;
 }
