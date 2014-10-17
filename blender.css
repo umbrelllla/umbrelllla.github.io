@@ -2061,7 +2061,7 @@ font-size: 100%;
   }
 }
 /*megamenu2カラム*/
-  #label6,#label7{
+  #Label6,#Label7{
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2069,7 +2069,7 @@ font-size: 100%;
 }
 
   @media (min-width: 768px) {
-#label6,#label7{
+#Label6,#Label7{
     width: 50%;
     float: left;
   }
