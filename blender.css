@@ -2096,24 +2096,37 @@ line-height: 1;
 .widget-item-control {
 display: none;
 }
-/* svg sprite */
-[class^="icon-"], [class*=" icon-"] {
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-image: url(sprite.svg);
+
+.video dl {
+/* border: 1px solid #999; */
+padding: 10px 5px 5px 0px;
 }
-.icon-home {
-  width: 32px;
-  height: 32px;
-  background-position: 0 0;
+.video dl dt {
+font-weight: bold;
+font-size: 70%;
+color: #777;
 }
-.icon-quill {
-  width: 32px;
-  height: 32px;
-  background-position: -48px 0;
+.video dl dd {
+padding-left: 10px;
+margin-bottom: 5px;
+font-size: 95%;
+color: #ccc;
 }
-.icon-play {
-  width: 32px;
-  height: 32px;
-  background-position: -96px 0;
+.video dl dd:before {
+content: '\00bb';
+margin-right: 3px;
+color: #666;
+}
+.video {
+margin-bottom: 50px;
+background-color: #111;
+border: 1px solid #000;
+}
+.source {
+font-weight: bold;
+}
+.timetable {
+list-style-type: none;
+padding-left: 15px;
+font-size: 90%;
 }
