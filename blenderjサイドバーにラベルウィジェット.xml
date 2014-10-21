@@ -77,7 +77,25 @@ margin: 40px 20px 50px 20px;
 }
 </style><b:else/><style>
 .middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}
-.status-msg-body{position:relative!important;background-color:#f8e5f1;border:1px solid #fd91df;border-radius:3px;margin:40px 0;padding:5px 10px}.status-msg-wrap{font-size:110%;position:relative}
+.status-msg-body{
+position: relative!important;
+margin: 20px 0 30px 0;
+padding: 0;
+border-bottom: 1px dashed #444;
+}.status-msg-wrap{font-size:110%;position:relative}.status-msg-body a {
+display: inline-block;
+min-width: 10px;
+padding: 5px 15px 2px 15px;
+font-size: 15px;
+font-weight: normal;
+color: #fff;
+line-height: 1;
+vertical-align: baseline;
+white-space: nowrap;
+text-align: center;
+background-color: #007fff;
+border-radius: 10px;
+}
 #blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}
 .page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}
 .media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}
@@ -374,7 +392,7 @@ user is not using shrink to fit then we expand the header.
 
 
 
-      <ul class='list'>
+      <ul>
         <b:if cond='data:title'>
               <li class='dropdown-header'><data:title/></li>
             </b:if>
