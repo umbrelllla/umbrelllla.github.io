@@ -423,12 +423,12 @@ pre code {
   width: 100%;
 }
 @media (min-width: 768px) {
-/*  .col-sm-2, */.col-sm-3,  .col-sm-4, /*  .col-sm-5, */ .col-sm-6,/* .col-sm-7,  */.col-sm-8 , .col-sm-9/*,.col-sm-12 */ {
+/*  .col-sm-2, */.col-sm-3,  .col-sm-4, /*  .col-sm-5, */ .col-sm-6,/* .col-sm-7,  */.col-sm-8 , .col-sm-9,.col-sm-12  {
     float: left;
   }
-/*   .col-sm-12 {
+   .col-sm-12 {
   width: 100%;
-}*/
+}
 .col-sm-9 {
   width: 75%;
 } 
@@ -449,10 +449,10 @@ pre code {
 } */
 }
 /* @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-5, .col-md-6, .col-md-7,  .col-md-9, .col-md-10, .col-md-11, .col-md-12,*/.col-md-8, .col-md-4{
   float: left;
 }
-.col-md-12 {
+/* .col-md-12 {
   width: 100%;
 }
 .col-md-11 {
@@ -463,11 +463,11 @@ pre code {
 }
 .col-md-9 {
   width: 75%;
-}
+} */
 .col-md-8 {
   width: 66.66666667%;
 }
-.col-md-7 {
+/* .col-md-7 {
   width: 58.33333333%;
 }
 .col-md-6 {
@@ -475,11 +475,11 @@ pre code {
 }
 .col-md-5 {
   width: 41.66666667%;
-}
+} */
 .col-md-4 {
   width: 33.33333333%;
 }
-.col-md-3 {
+/* .col-md-3 {
   width: 25%;
 }
 .col-md-2 {
@@ -487,8 +487,8 @@ pre code {
 }
 .col-md-1 {
   width: 8.33333333%;
+}  */
 } 
-} */
 table {
   max-width: 100%;
   background-color: transparent;
@@ -1370,8 +1370,8 @@ margin-bottom: 3px;
 border-bottom: 1px dashed #666;
 }
 
-a[href$="%E3%82%A2%E3%83%97%E3%83%AA"] { color: red; }
-href="http://blenderj.blogspot.jp/search/label/%E3%82%A2%E3%83%97%E3%83%AA"
+/* a[href$="%E3%82%A2%E3%83%97%E3%83%AA"] { color: red; }
+href="http://blenderj.blogspot.jp/search/label/%E3%82%A2%E3%83%97%E3%83%AA" */
 /*!
  * Yamm!3現在未使用
  * Yet another megamenu for Bootstrap 3
@@ -1997,7 +1997,7 @@ line-height: 1.8;
 left: auto;
 }
 .dropdown-menu-large > div > ul {
-  padding: 0 20px 0 15px;
+  padding: 0 0px 0 15px;
   margin: 0;
 }
 .dropdown-menu-large > div > ul > li {
@@ -2096,4 +2096,25 @@ line-height: 1;
 }
 .widget-item-control {
 display: none;
+}
+/* svg sprite */
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-home {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-quill {
+  width: 32px;
+  height: 32px;
+  background-position: -48px 0;
+}
+.icon-play {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
 }

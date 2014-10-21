@@ -44,7 +44,8 @@
 <link href='http://4.bp.blogspot.com/-3miLDAfjF9k/UhBRxD6aipI/AAAAAAAABxE/4qR5jc7leU8/s1600/favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'/>
 &lt;style type=&quot;text/css&quot;&gt;
 &lt;!-- /*<b:skin><![CDATA[*/]]></b:skin>
-<link href='http://umbrelllla.github.io/blender.min.css' rel='stylesheet' type='text/css'/><b:if cond='data:blog.pageType == &quot;item&quot;'><style>
+<link href='http://umbrelllla.github.io/blender.min.css' rel='stylesheet' type='text/css'/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'><style>
 #colorbox,#cboxOverlay,#cboxWrapper{position:absolute;top:0;left:0;z-index:9999;overflow:hidden}#cboxWrapper{max-width:none}#cboxOverlay{position:fixed;width:100%;height:100%}
 #cboxMiddleLeft,#cboxBottomLeft{clear:left}#cboxContent{position:relative}#cboxLoadedContent{overflow:auto;-webkit-overflow-scrolling:touch}#cboxTitle{margin:0}
 #cboxLoadingOverlay,#cboxLoadingGraphic{position:absolute;top:0;left:0;width:100%;height:100%}#cboxPrevious,#cboxNext,#cboxClose,#cboxSlideshow{cursor:pointer}
@@ -71,9 +72,45 @@ a.youtube-lazy-link:hover{text-decoration:none;color:#FFF}.youtube-lazy-link-div
 .post-header{line-height:1.8;margin-bottom:20px;font-size:70%}#related-posts{margin:20px 0;border:1px solid #999;padding:10px 20px}#related-posts ul{padding:0;list-style-type:none;margin-left:20px;line-height:1.7}
 #related-posts ul li{clear:both}h3.heading-border{margin-bottom:10px}#related-posts ul li:before{content:&#39;\00bb&#39;}span#blog-pager-older-link{float:right}
 span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto;max-width:100%;height:auto}
-.post img:hover{border:1px solid #38a1db;background-color:#38a1db}.post-title h1{margin:5px 10px 10px 0;color:#222;font-weight:normal;font-size:160%}.post-title h1:before{content:&#39;\002605&#39;}
+.post img:hover{border:1px solid #38a1db;background-color:#38a1db}
+.post-title h1
+{}
+.post-title h1:before{content:&#39;\002605&#39;}
 #related-posts {
 margin: 40px 20px 50px 20px;
+}
+.lazyYT-title {
+    z-index: 100!important;
+    color: #fff!important;
+    font-family: sans-serif!important;
+    font-size: 12px!important;
+    top: 10px!important;
+    left: 12px!important;
+    position: absolute!important;
+    margin: 0!important;
+    padding: 0.5em!important;
+    line-height: 1!important;
+    font-style: normal!important;
+    font-weight: normal!important;
+    background-color: rgba(0,0,0,0.8)!important;
+    border-radius: 0.5em!important;
+}
+
+.lazyYT-button {
+    margin: 0!important;
+    padding: 0!important;
+    width: 60px!important;
+    height: 41px!important;
+    z-index: 100!important;
+    position: absolute!important;
+    top: 50%!important;
+    margin-top: -22px!important;
+    left: 50%!important;
+    margin-left: -30px!important;
+    background-image: url(&#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAApCAYAAABp50paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABV9JREFUeNrcWk1IK1cUvrmZGBOjJvr6xKe+Slvroi6kK6GrUkSxO12IC6GgUFBcuOlC8GdRulERV3VRQV0IKhRU0NJupK3tpi1dCRaxffWHGjWZPJNnNJlMz9FzX+ZNkzylcxP1wMdMZiYz97vnu+ee+2Njmc0GyANwgANQDCgAuABOwGOAG6AAiuh+MV3Lo+fc9KyN3qGYvnEBSAA0QBTwAnBp+P0ccAxQ6bkw/T4HRABn9B+8F6f/ZiRktjJANaCSUE0kkVApoBDgAeQTIeM7dAKjAuiG6+b7wniKstgMv+2m5xMGslgZIUAAEAOcAv4GHAL+BDwDBNMRxvOPAZ8C3iUPOVNUiGaCfgOV3MZe9z5OlSDAUzxzQZXyC+BLwM+pCtMJGCTvCTJxOlpBxGpLVzF2ajqiMvyAzwDfGuXyPuALkmyY5KGZ5GVGri1duXRyVIyOPsA7gO9R/iIYtQLKiSy7Q6T+b2UkSN7vAT4U7QGDz9Mbtp/7SPySjh9gj8EpApeyh2/YoyicuhlvhuBkVU3n2jA/cBkJxyUVjBuipz2HEf0qYcKs5w1ify6DbFVVVbSrq0s9ODhQlpaWClRVdUtWUyqLE0cPEn5CXkhI8HC8ubk5ODw8XJBIJOJNTU2H/f39j/f29jxZDJI2Iowq9nJiLk1KZWWYqcKHOC9pa2t7c21tLdTR0XHgdDo1kng22rdGQaucU2YlraY1TRPJACrIXldXVzU/P+8YHR09rqysVIkwz1JWxjmNZqQRBimbBxdIvLyvr8+7uroabGxs9NP1bAS0fOmE09Q2SsxdX19fsbCw4BgcHNzzeDxhGrDItCJO2s52hiVIO3w+X+nIyEgxRPCjmpqaE8lp7VU/nCeTMASrTO++GrTDM8UQzStB4uHOzs5niqIkJLRrLIeTG2QkpVZtthu9Fgk6amtrn8zMzLgmJyePvV7vmcVl0kUuncfuhumkiIqenh7f4uJiAJKWMwuDmS4krdyxURKOYz0Qvd0NDQ1Ri9+tKIbh050Zx+q6fjg1NaWtr6/7SO5WvTuq0ABZuNyWY7L6ycnJ0dDQ0OXc3FxFJBKxW0w4opCEcmnYrDh4Vd3c3FS7u7t929vbj6ipWT3IuOREOFeeRQ/GQqGQf2xsLNDS0vIIyBbRdU2Cgl5K2pYD+SKpF1tbW0cDAwOu5eXlKkleNdqVpMMyk3eQaioJ6zCo8M/OzsZh6Fi0v79fYsi+ZNpzJByU6WHD4AEJ4QxpfHd392hiYuJyenq64vz8XGGvrlJIHSbix46lavc60xISVjc2NsK9vb0ukHKZYeIhG00I7WpeOirxQ3xnZwc99w90MaHx8fFAa2trMZAtYcl542wYOhbXoU7xox8BvmLJFTxLCRcWFkbb29tVv9+vrKyseOnj2SL6MqUEHAA+QcJ1gDl2PTcdldCexeKXCEq5GIrizOzvgC5OUTrI/rtua1ncYsl1nlzm7CjpCKcTld3vtaQbZVlY+SJoBR4wUeHIPUyykDBOwP8mZgTYw1pQQy755N2fsGlxurgO+JUmAxyGh/V7VgHmMjspNn0D+IEZZhOwDf/FrheOn7Lkdgexkm43vfB18rF8JuQGvYCD4DSUH69/B/gccJSqgG+z630euJb6Fv3JaSCfjpBm6McTFqWKNvbqPg6eIefXSbYXVAbc8PIH4EfA1+x620NGj2Cf7KMOG7cm4fi0hK5XUw0KiG1MeHQTHBZGVrFjJ0znuEXpjIItdnX7FHRPCeLeITPt4LmtBEWNiz1XYj7MxZJbmPIJpSy5pUlUXDrPxAzKiBBJN53vk9fE/q0okY4ZVBS7jaL+FWAA/y++OTUmOgsAAAAASUVORK5CYII=&#39;)!important;
+}
+.js-lazyYT {
+
 }
 </style><b:else/><style>
 .middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}
@@ -124,11 +161,8 @@ margin-bottom: 20px;
 </style></b:if>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <style>
-  .post-title h1 {
-border-bottom: 1px dashed #444;
-padding-bottom: 5px;
-/* line-height: 100%; */
-margin-bottom: 30px;
+  .post-title{
+
 }
 </style>
 </b:if>
@@ -249,15 +283,15 @@ user is not using shrink to fit then we expand the header.
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
 <!-- /////////チュートリアルmegamenuセクション//////////// -->
-<!-- /////////現在2カラム。変更の場合はウィジェット追加語、該当IDのスタイリング必要。//////////// -->
+<!-- /////////現在2カラム&#12290;変更の場合はウィジェット追加語&#12289;該当IDのスタイリング必要&#12290;//////////// -->
     <ul class='nav navbar-nav'>
-<!-- /////////横メニュー増やす場合はここからコピペ。//////////// -->
+<!-- /////////横メニュー増やす場合はここからコピペ&#12290;//////////// -->
       <li class='dropdown dropdown-large'>
         <a class='dropdown-toggle' data-toggle='dropdown' href='#'>ビデオチュートリアル <b class='caret'/></a>
 
           <b:section class='main dropdown-menu dropdown-menu-large row' id='megamenu' showaddelement='yes'>
-<b:widget id='Label6' locked='false' title='カテゴリ' type='Label'>
-  <b:includable id='main'>
+            <b:widget id='Label6' locked='false' title='カテゴリ' type='Label'>
+              <b:includable id='main'>
     <b:if cond='data:display == &quot;list&quot;'>
       <ul>
               <b:if cond='data:title'>
@@ -265,13 +299,13 @@ user is not using shrink to fit then we expand the header.
       <b:loop values='data:labels' var='label'>
         
           <b:if cond='data:blog.url == data:label.url'>
-             &lt;li class="active" expr:dir='data:blog.languageDirection'&gt;<data:label.name/>
+             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;<data:label.name/>
 <b:else/>
            &lt;li&gt;
             <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
           </b:if>
           <b:if cond='data:showFreqNumbers'>
-            <span class="badge" dir='ltr'><data:label.count/></span>
+            <span class='badge' dir='ltr'><data:label.count/></span>
           </b:if>
         &lt;/li&gt;
       </b:loop>
@@ -292,9 +326,9 @@ user is not using shrink to fit then we expand the header.
     </b:if>
     <b:include name='quickedit'/>
 </b:includable>
-</b:widget>
-<b:widget id='Label7' locked='false' title='カテゴリ' type='Label'>
-  <b:includable id='main'>
+            </b:widget>
+            <b:widget id='Label7' locked='false' title='カテゴリ' type='Label'>
+              <b:includable id='main'>
    <b:if cond='data:display == &quot;list&quot;'>
       <ul>
               <b:if cond='data:title'>
@@ -302,14 +336,14 @@ user is not using shrink to fit then we expand the header.
       <b:loop values='data:labels' var='label'>
         
           <b:if cond='data:blog.url == data:label.url'>
-             &lt;li class="active" expr:dir='data:blog.languageDirection'&gt;<data:label.name/>
+             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;<data:label.name/>
 
           <b:else/>
            &lt;li&gt;
             <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
           </b:if>
           <b:if cond='data:showFreqNumbers'>
-            <span class="badge" dir='ltr'><data:label.count/></span>
+            <span class='badge' dir='ltr'><data:label.count/></span>
           </b:if>
         &lt;/li&gt;
       </b:loop>
@@ -330,18 +364,18 @@ user is not using shrink to fit then we expand the header.
     </b:if>
     <b:include name='quickedit'/>
 </b:includable>
-</b:widget>
-</b:section>          
+            </b:widget>
+          </b:section>          
 </li>
-<!-- /////////横メニュー増やす場合はここまでコピペ。//////////// -->
+<!-- /////////横メニュー増やす場合はここまでコピペ&#12290;//////////// -->
 
-<!-- /////////横メニュー増やす場合はここからコピペ。//////////// -->
+<!-- /////////横メニュー増やす場合はここからコピペ&#12290;//////////// -->
       <li class='dropdown dropdown-large'>
         <a class='dropdown-toggle' data-toggle='dropdown' href='#'>ブログ <b class='caret'/></a>
 
           <b:section class='main dropdown-menu dropdown-menu-large row' id='blogmenu' showaddelement='yes'>
-<b:widget id='Label8' locked='false' title='カテゴリ' type='Label'>
-  <b:includable id='main'>
+            <b:widget id='Label8' locked='false' title='カテゴリ' type='Label'>
+              <b:includable id='main'>
     <b:if cond='data:display == &quot;list&quot;'>
       <ul>
               <b:if cond='data:title'>
@@ -349,13 +383,13 @@ user is not using shrink to fit then we expand the header.
       <b:loop values='data:labels' var='label'>
         
           <b:if cond='data:blog.url == data:label.url'>
-             &lt;li class="active" expr:dir='data:blog.languageDirection'&gt;<data:label.name/>
+             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;<data:label.name/>
 <b:else/>
            &lt;li&gt;
             <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
           </b:if>
           <b:if cond='data:showFreqNumbers'>
-            <span class="badge" dir='ltr'><data:label.count/></span>
+            <span class='badge' dir='ltr'><data:label.count/></span>
           </b:if>
         &lt;/li&gt;
       </b:loop>
@@ -376,19 +410,18 @@ user is not using shrink to fit then we expand the header.
     </b:if>
     <b:include name='quickedit'/>
 </b:includable>
-</b:widget>
-
-</b:section>          
+            </b:widget>
+          </b:section>          
 </li>
-<!-- /////////横メニュー増やす場合はここまでコピペ。//////////// -->
+<!-- /////////横メニュー増やす場合はここまでコピペ&#12290;//////////// -->
 
-<!-- /////////横メニュー増やす場合はここからコピペ。//////////// -->
+<!-- /////////横メニュー増やす場合はここからコピペ&#12290;//////////// -->
       <li class='dropdown dropdown-large'>
         <a class='dropdown-toggle' data-toggle='dropdown' href='#'>ページ <b class='caret'/></a>
 
           <b:section class='main dropdown-menu dropdown-menu-large row' id='pagemenu' showaddelement='yes'>
-<b:widget id='PageList2' locked='false' title='ページ' type='PageList'>
-<b:includable id='main'>
+            <b:widget id='PageList2' locked='false' title='ページ' type='PageList'>
+              <b:includable id='main'>
 
 
 
@@ -410,11 +443,10 @@ user is not using shrink to fit then we expand the header.
 
   
 </b:includable>
-</b:widget>
-
-</b:section>          
+            </b:widget>
+          </b:section>          
 </li>
-<!-- /////////横メニュー増やす場合はここまでコピペ。//////////// -->
+<!-- /////////横メニュー増やす場合はここまでコピペ&#12290;//////////// -->
 
 
 
@@ -595,8 +627,7 @@ user is not using shrink to fit then we expand the header.
                   </a>
                 </p>
               </b:includable>
-    <b:includable id='breadcrumb' var='posts'>
-
+<b:includable id='breadcrumb' var='posts'>
 <b:if cond='data:blog.homepageUrl != data:blog.url'>
 <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
 <ul class='breadcrumb'><li><a expr:href='data:blog.homepageUrl' rel='tag'>&#10026;Home</a></li>/<li><data:blog.pageName/></li></ul>
@@ -1618,28 +1649,27 @@ user is not using shrink to fit then we expand the header.
  <!-- END Content --> 
         
             <b:section class='sidebar col-xs-12 col-sm-3 dmbs-right' id='sidebar' preferred='yes'>
-              
                <b:widget id='Label1' locked='false' title='ラベル' type='Label'>
                  <b:includable id='main'>
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
  <!-- チュートリアルメニューヘッダ -->
-              <h2 class="menuhead">ビデオチュートリアル</h2>
-              <p class="menulead">主に英語。仕上がりは静止画中心。</p>     
+              <h2 class='menuhead'>ビデオチュートリアル</h2>
+              <p class='menulead'>主に英語&#12290;仕上がりは静止画中心&#12290;</p>     
 <p class='labelhead'><a expr:href='&quot;http://blenderj.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
 <nav class='treenav'>
       <ul class='list'>
 <b:loop values='data:labels' var='label'>
         
           <b:if cond='data:blog.url == data:label.url'>
-             &lt;li class="active" expr:dir='data:blog.languageDirection'&gt;<data:label.name/>
+             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;<data:label.name/>
 
           <b:else/>
            &lt;li&gt;
             <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
           </b:if>
           <b:if cond='data:showFreqNumbers'>
-            <span class="badge" dir='ltr'><data:label.count/></span>
+            <span class='badge' dir='ltr'><data:label.count/></span>
           </b:if>
         &lt;/li&gt;
       </b:loop>
@@ -1663,9 +1693,8 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
   </div>
 </b:includable>
-</b:widget>
-
-<b:widget id='Label2' locked='false' title='ラベル' type='Label'>
+               </b:widget>
+               <b:widget id='Label2' locked='false' title='ラベル' type='Label'>
                  <b:includable id='main'>
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
@@ -1676,7 +1705,7 @@ user is not using shrink to fit then we expand the header.
 <b:loop values='data:labels' var='label'>
         
           <b:if cond='data:blog.url == data:label.url'>
-             &lt;li class="active" expr:dir='data:blog.languageDirection'&gt;
+             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;
             <data:label.name/>
 
           <b:else/>
@@ -1684,7 +1713,7 @@ user is not using shrink to fit then we expand the header.
             <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
           </b:if>
           <b:if cond='data:showFreqNumbers'>
-            <span class="badge" dir='ltr'><data:label.count/></span>
+            <span class='badge' dir='ltr'><data:label.count/></span>
           </b:if>
         &lt;/li&gt;
       </b:loop>
@@ -1708,23 +1737,21 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
   </div>
 </b:includable>
-</b:widget>
-
-
-              <b:widget id='Label5' locked='false' title='ラベル' type='Label'>
+               </b:widget>
+               <b:widget id='Label5' locked='false' title='ラベル' type='Label'>
                  <b:includable id='main'>
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
      <!-- ブログメニューヘッダ -->
-              <h2 class="menuhead">ブログ</h2>
-              <p class="menulead">Blenderについてのメモ的なことやお知らせ。</p>
+              <h2 class='menuhead'>ブログ</h2>
+              <p class='menulead'>Blenderについてのメモ的なことやお知らせ&#12290;</p>
 <p class='labelhead'><a expr:href='&quot;http://blenderj.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
 <nav class='treenav'>
       <ul class='list'>
 <b:loop values='data:labels' var='label'>
         
           <b:if cond='data:blog.url == data:label.url'>
-             &lt;li class="active" expr:dir='data:blog.languageDirection'&gt;
+             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;
             <data:label.name/>
 
           <b:else/>
@@ -1732,7 +1759,7 @@ user is not using shrink to fit then we expand the header.
             <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
           </b:if>
           <b:if cond='data:showFreqNumbers'>
-            <span class="badge" dir='ltr'><data:label.count/></span>
+            <span class='badge' dir='ltr'><data:label.count/></span>
           </b:if>
         &lt;/li&gt;
       </b:loop>
@@ -1756,7 +1783,7 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
   </div>
 </b:includable>
-</b:widget>
+               </b:widget>
                <b:widget id='PopularPosts3' locked='false' title='人気の投稿' type='PopularPosts'>
                  <b:includable id='main'>
                   <b:if cond='data:title'>
@@ -2165,38 +2192,13 @@ head.appendChild(script);
     });
 })(jQuery);
 /*youtube lazy link*/
-$(document).ready(function() {$("a.youtube-lazy-link").each(function(index) {
-    var embedparms = $(this).attr("href").split("/embed/")[1];
-    if(!embedparms) embedparms = $(this).attr("href").split("://youtu.be/")[1];
-    if(!embedparms) embedparms = $(this).attr("href").split("?v=")[1].replace(/\&/,'?');
-    var youid = embedparms.split("?")[0].split("#")[0];
-    var start = embedparms.match(/[#&]t=(\d+)s/);
-    if(start) start = start[1];
-    else {
-      start = embedparms.match(/[#&]t=(\d+)m(\d+)s/);
-      if(start) start = parseInt(start[1])*60+parseInt(start[2]);
-      else {
-        start = embedparms.match(/[?&]start=(\d+)/);
-        if(start) start = start[1];
-      }
-    }
-    embedparms = embedparms.split("#")[0];
-    if(start && embedparms.indexOf("start=") == -1)
-      embedparms += ((embedparms.indexOf("?")==-1) ? "?" : "&") + "start="+start;
-    if(embedparms.indexOf("showinfo=0") != -1)
-      $(this).html('');
-    else
-      $(this).html('<div class="youtube-lazy-link-info">' + $(this).html() + '</div>');
-    $(this).prepend('<div style="height:'+(parseInt($(this).css("height"))-4)+'px;width:'+(parseInt($(this).css("width"))-4)+'px;" class="youtube-lazy-link-div"></div>');
-    $(this).css("background", "#000 url(http://i2.ytimg.com/vi/"+youid+"/0.jpg) center center no-repeat");
-    $(this).attr("id", youid+index);
-    $(this).attr("href", "http://www.youtube.com/watch?v="+youid+(start ? "#t="+start+"s" : ""));
-    var emu = 'http://www.youtube.com/embed/'+embedparms;
-    emu += ((emu.indexOf("?")==-1) ? "?" : "&") + "autoplay=1";
-    var videoFrame = '<iframe width="'+parseInt($(this).css("width"))+'" height="'+parseInt($(this).css("height"))+'" style="vertical-align:top;" src="'+emu+'" frameborder="0" allowfullscreen></iframe>';
-    $(this).attr("onclick", "$('#"+youid+index+"').replaceWith('"+videoFrame+"');return false;");
-  });
-})
+
+ (function(b){function a(d){var f=d.data("width"),c=d.data("height"),e=d.data("ratio"),j=d.data("youtube-id"),h=["16","9"],g=0,i=d.data("parameters")||"";
+if(typeof f==="undefined"||typeof c==="undefined"){c=0;f="100%";h=(e.split(":")[1]/e.split(":")[0])*100;g=h+"%";}d.css({position:"relative",height:c,width:f,"padding-top":g,background:"url(//img.youtube.com/vi/"+j+"/hqdefault.jpg) center center no-repeat",cursor:"pointer","background-size":"cover"}).html('<p id="lazyYT-title-'+j+'" class="lazyYT-title"></p><div class="lazyYT-button"></div>').addClass("lazyYT-image-loaded");
+b.getJSON("https://gdata.youtube.com/feeds/api/videos/"+j+"?v=2&alt=json",function(k){b("#lazyYT-title-"+j).text(k.entry.title.$t);});d.on("click",function(k){k.preventDefault();
+if(!d.hasClass("lazyYT-video-loaded")&&d.hasClass("lazyYT-image-loaded")){d.html('<iframe width="'+f+'" height="'+c+'" src="//www.youtube.com/embed/'+j+"?autoplay=1&"+i+'" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allowfullscreen></iframe>').removeClass("lazyYT-image-loaded").addClass("lazyYT-video-loaded");
+}});}b.fn.lazyYT=function(){return this.each(function(){var c=b(this).css("cursor","pointer");a(c);});};}(jQuery));
+$('.js-lazyYT').lazyYT();
 /*]]>*/
 </script>
 </b:if>
