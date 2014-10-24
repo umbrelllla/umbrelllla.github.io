@@ -1026,7 +1026,7 @@ letter-spacing: 1px;
 .badge {
   display: inline-block;
   min-width: 10px;
-  padding: 3px 7px;
+ padding: 4px 7px 1px 5px;
   font-size: 13px;
   font-weight: bold;
   color: #ffffff;
@@ -1735,7 +1735,7 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 
  .badge {
 color: #FFF;
-background-color: #f76cca;
+background-color: #38a1db;
 border-radius: 10px;
 } 
 /* li.current-cat>.badge, li.used-cat-parent>.badge,li.used-cat>.badge {
@@ -1949,7 +1949,13 @@ div#Header2{
 font-size: 100%;
 margin: 10px 20px 5px 0;
 }
-
+#blog-pager {
+text-align: center;
+}
+.rm {
+color: #007fff;
+/* font-size: 150%; */
+}
 /* .treehead {
 display: none;
 } */
@@ -1970,7 +1976,12 @@ color: #999;
 p.labelhead {
 
 }
+.post-title h1 {
+font-size: 160%;
+color: #000;
+}
 .menulead {
+
 font-size: 75%;
 color: #666;
 }
@@ -1996,7 +2007,7 @@ line-height: 1.8;
 left: auto;
 }
 .dropdown-menu-large > div > ul {
-  padding: 0 0px 0 15px;
+  padding: 0 0px 0 10px;
   margin: 0;
 }
 .dropdown-menu-large > div > ul > li {
@@ -2137,4 +2148,7 @@ font-size: 60%;
 margin: 0 0 0 5px;
 /* line-height: 1.8; */
 vertical-align: top;
+}
+.form-control {
+color: #222;
 }

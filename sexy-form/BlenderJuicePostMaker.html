@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>DatePickerウィジェット</title>
+<link type="text/css" rel="stylesheet"
+  href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+<!--1国際化対応のライブラリをインポート-->
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/i18n/jquery-ui-i18n.min.js"></script> -->
+
+<script type="text/javascript" src="js/jquery.sfprototypeman.js"></script>
+
+<script type="text/javascript">
+$(function() {
+  // 2日本語を有効化
+  /*$.datepicker.setDefaults($.datepicker.regional['ja']);*/
+  // 3日付選択ボックスを生成
+  $('#date').datepicker({ dateFormat: 'yy/mm/dd' });
+});
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  jQuery().sfPrototypeMan();
+
+  // If you choose to run jQuery UI sortable, sfPrototypeMan will interact with it
+  jQuery("#MyFormType_animals").sortable();
+});
+</script>
+    <style type="text/css">
+    body {
+margin: 30px;
+}
+      ul {
+list-style-type: none;
+}
+
+li {
+margin: 30px;
+padding: 0 0px 20px 10px;
+border-bottom: 1px solid #ccc;
+}
+
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form method="POST" action="">
+  <label>
+    
+  </label>
+  <ul>
+
+<li class="label">
+<input type="checkbox" class="area" value="ビデオチュートリアル">ビデオチュートリアル
+<input type="checkbox" class="area" value="景色"> 景色
+<input type="checkbox" class="area" value="hokkaidou"> 北海道
+</li>
+
+
+
+
+
+        <li class="vid">
+          <label for="name">ビデオID:</label>
+            <input type="text" size="40" id="name" />
+        </li>
+        <li>
+
+        </li>
+        <li class="source">
+            <label for="site">掲載元サイト名:</label>
+            <select id="site">
+                <option>Brender Guru</option>
+                <option>Blender Cookie</option>
+                <option>CG Ninja</option>
+            </select>
+            <label for="source">掲載元サイト名:</label>
+            <input type="text" size="40" id="source" /><br><br>
+            <label for="sourceurl">掲載元サイトURL:</label>
+            <input type="text" size="40" id="sourceurl" />
+        </li>
+
+        <li>
+            <label for="hour">動画再生　時間:</label>
+            <input type="text" size="5" id="hour" />
+            <label for="minuts">分:</label>
+            <input type="text" size="5" id="minuts" />
+            <label for="seconds">秒:</label>
+            <input type="text" size="5" id="seconds" />
+        </li>
+
+        <li>
+          <label for="datepicker">動画公開日:</label>
+
+            <input type="text" id="date" size="10" />
+        </li>
+        <li>
+            <label for="ver">バージョン:</label>
+            <select id="ver">
+                <option>v2.71</option>
+                <option>v2.72</option>
+                <option>v2.73</option>
+                <option>v2.74</option>
+                <option>v2.75</option>
+            </select>
+        </li>
+        <li>
+            <label for="hd">画質:</label>
+            <select id="hd">
+                <option>HD</option>
+                <option>FullHD</option>
+            </select>
+        </li>
+        <li>
+          <label for="disc">説明:</label>
+            <textarea cols="50" rows="5" id="disc"></textarea>
+        </li>
+
+<!--         <li>
+    <label><input type="radio" name="radio" /> Pick one</label>
+    <label><input type="radio" name="radio" /> And stick with it</label>
+</li> -->
+        <!-- <li>
+              <label><input type="checkbox" /> Can haz tickbox?</label>
+        </li>
+        <li>
+            <label>Upload a file:</label>
+            <input type="file" />
+        </li>
+        <li>
+          <label for="message">Message:</label>
+            <textarea cols="50" rows="5" id="message"></textarea>
+            </li> -->
+
+<li><table class="table table-bordered col-md-6" id="mokujiTable">
+  <thead>
+    <tr>
+      <th class="col-md-3">時間</th>
+      <th class="col-md-3">説明</th>
+    </tr>
+  </thead>
+<tbody>
+    <tr>
+      <td class="tdclass"><input type="text" size="5" class="hourtd" value="00">:<input type="text" size="5" class="minutstd" value="00">:<input type="text" size="5" class="secondtd" value="00"></td>
+      <td class="tdclass"><textarea cols="50" rows="5" class="disctd" placeholder="説明"></textarea></td>
+    </tr>
+</tbody>
+</table>
+<input type="button" id="rowAdd" value="追加" />
+<input type="button" id="rowRemove" value="削除" />
+  </li></ul>
+<script type="text/javascript">
+$('#rowAdd').on('click', function() {
+  $('#mokujiTable').append('<tr><td class="tdclass"><input type="text" size="5" class="hourtd" value="00">:<input type="text" size="5" class="minutstd" value="00">:<input type="text" size="5" class="secondtd" value="00"></td><td class="tdclass"><textarea cols="50" rows="5" class="disctd" placeholder="説明"></textarea></td></tr>');
+});
+$('#rowRemove').on('click', function() {
+  $('#mokujiTable tr:last-child').remove();
+});
+
+</script>
+
+
+</body>
+</html>
