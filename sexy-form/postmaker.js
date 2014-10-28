@@ -33,7 +33,7 @@ void(0);
 			    		return line.join('');
 		  			
 					}).get().join('\n');
-
+var seriesname=$("#1198858 div div div p span").text();
 
 		var html='<div class="vrow">\n<div class="row">\n<div class="col-sm-12 col-md-8">\n<div class="js-lazyYT" data-ratio="16:9" data-youtube-id="'+videoid+'">\nloding</div>\n</div>\n<div class="col-sm-12 col-md-4">\n\n<dl>\n<dt>掲載元</dt>\n<dd class="source"><a href="'+source[1]+'">'+source[0]+'</a></dd>\n<dt>動画再生時間</dt>\n<dd>'+playtime[0]+':'+playsecond+'</dd>\n<dt>動画公開日</dt>\n<dd>'+videopostdate+'</dd>\n<dt>バージョン</dt>\n<dd><a dir="ltr" href="http://blenderj.blogspot.jp/search/label/'+version+'">'+version+'</a></dd>\n<dt>画質</dt>\n<dd><a dir="ltr" href="http://blenderj.blogspot.jp/search/label/'+hd+'">'+hd+'</a></dl></div></div></div>\n<a href="http://img.youtube.com/vi/'+videoid+'/hqdefault.jpg" imageanchor="1" class="pull-right"><img src="http://img.youtube.com/vi/'+videoid+'/mqdefault.jpg" /></a>\n<p>'+discription+'</p>\n<!--more-->\n<ul class="timetable">\n'+timetable+'</ul>';
 		postmaker(title,label,html);

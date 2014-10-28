@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'><head><meta content='width=device-width, initial-scale=1.0' name='viewport'/><b:if cond='data:blog.pageType == &quot;index&quot;'/><b:if cond='data:blog.pageType == &quot;index&quot;'> <title> <data:blog.pageTitle/> </title> <b:else/> <title> <data:blog.pageName/> </title></b:if><b:include data='blog' name='all-head-content'/><!-- BEGIN Open Graph tags --> <meta expr:content='data:blog.metaDescription' name='description' property='og:description'/><b:if cond='data:blog.pageType == &quot;item&quot;'> <meta expr:content='data:blog.pageName' property='og:title'/> <meta expr:content='data:blog.canonicalUrl' property='og:url'/> <meta content='Site Name' property='og:site_name'/> <meta content='article' property='og:type'/> <b:if cond='data:blog.postImageThumbnailUrl'> <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/> <b:else/> <meta content='http://2.bp.blogspot.com/-DknlKJONMdY/UhBRqSykyiI/AAAAAAAABws/Id-lSMf1bMY/s1600/apple-touch-icon-144-precomposed.png' property='og:image'/> </b:if> <b:else/> <meta expr:content='data:blog.title' property='og:title'/> <meta expr:content='data:blog.canonicalHomepageUrl' property='og:url'/> <meta content='Site Name' property='og:site_name'/> <meta content='blog' property='og:type'/> <meta content='http://2.bp.blogspot.com/-DknlKJONMdY/UhBRqSykyiI/AAAAAAAABws/Id-lSMf1bMY/s1600/apple-touch-icon-144-precomposed.png' property='og:image'/></b:if><meta expr:content='&quot;en_US&quot;' property='og:locale'/><!-- END Open Graph tags --><link href='http://2.bp.blogspot.com/-DknlKJONMdY/UhBRqSykyiI/AAAAAAAABws/Id-lSMf1bMY/s1600/apple-touch-icon-144-precomposed.png' rel='apple-touch-icon-precomposed' sizes='144x144'/><link href='http://3.bp.blogspot.com/-rRWmpiJY5BA/UhBRpQVuLxI/AAAAAAAABwk/lclFS71I0pY/s1600/apple-touch-icon-114-precomposed.png' rel='apple-touch-icon-precomposed' sizes='114x114'/><link href='http://4.bp.blogspot.com/-gfIbuWbo0gc/UhBRv6ZlsRI/AAAAAAAABw8/La3g8rX-MPQ/s1600/apple-touch-icon-72-precomposed.png' rel='apple-touch-icon-precomposed' sizes='72x72'/><link href='http://4.bp.blogspot.com/-J75pjsUM8mk/UhBRq0uetvI/AAAAAAAABw0/-kcTxAIYhko/s1600/apple-touch-icon-57-precomposed.png' rel='apple-touch-icon-precomposed'/><link href='http://4.bp.blogspot.com/-3miLDAfjF9k/UhBRxD6aipI/AAAAAAAABxE/4qR5jc7leU8/s1600/favicon.png' rel='shortcut icon'/><link href='http://4.bp.blogspot.com/-3miLDAfjF9k/UhBRxD6aipI/AAAAAAAABxE/4qR5jc7leU8/s1600/favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'/>&lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin><![CDATA[*/]]></b:skin><link href='http://umbrelllla.github.io/sketch.min.css' rel='stylesheet' type='text/css'/><b:if cond='data:blog.pageType == &quot;item&quot;'><style>
-
+.bookmark img {
+margin-right: 15px;
+}
+.bookmark {
+border: 1px solid #ccc;
+margin: 30px 20px 30px 0;
+padding: 20px;
+}
 .lazyYT-title {
     z-index: 100!important;
     color: #fff!important;
@@ -47,16 +54,19 @@ max-width: 600px;
 
 <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
 <ul class='nav navbar-nav'>
-  <li class='dropdown'><a class='dropdown-toggle' data-toggle='dropdown' href='#'>メニュー<b class='caret'/></a>
+  <li class='dropdown'><a class='dropdown-toggle' data-toggle='dropdown' href='#'>カテゴリ<b class='caret'/></a>
   <ul class='dropdown-menu'> <li> <div class=' yamm-content' id='Label1Cover'> 
 <b:section class='main row' id='navigation' showaddelement='no'>
    <b:widget id='Label3' locked='false' title='カテゴリ' type='Label'>
-     <b:includable id='main'><div class='col-xs-12'>
-      <b:if cond='data:title'><h3 class='yammlabelhead'><data:title/></h3> </b:if>
+     <b:includable id='main'><div class='col-sm-6'>
       <nav class='treenav'> <b:if cond='data:display == &quot;list&quot;'> <ul class='list'> <b:loop values='data:labels' var='label'> <li> <b:if cond='data:blog.url == data:label.url'> <span expr:dir='data:blog.languageDirection'><data:label.name/></span> <b:else/> <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a> </b:if> <b:if cond='data:showFreqNumbers'> <span dir='ltr'>(<data:label.count/>)</span> </b:if> </li> </b:loop> </ul> <b:else/> <b:loop values='data:labels' var='label'> <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'> <b:if cond='data:blog.url == data:label.url'> <span expr:dir='data:blog.languageDirection'><data:label.name/></span> <b:else/> <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a> </b:if> <b:if cond='data:showFreqNumbers'> <span class='label-count' dir='ltr'>(<data:label.count/>)</span> </b:if> </span> </b:loop> </b:if> <b:include name='quickedit'/> </nav> </div><!-- col-xs-12 col-sm-6 --> 
     </b:includable>
    </b:widget>
-
+   <b:widget id='Label10' locked='false' title='カテゴリ' type='Label'>
+     <b:includable id='main'><div class='col-sm-6'>
+      <nav class='treenav'> <b:if cond='data:display == &quot;list&quot;'> <ul class='list'> <b:loop values='data:labels' var='label'> <li> <b:if cond='data:blog.url == data:label.url'> <span expr:dir='data:blog.languageDirection'><data:label.name/></span> <b:else/> <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a> </b:if> <b:if cond='data:showFreqNumbers'> <span dir='ltr'>(<data:label.count/>)</span> </b:if> </li> </b:loop> </ul> <b:else/> <b:loop values='data:labels' var='label'> <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'> <b:if cond='data:blog.url == data:label.url'> <span expr:dir='data:blog.languageDirection'><data:label.name/></span> <b:else/> <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a> </b:if> <b:if cond='data:showFreqNumbers'> <span class='label-count' dir='ltr'>(<data:label.count/>)</span> </b:if> </span> </b:loop> </b:if> <b:include name='quickedit'/> </nav> </div><!-- col-xs-12 col-sm-6 --> 
+    </b:includable>
+   </b:widget>
  </b:section>
 </div></li></ul>
  </li>
