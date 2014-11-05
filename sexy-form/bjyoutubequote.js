@@ -1,10 +1,19 @@
 javascript:(
+var popw = window.open('https://beta.kustomnote.com/newNote/151586/#/','','scrollbars=yes,width=600,height=800,top=0,right=0,status=yes,resizable=yes');
+function test1()
+{
+popw.document.textForm.text_field.value = "あああ";
+
+
+
+javascript:(
 	function(){
 	    function postmaker(title,label,html,slug){
 	        var d=window.open().document;
 	        d.writeln('<h1>BJ POSTMAKER</h1><h2>タイトル</h2><textarea id="title" rows=3 cols=80 onclick="this.select()">'+title+'</textarea><h2>ラベル</h2><textarea id="label" rows=5 cols=80 onclick="this.select()">'+label+'</textarea><h2>スラッグ</h2><textarea id="slug" rows=5 cols=80 onclick="this.select()">'+slug+'</textarea><h2>投稿HTML</h2><textarea id="html" rows=20 cols=80 onclick="this.select()">'+html+'</textarea><script></script>');
 	        d.close();
-	        	        popw = window.open('https://draft.blogger.com/blogger.g?blogID=5051161372427020341#editor/src=sidebar','bloggerForm','scrollbars=yes,width=600,height=800,top=0,right=0,status=yes,resizable=yes');
+	        	        popw = window.open('https://beta.kustomnote.com/newNote/151586/#/','bloggerForm','scrollbars=yes,width=600,height=800,top=0,right=0,status=yes,resizable=yes');
+	        	        popw.document.textForm.text_field.value = 'あああ';
 
 if (!document.all) T = setTimeout('popw.focus()',50);
 void(0);
