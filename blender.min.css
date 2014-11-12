@@ -1,4 +1,4 @@
-.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;color:#999}
+.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;color:#999;margin-top:20px}
 /*!
  * Bootswatch v3.1.1+1
  * Homepage: http://bootswatch.com
@@ -90,7 +90,7 @@ a.navbar-brand img{margin-top:5px}#main{margin-top:25px}abbr.published{font-styl
 .PopularPosts .item-title{font-size:85%;line-height:1}.PopularPosts .widget-content ul{padding:0}.PopularPosts img{;float:left;margin-right:10px}.navbar-brand{display:none}
 .navbar-fixed-top .navbar-brand{display:block;font-size:26px;font-weight:bold;color:#000}.navbar-brand{float:left;font-size:18px;line-height:20px}.navbar{min-height:41px}
 .navbar-form{margin-top:4px;margin-bottom:3px}.PopularPosts .widget-content ul li{width:100%;border-bottom:1px solid #ddd;padding:5px 0;list-style-type:none}
-p.home:before{content:'\00272a'}.navbar-fixed-top .descriptionwrapper{display:none}div#Header2{display:none}.navbar-fixed-top div#Header2{display:block;font-size:100%;margin:10px 20px 5px 0}
+p.home:before{content:'\00272a'}.navbar-fixed-top .descriptionwrapper{display:none}div#Header2{display:none}.navbar-fixed-top div#Header2{display:block;font-size:100%;margin:5px 20px 5px 0}
 #blog-pager{text-align:center}.rm{color:#007fff}.middle h2.title{background-color:transparent;border:0;color:#222;float:left;margin:0;padding:0;line-height:1}
 .middle h2.title:after{content:'\00bb';margin:0 5px;color:#999}.post-title h1{font-size:160%;color:#000}.menulead{font-size:75%;color:#666}
 .menuhead{font-weight:bold;border-bottom:1px solid #007fff;border-left:5px solid #007fff;padding:3px 5px;margin:0 0 10px 0;color:#007fff;font-size:100%}

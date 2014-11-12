@@ -14,6 +14,7 @@ text-align: center;
 font-size: 80%;
 padding: 20px 10px;
 color: #999;
+margin-top:20px;
 }
 /* .main-top-nav{background:#34495e !important;}
 .post-feeds{display:none;}
@@ -1947,7 +1948,7 @@ div#Header2{
 .navbar-fixed-top div#Header2 {
   display: block;
 font-size: 100%;
-margin: 10px 20px 5px 0;
+margin: 5px 20px 5px 0;
 }
 #blog-pager {
 text-align: center;

@@ -86,11 +86,57 @@ margin-bottom: 10px;
 .smallthumbs img {
 margin-right: 5px;
 }
+section.seriesNote h4 {
+border-bottom: 1px dotted #ccc;
+padding-bottom: 5px;
+}
+section.seriesNote h4 small:after {
+content: '\00bb';
+color: #000;
+margin: 0 3px;
+font-size: 90%;
+}
+dd.indexlink a {
+font-size: 80%;
+}
+.timetable li span:after {
+content: '\002662';
+font-size: 70%;
+color: #ccc;
+vertical-align: middle;
+margin: 0 5px;
+}
+section.seriesNote ul {
+list-style-type: none;
+padding-left: 20px;
+}
+section.seriesNote ul li:before {
+content: '\00bb';
+margin-right: 3px;
+color: #999;
+}
 section.seriesNote {
 background-color: #f2f2f2;
 margin: 40px;
-padding: 20px 35px;
+padding: 25px 35px;
 border: 8px double #dcdcdc;
+}
+section.seriesNote h4 small {
+font-weight: bold;
+color: #777;
+font-size: 80%;
+}
+span.currentpart:before {
+content: '\002190';
+margin-right: 3px;
+}
+span.currentpart {
+color: #ff0000;
+}
+section.seriesNote h4 {
+border-bottom: 1px dotted #ccc;
+padding-bottom: 5px;
+font-size: 100%;
 }
 .vthumbnails {
 margin: 0 0 0 20px;
