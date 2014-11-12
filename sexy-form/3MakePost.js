@@ -77,7 +77,7 @@ function toHms(t) {
 					/*シリーズタイトル*/
 					var seriestitle = title;
 					/*タイトルにパート●つけて投稿タイトルとする*/
-					title+=' パート'+seriesindex[1];
+					title+=' パート'+seriesindex[1]+'/'+seriesindex[0];
 					sindex += '<section class="seriesNote"><h4><small>シリーズ目次</small>' +seriestitle+'シリーズ 全'+seriesindex[0]+ 'パート</h4><ul>';
 					for (i = 1; i <= seriesindex[0]; i++) {
     					if(i == seriesindex[1] ) {
@@ -219,7 +219,7 @@ function toHms(t) {
 
 			/*html整形、youtube遅延ロード*/
 			
-			var html = '<div class="vrow"><div class="row"><div class="col-sm-12 col-md-8"><div class="js-lazyYT" data-youtube-id="'+videoid[1]+'" data-ratio="16:9"></div>\n</div><div class="col-sm-12 col-md-4"><dl><dt>掲載元</dt><dd class="source"><a href="'+source+'">'+author+'</a></dd><dt>動画再生時間</dt><dd>'+toHms(duration)+'</dd><dt>動画公開日</dt><dd>'+opendate+'</dd><dt>バージョン</dt><dd><a dir="ltr" href="http://blenderj.blogspot.jp/search/label/'+version+'">'+version+'</a></dd></dl></div></div></div><div class="discription clearfix"><div class="pull-right"><a href="http://img.youtube.com/vi/'+videoid[1]+'/hqdefault.jpg" imageanchor="1"><img class="postthum" src="http://img.youtube.com/vi/'+videoid[1]+'/mqdefault.jpg" /></a><div class="smallthumbs"><img src="http://img.youtube.com/vi/'+videoid[1]+'/1.jpg" /><img src="http://img.youtube.com/vi/'+videoid[1]+'/2.jpg" /><img src="http://img.youtube.com/vi/'+videoid[1]+'/3.jpg" /></div></div>'+discription+'<br /><!--more--><ul class="timetable">'+list+'</ul></div>'+sindex;
+			var html = '<div class="vrow"><div class="row"><div class="col-sm-12 col-md-8"><div class="js-lazyYT" data-youtube-id="'+videoid[1]+'" data-ratio="16:9"></div>\n</div><div class="col-sm-12 col-md-4"><dl><dt>掲載元</dt><dd class="source"><a href="'+source+'">'+author+'</a></dd><dt>動画再生時間</dt><dd>'+toHms(duration)+'</dd><dt>動画公開日</dt><dd>'+opendate+'</dd><dt>Blenderのバージョン</dt><dd><a dir="ltr" href="http://blenderj.blogspot.jp/search/label/'+version+'">'+version+'</a></dd></dl></div></div></div><div class="discription clearfix"><div class="vthumbnails pull-right"><a href="http://img.youtube.com/vi/'+videoid[1]+'/hqdefault.jpg" imageanchor="1"><img class="postthum" src="http://img.youtube.com/vi/'+videoid[1]+'/mqdefault.jpg" /></a><div class="smallthumbs"><img src="http://img.youtube.com/vi/'+videoid[1]+'/1.jpg" /><img src="http://img.youtube.com/vi/'+videoid[1]+'/2.jpg" /><img src="http://img.youtube.com/vi/'+videoid[1]+'/3.jpg" /></div></div>'+discription+'<br /><!--more--><ul class="timetable">'+list+'</ul></div>'+sindex;
 
 
 			/*編集エリアの内容を差し替え*/
