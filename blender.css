@@ -337,6 +337,20 @@ dt {
 dd {
   margin-left: 0;
 }
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+}
 blockquote {
   padding: 10.5px 21px;
   margin: 0 0 21px;
@@ -1215,6 +1229,21 @@ button.close {
     width: 900px;
   }
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
 .clearfix:before,
 .clearfix:after,
 .container:before,
@@ -1234,6 +1263,7 @@ button.close {
 }
 .clearfix:after,
 .container:after,
+.dl-horizontal dd:after,
 .row:after,
 .nav:after,
 .navbar:after,
@@ -2137,11 +2167,7 @@ border: 1px solid #000;
 .source {
 font-weight: bold;
 }
-.timetable {
-list-style-type: none;
-padding-left: 15px;
-font-size: 90%;
-}
+
 .time:after {
 content: '\002662';
 font-size: 60%;
