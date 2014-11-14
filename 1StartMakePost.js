@@ -37,7 +37,7 @@ javascript:(
 
 
 			/*新しいウィンドウで表示する動画*/
-			var videoFrame = '<iframe allowfullscreen width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/'+videoid[1]+'"></iframe>';
+			var videoFrame = '<div class="youtube-container" style="position:relative;padding-bottom: 56.25%;padding-top:30px;height:0;overflow:hidden;"><iframe allowfullscreen width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/'+videoid[1]+'" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>';
 			postmaker(videoFrame);
 
 	}
