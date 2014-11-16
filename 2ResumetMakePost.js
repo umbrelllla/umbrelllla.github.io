@@ -2,7 +2,7 @@ javascript:(
 	function() {
 		function postmaker(videoFrame){
 	        var d=window.open("", "", "width=600,height=800").document;
-	        d.writeln('<h1>BJ POSTMAKER</h1><h2>投稿再開</h2>'+videoFrame+'<ol style="font-weight:bold;font-size:18px;line-height:2;"><li><input type="checkbox" name="1" value="1">ラベルでバージョンとシリーズの場合はシリーズ選択してください。</li><li><input type="checkbox" name="1" value="1">説明とタイムテーブルを作成しつつ、ラベルを決める。</li><li><input type="checkbox" name="1" value="1">タイトルを作成（シリーズ投稿の場合パートNOなし）</li><li><input type="checkbox" name="1" value="1">カスタムパーマリンクを設定して下さい。シリーズ投稿の場合は【シリーズスラッグseries全シリーズ数-シリーズNO】とする(low-polytrex-series4-1)</li><li><input type="checkbox" name="1" value="1">スケジュール投稿を設定</li><li><input type="checkbox" name="1" value="1">仕上げブックマークレットで体裁を整え、別窓に開いたタイトルをコピペして完了</li></ol><script></script>');
+	        d.writeln('<h1>BJ POSTMAKER</h1><h2>投稿再開</h2>'+videoFrame+'<ol style="font-weight:bold;font-size:18px;line-height:2;"><li><input type="checkbox" name="1" value="1">ラベルでバージョンとシリーズの場合はシリーズ選択してください。</li><li><input type="checkbox" name="1" value="1">要約を作成。40字程度、検索向けmetaタグにも使用します。</li><li><input type="checkbox" name="1" value="1">説明とタイムテーブルを作成しつつ、ラベルを決める。</li><li><input type="checkbox" name="1" value="1">タイトルを作成（シリーズ投稿の場合パートNOなし）</li><li><input type="checkbox" name="1" value="1">カスタムパーマリンクを設定して下さい。シリーズ投稿の場合は【シリーズスラッグseries全シリーズ数-シリーズNO】とする(low-polytrex-series4-1)</li><li><input type="checkbox" name="1" value="1">スケジュール投稿を設定</li><li><input type="checkbox" name="1" value="1">仕上げブックマークレットで体裁を整え、別窓に開いたタイトルをコピペして完了</li></ol><script></script>');
 	        d.close();
 
 
