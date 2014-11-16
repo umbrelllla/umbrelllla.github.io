@@ -60,14 +60,15 @@ function toHms(t) {
 		var labels = $('.GCUXF0KCFWB').text()
 		/*ラベルからバージョン取得*/
 		var version=labels.match(/v\d+.\d+/);
+var indexlink ='';
 
+var sindex = '';
 		/*シリーズ目次整形*/
 		/*ラベルからシリーズ取得*/
 		var isseries = labels.indexOf("シリーズ");
 		if(isseries!=-1){
 
 
-			var sindex = '';
 			/*series4-1*/
 			var seriesno=url.match(/series\d+-\d+/);
 			if(seriesno!=null){
@@ -92,7 +93,7 @@ function toHms(t) {
 		    			}
 					}
 					/*シリーズ目次リンク*/
-					var indexlink = '<dt>シリーズ目次</dt><dd class="indexlink"><a href="'+url+'#seriesindex">'+seriestitle+'シリーズ</a></dd>';
+					indexlink = '<dt>シリーズ目次</dt><dd class="indexlink"><a href="'+url+'#seriesindex">'+seriestitle+'シリーズ</a></dd>';
 					/*シリーズ目次*/
 					sindex += '</ul></section>';
 			}else{

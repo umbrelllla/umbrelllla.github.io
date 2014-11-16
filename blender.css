@@ -331,9 +331,6 @@ dt,
 dd {
   line-height: 1.42857143;
 }
-dt {
-  font-weight: bold;
-}
 dd {
   margin-left: 0;
 }
@@ -350,6 +347,13 @@ dd {
   .dl-horizontal dd {
     margin-left: 180px;
   }
+}
+.dl-horizontal dt:before {
+content: '\002192';
+font-size: 70%;
+margin-right: 3px;
+vertical-align: middle;
+color: #999;
 }
 blockquote {
   padding: 10.5px 21px;
