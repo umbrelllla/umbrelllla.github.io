@@ -1783,7 +1783,10 @@ user is not using shrink to fit then we expand the header.
     <b:if cond='data:display == &quot;list&quot;'>
  <!-- チュートリアルメニューヘッダ -->
               <h2 class='menuhead'>ビデオチュートリアル</h2>
-              <p class='menulead'>主に英語&#12290;仕上がりは静止画中心&#12290;</p>     
+              <p class='menulead'>主に英語&#12290;仕上がりは静止画中心&#12290;</p>  
+              <ul class='list bigginer'><li>
+<a dir="ltr" href="http://blenderj.blogspot.jp/search/label/%E3%83%93%E3%82%AE%E3%83%8A%E3%83%BC">ビギナー</a>
+            </li></ul>
 <p class='labelhead'><data:title/></p>
 <nav class='treenav'>
       <ul class='list'>
