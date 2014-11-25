@@ -412,7 +412,7 @@ user is not using shrink to fit then we expand the header.
     <ul class='nav navbar-nav'>
 <!-- /////////横メニュー増やす場合はここからコピペ&#12290;//////////// -->
       <li class='dropdown dropdown-large'>
-        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>ビデオチュートリアル <b class='caret'/></a>
+        <a class='dropdown-toggle videot' data-toggle='dropdown' href='#'>ビデオチュートリアル <b class='caret'/></a>
 
           <b:section class='main dropdown-menu dropdown-menu-large row' id='megamenu' showaddelement='yes'>
             <b:widget id='HTML2' locked='false' title='' type='HTML'>
@@ -585,10 +585,10 @@ user is not using shrink to fit then we expand the header.
 
 <!-- /////////横メニュー増やす場合はここからコピペ&#12290;//////////// -->
       <li class='dropdown dropdown-large'>
-        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>ブログ <b class='caret'/></a>
+        <a class='dropdown-toggle blogt' data-toggle='dropdown' href='#'>ブログ <b class='caret'/></a>
 
           <b:section class='main dropdown-menu dropdown-menu-large row' id='blogmenu' showaddelement='yes'>
-            <b:widget id='HTML3' locked='false' title='ブログ' type='HTML'>
+            <b:widget id='HTML3' locked='false' title='' type='HTML'>
               <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -1884,7 +1884,7 @@ user is not using shrink to fit then we expand the header.
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
  <!-- チュートリアルメニューヘッダ -->
-              <h2 class='menuhead'><a dir='ltr' href='http://blenderj.blogspot.jp/search/label/%E3%83%93%E3%83%87%E3%82%AA%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB'>ビデオチュートリアル</a></h2>
+              <h2 class='menuhead'><a class='videot' dir='ltr' href='http://blenderj.blogspot.jp/search/label/%E3%83%93%E3%83%87%E3%82%AA%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB'>ビデオチュートリアル</a></h2>
 
               <p class='menulead'>主に英語&#12290;仕上がりは静止画中心&#12290;</p>  
               
@@ -2063,7 +2063,7 @@ user is not using shrink to fit then we expand the header.
     <b:if cond='data:display == &quot;list&quot;'>
      <!-- ブログメニューヘッダ -->
               
-              <h2 class='menuhead'><a dir='ltr' href='http://blenderj.blogspot.jp/search/label/%E3%83%96%E3%83%AD%E3%82%B0'>ブログ</a></h2>
+              <h2 class='menuhead'><a class='blogt' dir='ltr' href='http://blenderj.blogspot.jp/search/label/%E3%83%96%E3%83%AD%E3%82%B0'>ブログ</a></h2>
               <p class='menulead'>Blenderについてのメモ的なことやお知らせ&#12290;</p>
 <p class='labelhead'><a expr:href='&quot;http://blenderj.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
 <nav class='treenav'>
