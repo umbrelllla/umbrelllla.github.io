@@ -1777,14 +1777,14 @@ user is not using shrink to fit then we expand the header.
  <!-- END Content --> 
         
             <b:section class='sidebar col-xs-12 col-sm-3 dmbs-right' id='sidebar' preferred='yes'>
-               <b:widget id='Label1' locked='false' title='ラベル' type='Label'>
+               <b:widget id='Label1' locked='false' title='仕上がり' type='Label'>
                  <b:includable id='main'>
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
  <!-- チュートリアルメニューヘッダ -->
               <h2 class='menuhead'>ビデオチュートリアル</h2>
               <p class='menulead'>主に英語&#12290;仕上がりは静止画中心&#12290;</p>     
-<p class='labelhead'><a expr:href='&quot;http://blenderj.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
+<p class='labelhead'><data:title/></p>
 <nav class='treenav'>
       <ul class='list'>
 <b:loop values='data:labels' var='label'>
@@ -1822,12 +1822,12 @@ user is not using shrink to fit then we expand the header.
   </div>
 </b:includable>
                </b:widget>
-               <b:widget id='Label2' locked='false' title='ラベル' type='Label'>
+               <b:widget id='Label2' locked='false' title='機能' type='Label'>
                  <b:includable id='main'>
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
     
-<p class='labelhead'><a expr:href='&quot;http://blenderj.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
+<p class='labelhead'><data:title/></p>
 <nav class='treenav'>
       <ul class='list'>
 <b:loop values='data:labels' var='label'>
@@ -1866,6 +1866,49 @@ user is not using shrink to fit then we expand the header.
   </div>
 </b:includable>
                </b:widget>
+<b:widget id='Label16' locked='false' title='バージョン' type='Label'>
+                 <b:includable id='main'>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+ 
+<p class='labelhead'><data:title/></p>
+<nav class='treenav'>
+      <ul class='list'>
+<b:loop values='data:labels' var='label'>
+        
+          <b:if cond='data:blog.url == data:label.url'>
+             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;<data:label.name/>
+
+          <b:else/>
+           &lt;li&gt;
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='badge' dir='ltr'><data:label.count/></span>
+          </b:if>
+        &lt;/li&gt;
+      </b:loop>
+
+      </ul>
+      </nav>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='badge' dir='ltr'><data:label.count/></span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+               </b:widget>               
                <b:widget id='Label5' locked='false' title='ラベル' type='Label'>
                  <b:includable id='main'>
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>

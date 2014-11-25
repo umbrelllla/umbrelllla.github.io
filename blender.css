@@ -2124,7 +2124,7 @@ background-color: #007fff;
 
   @media (min-width: 768px) {
 #Label6,#Label7{
-    width: 50%;
+    /* width: 50%; */
     float: left;
   }
 }
