@@ -1881,7 +1881,7 @@ font-weight: bold;
 margin-bottom: 20px;
 }
 h2.title a {
-color: #007fff;
+color: #fff;
 }
 /* p.navbar-text {
 font-size: 75%;
@@ -2213,7 +2213,7 @@ text-rendering: auto;
 -webkit-font-smoothing: antialiased;
 content: "\f0f6";
 font-size: 80%;
-color: #ffa500;
+color: #ff8c00;
 vertical-align: top;
 margin-right: 4px;
 font-weight: normal;
@@ -2224,5 +2224,7 @@ content: "\00bb";
 
 }
 .blog a h1.media-heading {
-color: #ffa500;
+}
+a.dropdown-toggle.videot:before, a.dropdown-toggle.blogt:before {
+color: #fff;
 }

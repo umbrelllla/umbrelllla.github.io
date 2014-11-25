@@ -76,9 +76,28 @@ span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.428571
 .post a img:hover{border:1px solid #38a1db;background-color:#38a1db}
 .post-title h1
 {}
-.post-title h1:before{content:&#39;\002605&#39;}
+.blog div.post-title h1:before,.tutorial div.post-title h1:before{
+display: inline-block;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+font-size: 80%;
+
+margin-right: 8px;}
 #related-posts {
 margin: 40px 20px 50px 20px;
+}
+.blog div.post-title h1:before{
+content: &quot;\f0f6&quot;;
+color: #ffa500;
+vertical-align: top;
+}
+.tutorial div.post-title h1:before{
+ content: "\f16a";
+color: #dc143c; 
+vertical-align: middle;
 }
 img.postthum {
 width: 400px;
@@ -1361,7 +1380,8 @@ user is not using shrink to fit then we expand the header.
   <b:if cond='data:blog.pageType != &quot;archive&quot;'>
 <!-- ///////////個別投稿ページとページ//////////////// -->
 <!-- 共通だったところ -->
-                <div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+&lt;div class=&#39;post hentry <b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><b:if cond='data:label.name == &quot;ブログ&quot;'>blog<b:else/><b:if cond='data:label.name == &quot;ビデオチュートリアル&quot;'>tutorial</b:if></b:if></b:loop></b:if>&#39; itemprop=&#39;blogPost&#39; itemscope=&#39;itemscope&#39; itemtype=&#39;http://schema.org/BlogPosting&#39;&gt;
+                
                   <b:if cond='data:post.firstImageUrl'>
                     <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
                   </b:if>
@@ -1476,7 +1496,7 @@ user is not using shrink to fit then we expand the header.
                     </b:if> 
 
 
-  </div><!-- post hentry -->
+  &lt;/div&gt;<!-- post hentry -->
 <!-- ///////////個別投稿ページここまで//////////////// -->
 </b:if>
 <b:else/><!-- /if else item -->
