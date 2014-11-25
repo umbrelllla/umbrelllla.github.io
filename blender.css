@@ -2111,7 +2111,7 @@ background-color: #007fff;
   }
 }
 /*megamenu2カラム*/
-  #Label6,#Label7,#Label8,#PageList2{
+  #Label6, #Label7, #Label8, #PageList2,  #Label18, #Label19{
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2123,7 +2123,7 @@ background-color: #007fff;
 }
 
   @media (min-width: 768px) {
-#Label6,#Label7{
+#Label6, #Label7, #Label18, #Label19{
     /* width: 50%; */
     float: left;
   }
