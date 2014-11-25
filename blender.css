@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-2wvqcr');
-	src:url('fonts/icomoon.eot?#iefix-2wvqcr') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-2wvqcr') format('woff'),
-		url('fonts/icomoon.ttf?-2wvqcr') format('truetype'),
-		url('fonts/icomoon.svg?-2wvqcr#icomoon') format('svg');
+	src:url('http://umbrelllla.github.io/fonts/icomoon.eot?-2wvqcr');
+	src:url('http://umbrelllla.github.io/fonts/icomoon.eot?#iefix-2wvqcr') format('embedded-opentype'),
+		url('http://umbrelllla.github.io/fonts/icomoon.woff?-2wvqcr') format('woff'),
+		url('http://umbrelllla.github.io/fonts/icomoon.ttf?-2wvqcr') format('truetype'),
+		url('http://umbrelllla.github.io/fonts/icomoon.svg?-2wvqcr#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
