@@ -2200,18 +2200,30 @@ font-style: normal;
 font-weight: normal;
 line-height: 1;
 -webkit-font-smoothing: antialiased;
-content: "\f01d";
+content: "\f16a";
+color: #dc143c;
+font-size: 90%;
+vertical-align: middle;
+margin-right: 2px;
 }
 .blog a h1.media-heading:before,.blogt:before {
 display: inline-block;
-font: normal normal normal 14px/1 FontAwesome;
-font-size: inherit;
+font-family: FontAwesome;
+/* font-size: inherit; */
 text-rendering: auto;
 -webkit-font-smoothing: antialiased;
-content: "\f044";
+content: "\f0f6";
+font-size: 80%;
+color: #ffa500;
+/* top: 1px; */
+vertical-align: top;
+margin-right: 2px;
 }
 h2.menuhead a:after,h2.menuhead a:after, h2.title a:after{
 
 content: "\00bb";
 
+}
+.blog a h1.media-heading {
+color: #ffa500;
 }
