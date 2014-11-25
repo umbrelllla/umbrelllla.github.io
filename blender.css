@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] ,.blog a h1.media-heading:before,.blogt:before,h1.media-heading:before,.videot:before,h2.menuhead a:after, h2.title a:after{
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
