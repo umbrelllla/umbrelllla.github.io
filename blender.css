@@ -2193,3 +2193,30 @@ color: #222;
 ul.list.bigginer {
 margin-bottom: 20px;
 }
+h1.media-heading:before,.videot a:before {
+display: inline-block;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+content: "\f01d";
+}
+.blog a h1.media-heading:before,.blogt a:before {
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+content: "\f1fc";
+}
+h2.menuhead a:after,h2.menuhead a:after, h2.title a:after{
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+content: "\f18e";
+/* font-size: 85%; */
+margin-left: 3px;
+}
