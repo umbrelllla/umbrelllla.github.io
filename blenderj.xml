@@ -211,7 +211,7 @@ background: #D7F5FF;
 border-radius: 5px;
 }
 .excerpt::after {
-content: '';
+content: &#39;&#39;;
 position: absolute;
 bottom: -15px;
 left: 50px;
@@ -1427,16 +1427,18 @@ user is not using shrink to fit then we expand the header.
                     </span>
                     <span class='post-labels'>
                       <b:if cond='data:post.labels'>
-                        &#9001;<b:loop index='i' values='data:post.labels' var='label'>
-                        <b:if cond='data:i == 0'>
-                          <a class='label label-default' expr:href='data:label.url' rel='tag'>
+                        &#9001;<b:loop values='data:post.labels' var='label'>
+
+                            <b:if cond='data:label.isLast == &quot;true&quot;'>
+                              <a class='label label-default' expr:href='data:label.url' rel='tag'>
                             <data:label.name/>
                           </a>
-                         <b:else/>                         
-                            <b:if cond='data:label.isLast == &quot;true&quot;'>
-                              <span>..他<data:i/>個のラベル</span>
+                          <b:else/>
+                          <a class='label label-default' expr:href='data:label.url' rel='tag'>
+                            <data:label.name/>
+                          </a>,
                             </b:if>
-                          </b:if> 
+                          
                         </b:loop>&#9002;
                       </b:if>
                     </span>

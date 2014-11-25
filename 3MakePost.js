@@ -83,7 +83,7 @@ var sindex = '';
 					var seriestitle = title;
 					/*タイトルにパート●つけて投稿タイトルとする*/
 					title+=' パート'+seriesindex[1]+'/'+seriesindex[0];
-					sindex += '<section class="seriesNote"><h4><small>シリーズ目次</small>' +seriestitle+'シリーズ 全'+seriesindex[0]+ 'パート</h4><ul>';
+					sindex += '<section class="seriesNote" id="seriesindex"><h4><small>シリーズ目次</small>' +seriestitle+'シリーズ 全'+seriesindex[0]+ 'パート</h4><ul>';
 					for (i = 1; i <= seriesindex[0]; i++) {
     					if(i == seriesindex[1] ) {
 		    				/*今ここ処理*/
@@ -95,7 +95,7 @@ var sindex = '';
 		    			}
 					}
 					/*シリーズ目次リンク*/
-					indexlink = '<dt>シリーズ目次</dt><dd class="indexlink"><a href="'+url+'#seriesindex">'+seriestitle+'シリーズ</a></dd>';
+					indexlink = '<dt>シリーズ目次</dt><dd class="indexlink"><a href="'+url.replace('.html','')+'#seriesindex">'+seriestitle+'シリーズ</a></dd>';
 					/*シリーズ目次*/
 					sindex += '</ul></section>';
 			}else{
