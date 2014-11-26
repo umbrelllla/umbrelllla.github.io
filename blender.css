@@ -994,7 +994,7 @@ font-size:85%;
 
 .breadcrumb {
 padding: 0;
-margin-bottom: 0px;
+margin-bottom: 20px;
 list-style: none;
 font-size: 70%;
 letter-spacing: 1px;
@@ -1875,7 +1875,6 @@ font-size: 110%;
 padding: 5px 10px 0px 10px;
 border-left: 6px solid red;
 margin: 10px 0 0 0;
-font-weight: bold;
 }
 #HTML2 div.widget-content,#HTML3 div.widget-content {
 margin-bottom: 20px;
@@ -2021,6 +2020,7 @@ p.labelhead {
 .post-title h1 {
 font-size: 160%;
 color: #000;
+margin-top: 0px;
 }
 .menulead {
 
@@ -2221,10 +2221,16 @@ font-weight: normal;
 h2.menuhead a:after,h2.menuhead a:after, h2.title a:after{
 
 content: "\00bb";
-
+color: #007fff;
+margin-left: 5px;
+font-size: 120%;
+line-height: 0.5;
 }
 .blog a h1.media-heading {
 }
 a.dropdown-toggle.videot:before, a.dropdown-toggle.blogt:before {
 color: #fff;
+}
+h2.title a:hover{
+color:#ff37df;
 }

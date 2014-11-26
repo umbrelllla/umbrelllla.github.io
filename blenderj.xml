@@ -84,7 +84,7 @@ font-weight: normal;
 line-height: 1;
 -webkit-font-smoothing: antialiased;
 font-size: 80%;
-
+vertical-align: top;
 margin-right: 8px;}
 #related-posts {
 margin: 40px 20px 50px 20px;
@@ -92,12 +92,10 @@ margin: 40px 20px 50px 20px;
 .blog div.post-title h1:before{
 content: &quot;\f0f6&quot;;
 color: #ffa500;
-vertical-align: top;
 }
 .tutorial div.post-title h1:before{
  content: "\f16a";
 color: #dc143c; 
-vertical-align: middle;
 }
 img.postthum {
 width: 400px;
@@ -725,6 +723,7 @@ user is not using shrink to fit then we expand the header.
 </div>
 </nav>
 <div class='middle category'><div class='container'><div class='row'><div class='col-xs-12'>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
 <b:section id='infomation' preferred='yes'>
   <b:widget id='HTML1' locked='false' title='html' type='HTML'>
     <b:includable id='main'>
@@ -740,7 +739,7 @@ user is not using shrink to fit then we expand the header.
 </b:includable>
   </b:widget>
 </b:section>
-          
+ </b:if>         
         <b:if cond='data:blog.pageType == &quot;archive&quot;'>
         <b:if cond='data:blog.pageName'>
           <h1><data:blog.pageName/>年のアーカイブ</h1>
@@ -760,8 +759,10 @@ user is not using shrink to fit then we expand the header.
 
                   <!-- posts -->
                   <div class='blog-posts hfeed'>
-                    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+                    <b:if cond='data:blog.pageType != &quot;item&quot;'>
+                      <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
                       &lt;div class=&quot;row video&quot;&gt;
+                    </b:if>
                     </b:if>
                     <b:include data='posts' name='breadcrumb'/>
                     <b:include data='top' name='status-message'/>
@@ -799,9 +800,10 @@ user is not using shrink to fit then we expand the header.
                     </b:loop>
                     <!-- //////////投稿ループここまで////////// -->
                     <data:adEnd/>
-                    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+                     <b:if cond='data:blog.pageType != &quot;item&quot;'>
+                      <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
                      &lt;/div&gt;
-                    </b:if>
+                    </b:if></b:if>
                   </div><!-- blog-posts hfeed -->
                   <!-- navigation -->
                   <b:include name='nextprev'/>
@@ -1373,6 +1375,7 @@ user is not using shrink to fit then we expand the header.
                 </div>
                 <div class='clear'/>
               </b:includable>
+
     <b:includable id='post' var='post'>
 
 
@@ -1499,7 +1502,9 @@ user is not using shrink to fit then we expand the header.
   &lt;/div&gt;<!-- post hentry -->
 <!-- ///////////個別投稿ページここまで//////////////// -->
 </b:if>
-<b:else/><!-- /if else item -->
+</b:if>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
 <!-- ////////////////アーガイブとトップページ/////////////// -->
  <!-- 共通だったところ -->
 
@@ -1591,6 +1596,7 @@ user is not using shrink to fit then we expand the header.
   &lt;/div&gt;<!-- post hentry -->
 
 <!-- ////////////////アーガイブとトップページここまで/////////////// -->            
+</b:if>
 </b:if><!-- /if else item -->
   <!-- email post links -->
                                         
