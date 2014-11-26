@@ -1,3 +1,6 @@
+a.titlelogo img {
+margin: 5px 0 5px 0;
+}
   .post {
 color: #333;
 line-height: 2em;
@@ -2116,6 +2119,13 @@ background-color: #007fff;
   .dropdown-menu-large .dropdown-header {
     padding: 3px 15px !important;
   }
+  .container.head {
+text-align: center;
+}
+.descriptionwrapper,a.titlelogo {
+float: none;
+}
+
 }
 /*megamenu2カラム*/
   #Label6, #Label7, #Label8, #PageList2,  #Label18, #Label19{
@@ -2233,4 +2243,14 @@ color: #fff;
 }
 h2.title a:hover{
 color:#ff37df;
+}
+.descriptionwrapper {
+float: right;
+}
+a.titlelogo {
+float: left;
+}
+.container.head {
+padding-top: 5px;
+padding-bottom: 5px;
 }
