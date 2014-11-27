@@ -110,4 +110,5 @@ p.home:before{content:'\00272a'}.navbar-fixed-top .descriptionwrapper{display:no
 ul.list.bigginer{margin-bottom:20px}h1.media-heading:before,.videot:before{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;content:"\f16a";color:#dc143c;font-size:90%;vertical-align:middle;margin-right:2px}
 .blog a h1.media-heading:before,.blogt:before{display:inline-block;font-family:FontAwesome;text-rendering:auto;-webkit-font-smoothing:antialiased;content:"\f0f6";font-size:80%;color:#ff8c00;vertical-align:top;margin-right:4px;font-weight:normal}
 h2.menuhead a:after,h2.menuhead a:after,h2.title a:after{content:"\00bb";color:#007fff;margin-left:5px;font-size:120%;line-height:.5}
-a.dropdown-toggle.videot:before,a.dropdown-toggle.blogt:before{color:#fff}h2.title a:hover{color:#ff37df}
+a.dropdown-toggle.videot:before,a.dropdown-toggle.blogt:before{color:#fff}h2.title a:hover{color:#ff37df}img.blendlogo{float:left;margin-top:5px}#infomation h4{margin:0 0 5px 0;margin-top:5px}
+#infomation p{font-size:85%;line-height:1.2;color:#666}
