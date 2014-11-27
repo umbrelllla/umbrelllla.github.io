@@ -2188,7 +2188,7 @@ margin-right: 3px;
 color: #666;
 }
 .vrow {
-margin-bottom: 50px;
+margin-bottom: 20px;
 background-color: #111;
 border: 1px solid #000;
 }
@@ -2254,12 +2254,12 @@ color:#ff37df;
 
 img.blendlogo {
 float: left;
-margin-top: 5px;
+margin-top: 15px;
 }
 
 #infomation h4 {
 margin: 0 0 5px 0;
-margin-top: 5px;
+margin-top: 15px;
 }
 #infomation p {
 font-size: 85%;
@@ -2270,4 +2270,11 @@ color: #666;
 float: left;
 margin: 0 7px 0 0;
 border: 1px solid #000;
+}
+.post ins.adsbygoogle {
+margin-bottom: 20px;
+}
+#infomation .row {
+margin-top: 10px;
+margin-bottom: 10px;
 }
