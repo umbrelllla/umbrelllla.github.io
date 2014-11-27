@@ -2251,3 +2251,18 @@ color: #fff;
 h2.title a:hover{
 color:#ff37df;
 }
+
+img.blendlogo {
+float: left;
+margin-top: 5px;
+}
+
+#infomation h4 {
+margin: 0 0 5px 0;
+margin-top: 5px;
+}
+#infomation p {
+font-size: 85%;
+line-height: 1.2;
+color: #666;
+}
