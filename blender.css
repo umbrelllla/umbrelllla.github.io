@@ -1318,7 +1318,7 @@ button.close {
   .visible-lg {
     display: block !important;
   }
-}
+}*/
 @media (max-width: 767px) {
   .hidden-xs {
     display: none !important;
@@ -1333,7 +1333,7 @@ button.close {
   .hidden-md {
     display: none !important;
   }
-} */
+}
 .btn {
   border: none;
 }
