@@ -28,6 +28,7 @@ font-size: 80%;
 padding: 20px 10px;
 color: #999;
 margin-top:20px;
+
 }
 /* .main-top-nav{background:#34495e !important;}
 .post-feeds{display:none;}
@@ -910,8 +911,8 @@ font-size: 70%;
   }
 } */
 .navbar-default {
-background-color: #4c5358;
-border-color: #4c5358;
+background-color: #4A7CAC;
+border-color: #3E5164;
 color: #fff;
 }
 .navbar-default .navbar-brand {
@@ -2296,14 +2297,6 @@ padding-top: 15px;
   .navbar-fixed-bottom .navbar-collapse {
     max-height: 200px;
   }
-  section.seriesNote {
-margin: 5px;
-padding: 25px 10px; 
-}
-#related-posts {
-margin: 30px 0 20px 0;
-}
-
 }
 .container > .navbar-header,
 .container-fluid > .navbar-header,
