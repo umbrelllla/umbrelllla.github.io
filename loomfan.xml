@@ -203,7 +203,7 @@ user is not using shrink to fit then we expand the header.
         <a class='dropdown-toggle videot' data-toggle='dropdown' href='#'>ビデオチュートリアル <b class='caret'/></a>
 
           <b:section class='main dropdown-menu dropdown-menu-large row' id='megamenu' showaddelement='yes'>
-            <b:widget id='HTML2' locked='false' title='' type='HTML'>
+            <b:widget id='HTML2' locked='false' title='HTML' type='HTML'>
               <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -216,7 +216,7 @@ user is not using shrink to fit then we expand the header.
   <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Label6' locked='false' title='ラベル' type='Label'>
+            <b:widget id='Label6' locked='false' title='' type='Label'>
               <b:includable id='main'>
     <b:if cond='data:display == &quot;list&quot;'>
       <ul>
@@ -253,7 +253,7 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Label7' locked='false' title='仕上がり' type='Label'>
+            <b:widget id='Label7' locked='false' title='道具別' type='Label'>
               <b:includable id='main'>
    <b:if cond='data:display == &quot;list&quot;'>
       <ul>
@@ -291,7 +291,7 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Label18' locked='false' title='機能' type='Label'>
+            <b:widget id='Label18' locked='false' title='仕上がり別' type='Label'>
               <b:includable id='main'>
    <b:if cond='data:display == &quot;list&quot;'>
       <ul>
@@ -329,7 +329,7 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Label21' locked='false' title='機能' type='Label'>
+            <b:widget id='Label21' locked='false' title='色別' type='Label'>
               <b:includable id='main'>
    <b:if cond='data:display == &quot;list&quot;'>
       <ul>
@@ -367,7 +367,7 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Label19' locked='false' title='バージョン' type='Label'>
+            <b:widget id='Label19' locked='false' title='季節やイベント別' type='Label'>
               <b:includable id='main'>
    <b:if cond='data:display == &quot;list&quot;'>
       <ul>
@@ -414,7 +414,7 @@ user is not using shrink to fit then we expand the header.
         <a class='dropdown-toggle blogt' data-toggle='dropdown' href='#'>ブログ <b class='caret'/></a>
 
           <b:section class='main dropdown-menu dropdown-menu-large row' id='blogmenu' showaddelement='yes'>
-            <b:widget id='HTML3' locked='false' title='' type='HTML'>
+            <b:widget id='HTML3' locked='false' title='HTML' type='HTML'>
               <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -501,7 +501,9 @@ user is not using shrink to fit then we expand the header.
 </li>
 <!-- /////////横メニュー増やす場合はここまでコピペ&#12290;//////////// -->
 
-
+<li>
+          <a href="http://loomfan.blogspot.jp/p/blog-page.html">ショップ</a>
+        </li>
 
 
 
@@ -1942,7 +1944,7 @@ user is not using shrink to fit then we expand the header.
      <!-- ブログメニューヘッダ -->
               
               <h2 class='menuhead'><a class='blogt' dir='ltr' href='http://loomfan.blogspot.jp/search/label/%E3%83%96%E3%83%AD%E3%82%B0'>ブログ</a></h2>
-              <p class='menulead'>レインボールーム、モンスターテイル、ファンルーム等についてのメモ的なことやお知らせ&#12290;</p>
+              <p class='menulead'>レインボールーム&#12289;モンスターテイル&#12289;ファンルーム等についてのメモ的なことやお知らせ&#12290;</p>
 <p class='labelhead'><a expr:href='&quot;http://loomfan.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
 <nav class='treenav'>
       <ul class='list'>
