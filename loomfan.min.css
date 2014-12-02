@@ -75,8 +75,9 @@ h1,h2,h3,h4,h5,h6{font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo
  * http://geedmo.github.com/yamm3
  */pre{margin:0;padding:10px 20px!important}
 .yamm .yamm-content li a{color:#ccc;font-size:90%;line-height:2;font-weight:normal}.yamm .yamm-content li{list-style-type:none}.yamm .yamm-content ul{padding:0}
-#navbar-collapse-grid>ul>li>a:hover{background-color:#00608d}.navbar-default .navbar-nav>li>a{color:#FFF}ul.list-unstyled{line-height:24px;margin-bottom:8px}
-ul.list{border-bottom:1px dashed #666;margin:0 auto;min-height:auto;font-size:80%;list-style-type:none;margin:0 0 0 10px;padding:0 0 10px 0;line-height:1.8}
+#navbar-collapse-grid>ul>li>a:hover{background-color:#00608d}.navbar-default .navbar-nav>li>a{color:#FFF}ul.list-unstyled{line-height:1;margin-bottom:8px;font-size:90%;padding:10px 10px 0 0}
+ul.list-unstyled li{margin:10px 0}#infomation .col-sm-6.col-md-4{border-right:1px solid #ccc}li i.fa.fa-arrow-right{font-size:60%;vertical-align:middle;margin-right:3px;color:#ff8bf9}
+li i.fa.fa-external-link{font-size:70%;margin-right:3px;color:#0bf}ul.list{border-bottom:1px dashed #666;margin:0 auto;min-height:auto;font-size:80%;list-style-type:none;margin:0 0 0 10px;padding:0 0 10px 0;line-height:1.8}
 .labelhead{margin:0 0 5px}#Header2 a{color:#fff}.yamm-content .treenav ul.list>li{padding:0}.yamm-content .treenav ul.list li{color:#888}.yamm-content .treenav ul.list ul li:last-child:before{background-color:#222}
 .yamm-content .treenav ul.list li a{color:#ccc;font-weight:normal;position:relative}div.middle.category{padding:10px 0;background-color:#f2f2f2}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-right-radius:0;border-top-left-radius:0;background-color:#232323}
 footer{margin:0;background-color:#111;padding:15px 0 20px 0}.dmbs-right h3{background-color:#000;color:#fff;font-size:150%;padding:6px 10px 5px 20px;border-left:4px solid #f00;margin-bottom:10px;font-size:120%}

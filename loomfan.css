@@ -1449,8 +1449,27 @@ background-color: #00608d;
 color: #FFF;
 }
 ul.list-unstyled {
-line-height: 24px;
-    margin-bottom: 8px;
+line-height: 1;
+margin-bottom: 8px;
+font-size: 90%;
+padding: 10px 10px 0 0;
+}
+ul.list-unstyled li {
+margin: 10px 0;
+}
+#infomation .col-sm-6.col-md-4 {
+border-right: 1px solid #ccc;
+}
+li i.fa.fa-arrow-right {
+font-size: 60%;
+vertical-align: middle;
+margin-right: 3px;
+color: #FF8BF9;
+}
+li i.fa.fa-external-link {
+font-size: 70%;
+margin-right: 3px;
+color: rgb(0, 187, 255);
 }
 /* .video div.post-meta ul.list-inline > li.date {
 font-size: 85%;
