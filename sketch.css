@@ -6,8 +6,9 @@ overflow: hidden;
 border-bottom: 1px solid #ddd;
 padding: 8px 0px;
 }
-
-
+#HTML2 .widget-content a img {
+border: 2px solid #009DC4;
+}
 #footer {
 background-color: #111;
 text-align: center;
