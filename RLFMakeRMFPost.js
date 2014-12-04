@@ -197,6 +197,14 @@ function toHms(t) {
  			    case 'Lauren\'s Loom':
 			    	source = 'https://plus.google.com/b/104748838421935953944/117633863171237482331/posts';
 			    	break;
+			    case 'omocha kodomo':
+			    	source = 'https://plus.google.com/b/104748838421935953944/103964625543278581217/posts';
+			    	break;
+			    case 'SoCraftastic':
+			    	source = 'https://plus.google.com/b/104748838421935953944/+SoCraftastic/posts';
+				case 'HANAYAMAchannel':
+			    	source = 'http://www.hanayamatoys.co.jp/product/category/hobby/funloom/funloom_standard-set.html';
+			    	break;
 				default:
     				author= '<strong style="font-color:red;font-size:25px;">該当なし</strong>';
     				source = 'http://';
