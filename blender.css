@@ -11,7 +11,9 @@ float: left;
 padding-top: 5px;
 padding-bottom: 5px;
 }
+
   .post {
+}
 color: #333;
 line-height: 2em;
 clear: both; 
@@ -2166,8 +2168,8 @@ color: #666;
 }
 .vrow {
 margin-bottom: 20px;
-background-color: #111;
-border: 1px solid #000;
+/*background-color: #111;
+border: 1px solid #000;*/
 }
 .source {
 font-weight: bold;

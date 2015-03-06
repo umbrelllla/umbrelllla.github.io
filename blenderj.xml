@@ -72,7 +72,15 @@ a.youtube-lazy-link:hover{text-decoration:none;color:#FFF}.youtube-lazy-link-div
 #related-posts ul li{clear:both}h3.heading-border{margin-bottom:10px}#related-posts ul li:before{content:&#39;\00bb&#39;}span#blog-pager-older-link{float:right}
 span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto;max-width:100%;height:auto}
 .post a img:hover{border:1px solid #38a1db;background-color:#38a1db}.blog div.post-title h1:before,.tutorial div.post-title h1:before{display: inline-block;font-family: FontAwesome;font-style: normal;font-weight: normal;line-height: 1;-webkit-font-smoothing: antialiased;font-size: 80%;vertical-align: top;margin-right: 8px;}#related-posts {margin: 40px 20px 50px 20px;}.blog div.post-title h1:before{content: &quot;\f0f6&quot;;color: #ffa500;}.tutorial div.post-title h1:before{content: &quot;\f16a&quot;;color: #dc143c; }img.postthum {width: 400px;margin-bottom: 10px;}.smallthumbs img {margin-right: 5px;}section.seriesNote h4 {border-bottom: 1px dotted #ccc;padding-bottom: 5px;}section.seriesNote h4 small:after {content: &#39;\00bb&#39;;color: #000;margin: 0 3px;font-size: 90%;}dd.indexlink a {font-size: 80%;}.timetable li span:after {
-content: &#39;\002662&#39;;font-size: 70%;color: #ccc;vertical-align: middle;margin: 0 3px;}section.seriesNote ul {list-style-type: none;padding-left: 20px;}section.seriesNote ul li:before {content: &#39;\00bb&#39;;margin-right: 3px;color: #999;}section.seriesNote {background-color: #f2f2f2;margin: 40px;padding: 25px 35px;border: 8px double #dcdcdc;}section.seriesNote h4 small {font-weight: bold;color: #777;font-size: 80%;}span.currentpart:before {content: &#39;\002190&#39;;margin-right: 3px;}span.currentpart {color: #ff0000;}section.seriesNote h4 {border-bottom: 1px dotted #ccc;padding-bottom: 5px;font-size: 100%;}.vthumbnails {margin: 0 0 0 20px;}ul.timetable li:before {content: &#39;--&#39;;font-size: 80%;margin-right: 5px;vertical-align: middle;}.timetable {list-style-type: none;padding-left: 5px;font-size: 90%;margin: 20px 10px 0px 0px;}ul.timetable li:before {content: &#39;\002192&#39;;font-size: 70%;margin-right: 3px;vertical-align: middle;color: #999;}.timetable li {line-height: 28px;margin: 10px 0;text-indent: -6.5em;padding-left: 6.5em;}.timetable li span {color: #555;}.lazyYT-title {    z-index: 100!important;    color: #fff!important;    font-size: 14px!important;    top: 10px!important;    left: 12px!important;    position: absolute!important;    margin: 0!important;    padding: 0.5em!important;    line-height: 1!important;    font-style: normal!important;    font-weight: bold!important;    background-color: rgba(0,0,0,0.8)!important;    border-radius: 0.5em!important;}.lazyYT-button {    margin: 0!important;    padding: 0!important;    width: 60px!important;    height: 41px!important;    z-index: 100!important;    position: absolute!important;    top: 50%!important;    margin-top: -22px!important;    left: 50%!important;    margin-left: -30px!important;    background-image: url(&#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAApCAYAAABp50paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABV9JREFUeNrcWk1IK1cUvrmZGBOjJvr6xKe+Slvroi6kK6GrUkSxO12IC6GgUFBcuOlC8GdRulERV3VRQV0IKhRU0NJupK3tpi1dCRaxffWHGjWZPJNnNJlMz9FzX+ZNkzylcxP1wMdMZiYz97vnu+ee+2Njmc0GyANwgANQDCgAuABOwGOAG6AAiuh+MV3Lo+fc9KyN3qGYvnEBSAA0QBTwAnBp+P0ccAxQ6bkw/T4HRABn9B+8F6f/ZiRktjJANaCSUE0kkVApoBDgAeQTIeM7dAKjAuiG6+b7wniKstgMv+2m5xMGslgZIUAAEAOcAv4GHAL+BDwDBNMRxvOPAZ8C3iUPOVNUiGaCfgOV3MZe9z5OlSDAUzxzQZXyC+BLwM+pCtMJGCTvCTJxOlpBxGpLVzF2ajqiMvyAzwDfGuXyPuALkmyY5KGZ5GVGri1duXRyVIyOPsA7gO9R/iIYtQLKiSy7Q6T+b2UkSN7vAT4U7QGDz9Mbtp/7SPySjh9gj8EpApeyh2/YoyicuhlvhuBkVU3n2jA/cBkJxyUVjBuipz2HEf0qYcKs5w1ify6DbFVVVbSrq0s9ODhQlpaWClRVdUtWUyqLE0cPEn5CXkhI8HC8ubk5ODw8XJBIJOJNTU2H/f39j/f29jxZDJI2Iowq9nJiLk1KZWWYqcKHOC9pa2t7c21tLdTR0XHgdDo1kng22rdGQaucU2YlraY1TRPJACrIXldXVzU/P+8YHR09rqysVIkwz1JWxjmNZqQRBimbBxdIvLyvr8+7uroabGxs9NP1bAS0fOmE09Q2SsxdX19fsbCw4BgcHNzzeDxhGrDItCJO2s52hiVIO3w+X+nIyEgxRPCjmpqaE8lp7VU/nCeTMASrTO++GrTDM8UQzStB4uHOzs5niqIkJLRrLIeTG2QkpVZtthu9Fgk6amtrn8zMzLgmJyePvV7vmcVl0kUuncfuhumkiIqenh7f4uJiAJKWMwuDmS4krdyxURKOYz0Qvd0NDQ1Ri9+tKIbh050Zx+q6fjg1NaWtr6/7SO5WvTuq0ABZuNyWY7L6ycnJ0dDQ0OXc3FxFJBKxW0w4opCEcmnYrDh4Vd3c3FS7u7t929vbj6ipWT3IuOREOFeeRQ/GQqGQf2xsLNDS0vIIyBbRdU2Cgl5K2pYD+SKpF1tbW0cDAwOu5eXlKkleNdqVpMMyk3eQaioJ6zCo8M/OzsZh6Fi0v79fYsi+ZNpzJByU6WHD4AEJ4QxpfHd392hiYuJyenq64vz8XGGvrlJIHSbix46lavc60xISVjc2NsK9vb0ukHKZYeIhG00I7WpeOirxQ3xnZwc99w90MaHx8fFAa2trMZAtYcl542wYOhbXoU7xox8BvmLJFTxLCRcWFkbb29tVv9+vrKyseOnj2SL6MqUEHAA+QcJ1gDl2PTcdldCexeKXCEq5GIrizOzvgC5OUTrI/rtua1ncYsl1nlzm7CjpCKcTld3vtaQbZVlY+SJoBR4wUeHIPUyykDBOwP8mZgTYw1pQQy755N2fsGlxurgO+JUmAxyGh/V7VgHmMjspNn0D+IEZZhOwDf/FrheOn7Lkdgexkm43vfB18rF8JuQGvYCD4DSUH69/B/gccJSqgG+z630euJb6Fv3JaSCfjpBm6McTFqWKNvbqPg6eIefXSbYXVAbc8PIH4EfA1+x620NGj2Cf7KMOG7cm4fi0hK5XUw0KiG1MeHQTHBZGVrFjJ0znuEXpjIItdnX7FHRPCeLeITPt4LmtBEWNiz1XYj7MxZJbmPIJpSy5pUlUXDrPxAzKiBBJN53vk9fE/q0okY4ZVBS7jaL+FWAA/y++OTUmOgsAAAAASUVORK5CYII=&#39;)!important;}.js-lazyYT {}.excerpt {position: relative;padding: 0px 15px;margin: 1em 0px;color: #666;background: #D7F5FF;border-radius: 5px;}.excerpt::after {content: &#39;&#39;;position: absolute;bottom: -15px;left: 50px;border-width: 15px 13px 0px;border-style: solid;border-color: #D7F5FF transparent;display: block;width: 0px;}@media (min-width: 992px) { .vthumbnails{    float: right;  }  }@media (max-width: 992px) {.vthumbnails {margin: 0 0 20px 0;text-align: center;}.vrow dl {padding: 10px 10px 0px 10px;}}</style><b:else/><style>.middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}.status-msg-body{position: relative!important;margin: 20px 0 30px 0;padding: 0;border-bottom: 1px dashed #444;}.status-msg-wrap{font-size:110%;position:relative}.status-msg-body a {display: inline-block;min-width: 10px;padding: 5px 15px 2px 15px;font-size: 15px;font-weight: normal;color: #fff;line-height: 1;vertical-align: baseline;white-space: nowrap;text-align: center;background-color: #007fff;border-radius: 10px;}#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}.page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}.media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size: 90%;margin-top: 10px;margin-bottom: 3px;padding-bottom: 5px;font-weight: normal;border-bottom: 1px dotted #c9c9c9;}.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color: #999;font-size: 65%;line-height: 1.5;}a.snippet p {margin-top: 5px;}div.row.video {border-bottom: 1px solid #ddd;margin-bottom: 20px;}</style></b:if><b:if cond='data:blog.pageType != &quot;static_page&quot;'><style>  .post-title{}</style></b:if>
+content: &#39;\002662&#39;;font-size: 70%;color: #ccc;vertical-align: middle;margin: 0 3px;}section.seriesNote ul {list-style-type: none;padding-left: 20px;}section.seriesNote ul li:before {content: &#39;\00bb&#39;;margin-right: 3px;color: #999;}section.seriesNote {background-color: #f2f2f2;margin: 40px;padding: 25px 35px;border: 8px double #dcdcdc;}section.seriesNote h4 small {font-weight: bold;color: #777;font-size: 80%;}span.currentpart:before {content: &#39;\002190&#39;;margin-right: 3px;}span.currentpart {color: #ff0000;}section.seriesNote h4 {border-bottom: 1px dotted #ccc;padding-bottom: 5px;font-size: 100%;}.vthumbnails {margin: 0 0 0 20px;}ul.timetable li:before {content: &#39;--&#39;;font-size: 80%;margin-right: 5px;vertical-align: middle;}
+.timetable {list-style-type: none;padding-left: 0px;font-size: 80%;}ul.timetable li:before {content: &#39;\002192&#39;;font-size: 70%;margin-right: 3px;vertical-align: middle;color: #999;}
+.timetable li {line-height: 1.5em;position: relative;
+display: block;
+padding: 8px 10px;
+margin-bottom: -1px;
+background-color: #fff;
+border: 1px solid #ddd;}
+.timetable li span {color: #555;}.lazyYT-title {    z-index: 100!important;    color: #fff!important;    font-size: 14px!important;    top: 10px!important;    left: 12px!important;    position: absolute!important;    margin: 0!important;    padding: 0.5em!important;    line-height: 1!important;    font-style: normal!important;    font-weight: bold!important;    background-color: rgba(0,0,0,0.8)!important;    border-radius: 0.5em!important;}.lazyYT-button {    margin: 0!important;    padding: 0!important;    width: 60px!important;    height: 41px!important;    z-index: 100!important;    position: absolute!important;    top: 50%!important;    margin-top: -22px!important;    left: 50%!important;    margin-left: -30px!important;    background-image: url(&#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAApCAYAAABp50paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABV9JREFUeNrcWk1IK1cUvrmZGBOjJvr6xKe+Slvroi6kK6GrUkSxO12IC6GgUFBcuOlC8GdRulERV3VRQV0IKhRU0NJupK3tpi1dCRaxffWHGjWZPJNnNJlMz9FzX+ZNkzylcxP1wMdMZiYz97vnu+ee+2Njmc0GyANwgANQDCgAuABOwGOAG6AAiuh+MV3Lo+fc9KyN3qGYvnEBSAA0QBTwAnBp+P0ccAxQ6bkw/T4HRABn9B+8F6f/ZiRktjJANaCSUE0kkVApoBDgAeQTIeM7dAKjAuiG6+b7wniKstgMv+2m5xMGslgZIUAAEAOcAv4GHAL+BDwDBNMRxvOPAZ8C3iUPOVNUiGaCfgOV3MZe9z5OlSDAUzxzQZXyC+BLwM+pCtMJGCTvCTJxOlpBxGpLVzF2ajqiMvyAzwDfGuXyPuALkmyY5KGZ5GVGri1duXRyVIyOPsA7gO9R/iIYtQLKiSy7Q6T+b2UkSN7vAT4U7QGDz9Mbtp/7SPySjh9gj8EpApeyh2/YoyicuhlvhuBkVU3n2jA/cBkJxyUVjBuipz2HEf0qYcKs5w1ify6DbFVVVbSrq0s9ODhQlpaWClRVdUtWUyqLE0cPEn5CXkhI8HC8ubk5ODw8XJBIJOJNTU2H/f39j/f29jxZDJI2Iowq9nJiLk1KZWWYqcKHOC9pa2t7c21tLdTR0XHgdDo1kng22rdGQaucU2YlraY1TRPJACrIXldXVzU/P+8YHR09rqysVIkwz1JWxjmNZqQRBimbBxdIvLyvr8+7uroabGxs9NP1bAS0fOmE09Q2SsxdX19fsbCw4BgcHNzzeDxhGrDItCJO2s52hiVIO3w+X+nIyEgxRPCjmpqaE8lp7VU/nCeTMASrTO++GrTDM8UQzStB4uHOzs5niqIkJLRrLIeTG2QkpVZtthu9Fgk6amtrn8zMzLgmJyePvV7vmcVl0kUuncfuhumkiIqenh7f4uJiAJKWMwuDmS4krdyxURKOYz0Qvd0NDQ1Ri9+tKIbh050Zx+q6fjg1NaWtr6/7SO5WvTuq0ABZuNyWY7L6ycnJ0dDQ0OXc3FxFJBKxW0w4opCEcmnYrDh4Vd3c3FS7u7t929vbj6ipWT3IuOREOFeeRQ/GQqGQf2xsLNDS0vIIyBbRdU2Cgl5K2pYD+SKpF1tbW0cDAwOu5eXlKkleNdqVpMMyk3eQaioJ6zCo8M/OzsZh6Fi0v79fYsi+ZNpzJByU6WHD4AEJ4QxpfHd392hiYuJyenq64vz8XGGvrlJIHSbix46lavc60xISVjc2NsK9vb0ukHKZYeIhG00I7WpeOirxQ3xnZwc99w90MaHx8fFAa2trMZAtYcl542wYOhbXoU7xox8BvmLJFTxLCRcWFkbb29tVv9+vrKyseOnj2SL6MqUEHAA+QcJ1gDl2PTcdldCexeKXCEq5GIrizOzvgC5OUTrI/rtua1ncYsl1nlzm7CjpCKcTld3vtaQbZVlY+SJoBR4wUeHIPUyykDBOwP8mZgTYw1pQQy755N2fsGlxurgO+JUmAxyGh/V7VgHmMjspNn0D+IEZZhOwDf/FrheOn7Lkdgexkm43vfB18rF8JuQGvYCD4DSUH69/B/gccJSqgG+z630euJb6Fv3JaSCfjpBm6McTFqWKNvbqPg6eIefXSbYXVAbc8PIH4EfA1+x620NGj2Cf7KMOG7cm4fi0hK5XUw0KiG1MeHQTHBZGVrFjJ0znuEXpjIItdnX7FHRPCeLeITPt4LmtBEWNiz1XYj7MxZJbmPIJpSy5pUlUXDrPxAzKiBBJN53vk9fE/q0okY4ZVBS7jaL+FWAA/y++OTUmOgsAAAAASUVORK5CYII=&#39;)!important;}.js-lazyYT {}.excerpt {position: relative;padding: 0px 15px;margin: 1em 0px;color: #666;background: #D7F5FF;border-radius: 5px;}.excerpt::after {content: &#39;&#39;;position: absolute;bottom: -15px;left: 50px;border-width: 15px 13px 0px;border-style: solid;border-color: #D7F5FF transparent;display: block;width: 0px;}@media (min-width: 992px) { .vthumbnails{    float: right;  }  }@media (max-width: 992px) {.vthumbnails {margin: 0 0 20px 0;text-align: center;}.vrow dl {padding: 10px 10px 0px 10px;}}</style><b:else/><style>.middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}.status-msg-body{position: relative!important;margin: 20px 0 30px 0;padding: 0;border-bottom: 1px dashed #444;}.status-msg-wrap{font-size:110%;position:relative}.status-msg-body a {display: inline-block;min-width: 10px;padding: 5px 15px 2px 15px;font-size: 15px;font-weight: normal;color: #fff;line-height: 1;vertical-align: baseline;white-space: nowrap;text-align: center;background-color: #007fff;border-radius: 10px;}#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}.page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}.media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size: 90%;margin-top: 10px;margin-bottom: 3px;padding-bottom: 5px;font-weight: normal;border-bottom: 1px dotted #c9c9c9;}.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color: #999;font-size: 65%;line-height: 1.5;}a.snippet p {margin-top: 5px;}div.row.video {border-bottom: 1px solid #ddd;margin-bottom: 20px;}</style></b:if><b:if cond='data:blog.pageType != &quot;static_page&quot;'><style>  .post-title{}</style></b:if>
 <script>
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -81,7 +89,7 @@ content: &#39;\002662&#39;;font-size: 70%;color: #ccc;vertical-align: middle;mar
 
   ga(&#39;create&#39;, &#39;UA-56661536-2&#39;, &#39;auto&#39;, {&#39;allowLinker&#39;: true});
   ga(&#39;require&#39;, &#39;linker&#39;);
-  ga(&#39;linker:autoLink&#39;, [&#39;blendersketch.blogspot.jp&#39;, &#39;blendersketch.blogspot.jp&#39;] );
+  ga(&#39;linker:autoLink&#39;, [&#39;blendersketch.blogspot.jp&#39;, &#39;blendersketch.blogspot.com&#39;] );
   ga(&#39;require&#39;, &#39;displayfeatures&#39;);
   ga(&#39;send&#39;, &#39;pageview&#39;);
 </script>
@@ -90,7 +98,7 @@ content: &#39;\002662&#39;;font-size: 70%;color: #ccc;vertical-align: middle;mar
 <div class='headbody'> <div class='container head'> <div class='headtitle' id='banner'>
   <!-- ヘッダ画像 -->
           <b:section class='header' id='blog-title' maxwidgets='1' showaddelement='no'>
-            <b:widget id='Header1' locked='true' title='Blender Sketch (Header)' type='Header'>
+            <b:widget id='Header1' locked='true' title='videoblog (Header)' type='Header'>
               <b:includable id='main'>
                 <b:if cond='data:useImage'>
                   <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
@@ -173,7 +181,7 @@ user is not using shrink to fit then we expand the header.
           <span class='icon-bar'/>
         </button>
 <b:section class='header' id='middle-title' maxwidgets='1' showaddelement='no'>
-  <b:widget id='Header2' locked='true' title='Blender Sketch (Header)' type='Header'>
+  <b:widget id='Header2' locked='true' title='videoblog (Header)' type='Header'>
     <b:includable id='main'>
                 <b:if cond='data:blog.url == data:blog.homepageUrl'><data:title/><b:else/><a expr:href='data:blog.homepageUrl'><data:title/></a></b:if>
               </b:includable>
@@ -216,7 +224,7 @@ user is not using shrink to fit then we expand the header.
   <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Label6' locked='false' title='' type='Label'>
+            <b:widget id='Label6' locked='false' title='ラベル' type='Label'>
               <b:includable id='main'>
     <b:if cond='data:display == &quot;list&quot;'>
       <ul>
@@ -1675,7 +1683,7 @@ user is not using shrink to fit then we expand the header.
  <!-- END Content --> 
         
             <b:section class='sidebar col-xs-12 col-sm-3 dmbs-right' id='sidebar' preferred='yes'>
-               <b:widget id='Label1' locked='false' title='' type='Label'>
+               <b:widget id='Label1' locked='false' title='カテゴリ（ラベル）' type='Label'>
                  <b:includable id='main'>
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
@@ -2096,36 +2104,12 @@ user is not using shrink to fit then we expand the header.
                   </b:if>
                 </b:includable>
                </b:widget>
-               <b:widget id='Stats1' locked='false' title='ページビューの合計' type='Stats'>
-                 <b:includable id='main'>
-  <b:if cond='data:title'> <h3 class='widget-title'><data:title/></h3></b:if>
-  <div class='widget-content'>
-    <!-- Content is going to be visible when data will be fetched from server. -->
-    <div expr:id='data:widget.instanceId + &quot;_content&quot;' style='display: none;'>
-      <!-- Counter and image will be injected later via AJAX call. -->
-      <b:if cond='data:showSparkline'>
-        <img alt='Sparkline' expr:id='data:widget.instanceId + &quot;_sparkline&quot;' height='30' width='75'/>
-      </b:if>
-      <b:if cond='data:showGraphicalCounter'>
-        <span class='counter-wrapper graph-counter-wrapper' expr:id='data:widget.instanceId + &quot;_totalCount&quot;'/>
-      <b:else/>
-        <span class='counter-wrapper text-counter-wrapper' expr:id='data:widget.instanceId + &quot;_totalCount&quot;'/>
-      </b:if>
-      <b:include name='quickedit'/>
-    </div>
-  </div>
-</b:includable>
-               </b:widget>
                <b:widget id='Followers1' locked='false' title='フォロワー' type='Followers'>
                  <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
     <b:if cond='data:codeSnippet != &quot;&quot;'>
       <h2 class='title'><data:title/></h2>
-    <b:else/>
-      <b:if cond='data:totalFollowerCount != &quot;&quot;'>
-        <h2 class='title'><data:title/> (<data:totalFollowerCount/>)</h2>
-      </b:if>
-    </b:if>  
+    </b:if>
   </b:if>
   <div class='widget-content'>
     <div expr:id='data:widget.instanceId + &quot;-wrapper&quot;'>
@@ -2133,83 +2117,11 @@ user is not using shrink to fit then we expand the header.
         <div style='margin-right:2px;'>
           <data:codeSnippet/>
         </div>
-      <b:else/>
-        <b:if cond='data:totalFollowerCount == &quot;&quot;'>
-          <span class='item-control following-not-admin'>
-            <b><data:failureSnippet/></b>
-          </span>
-          <span class='item-control blog-admin'>
-            <b><data:adminFailureSnippet/></b>
-          </span>
-        <b:else/>
-          <b:if cond='data:followingLinkPresent'>
-            <div class='follow-this profile-link item-control following-follow-this'>
-              <a expr:href='&quot;javascript:_FollowersView._openPopup(\&quot;&quot; + data:followUri + &quot;\&quot;);&quot;'>
-                <data:followThisMessage/>
-              </a>
-            </div>
-            <div class='follow-this profile-link item-control following-stop-following-this'>
-              <a expr:href='&quot;javascript:_FollowersView._openPopup(\&quot;&quot; + data:followUri + &quot;\&quot;);&quot;'>
-                <data:stopFollowingMessage/>
-              </a>
-            </div>
-          </b:if>
-  
-          <div class='followers-grid'>
-            <b:if cond='data:totalFollowerCount == 0'>
-              <div class='profile-link item-control following-follow-this'>
-                <data:emptyFollowersMessage/>
-              </div>
-            </b:if>
-            <!--
-            Relies on the js written out in navbar.gxp
-            -->
-            <b:loop values='data:followers' var='follower'>
-              <div class='follower'>
-                <a expr:href='data:follower.profileUrl' expr:title='data:follower.displayName' rel='nofollow'>
-                <img class='follower-img' expr:alt='data:follower.displayName' expr:height='data:follower.imageHeight' expr:onerror='&quot;this.onerror=null;this.src=\&quot;&quot; + data:anonFollowerImageUrl + &quot;\&quot;;&quot;' expr:onload='&quot;setAttributeOnload(this, \&quot;src\&quot;, \&quot;&quot; + data:follower.imageUrl + &quot;\&quot;)&quot;' expr:width='data:follower.imageWidth' src='http://img1.blogblog.com/img/blank.gif'/>
-                </a>
-              </div>
-            </b:loop>
-            <div class='clear'/>
-          </div>
-  
-          <div class='followers-canvas profile-link'>
-            <data:followersFooterMessage/>
-            <span class='item-control following-not-admin'>
-              <a expr:href='data:followersUri'>
-                <data:viewAllMessage/>
-              </a>
-            </span>
-            <span class='item-control blog-admin'>
-              <a expr:href='data:manageFollowersUri'>
-                <data:manageFollowersMessage/>
-              </a>
-            </span>
-          </div>
-          </b:if>
       </b:if>
     </div>
     <b:include name='quickedit'/>
   </div>
 </b:includable>
-               </b:widget>
-               <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
-                 <b:includable id='main'>
-    <b:if cond='data:feedbackSurveyLink'>
-      <div class='mobile-survey-link' style='text-align: center;'>
-        <data:feedbackSurveyLink/>
-      </div>
-    </b:if>
-
-    <div class='widget-content' style='text-align: center;'>
-      <b:if cond='data:attribution != &quot;&quot;'>
-       <data:attribution/>
-      </b:if>
-    </div>
-
-    <b:include name='quickedit'/>
-  </b:includable>
                </b:widget>
                <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'>
                  <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
@@ -2228,7 +2140,7 @@ user is not using shrink to fit then we expand the header.
         gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
           if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
             gapi.iframes.getContext().openChild({
-                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0755051161372427020341\46blogName\75Blender+Sketch\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75DISABLED\46layoutType\75LAYOUTS\46searchRoot\75http://blendersketch.blogspot.com/search\46blogLocale\75ja\46v\0752\46homepageUrl\75http://blendersketch.blogspot.com/\46vt\759074366764602067830&#39;,
+                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\075686330899544732746\46blogName\75videoblog\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://templatetestr.blogspot.com/search\46blogLocale\75ja\46v\0752\46homepageUrl\75http://templatetestr.blogspot.com/\46readAccessMode\75PRIVATE\46vt\0752911824532012889398&#39;,
                 where: document.getElementById(&quot;navbar-iframe-container&quot;),
                 id: &quot;navbar-iframe&quot;
             });
