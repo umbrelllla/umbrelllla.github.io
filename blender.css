@@ -536,6 +536,16 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
+span.post-labels:before {
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+transform: translate(0, 0);
+content: "\f02b";
+}
 output {
   display: block;
   padding-top: 11px;
@@ -2167,7 +2177,7 @@ margin-right: 3px;
 color: #666;
 }
 .vrow {
-margin-bottom: 20px;
+/*margin-bottom: 20px;*/
 /*background-color: #111;
 border: 1px solid #000;*/
 }
