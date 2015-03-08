@@ -31,24 +31,33 @@ return false;
 }
 /*VideoID取得*/
 /*タイトル取得*/
+var title = $('title').text();
+    /*コメントとタイムスタンプを配列で取得*/
+    var commentlist = "";
+    var comments= new Array();
+    var timestamps = new Array();
 
-/*コメントリスト取得*/
-var comment= $('.transcription').text();
-/*タイムスタンプ取得*/
-var timestamp=$('.comment-timestamp').text();
+    $(".comment").map(function(){
+      comments.push($(this).children(".transcription").text());
+      timestamps.push($(this).find(".comment-timestamp").text());
+    }).get();
 
-var comments=comment.split('\n');
-var commentlist="<ul>";
-/*空だったら削除*/
+    /*コメントとタイムスタンプのhtml作成*/
+    comments.reverse();//逆順に並び替え
+    timestamps.reverse();//逆順に並び替え
+
+    commentlist+="<ul>"
     for (i = 0; i < comments.length; i++) {
         var li=comments[i].replace(/\s+/g, "");
         if(li) {
           commentlist += '<li>';
+          commentlist += "【"+hmsToSecondsOnly(timestamps[i])+"】";//タイムスタンプミリ秒取得
+          commentlist +=timestamps[i];
           commentlist+=li;
           commentlist += '</li>';       
         }
     }
-    commentlist+="</ul>"
+    commentlist+="</ul>"+title;
 postmaker(commentlist);
     /*ここはできる*/
 
