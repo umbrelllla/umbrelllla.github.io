@@ -1,8 +1,8 @@
 javascript:(
   function() {
-    function postmaker(commentlist){
+    function postmaker(title,commentlist){
           var d=window.open().document;
-          d.writeln('<h1>BJ POSTMAKER</h1><h2>タイトルをコピペしてください</h2><textarea id="html" rows=3 cols=80 onclick="this.select()">'+commentlist+'</textarea><script></script>');
+          d.writeln('<h1>BJ POSTMAKER</h1><h2>タイトルをコピペしてください</h2><textarea id="html" rows=2 cols=80 onclick="this.select()">'+title+'</textarea><textarea id="html" rows=3 cols=80 onclick="this.select()">'+commentlist+'</textarea><script></script>');
 
           d.close();
       }
@@ -29,7 +29,15 @@ return true;
 }
 return false;
 }
-/*VideoID取得*/
+/*VideoID取得、youtubeURL作成*/
+var videourl='https://www.youtube.com/watch?v='+$('#youtubePlayer').attr("data-video-id");
+
+/*動画タイトル取得*/
+
+/*説明取得*/
+
+
+
 /*タイトル取得*/
 var title = $('title').text();
     /*コメントとタイムスタンプを配列で取得*/
@@ -57,8 +65,8 @@ var title = $('title').text();
           commentlist += '</li>';       
         }
     }
-    commentlist+="</ul>"+title;
-postmaker(commentlist);
+    commentlist+="</ul>";
+postmaker(title,commentlist);
     /*ここはできる*/
 
   }
