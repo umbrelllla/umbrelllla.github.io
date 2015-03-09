@@ -42,7 +42,7 @@
 <link href='http://4.bp.blogspot.com/-3miLDAfjF9k/UhBRxD6aipI/AAAAAAAABxE/4qR5jc7leU8/s1600/favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'/>
 &lt;style type=&quot;text/css&quot;&gt;
 &lt;!-- /*<b:skin><![CDATA[*/]]></b:skin>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
 <link href='http://umbrelllla.github.io/blender.min.css' rel='stylesheet' type='text/css'/>
 <b:if cond='data:blog.pageType == &quot;item&quot;'><style>
 
@@ -85,8 +85,8 @@ border-bottom: 1px solid #ccc;
 #related-posts ul li{clear:both}h3.heading-border{margin-bottom:10px}#related-posts ul li:before{content:&#39;\00bb&#39;}span#blog-pager-older-link{float:right}
 span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto;max-width:100%;height:auto}
 .post a img:hover{border:1px solid #38a1db;background-color:#38a1db}.blog div.post-title h1:before,.tutorial div.post-title h1:before{display: inline-block;font-family: FontAwesome;font-style: normal;font-weight: normal;line-height: 1;-webkit-font-smoothing: antialiased;font-size: 80%;vertical-align: top;margin-right: 8px;}#related-posts {margin: 40px 20px 50px 20px;}.blog div.post-title h1:before{content: &quot;\f0f6&quot;;color: #ffa500;}.tutorial div.post-title h1:before{content: &quot;\f16a&quot;;color: #dc143c; }img.postthum {width: 400px;margin-bottom: 10px;}.smallthumbs img {margin-right: 5px;}section.seriesNote h4 {border-bottom: 1px dotted #ccc;padding-bottom: 5px;}section.seriesNote h4 small:after {content: &#39;\00bb&#39;;color: #000;margin: 0 3px;font-size: 90%;}dd.indexlink a {font-size: 80%;}.timetable li span:after {
-content: &#39;\002662&#39;;font-size: 70%;color: #ccc;vertical-align: middle;margin: 0 3px;}section.seriesNote ul {list-style-type: none;padding-left: 20px;}section.seriesNote ul li:before {content: &#39;\00bb&#39;;margin-right: 3px;color: #999;}section.seriesNote {background-color: #f2f2f2;margin: 40px;padding: 25px 35px;border: 8px double #dcdcdc;}section.seriesNote h4 small {font-weight: bold;color: #777;font-size: 80%;}span.currentpart:before {content: &#39;\002190&#39;;margin-right: 3px;}span.currentpart {color: #ff0000;}section.seriesNote h4 {border-bottom: 1px dotted #ccc;padding-bottom: 5px;font-size: 100%;}.vthumbnails {margin: 0 0 10px 0;}
-ul.timetable li:before {content: "\f144";
+content: &#39;\002662&#39;;font-size: 70%;color: #ccc;vertical-align: middle;margin: 0 3px;}section.seriesNote ul {list-style-type: none;padding-left: 20px;}section.seriesNote ul li:before {content: &#39;\00bb&#39;;margin-right: 3px;color: #999;}section.seriesNote {background-color: #f2f2f2;margin: 40px;padding: 25px 35px;border: 8px double #dcdcdc;}section.seriesNote h4 small {font-weight: bold;color: #777;font-size: 80%;}span.currentpart:before {content: &#39;\002190&#39;;margin-right: 3px;}span.currentpart {color: #ff0000;}section.seriesNote h4 {border-bottom: 1px dotted #ccc;padding-bottom: 5px;font-size: 100%;}.vthumbnails {margin: 0 0 10 0px;}
+ul.timetable li:before {content: &quot;\f144&quot;;
 display: inline-block;
 font: normal normal normal 14px/1 FontAwesome;
 font-size: inherit;
@@ -1407,7 +1407,7 @@ user is not using shrink to fit then we expand the header.
                       </b:if>
                     </span>
                   </div> 
-                      <a class='snippet' expr:href='data:post.url + &quot;#more&quot;'><p><data:post.snippet/>
+                      <a class='snippet' expr:href='data:post.url'><p><data:post.snippet/>
                       
                     <b:if cond='data:post.hasJumpLink'>
                     <span class='rm'><data:post.jumpText/></span>
@@ -2232,12 +2232,12 @@ head.appendChild(script);
           <script>
           $(function(){
             var player;
-var videoID=$("#player").data("play");
+var videoID=$(&quot;#player&quot;).data(&quot;play&quot;);
             /* IFrame Player APIのコードをロード */
             function fGetScript(){
                $.ajax({
-                  url:"http://www.youtube.com/player_api/",
-                  dataType:"script",
+                  url:&quot;http://www.youtube.com/player_api/&quot;,
+                  dataType:&quot;script&quot;,
                   error:function(xhr, status, thrown) {
                      fGetScript();
                   }
@@ -2252,16 +2252,16 @@ var videoID=$("#player").data("play");
             function loadPlayer(videoID) {
                if(!player){
                   player = new YT.Player(
-                     'player',{
-                        width: '100%',   /* 動画プレーヤーの幅 */
-                        /*height: '390',   動画プレーヤーの高さ */
+                     &#39;player&#39;,{
+                        width: &#39;100%&#39;,   /* 動画プレーヤーの幅 */
+                        /*height: &#39;390&#39;,   動画プレーヤーの高さ */
                         videoId: videoID,   /* YouTube動画ID */
                         events: { /* イベント */
                         },
                         playerVars: {
-                           "rel":0,         // 関連動画の有無(default:1)
-                           "showinfo":0,      // 動画情報表示(default:1)
-                           "controls":1      // コントロール有無(default:1)
+                           &quot;rel&quot;:0,         // 関連動画の有無(default:1)
+                           &quot;showinfo&quot;:0,      // 動画情報表示(default:1)
+                           &quot;controls&quot;:1      // コントロール有無(default:1)
                         }
                      }
                   );
@@ -2269,9 +2269,9 @@ var videoID=$("#player").data("play");
                   player.loadVideoById(videoID);
                }
             }
-             $(".subject").click(function(){
+             $(&quot;.subject&quot;).click(function(){
                var time;
-               time=$(this).data("seconds");
+               time=$(this).data(&quot;seconds&quot;);
                player.seekTo(time,true);
             });
             
