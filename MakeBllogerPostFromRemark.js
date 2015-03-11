@@ -380,20 +380,6 @@ commentlist = '<div class="vrow"><div class="row capter"><div class="col-sm-12 c
     /*ここはできる*/
     });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
 /*ここはじっこうできない*/
 )();
