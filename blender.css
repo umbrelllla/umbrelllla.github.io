@@ -2121,12 +2121,7 @@ float: none;
 div#infomation {
 text-align: center;
 }
-.dmbs-right {
-border-top: 2px solid #999;
-margin-top: 40px;
-padding-top: 30px;
-background-color: #dfdfdf;
-}
+
 }
 /*megamenu2カラム*/
   #Label6, #Label7, #Label8, #PageList2,  #Label18, #Label19{
@@ -2330,7 +2325,12 @@ padding: 25px 10px;
 #related-posts {
 margin: 30px 0 20px 0;
 }
-
+.dmbs-right {
+border-top: 2px solid #999;
+margin-top: 40px;
+padding-top: 30px;
+background-color: #dfdfdf;
+}
 }
 .container > .navbar-header,
 .container-fluid > .navbar-header,
