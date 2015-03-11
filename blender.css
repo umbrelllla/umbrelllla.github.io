@@ -11,7 +11,9 @@ float: left;
 padding-top: 5px;
 padding-bottom: 5px;
 }
-
+.row.capter:after {
+clear: none;
+}
   .post {
 }
 color: #333;
@@ -1586,6 +1588,7 @@ position: relative;
 div.middle.category {
 padding: 10px 0;
 background-color: #f2f2f2;
+margin-bottom: 15px;
 }
 
 /* div.well.article-list.clearfix {

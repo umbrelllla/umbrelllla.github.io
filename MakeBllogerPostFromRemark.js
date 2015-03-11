@@ -373,7 +373,7 @@ commentlist = '<div class="vrow"><div class="row capter"><div class="col-sm-12 c
                 commentlist += '<li class="subject" data-seconds="'+hmsToSecondsOnly(timestamps[i])+'"><span>'+timestamps[i]+'</span>'+li+'</li>';
               }
           }
-          commentlist+='</ul></div></div></div><div class="vthumbnails"><a href="http://img.youtube.com/vi/"'+videoid+'/hqdefault.jpg" imageanchor="1"><img class="postthum" src="http://img.youtube.com/vi/'+videoid+'/mqdefault.jpg" /></a><br /><div class="smallthumbs"><img src="http://img.youtube.com/vi/'+videoid+'/1.jpg" /><img src="http://img.youtube.com/vi/'+videoid+'/2.jpg" /><img src="http://img.youtube.com/vi/'+videoid+'/3.jpg" /></div></div>\n\n<div class="discription">追加の説明があれば記入</div><br /><div class="clearfix"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- BlenderSketch記事中 --><br /><ins class="adsbygoogle" data-ad-client="ca-pub-1725391124304964" data-ad-format="auto" data-ad-slot="5197251768" style="display: block;"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script><br /></div>';
+          commentlist+='</ul></div></div></div><div class="vthumbnails"><a href="http://img.youtube.com/vi/"'+videoid+'/hqdefault.jpg" imageanchor="1"><img class="postthum" src="http://img.youtube.com/vi/'+videoid+'/mqdefault.jpg" /></a><br /><div class="smallthumbs"><img src="http://img.youtube.com/vi/'+videoid+'/1.jpg" /><img src="http://img.youtube.com/vi/'+videoid+'/2.jpg" /><img src="http://img.youtube.com/vi/'+videoid+'/3.jpg" /></div></div>';
       postmaker(title[0],tag,version[1],videotitle,search_disc,commentlist);
           /*ここはできる*/
  
