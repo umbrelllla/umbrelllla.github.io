@@ -186,6 +186,138 @@ var videourl='https://www.youtube.com/watch?v='+videoid;
           case 'Smess Videos ²':
             source ='http://smess.com.br/';
               break;
+          /*ここからルームファン*/
+          case 'kyoko miha':
+            source = 'https://plus.google.com/b/104748838421935953944/+hoopryu/posts';
+            break;
+          case 'rainbowfamily':
+            source = 'http://rainbowfamilyfl.blogspot.jp/';
+            break;
+          case 'Owl Boston':
+            source = 'https://plus.google.com/b/104748838421935953944/104198179076046786653/posts';
+            break;
+          case 'yuimokatime':
+            source = 'https://plus.google.com/b/104748838421935953944/114716508116808645650/videos';
+            break;
+          case 'Rainbow Loom Class':
+            source = 'https://plus.google.com/b/104748838421935953944/101807730353409497442/videos';
+            break;
+          case 'Esha NY':
+            source = 'https://plus.google.com/b/104748838421935953944/116636335248417916556/posts';
+            break;
+          case 'ponko':
+            source = 'https://plus.google.com/b/104748838421935953944/103714660009910891892/videos';
+            break;
+          case 'NOSUKAPI':
+            source = 'https://plus.google.com/b/104748838421935953944/111066050127520161258/posts';
+            break;
+          case 'YarnJourney':
+            source = 'https://plus.google.com/b/104748838421935953944/100692146962505222069/videos';
+            break;
+          case 'Emily Hill':
+            source = 'https://plus.google.com/b/104748838421935953944/109979005126335862758/posts';
+            break;
+          case 'jordantine1':
+            source = 'https://plus.google.com/b/104748838421935953944/+jordantine1/posts';
+            break;
+          case 'Eveline Maureen':
+            source = 'https://plus.google.com/u/0/b/104748838421935953944/111520522503187564504/posts';
+            break;
+          case 'Nina Houston':
+            source = 'https://plus.google.com/u/0/b/104748838421935953944/101623774392045035213/posts';
+            break;
+          case 'OLGACRAFTS':
+            source = 'https://plus.google.com/u/0/b/104748838421935953944/+OLGACRAFTS/posts';
+            break;
+          case 'cr3stina':
+            source = 'http://le-cr3azioni-di-cr3stina.blogspot.jp/';
+            break;
+          case 'Made By Mommy':
+            source = 'https://plus.google.com/b/104748838421935953944/+Madebymommy/posts';
+            break;
+          case 'DIY Mommy':
+            source = 'https://plus.google.com/b/104748838421935953944/100882864904587889310/videos';
+            break;
+          case 'Elegant Fashion 360':
+            source = 'https://plus.google.com/b/104748838421935953944/+Elegantfashion360/posts';
+            break;
+          case 'MesPetitsBonheurs':
+            source = 'http://www.mespetitsbonheurs.com/';
+            break;
+          case 'Rainbow Loom International by DIY Mommy':
+            source = 'http://instagram.com/_diymommy_';
+            break;
+          case 'Lovely Lovebird Designs':
+            source = 'https://plus.google.com/b/104748838421935953944/102213480554346921974/posts';
+            break;
+          case 'maynterest':
+            source = 'https://plus.google.com/b/104748838421935953944/+maynterest/posts';
+            break;
+          case 'Kinder Stories':
+            source = 'https://plus.google.com/b/104748838421935953944/106675703498153475369/posts';
+            break;
+          case 'Angèle & Compagnie':
+            source = 'https://plus.google.com/b/104748838421935953944/108839542350498866503/videos';
+            break;
+          case 'feelinspiffy':
+            source = 'http://craftingfantastic.blogspot.jp/';
+            break
+          case 'Rainbow Loom Anleitungen':
+            source = 'https://plus.google.com/b/104748838421935953944/105611730145821384446/posts';
+            break;
+          case 'Loopy Looms':
+            source = 'https://plus.google.com/b/104748838421935953944/107221361640339096806/posts';
+            break;
+          case 'TheParentingChannel':
+            source = 'http://www.theparentingchannel.net/';
+            break;
+          case 'Kate Schultz':
+            source = 'http://www.izzalicious.com/wp/';
+            break;
+          case 'Loves2Loom':
+            source = 'https://plus.google.com/b/104748838421935953944/105897107247944784176/posts';
+            break;
+          case 'Chodaro':
+            source = 'http://www.pinterest.com/chodaro/personal-rainbow-loom-braceletcharm-collection/';
+            break;
+          case 'Rainbow Loom France Pam':
+            source = 'https://plus.google.com/b/104748838421935953944/103009732866525460607/posts';
+            break;
+          case 'Vixxstarr':
+            source = 'https://plus.google.com/b/104748838421935953944/101351808683264151882/posts';
+            break;
+          case 'MeisjeDjamila':
+            source = 'https://plus.google.com/b/104748838421935953944/+MeisjeDjamila/posts';
+            break;
+          case 'Walter Schmied':
+            source = 'https://plus.google.com/b/104748838421935953944/115042602507687129540/posts';
+            break;
+          case 'Youtube Rainbow':
+            source = 'https://plus.google.com/b/104748838421935953944/114720807450202558485/videos';
+            break;
+          case 'webkinzfun99':
+            source = 'http://www.moshimonsters.com/monsters/webkinzfun99';
+            break;
+          case 'Hannah bean':
+            source = 'https://plus.google.com/b/104748838421935953944/114781643382168994592/posts';
+            break;
+          case 'Claire\'s Wears':
+            source = 'https://www.etsy.com/shop/LordoftheLooms?ref=shop_sugg';
+            break;              
+          case 'Justin\'s Toys - Rainbow Loom Bracelet Tutorials':
+            source = 'https://plus.google.com/b/104748838421935953944/+justinstoys/posts';
+            break;
+          case 'Lauren\'s Loom':
+            source = 'https://plus.google.com/b/104748838421935953944/117633863171237482331/posts';
+            break;
+          case 'omocha kodomo':
+            source = 'https://plus.google.com/b/104748838421935953944/103964625543278581217/posts';
+            break;
+          case 'SoCraftastic':
+            source = 'https://plus.google.com/b/104748838421935953944/+SoCraftastic/posts';
+          case 'HANAYAMAchannel':
+            source = 'http://www.hanayamatoys.co.jp/product/category/hobby/funloom/funloom_standard-set.html';
+            break;
           default:
               author= '<strong style="font-color:red;font-size:25px;">該当なし</strong>';
               source = 'http://';
@@ -228,7 +360,13 @@ var videourl='https://www.youtube.com/watch?v='+videoid;
           timestamps.reverse();//逆順に並び替え
 
 /*HTML作成*/
-commentlist = '<div class="vrow"><div class="row capter"><div class="col-sm-12 col-md-7"><div id="playerbox"><div id="player" data-play="'+videoid+'"><!-- 動画プレーヤーの埋め込み --></div></div><div class="excerpt">'+discription[0]+'<!--more--><ul class="info"><li><i class="fa fa-external-link"></i><a class="source" href="'+source+'">'+author+'</a></li><li><i class="fa fa-clock-o"></i>'+toHms(duration)+'</li><li><i class="fa fa-calendar"></i>'+opendate+'</li><li class="version">Blenderのバージョン<a dir="ltr" href="http://blendersketch.blogspot.jp/search/label/v'+version[1]+'">v'+version[1]+'</a></li></ul></div></div><div class="col-sm-12 col-md-5 pull-right"><ul class="timetable"><li class="listhead">チャプターリスト(クリックでシーク再生)</li>';
+var blender_v = "";
+
+if(version[1]){
+blender_v='<li class="version">Blenderのバージョン<a dir="ltr" href="http://blendersketch.blogspot.jp/search/label/v'+version[1]+'">v'+version[1]+'</a></li>';
+}
+
+commentlist = '<div class="vrow"><div class="row capter"><div class="col-sm-12 col-md-7"><div id="playerbox"><div id="player" data-play="'+videoid+'">動画を読み込んでいます......<!-- 動画プレーヤーの埋め込み --></div></div><div class="excerpt">'+discription[0]+'<!--more--><ul class="info"><li title="掲載元"><i class="fa fa-external-link"></i><a class="source" href="'+source+'">'+author+'</a></li><li title="動画再生時間"><i class="fa fa-clock-o"></i>'+toHms(duration)+'</li><li title="動画公開日"><i class="fa fa-calendar"></i>'+opendate+'</li>'+blender_v+'</ul></div></div><div class="col-sm-12 col-md-5 pull-right"><ul class="timetable"><li class="listhead">チャプターリスト(クリックでシーク再生)</li>';
           for (i = 0; i < comments.length; i++) {
               var li=comments[i].replace(/\s+/g, "");
               if(li) {
