@@ -180,7 +180,7 @@ border-right: 1px solid #ccc;
 
   ga(&#39;create&#39;, &#39;UA-56661536-3&#39;, &#39;auto&#39;, {&#39;allowLinker&#39;: true});
   ga(&#39;require&#39;, &#39;linker&#39;);
-  ga(&#39;linker:autoLink&#39;, [&#39;blendersketch.blogspot.jp&#39;, &#39;blendersketch.blogspot.com&#39;] );
+  ga(&#39;linker:autoLink&#39;, [&#39;loomfan.blogspot.jp&#39;, &#39;loomfan.blogspot.com&#39;] );
   ga(&#39;require&#39;, &#39;displayfeatures&#39;);
   ga(&#39;send&#39;, &#39;pageview&#39;);
 </script>
@@ -222,7 +222,7 @@ border-right: 1px solid #ccc;
     <ul class='nav navbar-nav'>
 <!-- /////////横メニュー増やす場合はここからコピペ&#12290;//////////// -->
       <li class='dropdown dropdown-large'>
-        <a class='dropdown-toggle videot' data-toggle='dropdown' href='#'>ビデオチュートリアル <b class='caret'/></a>
+        <a class='dropdown-toggle videot' data-toggle='dropdown' href='http://loomfan.blogspot.jp/search/label/%E3%83%93%E3%83%87%E3%82%AA%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB'>ビデオチュートリアル <b class='caret'/></a>
 
           <b:section class='main dropdown-menu dropdown-menu-large row' id='megamenu' showaddelement='yes'>
             <b:widget id='HTML2' locked='false' title='' type='HTML'>
@@ -543,12 +543,7 @@ border-right: 1px solid #ccc;
 
 
 
-<form class='navbar-form navbar-right' expr:action='data:blog.homepageUrl + &quot;search/&quot;' id='ajax-search-form' role='search'>
-<div class='form-group'>
-    <input class='form-control' name='q' onblur='if (this.value == &quot;&quot;) {this.value = &quot;Search...&quot;;}' onfocus='if (this.value == &quot;Search...&quot;) {this.value = &quot;&quot;;}' type='text' value='Search...'/>
- </div>
-    <button class='btn btn-default' type='submit' value='Search'>ブログ内検索</button>
-</form>
+
 </div><!-- /.navbar-collapse -->
 </div>
 </nav>
@@ -622,7 +617,7 @@ user is not using shrink to fit then we expand the header.
             </b:widget>
           </b:section><!-- header -->
           <div class='col-xs-12 col-sm-6 search' id=''>
-            <form class='form-inline' expr:action='data:blog.homepageUrl + &quot;search/&quot;' id='ajax-search-form' role='search'>
+            <form class='pull-right form-inline form-inline' expr:action='data:blog.homepageUrl + &quot;search/&quot;' id='ajax-search-form' role='search'>
 <div class='form-group'>
     <input class='form-control' name='q' onblur='if (this.value == &quot;&quot;) {this.value = &quot;Search...&quot;;}' onfocus='if (this.value == &quot;Search...&quot;) {this.value = &quot;&quot;;}' type='text' value='Search...'/>
  </div>
@@ -749,7 +744,7 @@ user is not using shrink to fit then we expand the header.
     <b:includable id='main' var='top'>
                 <b:if cond='data:mobile == &quot;false&quot;'>
                   <b:if cond='data:blog.url == data:blog.homepageUrl'>
-<div class='page-header'><h3> 最新の投稿 <a class='pull-right' href='http://blendersketch.blogspot.jp/feeds/posts/default?alt=rss '> <img alt='feed' height='10' src='https://lh6.googleusercontent.com/-4GA0LNH4EmQ/VCTqOmYnIoI/AAAAAAAAD1c/1TNBWpbAV-w/s800/feedicon14.png' title='feedはこちらからどうぞ' width='10'/></a></h3></div>
+<div class='page-header'><h3> 最新の投稿 <a class='pull-right' href='http://loomfan.blogspot.jp/feeds/posts/default?alt=rss '> <img alt='feed' height='10' src='https://lh6.googleusercontent.com/-4GA0LNH4EmQ/VCTqOmYnIoI/AAAAAAAAD1c/1TNBWpbAV-w/s800/feedicon14.png' title='feedはこちらからどうぞ' width='10'/></a></h3></div>
 </b:if>
 
                   <!-- posts -->
@@ -1906,7 +1901,7 @@ user is not using shrink to fit then we expand the header.
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
  <!-- チュートリアルメニューヘッダ -->
-              <h2 class='menuhead'><a class='videot' dir='ltr' href='http://blendersketch.blogspot.jp/search/label/%E3%83%93%E3%83%87%E3%82%AA%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB'>ビデオチュートリアル</a></h2>  
+              <h2 class='menuhead'><a class='videot' dir='ltr' href='http://loomfan.blogspot.jp/search/label/%E3%83%93%E3%83%87%E3%82%AA%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB'>ビデオチュートリアル</a></h2>  
               
 <p class='labelhead'><data:title/></p>
 <nav class='treenav'>
@@ -1952,9 +1947,9 @@ user is not using shrink to fit then we expand the header.
     <b:if cond='data:display == &quot;list&quot;'>
      <!-- ブログメニューヘッダ -->
               
-              <h2 class='menuhead'><a class='blogt' dir='ltr' href='http://blendersketch.blogspot.jp/search/label/%E3%83%96%E3%83%AD%E3%82%B0'>ブログ</a></h2>
+              <h2 class='menuhead'><a class='blogt' dir='ltr' href='http://loomfan.blogspot.jp/search/label/%E3%83%96%E3%83%AD%E3%82%B0'>ブログ</a></h2>
               <p class='menulead'>管理人のメモ的なことやお知らせ&#12290;</p>
-<p class='labelhead'><a expr:href='&quot;http://blendersketch.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
+<p class='labelhead'><a expr:href='&quot;http://loomfan.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
 <nav class='treenav'>
       <ul class='list'>
 <b:loop values='data:labels' var='label'>
