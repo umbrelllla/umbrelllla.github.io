@@ -70,33 +70,7 @@
 span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto;max-width:100%;height:auto}
 .post a img:hover{border:1px solid #38a1db;background-color:#38a1db}.blog div.post-title h1:before,.tutorial div.post-title h1:before{display: inline-block;font-family: FontAwesome;font-style: normal;font-weight: normal;line-height: 1;-webkit-font-smoothing: antialiased;font-size: 80%;vertical-align: top;margin-right: 8px;}#related-posts {margin: 40px 20px 50px 20px;}.blog div.post-title h1:before{content: &quot;\f0f6&quot;;color: #ffa500;}.tutorial div.post-title h1:before{content: &quot;\f16a&quot;;color: #dc143c; }img.postthum {width: 400px;margin-bottom: 10px;}.smallthumbs img {margin-right: 5px;}section.seriesNote h4 {border-bottom: 1px dotted #ccc;padding-bottom: 5px;}section.seriesNote h4 small:after {content: &#39;\00bb&#39;;color: #000;margin: 0 3px;font-size: 90%;}dd.indexlink a {font-size: 80%;}.timetable li span:after {
 content: &#39;\002662&#39;;font-size: 70%;color: #ccc;vertical-align: middle;margin: 0 3px;}section.seriesNote ul {list-style-type: none;padding-left: 20px;}section.seriesNote ul li:before {content: &#39;\00bb&#39;;margin-right: 3px;color: #999;}section.seriesNote {background-color: #f2f2f2;margin: 40px;padding: 25px 35px;border: 8px double #dcdcdc;}section.seriesNote h4 small {font-weight: bold;color: #777;font-size: 80%;}span.currentpart:before {content: &#39;\002190&#39;;margin-right: 3px;}span.currentpart {color: #ff0000;}section.seriesNote h4 {border-bottom: 1px dotted #ccc;padding-bottom: 5px;font-size: 100%;}.vthumbnails {margin: 0 0 10 0px;}
-#selectmenu .widget-content {
-  margin-bottom: 0;
-}
-.selectmenuarea,.headbody {
-  margin: 0 auto;
-  padding: 0.8em 0 0;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0px 1px 8px rgba(0,0,0,.25);
-  position: relative;
-}
-select {
-  line-height: 1em;
-  height: 1.8em;
-  display: block;
-  padding: .2em;
-  margin: 0 auto 1em;
-  float: none;
-  text-align: center;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: inset 0px 0px 4px rgba(0,0,0,.25);
-  -moz-box-shadow: inset 0px 0px 4px rgba(0,0,0,.25);
-  box-shadow: inset 0px 0px 4px rgba(0,0,0,.25);
-  border-color: #ccc;
-  font-size: 0.9em;
-}
+
 li.subject {
   cursor: pointer;
 }
@@ -158,30 +132,7 @@ border-bottom: 1px solid #ccc;
 #selectmenu .widget-content {
   margin-bottom: 0;
 }
-.selectmenuarea,.headbody {
-  margin: 0 auto;
-  padding: 0.8em 0 0;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0px 1px 8px rgba(0,0,0,.25);
-  position: relative;
-}
-select {
-  line-height: 1em;
-  height: 1.8em;
-  display: block;
-  padding: .2em;
-  margin: 0 auto 1em;
-  float: none;
-  text-align: center;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: inset 0px 0px 4px rgba(0,0,0,.25);
-  -moz-box-shadow: inset 0px 0px 4px rgba(0,0,0,.25);
-  box-shadow: inset 0px 0px 4px rgba(0,0,0,.25);
-  border-color: #ccc;
-  font-size: 0.9em;
-}
+
 .navbar-default {
 background-color: #4a7cac;
 border-color: #4a7cac;
@@ -596,7 +547,7 @@ border-right: 1px solid #ccc;
 <div class='form-group'>
     <input class='form-control' name='q' onblur='if (this.value == &quot;&quot;) {this.value = &quot;Search...&quot;;}' onfocus='if (this.value == &quot;Search...&quot;) {this.value = &quot;&quot;;}' type='text' value='Search...'/>
  </div>
-    <button class='btn btn-default btn-sm' type='submit' value='Search'>ブログ内検索</button>
+    <button class='btn btn-default' type='submit' value='Search'>ブログ内検索</button>
 </form>
 </div><!-- /.navbar-collapse -->
 </div>

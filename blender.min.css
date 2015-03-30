@@ -1,6 +1,7 @@
-a.titlelogo img{margin:5px 0 5px 0}.descriptionwrapper{float:right}a.titlelogo{float:left}.container.head{padding-top:5px;padding-bottom:5px}.row.capter:after{clear:none}
-.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}.selectmenuarea{margin-bottom:20px}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;color:#999;margin-top:20px}
-/*!
+a.titlelogo img{margin:5px 0 5px 0}.descriptionwrapper{float:right}p.description{font-size:.9em}.selectmenuarea,.headbody{margin:0 auto;padding:0;border-bottom:1px solid #ddd;box-shadow:0 1px 8px rgba(0,0,0,.25);position:relative}
+select{line-height:1em;height:1.8em;display:block;padding:.2em;margin:0 auto 1em;float:none;text-align:center;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;-webkit-box-shadow:inset 0 0 4px rgba(0,0,0,.25);-moz-box-shadow:inset 0 0 4px rgba(0,0,0,.25);box-shadow:inset 0 0 4px rgba(0,0,0,.25);border-color:#ccc;font-size:.9em}
+#selectmenu .widget-content{margin-bottom:0}a.titlelogo{float:left}.container.head{padding-top:5px;padding-bottom:5px}.row.capter:after{clear:none}.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}
+.selectmenuarea{margin-bottom:20px}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;color:#999;margin-top:20px}/*!
  * Bootswatch v3.1.1+1
  * Homepage: http://bootswatch.com
  * Copyright 2012-2014 Thomas Park
@@ -34,7 +35,7 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;backgrou
 .col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}
 }table{max-width:100%;background-color:transparent}th{text-align:left}label{display:inline-block;margin-bottom:5px;font-weight:bold}span.post-labels:before{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0,0);content:"\f02b"}
 output{display:block;padding-top:11px;font-size:15px;line-height:1.42857143;color:#333}.form-control:-ms-input-placeholder{color:#999}.form-control::-webkit-input-placeholder{color:#999}
-.btn{display:inline-block;margin-bottom:0;font-weight:normal;text-align:center;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;white-space:nowrap;padding:10px 18px;font-size:15px;line-height:1.42857143;border-radius:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.btn{display:inline-block;margin-bottom:0;font-weight:normal;text-align:center;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;white-space:nowrap;padding:7px 18px;font-size:15px;line-height:1.42857143;border-radius:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .btn:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.btn:hover,.btn:focus{color:#fff;text-decoration:none}.btn:active{outline:0;background-image:none;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.125);box-shadow:inset 0 3px 5px rgba(0,0,0,0.125)}
 .btn-primary{color:#fff;background-color:#007fff;border-color:#007fff}.btn-primary:hover{color:#fff;background-color:#006bd6;border-color:#0061c2}.btn-sm{padding:5px 10px;font-size:13px;line-height:1.5;border-radius:0}
 .collapse{display:none}.collapse.in{display:block}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition:height .35s ease;transition:height .35s ease}
