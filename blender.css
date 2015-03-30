@@ -23,7 +23,9 @@ overflow: hidden;
 border-bottom: 1px solid #ddd;
 padding: 8px 0px;
 }
-
+.selectmenuarea {
+  margin-bottom: 20px;
+}
 
 #footer {
 background-color: #111;
@@ -1588,7 +1590,7 @@ position: relative;
 div.middle.category {
 padding: 10px 0;
 background-color: #f2f2f2;
-margin-bottom: 15px;
+/*margin-bottom: 15px;*/
 }
 
 /* div.well.article-list.clearfix {
@@ -2278,7 +2280,7 @@ border: 1px solid #000;
 margin-bottom: 20px;
 }*/
 #infomation .row {
-margin-top: 10px;
+/*margin-top: 10px;*/
 margin-bottom: 10px;
 }
 .ad {
@@ -2350,4 +2352,34 @@ background-color: #dfdfdf;
     margin-right: 0;
     margin-left: 0;
   }
+
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  .form-inline .input-group {
+    display: inline-table;
+    vertical-align: middle;
+  }
+  .form-inline .input-group .input-group-addon,
+  .form-inline .input-group .input-group-btn,
+  .form-inline .input-group .form-control {
+    width: auto;
+  }
+  .form-inline .input-group > .form-control {
+    width: 100%;
+  }
+  .form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+
 }

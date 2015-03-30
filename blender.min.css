@@ -1,5 +1,5 @@
 a.titlelogo img{margin:5px 0 5px 0}.descriptionwrapper{float:right}a.titlelogo{float:left}.container.head{padding-top:5px;padding-bottom:5px}.row.capter:after{clear:none}
-.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;color:#999;margin-top:20px}
+.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}.selectmenuarea{margin-bottom:20px}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;color:#999;margin-top:20px}
 /*!
  * Bootswatch v3.1.1+1
  * Homepage: http://bootswatch.com
@@ -80,9 +80,8 @@ h1,h2,h3,h4,h5,h6{font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo
 #navbar-collapse-grid>ul>li>a:hover{background-color:#00608d}.navbar-default .navbar-nav>li>a{color:#FFF}ul.list-unstyled{line-height:24px;margin-bottom:8px}
 ul.list{border-bottom:1px dashed #666;margin:0 auto;min-height:auto;font-size:80%;list-style-type:none;margin:0 0 0 10px;padding:0 0 10px 0;line-height:1.8}
 .labelhead{margin:0 0 5px}#Header2 a{color:#fff}.yamm-content .treenav ul.list>li{padding:0}.yamm-content .treenav ul.list li{color:#888}.yamm-content .treenav ul.list ul li:last-child:before{background-color:#222}
-.yamm-content .treenav ul.list li a{color:#ccc;font-weight:normal;position:relative}div.middle.category{padding:10px 0;background-color:#f2f2f2;margin-bottom:15px}
-.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-right-radius:0;border-top-left-radius:0;background-color:#232323}footer{margin:0;background-color:#111;padding:15px 0 20px 0}
-.dmbs-right h3{background-color:#000;color:#fff;font-size:150%;padding:6px 10px 5px 20px;border-left:4px solid #f00;margin-bottom:10px;font-size:120%}
+.yamm-content .treenav ul.list li a{color:#ccc;font-weight:normal;position:relative}div.middle.category{padding:10px 0;background-color:#f2f2f2}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-right-radius:0;border-top-left-radius:0;background-color:#232323}
+footer{margin:0;background-color:#111;padding:15px 0 20px 0}.dmbs-right h3{background-color:#000;color:#fff;font-size:150%;padding:6px 10px 5px 20px;border-left:4px solid #f00;margin-bottom:10px;font-size:120%}
 .dmbs-right{border-left:1px solid #ccc;margin-top:10px}article{line-height:200%;color:#666}@media(max-width:767px){.navbar-nav .open .dropdown-menu{background-color:#232323;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,0.1)}
 }.badge{color:#FFF;background-color:#38a1db;border-radius:10px}.treenav ul.list li a:hover,.treenav ul.list li.active>a:hover,.yamm-content .treenav ul.list li a:hover,{color:red}
 .treenav ul.list li.active>a{color:#2a9fd6;font-weight:bold}img#logo{margin-top:5px}@media(max-width:767px){div.navbar.navbar-default.yamm{display:block}
@@ -112,11 +111,13 @@ ul.timetable li.listhead:before{content:none}.time:after{content:'\002662';font-
 .blog a h1.media-heading:before,.blogt:before{display:inline-block;font-family:FontAwesome;text-rendering:auto;-webkit-font-smoothing:antialiased;content:"\f0f6";font-size:80%;color:#ff8c00;vertical-align:top;margin-right:4px;font-weight:normal}
 h2.menuhead a:after,h2.menuhead a:after,h2.title a:after{content:"\00bb";color:#007fff;margin-left:5px;font-size:120%;line-height:.5}
 a.dropdown-toggle.videot:before,a.dropdown-toggle.blogt:before{color:#fff}h2.title a:hover{color:#ff37df}img.blendlogo{float:left;margin-top:15px}#infomation h4{margin:0 0 5px 0;margin-top:15px;text-align:left}
-#infomation p{font-size:85%;line-height:1.2;color:#666}.book img{float:left;margin:0 7px 0 0;border:1px solid #000}#infomation .row{margin-top:10px;margin-bottom:10px}
+#infomation p{font-size:85%;line-height:1.2;color:#666}.book img{float:left;margin:0 7px 0 0;border:1px solid #000}#infomation .row{margin-bottom:10px}
 .ad{text-align:center;padding-top:15px}.navbar-collapse.in{overflow-y:auto}@media(min-width:768px){.navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}
 .navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important;visibility:visible!important}.navbar-collapse.in{overflow-y:visible}
 .navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse{padding-right:0;padding-left:0}}.navbar-fixed-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse{max-height:340px}
 @media(max-device-width:480px) and (orientation:landscape){.navbar-fixed-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse{max-height:200px}section.seriesNote{margin:5px;padding:25px 10px}
 #related-posts{margin:30px 0 20px 0}.dmbs-right{border-top:2px solid #999;margin-top:40px;padding-top:30px;background-color:#dfdfdf}}.container>.navbar-header,.container-fluid>.navbar-header,.container>.navbar-collapse,.container-fluid>.navbar-collapse{margin-right:-15px;margin-left:-15px}
 @media(min-width:768px){.container>.navbar-header,.container-fluid>.navbar-header,.container>.navbar-collapse,.container-fluid>.navbar-collapse{margin-right:0;margin-left:0}
-}
+.form-inline .form-group{display:inline-block;margin-bottom:0;vertical-align:middle}.form-inline .form-control{display:inline-block;width:auto;vertical-align:middle}
+.form-inline .input-group{display:inline-table;vertical-align:middle}.form-inline .input-group .input-group-addon,.form-inline .input-group .input-group-btn,.form-inline .input-group .form-control{width:auto}
+.form-inline .input-group>.form-control{width:100%}.form-inline .control-label{margin-bottom:0;vertical-align:middle}}
