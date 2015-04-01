@@ -132,7 +132,7 @@ background-color: #007FFF;
 .headline {
   background: #FFE3C4;
   border-radius: 4px;
-  margin: 3% 0 5%;
+  margin: 3% 2% 5% 0;
 }
 .headline .headline-label {
   position: relative;
@@ -168,9 +168,15 @@ background-color: #007FFF;
 }
 /*BALLETFAN TOPPAGE*/
 
-.middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}.status-msg-body{position: relative!important;margin: 20px 0 30px 0;padding: 0;border-bottom: 1px dashed #444;}.status-msg-wrap{font-size:110%;position:relative}.status-msg-body a {display: inline-block;min-width: 10px;padding: 5px 15px 2px 15px;font-size: 15px;font-weight: normal;color: #fff;line-height: 1;vertical-align: baseline;white-space: nowrap;text-align: center;background-color: #007fff;border-radius: 10px;}#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}.page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}.media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size: 90%;margin-top: 10px;margin-bottom: 3px;padding-bottom: 5px;font-weight: normal;border-bottom: 1px dotted #c9c9c9;}.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color: #999;font-size: 65%;line-height: 1.5;}a.snippet p {margin-top: 5px;}div.row.video {border-bottom: 1px solid #ddd;margin-bottom: 20px;}</style></b:if><b:if cond='data:blog.pageType != &quot;static_page&quot;'><style>  .post-title{}</style></b:if>
+.middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}
+.status-msg-body{position: relative!important;0 0 3% 1%;padding: 0;}
+.status-msg-wrap{position:relative;  font-size: 0.8em;color: #666;}
+.status-msg-body a {display: inline-block;min-width: 10px;padding: 5px 15px 2px 15px;font-size: 15px;font-weight: normal;color: #fff;line-height: 1;vertical-align: baseline;white-space: nowrap;text-align: center;  background-color: #419FFD;border-radius: 10px;}#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}.page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}.media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size: 90%;margin-top: 10px;margin-bottom: 3px;padding-bottom: 5px;font-weight: normal;border-bottom: 1px dotted #c9c9c9;}.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color: #999;font-size: 65%;line-height: 1.5;}a.snippet p {margin-top: 5px;}div.row.video {border-bottom: 1px solid #ddd;margin-bottom: 20px;}</style></b:if><b:if cond='data:blog.pageType != &quot;static_page&quot;'><style>  .post-title{}</style></b:if>
 <style>
 /* 共通スタイル */
+h2.pagename {
+  margin: 2% 0% 0% 1%;
+}
 .navbar-default {
   background-color: #fff;
   border-color: #fff;
@@ -190,7 +196,7 @@ background-color: #007FFF;
 .navbar {
   min-height: 30px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 3%;
 }
 .navbar-fixed-top a.titlelogo img {
   height: 30px;
@@ -230,6 +236,7 @@ a.titlelogo img {
   margin-top: -19px;
 }
 .sidebar li.active {
+  padding-left: 8px;
   color: #000;
   background: #fdd761;
   border-radius: 0 2px 2px 0;
@@ -630,47 +637,9 @@ user is not using shrink to fit then we expand the header.
 </div><!-- /.navbar-collapse -->
 </div>
 </nav>
-<div class='middle category'><div class='container'><div class='row'><div class='col-xs-12'>
-<b:if cond='data:blog.url == data:blog.homepageUrl'>
 
+ss
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<b:section id='infomation' preferred='yes'>
-  <b:widget id='HTML1' locked='false' title='' type='HTML'>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
-</b:section>
- </b:if>         
-        <b:if cond='data:blog.pageType == &quot;archive&quot;'>
-        <b:if cond='data:blog.pageName'>
-          <h1><data:blog.pageName/>年のアーカイブ</h1>
-        </b:if>
-        </b:if>
-</div></div></div></div>
 <div class='container content' id='container'>
       <div class='row'>
 <b:section id='info' preferred='yes'/>
@@ -701,7 +670,7 @@ user is not using shrink to fit then we expand the header.
   </b:widget>
 
 
-<!-- infomation -->
+<!-- headline -->
             <b:widget id='HTML5' locked='false' title='' type='HTML'>
               <b:includable id='main'>
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
@@ -718,6 +687,8 @@ user is not using shrink to fit then we expand the header.
 </b:includable>
             </b:widget>
 
+
+<!-- /headline-->
 
       
       
@@ -853,6 +824,7 @@ user is not using shrink to fit then we expand the header.
 <b:if cond='data:blog.homepageUrl != data:blog.url'>
 <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
 <ul class='breadcrumb'><li><a expr:href='data:blog.homepageUrl' rel='tag'>&#10026;Home</a></li>/<li><data:blog.pageName/></li></ul>
+<h2 class="pagename"><data:blog.pageName/></h2>
 <b:else/>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <!-- breadcrumb for the post page -->
@@ -873,15 +845,15 @@ user is not using shrink to fit then we expand the header.
 <b:if cond='data:blog.pageType == &quot;archive&quot;'>
 <!-- breadcrumb for the label archive page and search pages.. -->
 <ul class='breadcrumb'>
-<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>Archives for <data:blog.pageName/></li>
-</ul>
+<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li><data:blog.pageName/></li>
+</ul><h2 class="pagename"><data:blog.pageName/>年のアーカイブ</h2>
 <b:else/>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
 <ul class='breadcrumb'>
 <b:if cond='data:blog.pageName == &quot;&quot;'>
 <li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>All posts</li>
 <b:else/>
-<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>Posts filed under <data:blog.pageName/></li>
+<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li><data:blog.pageName/></li><h2 class="pagename"><data:blog.pageName/></h2>
 </b:if>
 </ul>
 </b:if>
@@ -2378,17 +2350,15 @@ head.appendChild(script);
       <script type='text/javascript'>
         /*fix nav*/
         $(function(){ var box = $(&quot;.navbar&quot;);
-        var leftsidebar = $(&quot;.middle&quot;);
+        var leftsidebar = $(&quot;#Blog1&quot;);
         var boxTop = leftsidebar.offset().top;
         $(window).scroll(function () {
          if($(window).scrollTop() &gt;= boxTop) {
            box.addClass(&quot;navbar-fixed-top&quot;);
             $(&quot;#content&quot;).css(&quot;margin-top&quot;,&quot;50px&quot;); 
-            /*$(&quot;.titlelogo&gt;img&quot;).css(&quot;height&quot;,&quot;30px&quot;); */
           } else {
 box.removeClass(&quot;navbar-fixed-top&quot;);
-           /*$(&quot;#content&quot;).css(&quot;margin-top&quot;,&quot;200px&quot;)*/
-            /*$(&quot;.titlelogo&gt;img&quot;).css(&quot;height&quot;,&quot;auto&quot;);*/
+
             } 
             }); 
             });
