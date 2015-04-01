@@ -3,7 +3,7 @@ margin: 5px 0 5px 0;
 }
 
 p.description {
-   font-size: 1.5em;
+   font-size: 1.8em;
 }
 .selectmenuarea,.headbody {
   margin: 0 auto;
@@ -470,7 +470,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 .row {
@@ -1430,7 +1430,7 @@ padding: 0;
 h3{
 margin-top: 10px;
 margin-bottom: 3px;
-border-bottom: 1px dashed #666;
+/*border-bottom: 1px dashed #666;*/
 }
 
 /* a[href$="%E3%82%A2%E3%83%97%E3%83%AA"] { color: red; }

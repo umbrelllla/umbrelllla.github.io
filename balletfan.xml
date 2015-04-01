@@ -127,7 +127,48 @@ color: #fff;
 text-decoration: none;
 background-color: #007FFF;
 }
-@media (min-width: 992px) {   }@media (max-width: 992px) {.vthumbnails {margin: 0 0 20px 0;text-align: center;}.vrow dl {padding: 10px 10px 0px 10px;}}</style><b:else/><style>.middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}.status-msg-body{position: relative!important;margin: 20px 0 30px 0;padding: 0;border-bottom: 1px dashed #444;}.status-msg-wrap{font-size:110%;position:relative}.status-msg-body a {display: inline-block;min-width: 10px;padding: 5px 15px 2px 15px;font-size: 15px;font-weight: normal;color: #fff;line-height: 1;vertical-align: baseline;white-space: nowrap;text-align: center;background-color: #007fff;border-radius: 10px;}#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}.page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}.media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size: 90%;margin-top: 10px;margin-bottom: 3px;padding-bottom: 5px;font-weight: normal;border-bottom: 1px dotted #c9c9c9;}.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color: #999;font-size: 65%;line-height: 1.5;}a.snippet p {margin-top: 5px;}div.row.video {border-bottom: 1px solid #ddd;margin-bottom: 20px;}</style></b:if><b:if cond='data:blog.pageType != &quot;static_page&quot;'><style>  .post-title{}</style></b:if>
+@media (min-width: 992px) {   }@media (max-width: 992px) {.vthumbnails {margin: 0 0 20px 0;text-align: center;}.vrow dl {padding: 10px 10px 0px 10px;}}</style><b:else/><style>
+/*BALLETFAN TOPPAGE*/
+.headline {
+  background: #FFE3C4;
+  border-radius: 4px;
+  margin: 3% 0 5%;
+}
+.headline .headline-label {
+  position: relative;
+  background: #E88787;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px 0 0 5px;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 25px 0 0;
+  padding: 7px 20px;
+  float: left;
+}
+.headline .headline-label:after {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 83, 83, 0);
+  border-left-color: #E88787;
+  border-width: 8px;
+  top: 50%;
+  margin-top: -8px;
+}
+.headline p {
+  font-size: 1em;
+  color: #8d846b;
+  margin: 0;
+  padding: 4px 20px;
+}
+/*BALLETFAN TOPPAGE*/
+
+.middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}.status-msg-body{position: relative!important;margin: 20px 0 30px 0;padding: 0;border-bottom: 1px dashed #444;}.status-msg-wrap{font-size:110%;position:relative}.status-msg-body a {display: inline-block;min-width: 10px;padding: 5px 15px 2px 15px;font-size: 15px;font-weight: normal;color: #fff;line-height: 1;vertical-align: baseline;white-space: nowrap;text-align: center;background-color: #007fff;border-radius: 10px;}#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}.page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}.media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size: 90%;margin-top: 10px;margin-bottom: 3px;padding-bottom: 5px;font-weight: normal;border-bottom: 1px dotted #c9c9c9;}.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color: #999;font-size: 65%;line-height: 1.5;}a.snippet p {margin-top: 5px;}div.row.video {border-bottom: 1px solid #ddd;margin-bottom: 20px;}</style></b:if><b:if cond='data:blog.pageType != &quot;static_page&quot;'><style>  .post-title{}</style></b:if>
 <style>
 /* 共通スタイル */
 .navbar-default {
@@ -297,7 +338,7 @@ user is not using shrink to fit then we expand the header.
     <ul class='nav navbar-nav'>
 <!-- /////////横メニュー増やす場合はここからコピペ&#12290;//////////// -->
       <li class='dropdown dropdown-large'>
-        <a class='dropdown-toggle videot' data-toggle='dropdown' href='#'>ビデオチュートリアル <b class='caret'/></a>
+        <a class='dropdown-toggle videot' data-toggle='dropdown' href='#'>商品カテゴリ<b class='caret'/></a>
 
           <b:section class='main dropdown-menu dropdown-menu-large row' id='megamenu' showaddelement='yes'>
             <b:widget id='HTML2' locked='false' title='' type='HTML'>
@@ -633,16 +674,22 @@ user is not using shrink to fit then we expand the header.
 <div class='container content' id='container'>
       <div class='row'>
 <b:section id='info' preferred='yes'/>
+
 <b:section class='main col-xs-12 col-sm-9 clearfix' id='main' showaddelement='no'>
+
   <b:widget id='Header4' locked='true' title='balletfanテスト環境 (Header)' type='Header'>
+      
     <b:includable id='main'>
-                   <b:include name='description'/>
-              </b:includable>
+     <b:include name='description'/>
+     </b:includable>
     <b:includable id='description'>
+      <b:if cond='data:blog.url == data:blog.homepageUrl'>
   <div class='descriptionwrapper'>
     <p class='description'><span><data:description/></span></p>
   </div>
+  </b:if>
 </b:includable>
+
     <b:includable id='title'>
   <b:if cond='data:blog.url == data:blog.homepageUrl'>
     <data:title/>
@@ -650,13 +697,38 @@ user is not using shrink to fit then we expand the header.
     <a expr:href='data:blog.homepageUrl'><data:title/></a>
   </b:if>
 </b:includable>
+
   </b:widget>
+
+
+<!-- infomation -->
+            <b:widget id='HTML5' locked='false' title='' type='HTML'>
+              <b:includable id='main'>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+  <div class="headline clearfix">
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h3 class="headline-label"><data:title/></h3>
+  </b:if>
+  <p><data:content/></p>
+
+</div>
+  <b:include name='quickedit'/>
+  </b:if>
+</b:includable>
+            </b:widget>
+
+
+      
+      
+
   <b:widget id='Blog1' locked='true' title='ブログの投稿' type='Blog'>
     <b:includable id='main' var='top'>
                 <b:if cond='data:mobile == &quot;false&quot;'>
-                  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                  <!-- <b:if cond='data:blog.url == data:blog.homepageUrl'>
 <div class='page-header'><h3> 最新の投稿 <a class='pull-right' href='http://balletfan.blogspot.jp/feeds/posts/default?alt=rss '> <img alt='feed' height='10' src='https://lh6.googleusercontent.com/-4GA0LNH4EmQ/VCTqOmYnIoI/AAAAAAAAD1c/1TNBWpbAV-w/s800/feedicon14.png' title='feedはこちらからどうぞ' width='10'/></a></h3></div>
-</b:if>
+</b:if> -->
+
 
                   <!-- posts -->
                   <div class='blog-posts hfeed'>
