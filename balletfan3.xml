@@ -7,10 +7,11 @@
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
     <title><data:blog.pageName/> | <data:blog.title/></title>
     <b:else/>
-    <title>フリー3DCGソフトBlenderのビデオチュートリアル&#65288;主に英語&#65289;を紹介|<data:blog.pageTitle/></title>
+    <title>レインボールーム,ファンルーム,モンスターテイル,の作り方動画(海外が多め)をご紹介|<data:blog.pageTitle/></title>
     </b:if>
     <b:else/>
     <title><data:blog.pageName/> | <data:blog.title/></title>
+
     </b:if>
 <b:include data='blog' name='all-head-content'/>
 <!-- BEGIN Open Graph tags --> 
@@ -19,7 +20,7 @@
   <meta expr:content='data:blog.pageName' property='og:title'/>
   <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
   <meta content='Site Name' property='og:site_name'/>
-  <meta content='article' propezrty='og:type'/>
+  <meta content='article' property='og:type'/>
   <b:if cond='data:blog.postImageThumbnailUrl'>
     <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
     <b:else/>
@@ -43,23 +44,66 @@
 &lt;style type=&quot;text/css&quot;&gt;
 &lt;!-- /*<b:skin><![CDATA[*/]]></b:skin>
 <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
-<link href='http://umbrelllla.github.io/balletfan.min.css' rel='stylesheet' type='text/css'/>
+<link href='http://umbrelllla.github.io/blender.min.css' rel='stylesheet' type='text/css'/>
 <b:if cond='data:blog.pageType == &quot;item&quot;'><style>
+/*BALLET FAN*/
+shop-buttun a:after {
+  padding-left: 5px;
+  content: &quot;\f14c&quot;;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+.item-image {
+  float: left;
+  padding: 0 20px 0 0;
+}
+.item_price {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: red;
+}
+.pricedate {
+  font-weight: normal;
+  font-size: 0.6em;
+  color: #999;
+padding: 5px;
+}
+.shop-buttun a {
+  margin: 20px 0px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #007fff;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 7px 14px;
+  font-size: 0.9em;
+  line-height: 1.42857143;
+  border-radius:5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+.shop-buttun a:hover {
+  color: pink;
+}
+
+/*BALLET FAN*/
 
 
-li.subject {
-cursor: pointer;
-}
-.row.capter:after {
-clear: none;
-}
-.labels {
-margin-left: 0;
-font-size: 70%;
-line-height: 1;
-padding-bottom: 5px;
-border-bottom: 1px solid #ccc;
-}
 
 
 #colorbox,#cboxOverlay,#cboxWrapper{position:absolute;top:0;left:0;z-index:9999;overflow:hidden}#cboxWrapper{max-width:none}#cboxOverlay{position:fixed;width:100%;height:100%}
@@ -86,6 +130,10 @@ border-bottom: 1px solid #ccc;
 span#blog-pager-newer-link{float:left}.post img{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto;max-width:100%;height:auto}
 .post a img:hover{border:1px solid #38a1db;background-color:#38a1db}.blog div.post-title h1:before,.tutorial div.post-title h1:before{display: inline-block;font-family: FontAwesome;font-style: normal;font-weight: normal;line-height: 1;-webkit-font-smoothing: antialiased;font-size: 80%;vertical-align: top;margin-right: 8px;}#related-posts {margin: 40px 20px 50px 20px;}.blog div.post-title h1:before{content: &quot;\f0f6&quot;;color: #ffa500;}.tutorial div.post-title h1:before{content: &quot;\f16a&quot;;color: #dc143c; }img.postthum {width: 400px;margin-bottom: 10px;}.smallthumbs img {margin-right: 5px;}section.seriesNote h4 {border-bottom: 1px dotted #ccc;padding-bottom: 5px;}section.seriesNote h4 small:after {content: &#39;\00bb&#39;;color: #000;margin: 0 3px;font-size: 90%;}dd.indexlink a {font-size: 80%;}.timetable li span:after {
 content: &#39;\002662&#39;;font-size: 70%;color: #ccc;vertical-align: middle;margin: 0 3px;}section.seriesNote ul {list-style-type: none;padding-left: 20px;}section.seriesNote ul li:before {content: &#39;\00bb&#39;;margin-right: 3px;color: #999;}section.seriesNote {background-color: #f2f2f2;margin: 40px;padding: 25px 35px;border: 8px double #dcdcdc;}section.seriesNote h4 small {font-weight: bold;color: #777;font-size: 80%;}span.currentpart:before {content: &#39;\002190&#39;;margin-right: 3px;}span.currentpart {color: #ff0000;}section.seriesNote h4 {border-bottom: 1px dotted #ccc;padding-bottom: 5px;font-size: 100%;}.vthumbnails {margin: 0 0 10 0px;}
+
+li.subject {
+  cursor: pointer;
+}
 ul.timetable li:before {content: &quot;\f144&quot;;
 display: inline-block;
 font: normal normal normal 14px/1 FontAwesome;
@@ -114,7 +162,8 @@ display: block;
 padding: 8px 10px;
 margin-bottom: -1px;
 border: 1px solid #ddd;}
-.timetable li span {font-size: 85%;}.excerpt {
+.timetable li span {font-size: 85%;}
+.excerpt {
 position: relative;
 padding: 10px 15px;
 margin: 1em 0px;
@@ -127,65 +176,25 @@ color: #fff;
 text-decoration: none;
 background-color: #007FFF;
 }
+.navbar-default {
+background-color: #4a7cac;
+border-color: #4a7cac;
+color: #fff;
+}
+.labels {
+margin-left: 0;
+font-size: 70%;
+line-height: 1;
+padding-bottom: 5px;
+border-bottom: 1px solid #ccc;
+}
 @media (min-width: 992px) {   }@media (max-width: 992px) {.vthumbnails {margin: 0 0 20px 0;text-align: center;}.vrow dl {padding: 10px 10px 0px 10px;}}</style><b:else/><style>
-/*BALLETFAN TOPPAGE*/
-.headline {
-  background: #FFE3C4;
-  border-radius: 4px;
-  margin: 3% 2% 5% 0;
+#selectmenu .widget-content {
+  margin-bottom: 0;
 }
-.headline .headline-label {
-  position: relative;
-  background: #E88787;
-  color: #fff;
-  display: inline-block;
-  border-radius: 5px 0 0 5px;
-  font-weight: bold;
-  font-size: 1em;
-  margin: 0 25px 0 0;
-  padding: 7px 20px;
-  float: left;
-}
-.headline .headline-label:after {
-  left: 100%;
-  border: solid transparent;
-  content: &quot; &quot;;
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(255, 83, 83, 0);
-  border-left-color: #E88787;
-  border-width: 8px;
-  top: 50%;
-  margin-top: -8px;
-}
-.headline p {
-  font-size: 1em;
-  color: #8d846b;
-  margin: 0;
-  padding: 4px 20px;
-}
+/*BALLET FAN TOPPAGE*/
 
-.shop-buttun {
-  text-align: center;
-}
-/*BALLETFAN TOPPAGE*/
-
-.middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}
-.status-msg-body{position: relative!important;0 0 3% 1%;padding: 0;}
-.status-msg-wrap{position:relative;  font-size: 0.8em;color: #666;  margin: 0 0 3% 1%;}
-.status-msg-body a {display: inline-block;min-width: 10px;padding: 5px 15px 2px 15px;font-size: 15px;font-weight: normal;color: #fff;line-height: 1;vertical-align: baseline;white-space: nowrap;text-align: center;  background-color: #419FFD;border-radius: 10px;}#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}.page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}.media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}
-h1.media-heading {
-  font-size: 0.8em;
-  margin-top: 10px;
-  margin-bottom: 3px;
-  padding-bottom: 5px;
-  font-weight: normal;
-}.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color: #999;font-size: 65%;line-height: 1.5;}a.snippet p {margin-top: 5px;}div.row.video {border-bottom: 1px solid #ddd;margin-bottom: 20px;}</style></b:if><b:if cond='data:blog.pageType != &quot;static_page&quot;'><style>  .post-title{}</style></b:if>
-<style>
-/* 共通スタイル */
-.item-image a img {
+.item-image a img {/*画像サイズ揃え*/
   padding: 4px;
   line-height: 1.42857143;
   background-color: #fff;
@@ -197,24 +206,39 @@ h1.media-heading {
   max-width: 100%;
   margin-right: 8px;
 }
-
-
-.item_price {
-  font-weight: bold;
-  color: red;
+.item-image img {/*Amazon1px画像除け*/
+  float: left;
+}
+h1.media-heading:before, .videot:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\f02e";
+  color: #F267C7;
+  font-size: 1em;
+  vertical-align: middle;
+  margin-right: 3px;
 }
 span.pricedate {
-
   font-size: 0.6em;
   color: #999;
   padding-left: 3px;
   font-weight: normal;
 }
+.item_price {
+  font-weight: bold;
+  color: red;
+}
 .shop-buttun a {
-  margin: 5px 0px;
+margin: 5px 0px;
   color: #fff;
+
   background-color: #007fff;
   display: inline-block;
+
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -230,86 +254,69 @@ span.pricedate {
   -ms-user-select: none;
   user-select: none;
 }
-h2.pagename {
-  margin: 2% 0% 0% 1%;
+.rm {
+  color: #007fff;
+  margin: 5px 0px;
+  color: #fff;
+  background-color: #007fff;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0px 5px;
+  font-size: 0.7em;
+  line-height: 1.3;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+/*BALLET FAN TOPPAGE*/
+
+
+
 .navbar-default {
-  background-color: #fff;
-  border-color: #fff;
-  color: #666;
+background-color: #4a7cac;
+border-color: #4a7cac;
+color: #fff;
 }
-.navbar-default .navbar-nav&gt;li&gt;a {
-  color: #666;
-  font-size: 1em;
+li.subject {
+cursor: pointer;
 }
-.navbar-default .navbar-nav&gt;li&gt;a {
-  color: #666;
-  font-size: 1em;
-}
-.dropdown-menu {/* ドロップダウンメニューの表示位置調整 */
-  top: auto;
-}
-.navbar {
-  min-height: 30px;
-  padding-top: 10px;
-  padding-bottom: 3%;
-}
-.navbar-fixed-top a.titlelogo img {
-  height: 30px;
-
-}
-a.titlelogo img {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+.row.capter:after {
+clear: none;
 }
 
-.navbar.navbar-fixed-top {
-      padding-top: 0px;
-  padding-bottom: 0px;
-  background: rgba(255,255,255,.95);
-  border-bottom: 1px #efefef solid;
-  border-color: rgba(0,0,0,.1);
-  box-shadow: inset 0 -1px 0 rgba(255,255,255,.5);
+ul.list-unstyled {
+line-height: 1;
+margin-bottom: 8px;
+font-size: 90%;
+padding: 10px 10px 0 0;
+list-style: none;
 }
-.dmbs-right {
-   border-left: none;
-}/* 
-矢印 */
-.sidebar li.active:after {
-  right: 100%;
-  border: solid transparent;
-  content: &quot; &quot;;
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(253, 215, 97, 0);
-  border-right-color: #fdd761;
-  border-width: 19px;
-  top: 50%;
-  margin-top: -19px;
+ul.list-unstyled li {
+margin: 10px 0;
 }
-.sidebar li.active {
-  padding-left: 8px;
-  color: #000;
-  background: #fdd761;
-  border-radius: 0 2px 2px 0;
-  position: relative;
-    margin: 10px 0;
+li i.fa.fa-external-link {
+font-size: 70%;
+margin-right: 3px;
+color: #0bf;
 }
-.sidebar ul.list li {
-  margin: 5px 0;
+li i.fa.fa-arrow-right {
+font-size: 60%;
+vertical-align: middle;
+margin-right: 3px;
+color: #ff8bf9;
 }
-@media (max-width: 992px){
-  span.pricedate {
-  display:block;
-  }
+#infomation .col-sm-6.col-md-4 {
+border-right: 1px solid #ccc;
 }
 
-</style>
-
+.middle.category h1:before{content:&#39;\002605&#39;;font-size:90%;margin-right:3px}div.post-meta{font-size:60%;line-height:150%}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;margin-right:8px}.status-msg-body{position: relative!important;margin: 20px 0 30px 0;padding: 0;border-bottom: 1px dashed #444;}.status-msg-wrap{font-size:110%;position:relative}.status-msg-body a {display: inline-block;min-width: 10px;padding: 5px 15px 2px 15px;font-size: 15px;font-weight: normal;color: #fff;line-height: 1;vertical-align: baseline;white-space: nowrap;text-align: center;background-color: #007fff;border-radius: 10px;}#blog-pager{width:100%;font-size:16px;line-height:normal;padding:2em 0;text-align:center}.page-header{padding-bottom:0;margin:0;border-bottom:0}.page-header h3{font-size:130%;font-weight:normal;margin-top:0;margin-bottom:15px}.media-body p:hover{color:#f76cca}.media-body p,.media-body div{font-size:70%;color:#888;margin-bottom:5px;line-height:130%}h1.media-heading{font-size: 0.8em;margin-top: 10px;margin-bottom: 3px;padding-bottom: 5px;font-weight: normal;}.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color: #999;font-size: 65%;line-height: 1.5;}a.snippet p {margin-top: 5px;}div.row.video {border-bottom: 1px solid #ddd;margin-bottom: 20px;}</style></b:if><b:if cond='data:blog.pageType != &quot;static_page&quot;'><style>  .post-title{}</style></b:if>
 
 <script>
   (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
@@ -317,14 +324,13 @@ a.titlelogo img {
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
 
-  ga(&#39;create&#39;, &#39;UA-56661536-2&#39;, &#39;auto&#39;, {&#39;allowLinker&#39;: true});
+  ga(&#39;create&#39;, &#39;UA-56661536-3&#39;, &#39;auto&#39;, {&#39;allowLinker&#39;: true});
   ga(&#39;require&#39;, &#39;linker&#39;);
-  ga(&#39;linker:autoLink&#39;, [&#39;blendersketch.blogspot.jp&#39;, &#39;blendersketch.blogspot.com&#39;] );
+  ga(&#39;linker:autoLink&#39;, [&#39;loomfan.blogspot.jp&#39;, &#39;loomfan.blogspot.com&#39;] );
   ga(&#39;require&#39;, &#39;displayfeatures&#39;);
   ga(&#39;send&#39;, &#39;pageview&#39;);
 </script>
 </head><body>
-<!-- /////ヘッダ/////// -->
 <nav class='navbar navbar-default yamm' id='masthead' role='navigation'>
 <div class='container'>
 <!-- Brand and toggle get grouped for better mobile display -->
@@ -334,70 +340,25 @@ a.titlelogo img {
           <span class='icon-bar'/>
           <span class='icon-bar'/>
         </button>
-          <b:section class='header' id='blog-title2' maxwidgets='1' showaddelement='no'>
-            <b:widget id='Header3' locked='true' title='balletfanテスト環境 (Header)' type='Header'>
-              <b:includable id='main'>
-                <b:if cond='data:useImage'>
-                  <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
-                    <!--
-Show image as background to text. You can't really calculate the width
-reliably in JS because margins are not taken into account by any of
-clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
-width if the user is using shrink to fit.
-This results in a margin-width's worth of pixels being cropped. If the
-user is not using shrink to fit then we expand the header.
--->
-                    <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                      + &quot;background-position: &quot;                      + data:backgroundPositionStyleStr + &quot;; &quot;                      + data:widthStyleStr                      + &quot;min-height: &quot; + data:height + &quot;px;&quot;                      + &quot;_height: &quot; + data:height + &quot;px;&quot;                      + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
-                      <div class='titlewrapper' style='background: transparent'>
-                        <h1 class='title' style='background: transparent; border-width: 0px'>
-                          <b:include name='title'/>
-                        </h1>
-                      </div>
-                      <b:include name='description'/>
-                    </div>
-                    <b:else/>
-                    <!--Show the image only-->
-                      <a expr:class='&quot;titlelogo&quot;' expr:href='data:blog.homepageUrl'>
-                        <img expr:alt='data:title' expr:src='data:sourceUrl' expr:title='data:title'/>
-                      </a>
-                      <!--Show the description-->
-                      <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
-                      <b:include name='description'/>
-                      </b:if>
-
-                  </b:if>
-                  <b:else/>
-                  <!--No header image -->
-                  <div id='header-inner'>
-                    <div class='titlewrapper'>
-                      <h1 class='title'>
-                        <b:include name='title'/>
-                      </h1>
-                    </div>
-                    <b:include name='description'/>
-                  </div>
-                </b:if>
+<b:section class='header' id='middle-title' maxwidgets='1' showaddelement='no'>
+  <b:widget id='Header2' locked='true' title='balletfanテスト環境 (Header)' type='Header'>
+    <b:includable id='main'>
+                <b:if cond='data:blog.url == data:blog.homepageUrl'><data:title/><b:else/><a expr:href='data:blog.homepageUrl'><data:title/></a></b:if>
               </b:includable>
-              <b:includable id='description'>
-                <div class='descriptionwrapper'>
-                  <p class='description'>
-                    <span>
-                      <data:description/>
-                    </span>
-                  </p>
-                </div>
-              </b:includable>
-              <b:includable id='title'>
-                <b:if cond='data:blog.url == data:blog.homepageUrl'>
-                  <data:title/>
-                  <b:else/>
-                  <a expr:href='data:blog.homepageUrl'>
-                    <data:title/>
-                  </a>
-                </b:if>
-              </b:includable>
-            </b:widget>
-          </b:section><!-- header -->
+    <b:includable id='description'>
+  <div class='descriptionwrapper'>
+    <p class='description'><span><data:description/></span></p>
+  </div>
+</b:includable>
+    <b:includable id='title'>
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <data:title/>
+  <b:else/>
+    <a expr:href='data:blog.homepageUrl'><data:title/></a>
+  </b:if>
+</b:includable>
+  </b:widget>
+</b:section>
           
         </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -407,7 +368,7 @@ user is not using shrink to fit then we expand the header.
     <ul class='nav navbar-nav'>
 <!-- /////////横メニュー増やす場合はここからコピペ&#12290;//////////// -->
       <li class='dropdown dropdown-large'>
-        <a class='dropdown-toggle videot' data-toggle='dropdown' href='#'>商品カテゴリ<b class='caret'/></a>
+        <a class='dropdown-toggle videot' data-toggle='dropdown' href='http://loomfan.blogspot.jp/search/label/%E3%83%93%E3%83%87%E3%82%AA%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB'>ビデオチュートリアル <b class='caret'/></a>
 
           <b:section class='main dropdown-menu dropdown-menu-large row' id='megamenu' showaddelement='yes'>
             <b:widget id='HTML2' locked='false' title='' type='HTML'>
@@ -460,7 +421,7 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Label7' locked='false' title='仕上がり' type='Label'>
+            <b:widget id='Label7' locked='false' title='道具別' type='Label'>
               <b:includable id='main'>
    <b:if cond='data:display == &quot;list&quot;'>
       <ul>
@@ -498,7 +459,7 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Label18' locked='false' title='機能' type='Label'>
+            <b:widget id='Label28' locked='false' title='仕上がり' type='Label'>
               <b:includable id='main'>
    <b:if cond='data:display == &quot;list&quot;'>
       <ul>
@@ -536,7 +497,45 @@ user is not using shrink to fit then we expand the header.
     <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Label19' locked='false' title='バージョン' type='Label'>
+            <b:widget id='Label18' locked='false' title='言語' type='Label'>
+              <b:includable id='main'>
+   <b:if cond='data:display == &quot;list&quot;'>
+      <ul>
+              <b:if cond='data:title'>
+              <li class='dropdown-header'><data:title/></li></b:if>
+      <b:loop values='data:labels' var='label'>
+        
+          <b:if cond='data:blog.url == data:label.url'>
+             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;<data:label.name/>
+
+          <b:else/>
+           &lt;li&gt;
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='badge' dir='ltr'><data:label.count/></span>
+          </b:if>
+        &lt;/li&gt;
+      </b:loop>
+      </ul>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+</b:includable>
+            </b:widget>
+            <b:widget id='Label19' locked='false' title='季節やイベント' type='Label'>
               <b:includable id='main'>
    <b:if cond='data:display == &quot;list&quot;'>
       <ul>
@@ -690,64 +689,209 @@ user is not using shrink to fit then we expand the header.
 
 
 
-<form class='navbar-form navbar-right' expr:action='data:blog.homepageUrl + &quot;search/&quot;' id='ajax-search-form' role='search'>
+
+</div><!-- /.navbar-collapse -->
+</div>
+</nav>
+
+<!-- /////ヘッダ/////// -->
+<div class='headbody'> <div class='container head'>
+  <div class='headtitle row' id='banner'>
+  <!-- ヘッダ画像 -->
+          <b:section class='header col-xs-12 col-sm-6' id='blog-title' maxwidgets='1' showaddelement='no'>
+            <b:widget id='Header1' locked='true' title='balletfanテスト環境 (Header)' type='Header'>
+              <b:includable id='main'>
+                <b:if cond='data:useImage'>
+                  <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
+                    <!--
+Show image as background to text. You can't really calculate the width
+reliably in JS because margins are not taken into account by any of
+clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
+width if the user is using shrink to fit.
+This results in a margin-width's worth of pixels being cropped. If the
+user is not using shrink to fit then we expand the header.
+-->
+                    <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                      + &quot;background-position: &quot;                      + data:backgroundPositionStyleStr + &quot;; &quot;                      + data:widthStyleStr                      + &quot;min-height: &quot; + data:height + &quot;px;&quot;                      + &quot;_height: &quot; + data:height + &quot;px;&quot;                      + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
+                      <div class='titlewrapper' style='background: transparent'>
+                        <h1 class='title' style='background: transparent; border-width: 0px'>
+                          <b:include name='title'/>
+                        </h1>
+                      </div>
+                      <b:include name='description'/>
+                    </div>
+                    <b:else/>
+                    <!--Show the image only-->
+                      <a expr:class='&quot;titlelogo&quot;' expr:href='data:blog.homepageUrl'>
+                        <img expr:alt='data:title' expr:src='data:sourceUrl' expr:title='data:title'/>
+                      </a>
+                      <!--Show the description-->
+                      <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
+                      <b:include name='description'/>
+                      </b:if>
+
+                  </b:if>
+                  <b:else/>
+                  <!--No header image -->
+                  <div id='header-inner'>
+                    <div class='titlewrapper'>
+                      <h1 class='title'>
+                        <b:include name='title'/>
+                      </h1>
+                    </div>
+                    <b:include name='description'/>
+                  </div>
+                </b:if>
+              </b:includable>
+              <b:includable id='description'>
+                <div class='descriptionwrapper'>
+                  <p class='description'>
+                    <span>
+                      <data:description/>
+                    </span>
+                  </p>
+                </div>
+              </b:includable>
+              <b:includable id='title'>
+                <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                  <data:title/>
+                  <b:else/>
+                  <a expr:href='data:blog.homepageUrl'>
+                    <data:title/>
+                  </a>
+                </b:if>
+              </b:includable>
+            </b:widget>
+          </b:section><!-- header -->
+          <div class='col-xs-12 col-sm-6 search' id=''>
+            <form class='pull-right form-inline form-inline' expr:action='data:blog.homepageUrl + &quot;search/&quot;' id='ajax-search-form' role='search'>
 <div class='form-group'>
     <input class='form-control' name='q' onblur='if (this.value == &quot;&quot;) {this.value = &quot;Search...&quot;;}' onfocus='if (this.value == &quot;Search...&quot;) {this.value = &quot;&quot;;}' type='text' value='Search...'/>
  </div>
     <button class='btn btn-default btn-sm' type='submit' value='Search'>ブログ内検索</button>
 </form>
-</div><!-- /.navbar-collapse -->
-</div>
-</nav>
+             </div>
+ </div> </div><!-- container -->
 
+
+
+</div>
+<!-- /////ヘッダ///// -->
+
+
+
+
+
+<div class='middle category'>
+  <div class='container'><div class='row'><div class='col-xs-12'>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<b:section id='infomation' preferred='yes'>
+  <b:widget id='HTML1' locked='false' title='' type='HTML'>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+</b:section>
+
+
+
+
+ </b:if>         
+        <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+        <b:if cond='data:blog.pageName'>
+          <h1><data:blog.pageName/>年のアーカイブ</h1>
+        </b:if>
+        </b:if>
+</div></div></div></div>
+<b:if cond='data:blog.pageType != &quot;archive&quot;'>
+<div class='selectmenuarea'>
+<div class='container'>
+<div class='row'>
+<b:section id='selectmenu' preferred='yes'>
+  <b:widget id='Label100' locked='false' title='道具別' type='Label'>
+    <b:includable id='main'>
+  <div class='widget-content  col-xs-12 col-sm-6 col-md-3'>
+  <select onchange='location=this.options[this.selectedIndex].value;'>
+     <option><data:title/></option>
+     <b:loop values='data:labels' var='label'>
+        <option expr:value='data:label.url'><data:label.name/>
+           (<data:label.count/>)
+        </option>
+     </b:loop>
+  </select>
+     <b:include name='quickedit'/>
+   </div>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Label101' locked='false' title='仕上がり別' type='Label'>
+    <b:includable id='main'>
+  <div class='widget-content  col-xs-12 col-sm-6 col-md-3'>
+  <select onchange='location=this.options[this.selectedIndex].value;'>
+     <option><data:title/></option>
+     <b:loop values='data:labels' var='label'>
+        <option expr:value='data:label.url'><data:label.name/>
+           (<data:label.count/>)
+        </option>
+     </b:loop>
+  </select>
+     <b:include name='quickedit'/>
+   </div>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Label102' locked='false' title='言語別' type='Label'>
+    <b:includable id='main'>
+  <div class='widget-content  col-xs-12 col-sm-6 col-md-3'>
+  <select onchange='location=this.options[this.selectedIndex].value;'>
+     <option><data:title/></option>
+     <b:loop values='data:labels' var='label'>
+        <option expr:value='data:label.url'><data:label.name/>
+           (<data:label.count/>)
+        </option>
+     </b:loop>
+  </select>
+     <b:include name='quickedit'/>
+   </div>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Label103' locked='false' title='季節やイベント別' type='Label'>
+    <b:includable id='main'>
+  <div class='widget-content  col-xs-12 col-sm-6 col-md-3'>
+  <select onchange='location=this.options[this.selectedIndex].value;'>
+     <option><data:title/></option>
+     <b:loop values='data:labels' var='label'>
+        <option expr:value='data:label.url'><data:label.name/>
+           (<data:label.count/>)
+        </option>
+     </b:loop>
+  </select>
+     <b:include name='quickedit'/>
+   </div>
+  </b:includable>
+  </b:widget>
+</b:section>
+</div>
+</div>
+</div>
+</b:if>
 
 
 <div class='container content' id='container'>
       <div class='row'>
 <b:section id='info' preferred='yes'/>
-
 <b:section class='main col-xs-12 col-sm-9 clearfix' id='main' showaddelement='no'>
-  <b:widget id='Header4' locked='true' title='balletfanテスト環境 (Header)' type='Header'>
-    <b:includable id='main'>
-     <b:include name='description'/>
-     </b:includable>
-    <b:includable id='description'>
-      <b:if cond='data:blog.url == data:blog.homepageUrl'>
-  <div class='descriptionwrapper'>
-    <p class='description'><span><data:description/></span></p>
-  </div>
-  </b:if>
-</b:includable>
-    <b:includable id='title'>
-  <b:if cond='data:blog.url == data:blog.homepageUrl'>
-    <data:title/>
-  <b:else/>
-    <a expr:href='data:blog.homepageUrl'><data:title/></a>
-  </b:if>
-</b:includable>
-  </b:widget>
-  <b:widget id='HTML5' locked='false' title='お知らせ' type='HTML'>
-    <b:includable id='main'>
-<b:if cond='data:blog.url == data:blog.homepageUrl'>
-  <div class='headline clearfix'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h3 class='headline-label'><data:title/></h3>
-  </b:if>
-  <p><data:content/></p>
-
-</div>
-  <b:include name='quickedit'/>
-  </b:if>
-</b:includable>
-  </b:widget>
   <b:widget id='Blog1' locked='true' title='ブログの投稿' type='Blog'>
     <b:includable id='main' var='top'>
                 <b:if cond='data:mobile == &quot;false&quot;'>
-                  <!-- <b:if cond='data:blog.url == data:blog.homepageUrl'>
-<div class='page-header'><h3> 最新の投稿 <a class='pull-right' href='http://balletfan.blogspot.jp/feeds/posts/default?alt=rss '> <img alt='feed' height='10' src='https://lh6.googleusercontent.com/-4GA0LNH4EmQ/VCTqOmYnIoI/AAAAAAAAD1c/1TNBWpbAV-w/s800/feedicon14.png' title='feedはこちらからどうぞ' width='10'/></a></h3></div>
-</b:if> -->
-
+                  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+<div class='page-header'><h3> 最新の投稿 <a class='pull-right' href='http://loomfan.blogspot.jp/feeds/posts/default?alt=rss '> <img alt='feed' height='10' src='https://lh6.googleusercontent.com/-4GA0LNH4EmQ/VCTqOmYnIoI/AAAAAAAAD1c/1TNBWpbAV-w/s800/feedicon14.png' title='feedはこちらからどうぞ' width='10'/></a></h3></div>
+</b:if>
 
                   <!-- posts -->
                   <div class='blog-posts hfeed'>
@@ -756,6 +900,7 @@ user is not using shrink to fit then we expand the header.
                       &lt;div class=&quot;row video&quot;&gt;
                     </b:if>
                     </b:if>
+                    
                     <b:include data='posts' name='breadcrumb'/>
                     <b:include data='top' name='status-message'/>
                     <data:defaultAdStart/>
@@ -872,7 +1017,6 @@ user is not using shrink to fit then we expand the header.
 <b:if cond='data:blog.homepageUrl != data:blog.url'>
 <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
 <ul class='breadcrumb'><li><a expr:href='data:blog.homepageUrl' rel='tag'>&#10026;Home</a></li>/<li><data:blog.pageName/></li></ul>
-<h2 class='pagename'><data:blog.pageName/></h2>
 <b:else/>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <!-- breadcrumb for the post page -->
@@ -893,15 +1037,15 @@ user is not using shrink to fit then we expand the header.
 <b:if cond='data:blog.pageType == &quot;archive&quot;'>
 <!-- breadcrumb for the label archive page and search pages.. -->
 <ul class='breadcrumb'>
-<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li><data:blog.pageName/></li>
-</ul><h2 class='pagename'><data:blog.pageName/>年のアーカイブ</h2>
+<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>Archives for <data:blog.pageName/></li>
+</ul>
 <b:else/>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
 <ul class='breadcrumb'>
 <b:if cond='data:blog.pageName == &quot;&quot;'>
 <li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>All posts</li>
 <b:else/>
-<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li><data:blog.pageName/></li><h2 class='pagename'><data:blog.pageName/></h2>
+<li><a expr:href='data:blog.homepageUrl'>&#10026;Home</a></li>/<li>Posts filed under <data:blog.pageName/></li>
 </b:if>
 </ul>
 </b:if>
@@ -1287,7 +1431,7 @@ user is not using shrink to fit then we expand the header.
                               <data:top.timestampLabel/>
                               <b:if cond='data:post.url'>
                                 <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
-                                  <abbr class='published' expr:title='data:post.timestampISO8601'>
+                                  <abbr class='published updated' expr:title='data:post.timestampISO8601'>
                                     <data:post.timestamp/>
                                   </abbr>
                                 </a>
@@ -1384,17 +1528,12 @@ user is not using shrink to fit then we expand the header.
                   <meta expr:content='data:post.id' itemprop='postId'/>
                   <a expr:name='data:post.id'/>
                   <b:if cond='data:post.title'>
-                    <b:if cond='data:post.link'>
-                      <a expr:href='data:post.link'>
-                      <data:post.title/>
-                      </a>
-                      <b:else/>
                       <b:if cond='data:post.url'>
                         <b:if cond='data:blog.url != data:post.url'>
 
                           <b:else/>
-<div class='post-title'>
-                        <h1 class=''><data:post.title/></h1><!--itemタイトル-->
+                        <div class='post-title'>
+                        <h1 class='entry-title'><data:post.title/></h1><!--itemタイトル-->
                         <div class='labels'>
                     <span class='post-labels'>
                       <b:if cond='data:post.labels'>
@@ -1416,7 +1555,7 @@ user is not using shrink to fit then we expand the header.
                         <b:else/>
                         <data:post.title/>
                       </b:if>
-                    </b:if>
+                    
                   </b:if>
 <!-- 共通だったところ -->
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
@@ -1432,7 +1571,7 @@ user is not using shrink to fit then we expand the header.
 <b:if cond='data:top.showTimestamp'>
   <b:if cond='data:post.url'>
     <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
-      <abbr class='published' expr:title='data:post.timestampISO8601'>
+      <abbr class='published updated' expr:title='data:post.timestampISO8601'>
         <data:post.dateHeader/> <data:post.timestamp/>
       </abbr>
     </a>
@@ -1499,7 +1638,13 @@ user is not using shrink to fit then we expand the header.
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 <!-- ////////////////アーガイブとトップページ/////////////// -->
  <!-- 共通だったところ -->
-               &lt;div class=&#39;col-xs-12 col-sm-4 <b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><b:if cond='data:label.name == &quot;ブログ&quot;'>blog<b:else/><b:if cond='data:label.name == &quot;チュートリアル&quot;'>tutorial</b:if></b:if></b:loop></b:if>&#39; itemprop=&#39;blogPost&#39; itemscope=&#39;itemscope&#39; itemtype=&#39;http://schema.org/BlogPosting&#39;&gt;
+
+                &lt;div class=&#39;col-xs-12 col-sm-4 <b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><b:if cond='data:label.name == &quot;ブログ&quot;'>blog<b:else/><b:if cond='data:label.name == &quot;チュートリアル&quot;'>tutorial</b:if></b:if></b:loop></b:if>&#39; itemprop=&#39;blogPost&#39; itemscope=&#39;itemscope&#39; itemtype=&#39;http://schema.org/BlogPosting&#39;&gt;
+
+                      
+
+
+
 
                   <b:if cond='data:post.firstImageUrl'>
                     <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
@@ -1510,20 +1655,70 @@ user is not using shrink to fit then we expand the header.
                   
 <!-- 共通だったところ -->
                    
-
-
-<!-- トップページとアーガイブの記事一覧 -->
-
                       <a expr:href='data:post.url'>
-                        <h1 class='media-heading'><data:post.title/><b:if cond='data:post.hasJumpLink'><span class='rm'><data:post.jumpText/></span></b:if></h1>
-                      </a>
+                        <h1 class='media-heading'><data:post.title/><b:if cond='data:post.hasJumpLink'>
+                    <span class='rm'><data:post.jumpText/></span>
+                    </b:if></h1>
 
-                      <data:post.body/>
+                      </a>
                       
+                      
+
                     
+                                           <div class='post-meta'>
+                    <!-- <span class='post-author vcard'>
+                      <b:if cond='data:top.showAuthor'>                        
+                        <span class='fn'>
+                          &#9786;<data:post.author/>
+                        </span>
+                      </b:if>
+                    </span> -->
+<!--                     <span class='post-timestamp'>
+                      
+                        <b:if cond='data:top.showTimestamp'>
+                          <b:if cond='data:post.url'>
+                              <abbr class='published updated' expr:title='data:post.timestampISO8601'>
+                                <data:post.dateHeader/>
+                              </abbr>
+                          </b:if>
+                      </b:if> 
+                    </span>
+                    <span class='post-labels'>
+                      <b:if cond='data:post.labels'>
+                        <b:loop values='data:post.labels' var='label'>
+
+                            <b:if cond='data:label.isLast == &quot;true&quot;'>
+                              <a class='label label-default' expr:href='data:label.url' rel='tag'>
+                            <data:label.name/>
+                          </a>
+                          <b:else/>
+                          <a class='label label-default' expr:href='data:label.url' rel='tag'>
+                            <data:label.name/>
+                          </a>,
+                            </b:if>
+                          
+                        </b:loop>
+                      </b:if>
+                    </span> -->
+                    <span class='post-comment-link'>
+                      <b:if cond='data:blog.pageType != &quot;item&quot;'>
+                        <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+                          <b:if cond='data:post.allowComments'>
+ <b:if cond='data:post.numComments &gt; 0'>
+                            <b:include data='post' name='comment_count_picker'/>
+                            </b:if>
+                          </b:if>
+                        </b:if>
+                      </b:if>
+                    </span>
+                  </div> 
+                      
+                      
+
                     
-                    
-                    
+                    <data:post.body/>
+
+
 
                  
 
@@ -1842,142 +2037,13 @@ user is not using shrink to fit then we expand the header.
  <!-- END Content --> 
         
             <b:section class='sidebar col-xs-12 col-sm-3 dmbs-right' id='sidebar' preferred='yes'>
-               <b:widget id='Label1' locked='false' title='カテゴリ（ラベル）' type='Label'>
+               <b:widget id='Label1' locked='false' title='人気のラベル' type='Label'>
                  <b:includable id='main'>
   <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
     <b:if cond='data:display == &quot;list&quot;'>
- <!-- チュートリアルメニューヘッダ -->              
-<p class='labelhead'><data:title/></p>
-<nav class='treenav'>
-      <ul class='list'>
-<b:loop values='data:labels' var='label'>
-        
-          <b:if cond='data:blog.url == data:label.url'>
-             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;<data:label.name/>
-
-          <b:else/>
-           &lt;li&gt;
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='badge' dir='ltr'><data:label.count/></span>
-          </b:if>
-        &lt;/li&gt;
-      </b:loop>
-
-      </ul>
-      </nav>
-    <b:else/>
-      <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='badge' dir='ltr'><data:label.count/></span>
-          </b:if>
-        </span>
-      </b:loop>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-               </b:widget>
-               <b:widget id='Label17' locked='false' title='仕上がり' type='Label'>
-                 <b:includable id='main'>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
-    
-<p class='labelhead'><data:title/></p>
-<nav class='treenav'>
-      <ul class='list'>
-<b:loop values='data:labels' var='label'>
-        
-          <b:if cond='data:blog.url == data:label.url'>
-             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;
-            <data:label.name/>
-
-          <b:else/>
-           &lt;li&gt;
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='badge' dir='ltr'><data:label.count/></span>
-          </b:if>
-        &lt;/li&gt;
-      </b:loop>
-
-      </ul>
-      </nav>
-    <b:else/>
-      <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='badge' dir='ltr'><data:label.count/></span>
-          </b:if>
-        </span>
-      </b:loop>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-               </b:widget>
-               <b:widget id='Label2' locked='false' title='機能' type='Label'>
-                 <b:includable id='main'>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
-    
-<p class='labelhead'><data:title/></p>
-<nav class='treenav'>
-      <ul class='list'>
-<b:loop values='data:labels' var='label'>
-        
-          <b:if cond='data:blog.url == data:label.url'>
-             &lt;li class=&quot;active&quot; expr:dir=&#39;data:blog.languageDirection&#39;&gt;
-            <data:label.name/>
-
-          <b:else/>
-           &lt;li&gt;
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='badge' dir='ltr'><data:label.count/></span>
-          </b:if>
-        &lt;/li&gt;
-      </b:loop>
-
-      </ul>
-      </nav>
-    <b:else/>
-      <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='badge' dir='ltr'><data:label.count/></span>
-          </b:if>
-        </span>
-      </b:loop>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-               </b:widget>
-               <b:widget id='Label16' locked='false' title='バージョン' type='Label'>
-                 <b:includable id='main'>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
- 
+ <!-- チュートリアルメニューヘッダ -->
+              <h2 class='menuhead'><a class='videot' dir='ltr' href='http://loomfan.blogspot.jp/search/label/%E3%83%93%E3%83%87%E3%82%AA%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB'>ビデオチュートリアル</a></h2>  
+              
 <p class='labelhead'><data:title/></p>
 <nav class='treenav'>
       <ul class='list'>
@@ -2022,9 +2088,9 @@ user is not using shrink to fit then we expand the header.
     <b:if cond='data:display == &quot;list&quot;'>
      <!-- ブログメニューヘッダ -->
               
-              <h2 class='menuhead'><a class='blogt' dir='ltr' href='http://blendersketch.blogspot.jp/search/label/%E3%83%96%E3%83%AD%E3%82%B0'>ブログ</a></h2>
-              <p class='menulead'>Blenderについてのメモ的なことやお知らせ&#12290;</p>
-<p class='labelhead'><a expr:href='&quot;http://blendersketch.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
+              <h2 class='menuhead'><a class='blogt' dir='ltr' href='http://loomfan.blogspot.jp/search/label/%E3%83%96%E3%83%AD%E3%82%B0'>ブログ</a></h2>
+              <p class='menulead'>管理人のメモ的なことやお知らせ&#12290;</p>
+<p class='labelhead'><a expr:href='&quot;http://loomfan.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
 <nav class='treenav'>
       <ul class='list'>
 <b:loop values='data:labels' var='label'>
@@ -2145,7 +2211,7 @@ user is not using shrink to fit then we expand the header.
                <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
                  <b:includable id='main'>
   <div class='widget-content'>
-    <b:if cond='data:blog.disableAdSenseWidget != &quot;true&quot;'>
+    <b:if cond='!data:blog.disableAdSenseWidget'>
       <data:adCode/>
     </b:if>
     <b:include name='quickedit'/>
@@ -2334,7 +2400,54 @@ head.appendChild(script);
     </div>
     <!-- END Footer --> 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'/>
-
+          <script>
+          $(function(){
+            var player;
+var videoID=$(&quot;#player&quot;).data(&quot;play&quot;);
+            /* IFrame Player APIのコードをロード */
+            function fGetScript(){
+               $.ajax({
+                  url:&quot;http://www.youtube.com/player_api/&quot;,
+                  dataType:&quot;script&quot;,
+                  error:function(xhr, status, thrown) {
+                     fGetScript();
+                  }
+               }); 
+            }
+            fGetScript();
+            /* プレーヤーの準備完了時 */
+            window.onYouTubeIframeAPIReady=function() {
+               loadPlayer(videoID);
+            }
+            /* プレーヤー生成 */
+            function loadPlayer(videoID) {
+               if(!player){
+                  player = new YT.Player(
+                     &#39;player&#39;,{
+                        width: &#39;100%&#39;,   /* 動画プレーヤーの幅 */
+                        /*height: &#39;390&#39;,   動画プレーヤーの高さ */
+                        videoId: videoID,   /* YouTube動画ID */
+                        events: { /* イベント */
+                        },
+                        playerVars: {
+                           &quot;rel&quot;:0,         // 関連動画の有無(default:1)
+                           &quot;showinfo&quot;:0,      // 動画情報表示(default:1)
+                           &quot;controls&quot;:1      // コントロール有無(default:1)
+                        }
+                     }
+                  );
+               }else{
+                  player.loadVideoById(videoID);
+               }
+            }
+             $(&quot;.subject&quot;).click(function(){
+               var time;
+               time=$(this).data(&quot;seconds&quot;);
+               player.seekTo(time,true);
+            });
+            
+         });
+      </script>
      <script src='http://umbrelllla.github.io/bootstrap.min.js'/>
      <b:if cond='data:blog.pageType == &quot;item&quot;'>
      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js'/>
@@ -2342,15 +2455,15 @@ head.appendChild(script);
       <script type='text/javascript'>
         /*fix nav*/
         $(function(){ var box = $(&quot;.navbar&quot;);
-        var leftsidebar = $(&quot;#Blog1&quot;);
+        var leftsidebar = $(&quot;.middle&quot;);
         var boxTop = leftsidebar.offset().top;
         $(window).scroll(function () {
          if($(window).scrollTop() &gt;= boxTop) {
            box.addClass(&quot;navbar-fixed-top&quot;);
             $(&quot;#content&quot;).css(&quot;margin-top&quot;,&quot;50px&quot;); 
           } else {
-box.removeClass(&quot;navbar-fixed-top&quot;);
-
+           box.removeClass(&quot;navbar-fixed-top&quot;);
+           $(&quot;#content&quot;).css(&quot;margin-top&quot;,&quot;200px&quot;)
             } 
             }); 
             });
