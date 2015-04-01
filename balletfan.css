@@ -1,11 +1,9 @@
 a.titlelogo img {
 margin: 5px 0 5px 0;
 }
-.descriptionwrapper {
-float: right;
-}
+
 p.description {
-  font-size: 0.9em;
+   font-size: 1.5em;
 }
 .selectmenuarea,.headbody {
   margin: 0 auto;
@@ -1586,7 +1584,6 @@ border-bottom: 1px dashed #666;
 margin: 0 auto;
 /* left: 60px; */
 min-height: auto;
-font-size: 80%;
 list-style-type: none;
 margin: 0 0 0px 10px;
 padding: 0 0 10px 0;
@@ -2151,7 +2148,7 @@ background-color: #007fff;
   .container.head {
 text-align: center;
 }
-.descriptionwrapper,a.titlelogo {
+a.titlelogo {
 float: none;
 }
 div#infomation {
