@@ -2273,19 +2273,7 @@ color: #222;
 ul.list.bigginer {
 margin-bottom: 20px;
 }
-h1.media-heading:before,.videot:before {
-display: inline-block;
-font-family: FontAwesome;
-font-style: normal;
-font-weight: normal;
-line-height: 1;
--webkit-font-smoothing: antialiased;
-content: "\f16a";
-color: #dc143c;
-font-size: 90%;
-vertical-align: middle;
-margin-right: 2px;
-}
+
 .blog a h1.media-heading:before,.blogt:before {
 display: inline-block;
 font-family: FontAwesome;
