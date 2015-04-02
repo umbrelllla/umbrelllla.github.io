@@ -84,8 +84,9 @@ h1,h2,h3,h4,h5,h6{font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo
 ul.list{border-bottom:1px dashed #666;margin:0 auto;min-height:auto;list-style-type:none;margin:0 0 0 10px;padding:0 0 10px 0;line-height:1.8}.labelhead{margin:0 0 5px}
 #Header2 a{color:#fff}.yamm-content .treenav ul.list>li{padding:0}.yamm-content .treenav ul.list li{color:#888}.yamm-content .treenav ul.list ul li:last-child:before{background-color:#222}
 .yamm-content .treenav ul.list li a{color:#ccc;font-weight:normal;position:relative}div.middle.category{padding:10px 0;background-color:#f2f2f2}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-right-radius:0;border-top-left-radius:0;background-color:#232323}
-footer{margin:0;background-color:#111;padding:15px 0 20px 0}.dmbs-right{border-left:1px solid #ccc;margin-top:10px}#PopularPosts3,#BlogArchive1,#Followers1{background-color:#fa5ba5;color:#fff;padding:2% 6%}
-div#PopularPosts3 a,div#BlogArchive1 a,div#Followers1 a{color:#fff}#PopularPosts3 h3.widget-title,#BlogArchive1 h3.widget-title,#Followers1 h3.widget-title{font-size:1.3em;text-align:center;padding:0 0 5px 0;font-weight:bold}
+footer{margin:0;background-color:#111;padding:15px 0 20px 0}.dmbs-right{border-left:1px solid #ccc;margin-top:10px}#PopularPosts3,#BlogArchive1,#Followers1{color:#fff;padding:2% 6%;margin:20px 0}
+#PopularPosts3{background-color:#fa5ba5}#BlogArchive1{background-color:#c05bfa}#Followers1{background-color:#fa8b5b}div#PopularPosts3 a,div#BlogArchive1 a,div#Followers1 a{color:#fff}
+#PopularPosts3 h3.widget-title,#BlogArchive1 h3.widget-title,#Followers1 h2.widget-title{font-size:1.2em;text-align:center;padding:0 0 5px 0;font-weight:bold}
 article{line-height:200%;color:#666}@media(max-width:767px){.navbar-nav .open .dropdown-menu{background-color:#232323;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,0.1)}
 }.badge{color:#FFF;background-color:#38a1db;border-radius:10px}.treenav ul.list li a:hover,.treenav ul.list li.active>a:hover,.yamm-content .treenav ul.list li a:hover,{color:red}
 .treenav ul.list li.active>a{color:#2a9fd6;font-weight:bold}img#logo{margin-top:5px}@media(max-width:767px){div.navbar.navbar-default.yamm{display:block}

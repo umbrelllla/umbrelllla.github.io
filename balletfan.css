@@ -1701,15 +1701,21 @@ margin-top: 10px;
 }
 /* サイドバーウィジェットスタイリング */
 #PopularPosts3,#BlogArchive1,#Followers1 {
-  background-color: #fa5ba5;
+  
   color: #fff;
     padding: 2% 6%;
+    margin: 20px 0;
 }
+
+#PopularPosts3{background-color: #fa5ba5;}
+#BlogArchive1{background-color: #C05BFA;}
+#Followers1{background-color: #FA8B5B;}
+
 div#PopularPosts3 a,div#BlogArchive1 a,div#Followers1 a {
   color: #fff;
 }
-#PopularPosts3 h3.widget-title,#BlogArchive1 h3.widget-title,#Followers1 h3.widget-title {
-  font-size: 1.3em;
+#PopularPosts3 h3.widget-title,#BlogArchive1 h3.widget-title,#Followers1 h2.widget-title {
+  font-size: 1.2em;
   text-align: center;
   padding: 0 0 5px 0;
   font-weight: bold;
