@@ -7,7 +7,7 @@
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
     <title><data:blog.pageName/> | <data:blog.title/></title>
     <b:else/>
-    <title>フリー3DCGソフトBlenderのビデオチュートリアル&#65288;主に英語&#65289;を紹介|<data:blog.pageTitle/></title>
+    <title>キッズバレエ関連商品のご紹介|<data:blog.pageTitle/></title>
     </b:if>
     <b:else/>
     <title><data:blog.pageName/> | <data:blog.title/></title>
@@ -182,6 +182,7 @@ h1.media-heading {
   margin-bottom: 3px;
   padding-bottom: 5px;
   font-weight: normal;
+    vertical-align: top;
 }.showpageNum a,.showpage a,.showpagePoint{background:#007fff;border:0;color:#FFF;margin-left:10px;padding:5px 10px}.showpageNum a:hover,.showpage a:hover,.showpagePoint,.blog-pager-newer-link,.blog-pager-older-link,.home-link{background:#000;color:#FFF}.showpageOf{display:none!important}div.middle.category h1{margin:10px 0 5px 10px}a.snippet:hover{color:#ff37df}a.snippet{color: #999;font-size: 65%;line-height: 1.5;}a.snippet p {margin-top: 5px;}div.row.video {border-bottom: 1px solid #ddd;margin-bottom: 20px;}</style></b:if><b:if cond='data:blog.pageType != &quot;static_page&quot;'><style>  .post-title{}</style></b:if>
 <style>
 /* 共通スタイル */
@@ -213,7 +214,7 @@ span.pricedate {
 .shop-buttun a {
   margin: 5px 0px;
   color: #fff;
-  background-color: #007fff;
+  background-color: #FF00A5;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -2022,9 +2023,9 @@ user is not using shrink to fit then we expand the header.
     <b:if cond='data:display == &quot;list&quot;'>
      <!-- ブログメニューヘッダ -->
               
-              <h2 class='menuhead'><a class='blogt' dir='ltr' href='http://blendersketch.blogspot.jp/search/label/%E3%83%96%E3%83%AD%E3%82%B0'>ブログ</a></h2>
-              <p class='menulead'>Blenderについてのメモ的なことやお知らせ&#12290;</p>
-<p class='labelhead'><a expr:href='&quot;http://blendersketch.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
+              <h2 class='menuhead'><a class='blogt' dir='ltr' href='http://balletfan.blogspot.jp/search/label/%E3%83%96%E3%83%AD%E3%82%B0'>ブログ</a></h2>
+              <p class='menulead'>メモ的なことやお知らせ&#12290;</p>
+<p class='labelhead'><a expr:href='&quot;http://balletfan.blogspot.jp/search/label/&quot; + data:title'><data:title/></a></p>
 <nav class='treenav'>
       <ul class='list'>
 <b:loop values='data:labels' var='label'>
