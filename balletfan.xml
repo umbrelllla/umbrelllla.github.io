@@ -45,8 +45,19 @@
 <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
 <link href='http://umbrelllla.github.io/balletfan.min.css' rel='stylesheet' type='text/css'/>
 <b:if cond='data:blog.pageType == &quot;item&quot;'><style>
+/*BALLETFAN*/
+.item-image {
+  float: left;
+  margin: 0 20px 0 0;
+}
+.item_price {
 
-
+  font-size: 1.5em;
+}
+.item_description {
+  margin-top: 20px;
+}
+/*BALLETFAN*/
 li.subject {
 cursor: pointer;
 }
