@@ -884,7 +884,7 @@ user is not using shrink to fit then we expand the header.
 <b:if cond='data:blog.homepageUrl != data:blog.url'>
 <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
 <ul class='breadcrumb'><li><a expr:href='data:blog.homepageUrl' rel='tag'>&#10026;Home</a></li>/<li><data:blog.pageName/></li></ul>
-<h2 class='pagename'><data:blog.pageName/></h2>
+
 <b:else/>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <!-- breadcrumb for the post page -->
@@ -2334,7 +2334,7 @@ head.appendChild(script);
         <a expr:href='data:blog.homepageUrl'>
             <data:blog.title/>
         </a>
-        2013 . Powered by 
+        2015 . Powered by 
         <a href='http://twitter.github.com/bootstrap/' rel='nofollow' title='Bootstrap'>
           Bootstrap
         </a>
