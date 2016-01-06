@@ -4,6 +4,7 @@ select{line-height:1em;height:1.8em;display:block;padding:.2em;margin:0 auto 1em
 .selectmenuarea{margin-bottom:20px;padding-top:20px;-webkit-box-shadow:0 0 6px 6px rgba(200,200,200,0.2) inset;
    -moz-box-shadow:0 0 6px 6px rgba(200,200,200,0.2) inset;
         box-shadow:0 0 6px 6px rgba(200,200,200,0.2) inset;}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;}
+.fa {margin-right: 5px;}
 /*!
  * Bootswatch v3.1.1+1
  * Homepage: http://bootswatch.com
