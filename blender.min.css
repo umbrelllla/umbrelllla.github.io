@@ -1,7 +1,7 @@
 a.titlelogo img{margin:5px 0 5px 0}.descriptionwrapper{float:right}p.description{font-size:.9em}.selectmenuarea,.headbody{margin:0 auto;padding:0;border-bottom:1px solid #ddd;box-shadow:0 1px 8px rgba(0,0,0,.25);position:relative}
 select{line-height:1em;height:1.8em;display:block;padding:.2em;margin:0 auto 1em;float:none;text-align:center;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;-webkit-box-shadow:inset 0 0 4px rgba(0,0,0,.25);-moz-box-shadow:inset 0 0 4px rgba(0,0,0,.25);box-shadow:inset 0 0 4px rgba(0,0,0,.25);border-color:#ccc;font-size:.9em}
 #selectmenu .widget-content{margin-bottom:0}a.titlelogo{float:left}.container.head{padding-top:5px;padding-bottom:5px}.row.capter:after{clear:none}.post{color:#333;line-height:2em;clear:both;overflow:hidden;border-bottom:1px solid #ddd;padding:8px 0}
-.selectmenuarea{margin-bottom:20px;padding-top:20px}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;color:#999;margin-top:20px}
+.selectmenuarea{margin-bottom:20px;padding-top:20px}#footer{background-color:#111;text-align:center;font-size:80%;padding:20px 10px;color:#999;}
 /*!
  * Bootswatch v3.1.1+1
  * Homepage: http://bootswatch.com
@@ -82,7 +82,7 @@ h1,h2,h3,h4,h5,h6{font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo
 #navbar-collapse-grid>ul>li>a:hover{background-color:#00608d}.navbar-default .navbar-nav>li>a{color:#FFF}ul.list-unstyled{line-height:24px;margin-bottom:8px}
 ul.list{border-bottom:1px dashed #666;margin:0 auto;min-height:auto;font-size:80%;list-style-type:none;margin:0 0 0 10px;padding:0 0 10px 0;line-height:1.8}
 .labelhead{margin:0 0 5px}#Header2 a{color:#fff}.yamm-content .treenav ul.list>li{padding:0}.yamm-content .treenav ul.list li{color:#888}.yamm-content .treenav ul.list ul li:last-child:before{background-color:#222}
-.yamm-content .treenav ul.list li a{color:#ccc;font-weight:normal;position:relative}div.middle.category{padding:10px 0;background-color:#f2f2f2}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-right-radius:0;border-top-left-radius:0;background-color:#232323}
+.yamm-content .treenav ul.list li a{color:#ccc;font-weight:normal;position:relative}div.middle.category{padding:10px 0;background-color:#DCDCDC;margin-top:20px;}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-right-radius:0;border-top-left-radius:0;background-color:#232323}
 footer{margin:0;background-color:#111;padding:15px 0 20px 0}.dmbs-right h3{background-color:#000;color:#fff;font-size:150%;padding:6px 10px 5px 20px;border-left:4px solid #f00;margin-bottom:10px;font-size:120%}
 .dmbs-right{border-left:1px solid #ccc;margin-top:10px}article{line-height:200%;color:#666}@media(max-width:767px){.navbar-nav .open .dropdown-menu{background-color:#232323;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,0.1)}
 }.badge{color:#FFF;background-color:#38a1db;border-radius:10px}.treenav ul.list li a:hover,.treenav ul.list li.active>a:hover,.yamm-content .treenav ul.list li a:hover,{color:red}
