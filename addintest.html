@@ -4,27 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>Sample</title>
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.3.min.js"></script>
-    <!-- <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script> -->
-    <script src="https://richapiaddin.azurewebsites.net/App/Office/Office.js"></script>
-    <script>
-      Office.initialize = function(reason){}
-      $(function(){
-        $("#btnOK").click(function(){
-          OneNote.run(function(context){
-            var page = context.application.getActivePage();
-            var outline = page.addOutline(10, 100, "<h1>こんにちは、世界</h1>");
-            return context.sync()
-            .then(function(){
-              console.log("Success");
-            })
-            .catch(function(error){
-              console.log("Error:" + JSON.stringify(error));
-            });
-          });
-        });
-      });
-    </script>
+
   </head>
   <body>
     <h4>OneNote-Add-in Sample</h4>
