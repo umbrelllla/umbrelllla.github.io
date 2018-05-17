@@ -200,6 +200,7 @@ body {
     letter-spacing: 1.1px;
     padding-top: 0;
     background-color: #FFF;
+    font-size: 18px;
 
 }
 
@@ -1291,7 +1292,7 @@ img#logo {
 }
 
 h3.widget-title,h2.title {
-
+text-align: center;
  color: #777;
   font-size: 0.85em;
   padding: 6px 10px 5px 20px;
@@ -1314,7 +1315,8 @@ div#ArchiveList {
 }
 
 .widget-content {
-  margin-bottom: 30px;
+      margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .btn-default {
@@ -1485,4 +1487,35 @@ h3.labelhead {
     margin-right: 0;
     margin-left: 0;
   }
+}
+.follow-button {
+    /* font-family: arial, sans-serif; */
+    /* background: #4B80F6; */
+    border: 1px solid #777;
+    background-image: -moz-linear-gradient(top,#68ABE8,#4B80F6);
+    background-image: -ms-linear-gradient(top,#68ABE8,#4B80F6);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#68ABE8',EndColorStr='#4B80F6')";
+    background-image: -o-linear-gradient(top,#68ABE8,#4B80F6);
+    /* background: -webkit-gradient(linear,left top,left bottom,from(#68ABE8),to(#4B80F6)); */
+    color: #ef934f;
+    font-size: 13px;
+    padding: 2px 7px;
+    display: inline-block;
+    min-width: 54px;
+    text-align: center;
+    /* font-weight: bold; */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -o-transition: all 0.218s;
+    transition: all 0.218s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: default;
+}
+.showpageNum a:hover, .showpage a:hover, .showpagePoint, .blog-pager-newer-link, .blog-pager-older-link, .home-link {
+    background: #999;
+    color: #FFF;
 }
